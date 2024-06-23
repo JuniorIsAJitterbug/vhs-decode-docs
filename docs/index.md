@@ -1,4 +1,4 @@
-![image](/assets/images/graphics/Cross-Platform-VHS-Decode-Trasparent.png){: style="width:300px"}
+![image](assets/images/graphics/Cross-Platform-VHS-Decode-Trasparent.png){: style="width:300px"}
 
 # VHS-Decode Wiki 
 
