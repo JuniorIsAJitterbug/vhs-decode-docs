@@ -1,0 +1,6 @@
+
+FPC adapter is six pin and secured to to the battery by Gorilla double sided tape to strain relief the fpc
+
+10uF NP cap on pcb, but I have not experimented with other values much. 4dB gain on DdD appears optimal (I think).
+
+Pin 6 on camera fpc is RF PB and pin 8 is RF gnd (numbered 1-16 from top) 

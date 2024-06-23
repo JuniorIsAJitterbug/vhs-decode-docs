@@ -1,0 +1,6 @@
+jig connector: 3710-000413
+https://es.farnell.com/en-ES/samtec/fte-107-03-g-dv/header-0-8mm-2x7way-smt/dp/3668177
+
+https://discord.com/channels/665557267189334046/782578245408653313/1149738214530220083
+
+`CONNECTOR-SOCKET;14P,2R,0.8mm,STRAIGHT,S`

@@ -1,0 +1,1 @@
+TP1 on VCR has a single Dupont pin soldered in to secure  connection hook

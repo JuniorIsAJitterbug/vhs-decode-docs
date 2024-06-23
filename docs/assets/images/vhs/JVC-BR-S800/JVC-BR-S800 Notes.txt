@@ -1,0 +1,7 @@
+after much trial and error I finely got hifi rf sounding decent, I ended up moving the taps on to the respective audio and video processing boards, the head preamp is just too sensitive to RFI, also reducing the size of the capacitors on the taps helped a lot, I ended p with 0.1uf for video rf and 0.01uf for hifi.
+test.flac
+7.18 MB
+0:00/0:12
+0:00
+
+Adam_R#5281 -- https://discordapp.com/channels/665557267189334046/782578245408653313/1065440481523277934

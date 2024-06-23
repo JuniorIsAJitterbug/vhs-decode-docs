@@ -1,0 +1,8 @@
+https://discord.com/channels/665557267189334046/782578245408653313/1103667792668000338
+
+Novagood
+
+For my DCR-TRV238E I remember the RF amplitude was about 60-80mV (120-160mV peak-to-peak) with a 50ohm input (only 90% sure it was 50ohm and not 1Mohm) and I think AC coupling didn't make any difference. So it's significantly lower than a standard video signal (S-video or composite) and you'll need some kind of front-end to adjust the gain for the ADC range of your capture device
+
+https://discord.com/channels/665557267189334046/782578245408653313/1136351096906993757
+
