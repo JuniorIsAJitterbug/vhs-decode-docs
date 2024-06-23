@@ -1,0 +1,10 @@
+RF info:
+
+Video RF tap points are pins #3 & 4 (signal & ground) located near the head drum
+If signal is low, turning knobs to the right of tap points and returning to their original positions may improve output.
+
+Capture/processing issues:
+
+Captures from recordings that have HiFi audio result in bright video output with vhs-decode.
+Captures from recordings with linear audio result in normal expected video levels, although luminance shifts appear to cause tbc disruptions. 
+Various captures attached for reference with variable info in file names
