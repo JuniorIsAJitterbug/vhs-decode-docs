@@ -1,23 +1,23 @@
-![image](assets/images/graphics/Cross-Platform-VHS-Decode-Trasparent.png){: style="width:300px"}
+![](assets/images/graphics/Cross-Platform-VHS-Decode-Trasparent.png){: style="width:300px"}
 
 # VHS-Decode Wiki 
 
 
 This is the VHS-Decode Wiki written and maintained by [Harry Munday](https://github.com/harrypm) (harry@opcomedia.com),
-Inside this wiki and its pages, you will find everything! from easy-to-understand technical guidance and notations for getting a signal out of VCRs, capturing original [FM RF](Signal-Sampling) signals off of tapes, storing them and finally processing them into lossless digital media archives.
+Inside this wiki and its pages, you will find everything! from easy-to-understand technical guidance and notations for getting a signal out of VCRs, capturing original [FM RF](Signal-Sampling.md) signals off of tapes, storing them and finally processing them into lossless digital media archives.
 
-Want to support the work? visit [Donations](https://github.com/oyvindln/vhs-decode/wiki/Donations)
+Want to support the work? visit [Donations](Donations.md)
 
 VHS-Decode is part of a family of software sharing the same tools & developers!
 
-[CVBS (Composite) Decode](CVBS-Composite-Decode) / [HiFi Decode](HiFi-Decode) / [RTLSDR HiFi Decode](RTLSDR) / [LaserDisc Decode](https://github.com/happycube/ld-decode) / [CD-Decode](https://github.com/happycube/cd-decode) / [FL2K TBC Player](TBC-To-Analogue)
+[CVBS (Composite) Decode](CVBS-Composite-Decode.md) / [HiFi Decode](HiFi-Decode.md) / [RTLSDR HiFi Decode](RTLSDR.md) / [LaserDisc Decode](https://github.com/happycube/ld-decode) / [CD-Decode](https://github.com/happycube/cd-decode) / [FL2K TBC Player](TBC-to-Analogue.md)
 
 
 
 ## Start Here!
 
 
-- [The Frequently Asked Questions](FAQ)
+- [The Frequently Asked Questions](FAQ.md)
 - [Discord Community](https://discord.gg/pVVrrxd)
 
 
@@ -39,7 +39,8 @@ VHS-Decode is part of a family of software sharing the same tools & developers!
 
 We have a overview YouTube video!
 
-[![YouTube Video Tutoril Thumbnail](assets/images/video-thumbnails/decode-basic-video-thumbnail-1-2024.png){: style="width:400px"}](http://www.youtube.com/watch?feature=player_embedded&v=Xb128g617sg)
+[![](assets/images/video-thumbnails/decode-basic-video-thumbnail-1-2024.png){: style="width:500px"}](http://www.youtube.com/watch?v=Xb128g617sg)
+
 
 
 Odysee [Official VHS-Decode](https://odysee.com/@vhs-decode:7) - TheRealHarrypm
@@ -52,7 +53,7 @@ YouTube [The Video Dump Channel](https://www.youtube.com/@videodumpchannel) - Ji
 ## Summary
 
 
-Thanks to low-cost analogue to digital converters [CX Cards](CX-Cards) & [RTLSDR](RTLSDR) alongside the [DomesDayDuplicator](https://github.com/harrypm/DomesdayDuplicator#readme) direct digitisation and archival of many magnetic analouge media formats can be done not only properly but affordably with original FM RF (Frequency Modualted Radio Frequency) signals being captured and preserved in the digital file realm this is dubbed as the "FM RF Archival" method. 
+Thanks to low-cost analogue to digital converters [CX Cards](CX-Cards.md) & [RTLSDR](RTLSDR.md) alongside the [DomesDayDuplicator](https://github.com/harrypm/DomesdayDuplicator#readme) direct digitisation and archival of many magnetic analouge media formats can be done not only properly but affordably with original FM RF (Frequency Modualted Radio Frequency) signals being captured and preserved in the digital file realm this is dubbed as the "FM RF Archival" method. 
 
 Unlike limited baked-in standard S-Video/Composite, baseband video & audio capture, FM RF capture allows the original tape signals to be stored making a true digital master copy of your analogue media removing the need for expensive time base correctors and even working physical players in the future.
 
@@ -64,7 +65,7 @@ The decode family of tools brings you a state of the art archival toolchain to m
 
 FM RF capture and subsequent software decoding provides anyone with a standard desktop or laptop a complete software-defined videotape player with a full suite of "after the fact" broadcast level processing & manipulation tools with a full-frame software-based time base corrector, drop out detection, and compensation practically speaking near endless remastering potential. 
 
-Simpler digitisation, with conversion to baseband and then video files being a fluid copy-paste drag and drop experience for [many tape formats](https://github.com/oyvindln/vhs-decode/wiki/Tape-Format-Support-List) not limited to just VHS or SVHS, the burden of effort is no longer tied to high cost real-time equipment allowing for near endless remastering possibility's only limited to the potential of the media format and not the hardware used to capture it.
+Simpler digitisation, with conversion to baseband and then video files being a fluid copy-paste drag and drop experience for [many tape formats](Tape-Format-Support-List.md) not limited to just VHS or SVHS, the burden of effort is no longer tied to high cost real-time equipment allowing for near endless remastering possibility's only limited to the potential of the media format and not the hardware used to capture it.
 
 
 ## Breakdown of FM RF Archival
@@ -74,9 +75,9 @@ Simpler digitisation, with conversion to baseband and then video files being a f
 
 *Capture today decode tomorrow!*
 
-![VHS-Decode Workflow Overview](assets/images/graphics/VHS-Decode-Workflow-16-by-9-Overview-Current.png){: style="width:800px"}
+![](assets/images/graphics/VHS-Decode-Workflow-16-by-9-Overview-Current.png){: style="width:800px"}
 
-To see more expanded examples see the [The Visual Diagrams Page](Diagram-Visuals).
+To see more expanded examples see the [The Visual Diagrams Page](Diagram-Visuals.md).
 
 !!! NOTE
     Sony's 8mm formats Video8 & Hi8 is only 1 RF signal point that contains Video/HiFI FM/RCTC-Timecode, but VHS & Betamax are two separate FM RF test points. 
@@ -89,30 +90,30 @@ For various tape media formats we create what we call an "RF Tap" and its as sim
 
 - VCR/VTR Player --> Find FM RF Test Points --> Add a Decoupling 10uf Ceramic Capacitor --> 50Ohm RG316/RG178 Cabling --> BNC or SMA Bulkhead Connector.
 
-- RF Tap (Bulkhead) --> [Amplifier](Amplificaiton-R&D) or Direct --> RF Capture Hardware (CX Card, DdD, MIRSC, RLTSDR or outher ADC) -> 8-bit or 16-bit stream of RF Samples --> RF Data File --> Software Chain.
+- RF Tap (Bulkhead) --> [Amplifier](Amplificaiton-R&D.md) or Direct --> RF Capture Hardware (CX Card, DdD, MIRSC, RLTSDR or outher ADC) -> 8-bit or 16-bit stream of RF Samples --> RF Data File --> Software Chain.
 
 -----
 
-1. [Practically Any VCR/VTR/Camcorder](004-The-Tap-List#index) --> [Analog to Digital Converter "ADC" 28-40msps](RF-Capture-Guide) --> [Generic RF File of Video/HiFi Signals](File-&-Data-Formats).
+1. [Practically Any VCR/VTR/Camcorder](004-The-Tap-List.md#index) --> [Analog to Digital Converter "ADC" 28-40msps](RF-Capture-Guide.md) --> [Generic RF File of Video/HiFi Signals](File-&-Data-Formats.md).
 
-2. [RF File of Tape](File-&-Data-Formats) --> [FLAC Compression](RF-Compression-&-Decompression-Guide) --> [Optical Archive](Media-Archival-Guide) or [LTO Tape Archive](Media-Archival-Guide#lto-linear-tape-open).
+2. [RF File of Tape](File-&-Data-Formats.md) --> [FLAC Compression](RF-Compression-&-Decompression-Guide.md) --> [Optical Archive](Media-Archival-Guide.md) or [LTO Tape Archive](Media-Archival-Guide.md#lto-linear-tape-open).
 
-3.  HiFi FM File (RAW or FLAC) -> [HiFi Decode](HiFi-Decode) -> Demodulation & Noise Reduction -> FLAC 24-bit 48khz audio file.
+3.  HiFi FM File (RAW or FLAC) -> [HiFi Decode](HiFi-Decode.md) -> Demodulation & Noise Reduction -> FLAC 24-bit 48khz audio file.
 
-4.  Video FM File (RAW or FLAC) -> [VHS-Decode](RF-Capture-Decoding-Guide) ->  Demodulation & Time Base Correction -> Composite or S-Video [.TBC Files](File-&-Data-Formats) `video.tbc` & `video_chroma.tbc` -> [VBI Data Extraction](Identifying-vbi-data) `ld-process-vbi` -> `ld-analyse` Inspection & adjustment -> [TBC Video Export](TBC-to-Video-Export-Guide) FFmpeg & Chroma-Decoder -> RGB/YUV Uncompressed Colour Stream ->  FFmpeg Encode -> Final Interlaced Video File.
+4.  Video FM File (RAW or FLAC) -> [VHS-Decode](RF-Capture-Decoding-Guide.md) ->  Demodulation & Time Base Correction -> Composite or S-Video [.TBC Files](File-&-Data-Formats.md) `video.tbc` & `video_chroma.tbc` -> [VBI Data Extraction](Identifying-vbi-data.md) `ld-process-vbi` -> `ld-analyse` Inspection & adjustment -> [TBC Video Export](TBC-to-Video-Export-Guide.md) FFmpeg & Chroma-Decoder -> RGB/YUV Uncompressed Colour Stream ->  FFmpeg Encode -> Final Interlaced Video File.
 
-5.  Interlaced Video Files -> [Deinterlacing](Deinterlacing) -> Use on modern devices.
+5.  Interlaced Video Files -> [Deinterlacing](Deinterlacing.md) -> Use on modern devices.
 
 
 # Full 4fsc Composite & S-Video in a digital format! 
 
 
-Unlike conventional methods software decoding provides [4fsc sampling](Signal-Sampling) in non-square pixels so not only the visual picture area but the entire signal frame including the vertical blanking area (VBI) so information such as [Closed Captions](NTSC-Closed-Captioning), [VITC Timecode](VITC-SMPTE-Timecode) and [Teletext](PAL-Teletext-Subtitles) can be visually inspected and some can be digitally decoded automatically via `ld-process-vbi` to a standard `.JSON` [metadata file](JSON-Metadata-format) or via 3rd party tools like [VHS-Teletext](https://github.com/ali1234/vhs-teletext/wiki).
+Unlike conventional methods software decoding provides [4fsc sampling](Signal-Sampling.md) in non-square pixels so not only the visual picture area but the entire signal frame including the vertical blanking area (VBI) so information such as [Closed Captions](NTSC-Closed-Captioning.md), [VITC Timecode](VITC-SMPTE-Timecode.md) and [Teletext](PAL-Teletext-Subtitles.md) can be visually inspected and some can be digitally decoded automatically via `ld-process-vbi` to a standard `.JSON` [metadata file](JSON-Metadata-format.md) or via 3rd party tools like [VHS-Teletext](https://github.com/ali1234/vhs-teletext/wiki).
 
-![DdD EBU Colour Bar PAL VHS SP Full Frame](assets/images/example-media/Full-Frame-Exports/DdD-EBU-Colour-Bar-PAL-VHS-SP-Full-Frame-Colour.png){: style="width:600px"}
+![](assets/images/example-media/Full-Frame-Exports/DdD-EBU-Colour-Bar-PAL-VHS-SP-Full-Frame-Colour.png){: style="width:600px"} 
 
 
-Thanks to the [Time Base Corrected Format](File-&-Data-Formats)
+Thanks to the [Time Base Corrected Format](File-&-Data-Formats.md)
 
 
 | TV System | Full-Frame 4fsc | Frequency      | Frame Rate | Field Rate | Data Rate CVBS      | Data Rate Y+C      | 
@@ -125,30 +126,32 @@ The `.tbc` format is a fully open standard method of containing the full 4fsc sa
 
 The data is stored in the 16-bit `GREY16` format and Luminance (Y) files can be used with FFmpeg directly to render a greyscale full frame "open-matte" video, however the Chrominance (C) is QAM modulated hence "Digital S-Video" being a apt term.
 
-This baseband signal file or file set can also be opened in GNUradio it also allows backwards support for playback to analogue systems as media see [Analogue Playback](TBC-To-Analouge) for more information.
+This baseband signal file or file set can also be opened in GNUradio it also allows backwards support for playback to analogue systems as media see [Analogue Playback](TBC-to-Analogue.md) for more information.
 
 
 # Post Inspection & Levels Adjustment
 
 
-Thanks to the ld-tools and [LD-Analyse](https://github.com/oyvindln/vhs-decode/wiki/ld-analyse-User-Guide) (TBC Inspection Tool) complete software control over black & white levels and fully software defined 1/2/3D chroma decoders for NTSC & PAL Composite/S-Video provide a massive amount of adjustment in the baseband signal domain. 
+Thanks to the ld-tools and [LD-Analyse](ld-analyse-User-Guide.md) (TBC Inspection Tool) complete software control over black & white levels and fully software defined 1/2/3D chroma decoders for NTSC & PAL Composite/S-Video provide a massive amount of adjustment in the baseband signal domain. 
 
-![SVHS Scopes](assets/ld-analyse-rev7/Rev-7-SVHS-Scopes.png){: style="width:900px"}
+![](assets/ld-analyse-rev7/Rev-7-SVHS-Scopes.png){: style="width:900px"}
+
 
 # Video File Output
 
 
-After decoding and inspection/adjustment the `.tbc` files can then run through the `chroma-decoder` (comb-filter in NTSC speak) which recovers the original colour and can output it as a `RGB` or `YUV` stream this is virtually hands off with `tbc-video-export` with a wide range of FFmpeg profiles for producing [interlaced](Deinterlacing) files ready for playback and further post processing.
+After decoding and inspection/adjustment the `.tbc` files can then run through the `chroma-decoder` (comb-filter in NTSC speak) which recovers the original colour and can output it as a `RGB` or `YUV` stream this is virtually hands off with `tbc-video-export` with a wide range of FFmpeg profiles for producing [interlaced](Deinterlacing.md) files ready for playback and further post processing.
 
 For viewing media we recommend players such as [Media Player Classic](https://www.codecguide.com/download_kl.htm) or [VLC](https://www.videolan.org/).
 
 
 | Standard `760x488 NTSC` & `928x576 PAL` | Standard + VBI `760x512 NTSC` & `928x608 PAL`|
 |-----------------------------------------|----------------------------------------------|
-| ![TV PC Levels](assets/images/Post-Processing/TV-PC-Levels.png){: style="width:400px"} | ![Jennings With VBI](assets/images/Post-Processing/Jennings-With-VBI.png){: style="width:400px"} |
+| ![](assets/images/Post-Processing/TV-PC-Levels.png){: style="width:400px"} | ![](assets/images/Post-Processing/Jennings-With-VBI.png){: style="width:400px"} |
 
 
-The default output is lossless compressed archival ready `FFV1` & `FLAC` video and audio streams in the reliable `.mkv` (Matroska) container, but many [FFmpeg Profiles](https://github.com/oyvindln/vhs-decode/wiki/TBC-to-Video-Export-Guide#ffmpeg-profiles) are available.
+
+The default output is lossless compressed archival ready `FFV1` & `FLAC` video and audio streams in the reliable `.mkv` (Matroska) container, but many [FFmpeg Profiles](TBC-to-Video-Export-Guide.md#ffmpeg-profiles) are available.
 
 
 ## Software Post Processing
@@ -156,7 +159,7 @@ The default output is lossless compressed archival ready `FFV1` & `FLAC` video a
 
 - [Lossless Cut](https://github.com/mifi/lossless-cut) & [DaVinci Resolve](https://www.blackmagicdesign.com/nz/products/davinciresolve/) are recommended For editing.
 
-- [Interlacing & Deinterlacing Guide](Deinterlacing)
+- [Interlacing & Deinterlacing Guide](Deinterlacing.md)
 
 After the interlaced video files are created they can then be de-interlaced quickly with [bwdif](https://ffmpeg.org/ffmpeg-filters.html#toc-bwdif) but today more powerful deinterlacers like [QTGMC](http://avisynth.nl/index.php/QTGMC) can be easily used inside of [StaxRip](https://github.com/staxrip/staxrip/releases/) or [Hybrid](https://www.selur.de/downloads) with a few clicks providing a very high-quality motion accurate progressive video files.
 

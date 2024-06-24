@@ -2,29 +2,93 @@ site_name: vhs-decode
 site_description: vhs-decode documentation
 
 theme:
-  name: readthedocs
+    name: readthedocs
 
 markdown_extensions:
-  - toc:
-      permalink: true
-  - attr_list
-  - markdown.extensions.admonition
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+    - toc:
+          permalink: true
+    - attr_list
+    - markdown.extensions.admonition
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
 
 extra_css:
-  - stylesheets/extra.css
+    - stylesheets/extra.css
 
 nav:
-  - Home:
-      - Home: index.md
-  #      - Press & Media: press_and_media.md
-  - Starting & Contributing:
-      - FAQ - Frequently Asked Questions: faq.md
-#      - Diagram Breakdowns: Diagram-Visuals.md
-#      - Visual-Comparisons: Visual-Comparisons.md
-#      - VCR Reports: VCR-reports.md
-#      - RF Tap Examples: 004-The-Tap-List.md
-#      - Download & Contribute Data: Submitting-&-Downloading-Sample-Data.md
-#      - Speed Testing: Speed-Testing.md
+    - Home:
+          - Home: index.md
+          - For Press & Media: Press-&-Media.md
+    - Starting & Contributing:
+          - FAQ - Frequently Asked Questions: FAQ.md
+          - Diagram Breakdowns: Diagram-Visuals.md
+          - Visual-Comparisons: Visual-Comparisons.md
+          - VCR Reports: VCR-reports.md
+          - RF Tap Examples: 004-The-Tap-List.md
+          - Download & Contribute Data: Submitting-&-Downloading-Sample-Data.md
+          - Speed Testing: Speed-Testing.md
+    - Software Installation:
+          - Linux: Linux-Build.md
+          - Windows: Windows-Build.md
+          - MacOS: MacOS-Build.md
+    - Capture Hardware:
+          - CX Cards & CXADC: CX-Cards.md
+          - CX Cards - Clockgen Mod: Clockgen-Mod.md
+          - DdD - Domesday Duplicator: https://github.com/happycube/ld-decode/wiki/Domesday-Duplicator
+          - RTL-SDR: https://github.com/oyvindln/vhs-decode/wiki/RTLSDR
+    - Hardware Installation:
+          - Hardware Installation Guide: Hardware-Installation-Guide.md
+          - Finding RF Locations: Hardware-Installation-Guide.md#test-point-names
+          - The Tap List Example VCR's: 004-The-Tap-List.md
+    - Software Usage:
+          - Full Command List: Command-List.md
+          - RF Capture Guide: RF-Capture-Guide.md
+          - Capture Naming Guide: Capture-Naming-Guide.md
+          - RF Compression Guide: RF-Compression-&-Decompression-Guide.md
+          - RF Analysis Guide: Advanced-RF-Analysis.md
+          - RF Decoding Guide: RF-Capture-Decoding-Guide.md
+          - ld-analyse Guid: ld-analyse-User-Guide.md
+          - ld-tools Suite: ld-decode-tools.md
+          - Audio & HiFi Decoding: 003-Audio.md
+          - Exporting to Video Files: TBC-to-Video-Export-Guide.md
+          - TBC to CVBS/S-Video Playback: TBC-to-Analogue.md
+    - VBI Data Extraction & Decoding:
+          - Visual VBI Data Guide: Identifying-vbi-data.md
+          - Closed Captioning: Closed-Captioning.md
+          - Teletext: Teletext.md
+          - WSS Wide - Screen Signalling: Wide-Screen-Signalling.md
+          - VITC Timecode: VITC-SMPTE-Timecode.md
+          - VITS Signals: VITS-Vertical-Interval-Test-Signals.md
+          - XDS Data (PBS): XDS-VBI-Data.md
+          - Video ID IEC 61880: VIDEO-ID-VBI-IEC-61880.md
+    - Tools & Scripts:
+          - Vapoursynth TBC Median Stacking Guide: TBC-median-stacking-guide.md
+          - Ruxpin-Decode & TV Teddy Tapes: Ruxpin-Decode-TV-Teddy.md
+          - Tony's GNU Radio For Dummies Guide: https://github.com/tandersn/GNRC-Flowgraphs/wiki
+          - Tony's GNU Radio Scripts: https://github.com/tandersn/GNRC-Flowgraphs
+          - DomesDay Duplicator Utilities: DomesDayDuplicator-Utilility-Tools.md
+          - ld-decode Utilities: ld-decode-utilities.md
+    - Guides:
+          - Archiving Data & Tapes Properly: Media-Archival-Guide.md
+          - Digital Tape Transfer Guide: Digital-Tape-Guide.md
+          - Cleaning & Servicing Guide: Cleaning-&-Servicing-Guide.md
+          - Materials Handling Guide: Material-Handling-Guide.md
+          - Harry's ProRes Encoding Guide: ProRes-The-Definitive-FFmpeg-Guide.md
+          - Deinterlacing Basics: Deinterlacing.md
+    - Technical:
+          - TBC Format & JSON Metadata: JSON-Metadata-format.md
+          - File & Data Formats: File-&-Data-Formats.md
+          - ld-decode Framing: ld-decode-Framing-(technical-notes).md
+    - Other Decoders:
+          - Composite (CVBS) Decode: CVBS-Composite-Decode.md
+          - HiFi Decode: HiFi-Decode.md
+          - LaserDisc Decode: https://github.com/happycube/ld-decode
+          - CD Decode: https://github.com/happycube/cd-decode
+          - MUSE Decode: https://bitbucket.org/staffanulfberg/ldaudio/src/master/musecpp/
+    - Support & Community:
+          - Donations: Donations.md
+          - Discord: https://discord.gg/pVVrrxd
+          - Reddit: https://www.reddit.com/r/vhsdecode/
+          - Google Doc Documentation: https://docs.google.com/document/d/1ZzR3gbW6iSVSNP0qoDIS0ExeRecKehlTQ0EJyx2g568/edit?usp=sharing
+          - VideoHelp Forum: https://forum.videohelp.com/threads/394168-Current-status-of-ld-decode-vhs-decode-(true-backup-of-RF-signals)#post2558660
