@@ -52,7 +52,7 @@ There is also other amplifiers available that are more fine tuned for FM capture
 
 The newest is the [vhs-rf-amp-ada4857](https://gitlab.com/wolfre/vhs-rf-amp-ada4857) board by Rene Wolf using 12v. 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/vhs/Panasonic-HD630/Itewreed/hd630-eg_ada-amp_01.png){: style="width:400px"}
+![](assets/images/vhs/Panasonic-HD630/Itewreed/hd630-eg_ada-amp_01.png){: style="width:400px"}
 
 
 ## Duel Synchronised ADC CX Cards "Clockgen Mod"
@@ -124,11 +124,11 @@ DE0-Nano FPGA / FX3 USB 3.0 Board
 
 Used for [HiFi-Decode](003-Audio.md) & [RTL-SDR Decode](RTLSDR.md).
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Hardware/RTLSDR-3rd-Party-Sony-ILCE-7RM3-2023.03.04-22.25.45.jpg){: style="width:500px"}
+![](assets/images/Hardware/RTLSDR-3rd-Party-Sony-ILCE-7RM3-2023.03.04-22.25.45.jpg){: style="width:500px"}
 
 Pictured Order: TNC Male to SMA Male / TNC Female to SMA Male / BNC Male to SMA Male / BNC Female to SMA Male / [Nooelec RTL-SDR v5](https://www.amazon.co.uk/dp/B01HA642SW/)
 
-[RTLSDR Page](https://github.com/oyvindln/vhs-decode/wiki/RTLSDR)
+[RTLSDR Page](RTLSDR.md)
 
 
 
@@ -202,7 +202,7 @@ The original has been used by several members for testing but the clones that ar
 ## RSP1 / MSI-SDR / Msi2500 / Msi001
 
 
-[RSP1 RF Capture & Decoding](RSP1.md)
+[RSP1 RF Capture & Decoding](RSP1.md#FIXME)
 
 8-bit 20msps ADC
 

@@ -223,7 +223,7 @@ PCM digital is mainly found on Hi8 and rare SVHS tapes, and there is a few flavo
 
 Video8/Hi8 HiFi is always captured on its 1 RF point alongside video/timecode on different carriers, with PCM being lossless via FireWire DV25 reference capture alongside ideally a S-Video reference capture as DV25 is too compressed for SD video.
 
-(S)VHS/Beta has 2 separate signals one for Video and one for HiFi audio if your tapes only have Linear then you will need to conventionally capture the audio regardless, this is why reference conventional captures are recommended during your RF capture to save on tape re-runs and give you a reference to correct for audio drift, is becoming non-critical when synchronised setups are used such as [Clockgen Mod](CX-Cards.md) or the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md).
+(S)VHS/Beta has 2 separate signals one for Video and one for HiFi audio if your tapes only have Linear then you will need to conventionally capture the audio regardless, this is why reference conventional captures are recommended during your RF capture to save on tape re-runs and give you a reference to correct for audio drift, is becoming non-critical when synchronised setups are used such as [Clockgen Mod](CX-Cards.md) or the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md#FIXME).
 
 
 ## Linear Audio

@@ -3,7 +3,7 @@
 
 **V**ertical **I**nterval **T**est **S**ignals
 
-Not to be confused with [Test Patterns](Test-Patterns-&-Test-Signals.md) VITS is a test signal that has information for white level, black level and can be used to re-calibrate signal to noise ratio metadata.
+Not to be confused with [Test Patterns](Test-Patterns-&-Test-Signals.md#FIXME) VITS is a test signal that has information for white level, black level and can be used to re-calibrate signal to noise ratio metadata.
 
 Standard View
 

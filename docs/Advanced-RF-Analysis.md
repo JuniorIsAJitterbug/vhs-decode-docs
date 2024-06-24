@@ -44,7 +44,7 @@ Sample Rate ->
 
 View -> Show Spectral Frequency Display (Shift+D)
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/RF-Analysis/Adobe_Audition_Main_Window.png){: style="width:600px"}
+![](assets/images/RF-Analysis/Adobe_Audition_Main_Window.png){: style="width:600px"}
 
 
 # Inspect Data
@@ -57,11 +57,11 @@ It's recommended to use 8/16bit FLAC compressed or uncompressed 8/16bit captures
 ## Audacity
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/RF-Analysis/Audacity_Main_Window.png){: style="width:800px"}
+![](assets/images/RF-Analysis/Audacity_Main_Window.png){: style="width:800px"}
 
 Right-click on the left-hand side to change settings and enable the spectrograph.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/RF-Analysis/Audacity_Spectogram_Settings.png){: style="width:800px"}
+![](assets/images/RF-Analysis/Audacity_Spectogram_Settings.png){: style="width:800px"}
 
 You can change the settings according to the sample rate used for the capture.
 
@@ -69,13 +69,13 @@ You can change the settings according to the sample rate used for the capture.
 # ld-analyse
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Post-Processing/ld-analyse-line-ossiliscope-2022-11-30-08-27-47.png){: style="width:800px"}
+![](assets/images/Post-Processing/ld-analyse-line-ossiliscope-2022-11-30-08-27-47.png){: style="width:800px"}
 
 ld-analyse allows you to view the values of your `.json` metadata file with visually assisted graphing.
 
 Black SNR (Signal To Noise Ratio) is your basic quality indicator. 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Post-Processing/LD-Analyse-Black-SNR-202-11-13-18-46-18.png){: style="width:800px"}
+![](assets/images/Post-Processing/LD-Analyse-Black-SNR-202-11-13-18-46-18.png){: style="width:800px"}
 
 `40-50 dB` - Great Signal
 

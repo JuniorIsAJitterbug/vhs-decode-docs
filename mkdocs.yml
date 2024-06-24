@@ -36,7 +36,7 @@ nav:
           - CX Cards & CXADC: CX-Cards.md
           - CX Cards - Clockgen Mod: Clockgen-Mod.md
           - DdD - Domesday Duplicator: https://github.com/happycube/ld-decode/wiki/Domesday-Duplicator
-          - RTL-SDR: https://github.com/oyvindln/vhs-decode/wiki/RTLSDR
+          - RTL-SDR: RTLSDR.md
     - Hardware Installation:
           - Hardware Installation Guide: Hardware-Installation-Guide.md
           - Finding RF Locations: Hardware-Installation-Guide.md#test-point-names
@@ -63,11 +63,11 @@ nav:
           - XDS Data (PBS): XDS-VBI-Data.md
           - Video ID IEC 61880: VIDEO-ID-VBI-IEC-61880.md
     - Tools & Scripts:
-          - Vapoursynth TBC Median Stacking Guide: TBC-median-stacking-guide.md
+          - Vapoursynth TBC Median Stacking Guide: TBC-median-stacking-guide.md#FIXME
           - Ruxpin-Decode & TV Teddy Tapes: Ruxpin-Decode-TV-Teddy.md
           - Tony's GNU Radio For Dummies Guide: https://github.com/tandersn/GNRC-Flowgraphs/wiki
           - Tony's GNU Radio Scripts: https://github.com/tandersn/GNRC-Flowgraphs
-          - DomesDay Duplicator Utilities: DomesDayDuplicator-Utilility-Tools.md
+          - DomesDay Duplicator Utilities: DomesDayDuplicator-Utilitys-Tools.md
           - ld-decode Utilities: ld-decode-utilities.md
     - Guides:
           - Archiving Data & Tapes Properly: Media-Archival-Guide.md
@@ -79,7 +79,7 @@ nav:
     - Technical:
           - TBC Format & JSON Metadata: JSON-Metadata-format.md
           - File & Data Formats: File-&-Data-Formats.md
-          - ld-decode Framing: ld-decode-Framing-(technical-notes).md
+          - ld-decode Framing: ld-decode-Framing-(technical-notes).md#FIXME
     - Other Decoders:
           - Composite (CVBS) Decode: CVBS-Composite-Decode.md
           - HiFi Decode: HiFi-Decode.md

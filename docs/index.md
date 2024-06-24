@@ -108,7 +108,7 @@ For various tape media formats we create what we call an "RF Tap" and its as sim
 # Full 4fsc Composite & S-Video in a digital format! 
 
 
-Unlike conventional methods software decoding provides [4fsc sampling](Signal-Sampling.md) in non-square pixels so not only the visual picture area but the entire signal frame including the vertical blanking area (VBI) so information such as [Closed Captions](NTSC-Closed-Captioning.md), [VITC Timecode](VITC-SMPTE-Timecode.md) and [Teletext](PAL-Teletext-Subtitles.md) can be visually inspected and some can be digitally decoded automatically via `ld-process-vbi` to a standard `.JSON` [metadata file](JSON-Metadata-format.md) or via 3rd party tools like [VHS-Teletext](https://github.com/ali1234/vhs-teletext/wiki).
+Unlike conventional methods software decoding provides [4fsc sampling](Signal-Sampling.md) in non-square pixels so not only the visual picture area but the entire signal frame including the vertical blanking area (VBI) so information such as [Closed Captions](NTSC-Closed-Captioning.md#FIXME), [VITC Timecode](VITC-SMPTE-Timecode.md) and [Teletext](PAL-Teletext-Subtitles.md#FIXME) can be visually inspected and some can be digitally decoded automatically via `ld-process-vbi` to a standard `.JSON` [metadata file](JSON-Metadata-format.md) or via 3rd party tools like [VHS-Teletext](https://github.com/ali1234/vhs-teletext/wiki).
 
 ![](assets/images/example-media/Full-Frame-Exports/DdD-EBU-Colour-Bar-PAL-VHS-SP-Full-Frame-Colour.png){: style="width:600px"} 
 

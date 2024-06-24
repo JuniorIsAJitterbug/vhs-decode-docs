@@ -10,7 +10,7 @@ This doc goes over what and how you can post-process your video files.
 
 This is a in-drafting doc not a final workflow doc as the export tool could integrate most common modern workflows.
 
-You will most likely want to start at the [Deinterlacing](https://github.com/oyvindln/vhs-decode/wiki/https://github.com/oyvindln/vhs-decode/wiki/Deinterlacing) doc which is the first thing you need to know after producing some decoded data.
+You will most likely want to start at the [Deinterlacing](Deinterlacing.md) doc which is the first thing you need to know after producing some decoded data.
 
 
 ## Key

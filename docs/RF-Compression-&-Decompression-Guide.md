@@ -1,11 +1,11 @@
 # FLAC Compression & De-Compression Guide 
 
 
-Previous Page [RF Capture Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Guide)
+Previous Page [RF Capture Guide](RF-Capture-Guide.md)
 
-Sub-Page [Speed & Decoding Testing](https://github.com/oyvindln/vhs-decode/wiki/Speed-Testing)
+Sub-Page [Speed & Decoding Testing](Speed-Testing.md)
 
-Next Page [RF Decoding Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Decoding-Guide)
+Next Page [RF Decoding Guide](RF-Capture-Decoding-Guide.md)
 
 
 ## What is RF Compression & Down-Sampling?
@@ -302,13 +302,13 @@ Optionally but very useful
 - Gain Setting Used
 - Playback Hardware Used
 
-You can also rename the `.flac` to your media format name using [standard designators & standard naming guide](https://github.com/oyvindln/vhs-decode/wiki/Capture-Naming-Guide) that can be very useful for mass .xxx extension lookup for archives, if you want to keep things simple ignore this and ensure format is in file name.
+You can also rename the `.flac` to your media format name using [standard designators & standard naming guide](Capture-Naming-Guide.md) that can be very useful for mass .xxx extension lookup for archives, if you want to keep things simple ignore this and ensure format is in file name.
 
 # Page End
 
 
-Sub-Page [Speed & Decoding Testing](https://github.com/oyvindln/vhs-decode/wiki/Speed-Testing)
+Sub-Page [Speed & Decoding Testing](Speed-Testing.md)
 
-Previous Page [RF Capture Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Guide)
+Previous Page [RF Capture Guide](RF-Capture-Guide.md)
 
-Next Page [RF Decoding Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Decoding-Guide)
+Next Page [RF Decoding Guide](RF-Capture-Decoding-Guide.md)

@@ -225,7 +225,7 @@ You can fix this by adjusting tracking as you would normally for video and fine-
 # Processing Recommendations?
 
 
-The [EBU R128 Standard](https://github.com/oyvindln/vhs-decode/wiki/Documents) or -11 LUFS normalisation is recommended as its widely used in broadcast/online production this can be done with [StaxRip](https://github.com/staxrip/staxrip) or with [FFmpeg](https://github.com/slhck/ffmpeg-normalize#ebu-r128-normalization) tools.
+The [EBU R128 Standard](Documents.md) or -11 LUFS normalisation is recommended as its widely used in broadcast/online production this can be done with [StaxRip](https://github.com/staxrip/staxrip) or with [FFmpeg](https://github.com/slhck/ffmpeg-normalize.md#ebu-r128-normalization) tools.
 
 De-poping can be done very effectively with modern tools like [iZotope RX](https://www.izotope.com/en/products/rx.html).
 

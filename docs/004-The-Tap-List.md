@@ -11,7 +11,7 @@ Via posting your VCR setup in the [DD86 Discord](https://discord.com/invite/pVVr
 ## Notes 
 
 !!! IMPORTANT
-    For step by step instructions and general guidance on RF Tapping please read the [Hardware Installation Guide](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide).
+    For step by step instructions and general guidance on RF Tapping please read the [Hardware Installation Guide](Hardware-Installation-Guide.md).
 
 
 There are 4 types of RF taps you will observe:
@@ -510,7 +510,7 @@ There is enough space for 2 BNC bulkheads next to the right side of the TV Modul
 
 ![](assets/images/vhs/JVC-BR-S622U/JVC-BR-S622U-20230101_184514.jpg){: style="width:400px"}
 
-![](assets/images/vhs/JVC-BR-S622U/R-S622U-20230113_173747.jpg){: style="width:400px"}
+![](assets/images/vhs/JVC-BR-S622U/BR-S622U-20230113_173747.jpg){: style="width:400px"}
 
 ![](assets/images/vhs/JVC-BR-S622U/JVC-BR-S622U-20230108_185306.jpg){: style="width:400px"}
 
@@ -894,7 +894,7 @@ Various captures attached for reference with variable info in file names
 
 [Dedicated Sony 8mm Wiki Page](Sony-8mm-Formats.md)
 
-8mm camcorders can be finnicky and not all units deal with having a load connected to the RF test point very well, so do not expect smooth sailing here [without reading the hardware guide](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide#step-03-installing-a-capacitor-on-your-rf-tap) as a decoupling cap (10uf) can be required.
+8mm camcorders can be finnicky and not all units deal with having a load connected to the RF test point very well, so do not expect smooth sailing here [without reading the hardware guide](Hardware-Installation-Guide.md#step-03-installing-a-capacitor-on-your-rf-tap) as a decoupling cap (10uf) can be required.
 
 If you have no experience with soldering/electronics attempting to do RF capture of 8mm may therefore prove challenging. VCRs tend to be easier to work with but those tend to be very expensive and also usually require a fair bit of service as many of the models often have issues with both electronics and mechanical faults. 
 
@@ -911,9 +911,9 @@ Also Applys to,  DCR-TRV738E, DCR-TRV740, and DCR-TRV740E.
 
 NOTE: May require 10uf cap, DCR-TRV740 does.
 
-[User Manual](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Sony-8mm/Sony-Digital8-DCR-TRV840/Sony_Digital8_DCR-TRV240_DCR-TRV340_DCR-TRV740_DCR-TRV840_User_Manual.pdf) / [Service Manual](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Sony-8mm/Sony-Digital8-DCR-TRV840/Sony-Digital8-DCR-TRV840_DCR-738E_Service_Manual.pdf)
+[User Manual](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV840/Sony_Digital8_DCR-TRV240_DCR-TRV340_DCR-TRV740_DCR-TRV840_User_Manual.pdf) / [Service Manual](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV840/Sony-Digital8-DCR-TRV840_DCR-738E_Service_Manual.pdf)
 
-[Jig Method](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide#jig-method) 20pin Jig Used
+[Jig Method](Hardware-Installation-Guide.md#jig-method) 20pin Jig Used
 
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV840/Sony-DCR-TRV840-Jig-Attached-PXL_20230217_183942830.MP.jpg){: style="width:400px"}
 
@@ -1096,7 +1096,7 @@ Pin 8 is Ground
 ## Sony Hi8 TVR318
 
 
-[Jig Method](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide#jig-method) 16pin Jig + Cap Used (Appears to require external amplification on inital testing)
+[Jig Method](Hardware-Installation-Guide.md#jig-method) 16pin Jig + Cap Used (Appears to require external amplification on inital testing)
 
 ![](assets/images/Sony-8mm/Sony-Hi8-TRV318/Sony-Hi8-TRV318_2023.03.17_15.36.24.jpg){: style="width:400px"}
 
@@ -1110,7 +1110,7 @@ Pin 8 is Ground
 ## Sony Hi8 CCD TRV615
 
 
-[User Manual](https://github.com/oyvindln/vhs-decode/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV615/Sony-Hi8-CCD-TRV615-User-Manual.pdf) / [Service Manual](https://github.com/oyvindln/vhs-decode/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV615/Sony-Video8-Hi8_CCD-TRV15_TRV15E_TRV15EP_TRV15PK_TRV25_TRV25PK_TRV35_TRV35E_TRV65_TRV65PK_TRV85_TRV93_TRV215_TRV61.pdf)
+[User Manual](https://github.com/oyvindln/vhs-decode/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV615/Sony-Hi8-CCD-TRV615-User-Manual.pdf#FIXME) / [Service Manual](https://github.com/oyvindln/vhs-decode/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV615/Sony-Video8-Hi8_CCD-TRV15_TRV15E_TRV15EP_TRV15PK_TRV25_TRV25PK_TRV35_TRV35E_TRV65_TRV65PK_TRV85_TRV93_TRV215_TRV61.pdf#FIXME)
 
 `XR` Era Camcorder 
 

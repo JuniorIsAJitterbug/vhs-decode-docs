@@ -160,7 +160,7 @@ PAL
     ld-chroma-decoder --ffll 2 --lfll 308 --ffrl 2 --lfrl 620 --decoder transform3d -p y4m -q INPUT.tbc OUTPUT.mov
 
 
-![Example To Update Later](https://github.com/oyvindln/vhs-decode/wiki/assets/images/VITC/Ebay-NV-S7-VHS-SP-Full-Frame-Interlaced-25i-VITC-centered-crop.jpg)
+![Example To Update Later](assets/images/VITC/Ebay-NV-S7-VHS-SP-Full-Frame-Interlaced-25i-VITC-centered-crop.jpg)
 
 
 ## FFV1 (4:2:2) (Lossless Compressed)

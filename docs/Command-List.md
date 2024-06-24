@@ -405,7 +405,7 @@ Range's
 
 Sets output to full-frame of composite video signal `1135x625 PAL` & `910x525 NTSC` **Experimental**
 
-[![Panasonic-NV7-Humid-Tropics-Biome-VITC-Full-Frame](assets/images/VITC/Eden_Project_Demo_Tape_VHS_SP_deinterlaced_Video_Levels.png)](https://odysee.com/@vhs-decode:7/vhs-decode-full-frame-pal-2022:9)
+[![Panasonic-NV7-Humid-Tropics-Biome-VITC-Full-Frame](assets/images/VITC/Eden_Project_Demo_Tape_VHS_SP_deinterlaced_Video_Levels.png#FIXME)](https://odysee.com/@vhs-decode:7/vhs-decode-full-frame-pal-2022:9)
 
 
 ### Standard + VBI (Full Vertical Blanking Top Area)
@@ -867,7 +867,7 @@ For standard output this list of export commands is provided you only need to ch
 
 
 
-## [Active + VBI Area](https://github.com/oyvindln/vhs-decode/wiki/Command-List#vertical-framing-adjustment)
+## [Active + VBI Area](Command-List.md#vertical-framing-adjustment)
 
 
 (Y4M Only*) you can use these 2 commands.

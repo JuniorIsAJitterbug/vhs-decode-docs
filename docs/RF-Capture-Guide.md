@@ -75,9 +75,9 @@ The DomesDayDuplicator Rev 3, does not have the correct filtering for CVBS.
 
 [DomesDayDuplicator (DdD)](https://github.com/harrypm/DomesdayDuplicator) USB 3.0 Card
 
-[CX Card White](https://github.com/oyvindln/vhs-decode/wiki/CX-Cards) PCIe 1x Card
+[CX Card White](CX-Cards.md) PCIe 1x Card
 
-[Analogue Devices AD8367](https://github.com/oyvindln/vhs-decode/wiki/CX-Cards#external-amplification)  RMS Amplifier with SMA Connectors.
+[Analogue Devices AD8367](CX-Cards.md#external-amplification)  RMS Amplifier with SMA Connectors.
 
 ![](assets/images/Hardware/RTLSDR-3rd-Party-Sony-ILCE-7RM3-2023.03.04-22.25.45.jpg){: style="width:600px"}
 
@@ -114,7 +114,7 @@ If amplifiers are employed internally/externally directly after or before the RF
 ## File Handling & Indexing
 
 
-### [Naming Guide For RF Captures!](https://github.com/oyvindln/vhs-decode/wiki/Capture-Naming-Guide)
+### [Naming Guide For RF Captures!](Capture-Naming-Guide.md)
 
 
 Name your captures properly, **ignore this at your own peril** as managing any media collection is a nightmare if you don't do it right from the start.
@@ -309,7 +309,7 @@ If an RMS amplifier is employed set your gain level manually between `0~10` for 
 
 [Harry's Docs Fork](https://github.com/harrypm/CX-Card-GUI-Capture-App)
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Hardware/CXADC-GUI-Alpha-002.png){: style="width:300px"}
+![](assets/images/Hardware/CXADC-GUI-Alpha-002.png){: style="width:300px"}
 
 
 

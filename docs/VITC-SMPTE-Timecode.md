@@ -20,7 +20,7 @@ SMPTE = Society of Motion Picture and Television Engineers, the standardisation 
 
 VITC timecode is in simple terms a method of visually embedding timecode data into a video signal, using 2 redundant rows of white lines that make square data blocks when extracted this example below is from QCTools via FFMPEGs filter, however we now this data with `ld-process-vbi`.
 
-![QCTools_VITC](https://github.com/oyvindln/vhs-decode/wiki/assets/images/VITC/QCTools_VITC.gif)
+![QCTools_VITC](assets/images/VITC/QCTools_VITC.gif)
 
 It will typically be time of day or running time of that tape segment typically in ''free running'' mode in consumer usage.
 
@@ -30,11 +30,11 @@ For consumers, VITC was used for exact frame editing or exact record time inform
 
 **25 FPS VITC Digitally Rendered** 
 
-![VITC 25 FPS example](https://github.com/oyvindln/vhs-decode/wiki/assets/images/VITC/readvitc-pal.png)
+![VITC 25 FPS example](assets/images/VITC/readvitc-pal.png)
 
 VITC Timecode on a SVHS camcorder:
 
-![VITC TimeCode SVHS](https://github.com/oyvindln/vhs-decode/wiki/assets/images/VITC/VITC-TimeCode-SVHS.gif)
+![VITC TimeCode SVHS](assets/images/VITC/VITC-TimeCode-SVHS.gif)
 
 
 ## An example frame of FFMPEG VITC readout from an SVHS-C tape

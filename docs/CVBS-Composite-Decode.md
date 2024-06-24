@@ -3,7 +3,7 @@
 
 This spin-off project uses RAW CVBS captures and uses the signal processing and time base correction code, from vhs-decode & ld-decode there is no de-modulation like FM media.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/vhs-decode-gui/CVBS-Decode-Windows-Overview-2023.png){: style="width:800px"}
+![](assets/images/vhs-decode-gui/CVBS-Decode-Windows-Overview-2023.png){: style="width:800px"}
 
 
 **CVBS** an abbreviation,
@@ -100,7 +100,7 @@ cvbs-decode only outputs 3 files
 ## Export to Video File 
 
 
-The [TBC-Video-Export](https://github.com/oyvindln/vhs-decode/wiki/TBC-to-Video-Export-Guide/) tool will automatically detect NTSC/PAL input, it can also run `ld-dropout correct` & `ld-process-vbi` and will embed the updated .json file inside the mkv, and export a FFV1 10-bit 4:2:2 interlaced file, read the wiki doc for detailed use of its [profiles](https://github.com/oyvindln/vhs-decode/wiki/TBC-to-Video-Export-Guide#ffmpeg-profiles).
+The [TBC-Video-Export](TBC-to-Video-Export-Guide.md) tool will automatically detect NTSC/PAL input, it can also run `ld-dropout correct` & `ld-process-vbi` and will embed the updated .json file inside the mkv, and export a FFV1 10-bit 4:2:2 interlaced file, read the wiki doc for detailed use of its [profiles](TBC-to-Video-Export-Guide.md#ffmpeg-profiles).
 
 Linux & MacOS:
 
@@ -110,7 +110,7 @@ Windows:
 
     tbc-video-export.exe composite-test.tbc
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/cvbs-decode/CVBS-Decode-PAL-3D-Chroma-Decoder.png){: style="width:600px"}
+![](assets/images/cvbs-decode/CVBS-Decode-PAL-3D-Chroma-Decoder.png){: style="width:600px"}
 
 
 !!! NOTE
@@ -119,7 +119,7 @@ Windows:
 ## Command List
 
 
-Click the [here](https://github.com/oyvindln/vhs-decode/wiki/Command-List) for the full list, the below are just basic usage commands only.
+Click the [here](Command-List.md) for the full list, the below are just basic usage commands only.
 
 
 ## Set Input Frequency

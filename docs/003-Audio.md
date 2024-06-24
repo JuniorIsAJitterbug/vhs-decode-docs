@@ -41,7 +41,7 @@ Linear Mono (CH1) (1 Signal Baseband)
 
 Linear Stereo (CH1/CH2) (2 Signals Baseband)
 
-[Linear Time Code](https://github.com/oyvindln/vhs-decode/wiki/VITC-&-Subtitles) (CH2) (1 Signal Baseband) (Broadcast Decks) (SMPTE 12M LTC)
+[Linear Time Code](VITC-&-Subtitles.md) (CH2) (1 Signal Baseband) (Broadcast Decks) (SMPTE 12M LTC.md)
 
 Dolby Stereo (CH1/CH2) (2 Signals Baseband) (1980's Prosumer & Broadcast Decks)
 
@@ -154,7 +154,7 @@ And by muting / volume reduction if it is a long interruption.
 # Processing Recommendations?
 
 
-The [EBU R128 Standard](https://github.com/oyvindln/vhs-decode/wiki/Documents) or -11 LUFS normalisation is recommended as its widely used in broadcast/online production this can be done with [StaxRip](https://github.com/staxrip/staxrip) or with [FFmpeg](https://github.com/slhck/ffmpeg-normalize#ebu-r128-normalization) tools.
+The [EBU R128 Standard](Documents.md) or -11 LUFS normalisation is recommended as its widely used in broadcast/online production this can be done with [StaxRip](https://github.com/staxrip/staxrip) or with [FFmpeg](https://github.com/slhck/ffmpeg-normalize.md#ebu-r128-normalization) tools.
 
 
 # ADAT Audio Tapes

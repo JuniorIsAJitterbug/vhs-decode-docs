@@ -131,7 +131,7 @@ Example Short: `decode.exe ld -p -t 8 DdD_8.5_Gain.ldf First_Decoded_LD`
 ## CVBS-Decode:
 
 
-[CVBS-Decode Wiki Page](https://github.com/oyvindln/vhs-decode/wiki/hifi-decode).
+[CVBS-Decode Wiki Page](HiFi-Decode.md).
 
 CVBS-Decode, decodes raw RF captured composite signals, you capture the normal composite video signal out of a device, in raw RF values then save it to file.
 
@@ -146,7 +146,7 @@ You have full control over the baseband processing, fine control over how colour
 
 ## HiFi-Decode:
 
-[HiFi-Decode Wiki Page](https://github.com/oyvindln/vhs-decode/wiki/hifi-decode).
+[HiFi-Decode Wiki Page](HiFi-Decode.md).
 
 HiFi-Decode provides the FM audio decoding for VHS, SVHS, BetaMax, Video8, Hi8 
 
@@ -242,7 +242,7 @@ Your available frames will update as the data is written to the JSON file.
 
 You can open it as a standard GUI application or call it with `ld-analyse` in the terminal.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Post-Processing/ld-analyse-chroma-frame-107-2023-02-23-23-01-21.png){: style="width:600px"}
+![](assets/images/Post-Processing/ld-analyse-chroma-frame-107-2023-02-23-23-01-21.png){: style="width:600px"}
 
 
 # Determining Capture Quality 
@@ -293,12 +293,12 @@ Sudden dips in the graph are ware there are dropouts, interference or weak signa
 
 Very Bad Signal Example 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Signal-&-Capture-Errors/frame_pal_source_176_family-cut-16msps-8bit.tbc.png){: style="width:800px"}
+![](assets/images/example-media/Signal-&-Capture-Errors/frame_pal_source_176_family-cut-16msps-8bit.tbc.png){: style="width:800px"}
 
 
 Normal Good Signal Example
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Signal-&-Capture-Errors/frame_pal_source_228_40msps-DdD-raw.tbc.png){: style="width:800px"}
+![](assets/images/example-media/Signal-&-Capture-Errors/frame_pal_source_228_40msps-DdD-raw.tbc.png){: style="width:800px"}
 
 !!! NOTE
     This example contains a dropout.
@@ -306,20 +306,20 @@ Normal Good Signal Example
 
 Clean Macrovision Example 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Signal-&-Capture-Errors/Clean-Decoded-Macrovision_2023-03-25_04-43-09.tbc.png){: style="width:800px"}
+![](assets/images/example-media/Signal-&-Capture-Errors/Clean-Decoded-Macrovision_2023-03-25_04-43-09.tbc.png){: style="width:800px"}
 
 
 ## Adjusting your TBC in ld-analyse
 
 
-As [ld-analyse](https://github.com/oyvindln/vhs-decode/wiki/ld-analyse-User-Guide) reads the `.tbc` & `_chroma.tbc` files and combines them together in real-time with the ld-chroma-decoder this allows you to play with different chroma decoders and filtering settings on a basic level.
+As [ld-analyse](ld-analyse-User-Guide.md) reads the `.tbc` & `_chroma.tbc` files and combines them together in real-time with the ld-chroma-decoder this allows you to play with different chroma decoders and filtering settings on a basic level.
 
 With ld-analyse can adjust JSON metadata alongside reading it, you can ignore this step however it is useful to learn to make better finer adjusted exports.
 
 
 PAL Transform 2D for VHS & 3D for CVBS sources for example.
 
-This is to the same effect as [SoX combining commands](https://github.com/oyvindln/vhs-decode/wiki/ld-analyse-User-Guide#y--c-combining-with-sox) on some media consider it good enough for checking but make a short video export with `tbc-video-export --length 300 input-tbc-name` script to see the real media result.
+This is to the same effect as [SoX combining commands](ld-analyse-User-Guide.md#y-c-combining-with-sox) on some media consider it good enough for checking but make a short video export with `tbc-video-export --length 300 input-tbc-name` script to see the real media result.
 
 * Black Level Adjust
 
@@ -405,6 +405,6 @@ W-VHS / HDVS, Hi-Vision are all under the MUSE system that we need more samples 
 # Page End 
 
 
-Previous Page [RF Capture Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Guide)
+Previous Page [RF Capture Guide](RF-Capture-Guide.md)
 
-Next Page [Video Export Guide](https://github.com/oyvindln/vhs-decode/wiki/TBC-to-Video-Export-Guide)
+Next Page [Video Export Guide](TBC-to-Video-Export-Guide.md)

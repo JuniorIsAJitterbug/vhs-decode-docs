@@ -139,7 +139,7 @@ Portable (USB Type-C):
 
 *NOTE* LightON/LG burners have support for FAT32 translation layer mode i.e USB Flash Drive presentation mode required for iPhones and such.
 
-![](assets/images/hardware- baha sata cable){: style="width:400px"}
+![](assets/images/hardware- baha sata cable#FIXME){: style="width:400px"}
 
 
 ## One simple reason is the cost of Bit-Rot
@@ -245,13 +245,13 @@ Millennial Disc made by Millenniata (Fabricated and sold by Verbatim/Ritek today
 M-Disk only has 4 standard certified format versions, `DVD 4.7GB & BD 25/50/100GB`.
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/M-disc-comparison-blank-vs-written.jpg){: style="width:300px"}
+![](assets/images/archival-hardware/M-disc-comparison-blank-vs-written.jpg){: style="width:300px"}
 
 M-Discs have a black/grey look when burned, shiny golden look when non-burned.
 
 (Note: completely sliver looking discs are not genuine M-Discs)
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/Blu-Ray-&-BDXL-Sony-ILCE-6000-2023.04.02-19.22.16.jpg){: style="width:400px"}
+![](assets/images/archival-hardware/Blu-Ray-&-BDXL-Sony-ILCE-6000-2023.04.02-19.22.16.jpg){: style="width:400px"}
 
 M-Disc Logo on the current generation [Asus BW-16D1HT](https://www.asus.com/uk/motherboards-components/optical-drives/internal-blu-ray-drive/bw16d1ht/).
 
@@ -265,7 +265,7 @@ Cost of adoption is 50GBP / 70USD for top-end BDXL reader/writers M-Disk wins in
 ## DM Archive 
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/DM-Archive-Disc-Reader.png){: style="width:300px"}
+![](assets/images/archival-hardware/DM-Archive-Disc-Reader.png){: style="width:300px"}
 
 
 [Pioneer DM Archive](https://web.archive.org/web/20230303071045/https://www.cdrinfo.com/d7/content/pioneer-japan-releases-new-bdr-wx01dm-external-bddvdcd-writer-jis-x6257-standard-and-100) - Basically Japan Gov backed M-Disc
@@ -293,7 +293,7 @@ These solutions are at the 30~100TB of data point in terms of raw practical cost
 
 ![](assets/images/archival-hardware/SpectraStack-Top-OFF-LF-Angle-2MB.png){: style="width:300px"}
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/LTO-Tape-Insides.jpg){: style="width:300px"}
+![](assets/images/archival-hardware/LTO-Tape-Insides.jpg){: style="width:300px"}
 
 
 IBM's 20-year tried and true digital tape archival medium adopted by everyone.
@@ -327,7 +327,7 @@ The drives use the `SAS` interfaces natively or housed for `Fiber Channel` or `F
 
 The Types are `External Desktop`, `Single 5.25" Bay Half Height`, `Duel 5.25" Bay Full Height`, `Fiber Channel Autoloader` & `Duel 5.25" Bay Full Height Mounted inside a Fiber Autoloader`
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/Types-of-LTO-reader-writer-units.png){: style="width:300px"}
+![](assets/images/archival-hardware/Types-of-LTO-reader-writer-units.png){: style="width:300px"}
 
 
 (Image credit Ben Cartwright Cox [Live](https://blog.benjojo.co.uk/post/lto-tape-backups-for-linux-nerds) / [Archive](https://web.archive.org/web/20220127113637/https://blog.benjojo.co.uk/post/lto-tape-backups-for-linux-nerds))

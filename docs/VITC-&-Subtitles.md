@@ -1,7 +1,7 @@
 This Page Has Been Re-Formatted Into Different Pages.
 
-* https://github.com/oyvindln/vhs-decode/wiki/VITC-SMPTE-Timecode
+* [VITC-SMPTE-Timecode](VITC-SMPTE-Timecode.md)
 
-* https://github.com/oyvindln/vhs-decode/wiki/NTSC-Closed-Captioning
+* [NTSC-Closed-Captioning](NTSC-Closed-Captioning.md#FIXME)
 
-* https://github.com/oyvindln/vhs-decode/wiki/Teletext
+* [Teletext](Teletext.md)

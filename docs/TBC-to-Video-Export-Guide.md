@@ -1,6 +1,6 @@
-Back Page [RF Capture Decoding Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Decoding-Guide) 
+Back Page [RF Capture Decoding Guide](RF-Capture-Decoding-Guide.md) 
 
-Forward Page [Post Processing](https://github.com/oyvindln/vhs-decode/wiki/Post-Processing-Guide)
+Forward Page [Post Processing](Post-Processing-Guide.md)
 
 Sub-Page [Jitterbugs TBC-Video-Export Releases Page](https://github.com/JuniorIsAJitterbug/tbc-video-export/releases)
 
@@ -22,7 +22,7 @@ You can add your own encoding profiles in the `tbc-video-export.json` file, whic
 ## **Notes!** 
 
 
-Key Secondary Guide [Read Pre-Export LD-Analyse Guide Here](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Decoding-Guide#adjusting-your-tbc-in-ld-analyse)
+Key Secondary Guide [Read Pre-Export LD-Analyse Guide Here](RF-Capture-Decoding-Guide.md#adjusting-your-tbc-in-ld-analyse)
 
 Colour-Under formats `VHS, Umatic, BetaMax, Video8, Hi8` etc are a `.tbc`/`_chroma.tbc` file (Y+C) set.
 
@@ -57,7 +57,7 @@ The default output format is:
 - `Audio Codec: FLAC`
   
 
-Ideal starting point for post processing footage without VBI data, but will require [de-interlacing](https://github.com/oyvindln/vhs-decode/wiki/Deinterlacing) for online use.
+Ideal starting point for post processing footage without VBI data, but will require [de-interlacing](Deinterlacing.md) for online use.
 
 
 ## File Paths
@@ -146,7 +146,7 @@ Example Advanced
 !!! CAUTION
     Progressive video files will be 2x the size of interlaced files.
 
-FFmpeg profile based de-interlacing can be done with `bwdif` & `w3dif` (see the tbc-video-export.json formatting for how to apply it to new profiles) for 50p/59.94p progressive files although [QTGMC](https://github.com/oyvindln/vhs-decode/wiki/Deinterlacing) is recommended for the best results today.
+FFmpeg profile based de-interlacing can be done with `bwdif` & `w3dif` (see the tbc-video-export.json formatting for how to apply it to new profiles) for 50p/59.94p progressive files although [QTGMC](Deinterlacing.md) is recommended for the best results today.
 
 We have implemented ProRes & PCM audio modes for better support in [NLEs](https://en.wikipedia.org/wiki/Non-linear_editing) such as Davinchi Resolve.
 
@@ -495,8 +495,8 @@ You can pick either `x264_web` or `x265_web` depending on how much system/client
 # Page End 
 
 
-Next Page [Post Processing](https://github.com/oyvindln/vhs-decode/wiki/Post-Processing-Guide)
+Next Page [Post Processing](Post-Processing-Guide.md)
 
 Sub-Page [Jitterbugs TBC-Video-Export Releases Page](https://github.com/JuniorIsAJitterbug/tbc-video-export/releases)
 
-Back Page [RF Capture Decoding Guide](https://github.com/oyvindln/vhs-decode/wiki/RF-Capture-Decoding-Guide) 
+Back Page [RF Capture Decoding Guide](RF-Capture-Decoding-Guide.md) 

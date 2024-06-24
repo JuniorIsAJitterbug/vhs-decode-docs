@@ -49,21 +49,21 @@ Black SNR should be in the 95~98dB range when viewed in ld-analyse.
 ## Test Tones
 
 
-[1khz Sine Wave Tone](https://github.com/oyvindln/vhs-decode/wiki/assets/test-data/1kHz_44100Hz_16bit_05sec.wav)
+[1khz Sine Wave Tone](assets/test-data/1kHz_44100Hz_16bit_05sec.wav#FIXME)
 
-[GLITZ Tone](https://github.com/oyvindln/vhs-decode/wiki/assets/test-data/2minGLITS.ogg)
+[GLITZ Tone](assets/test-data/2minGLITS.ogg#FIXME)
 
-[BLITS 5.1 Lineup](https://github.com/oyvindln/vhs-decode/wiki/assets/test-data/BLITS_5.1Lineup_Demonstration.ogg)
+[BLITS 5.1 Lineup](assets/test-data/BLITS_5.1Lineup_Demonstration.ogg#FIXME)
 
-[BLITS 5.1 Lineup](https://github.com/oyvindln/vhs-decode/wiki/assets/test-data/BLITS_5.1Lineup_Demonstration.ogg)
+[BLITS 5.1 Lineup](assets/test-data/BLITS_5.1Lineup_Demonstration.ogg#FIXME)
 
 
 ## Docs
 
 
-[Multichannel Audio Line-up Tones](https://github.com/oyvindln/vhs-decode/wiki/assets/test-data/Multichannel-Audio-Line-up-Tones-tech3304.pdf)
+[Multichannel Audio Line-up Tones](assets/test-data/Multichannel-Audio-Line-up-Tones-tech3304.pdf#FIXME)
 
-[BLITS Surround Sound Ident](https://github.com/oyvindln/vhs-decode/wiki/assets/test-data/03_BLITS_Surround_Sound_Ident.pdf)
+[BLITS Surround Sound Ident](assets/test-data/03_BLITS_Surround_Sound_Ident.pdf#FIXME)
 
 
 # Page End

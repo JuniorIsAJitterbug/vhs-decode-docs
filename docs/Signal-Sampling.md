@@ -94,12 +94,12 @@ The 4fsc frequency sample rate is typically:
 In simple terms the same system used for D2/D3 tape.
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/docs/Book-Extracts/Poynton/Book-02/Page-171.png){: style="width:600px"}
+![](assets/docs/Book-Extracts/Poynton/Book-02/Page-171.png#FIXME){: style="width:600px"}
 
 > Page 171
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/docs/Book-Extracts/Poynton/Book-02/Page-172.png){: style="width:600px"}
+![](assets/docs/Book-Extracts/Poynton/Book-02/Page-172.png#FIXME){: style="width:600px"}
 
 > Page 172
 

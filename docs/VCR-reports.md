@@ -13,14 +13,14 @@ This page is for initial and long term notes about VCR testing however not to be
 - Nokia VCR3715, Luxor VCR4704 (Sanyo) 
     - oyvindln, captured ok with scope probe + DdD from pb fm on head amp, though the decks had some power supply issues so can't fully test.
 
-- [Bush VCR925NSIL](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#bush-vcr925nsil-orion-made)
+- [Bush VCR925NSIL](004-The-Tap-List.md#bush-vcr925nsil-orion-made)
     - Harrypm, DdD 2.02 Gain 1x Probe No issues, Test points to 50Ohm RG316 to BNC Bulkhead, Test Points are easy to access and plenty of space for 3 Bulkheads next to A/V connections but required a 100uf electrolytic capacitor for stable RF capture (HiFi needs re-testing)
 
 
 ## Sony Consumer / Prosumer Models
 
 
-* [Sony SLV-SE60](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#sony-late-90searly-2000s-slv-se60) - oyvindln, used with scope probe, worked well with both cxadc and DdD.
+* [Sony SLV-SE60](004-The-Tap-List.md#sony-late-90searly-2000s-slv-se60) - oyvindln, used with scope probe, worked well with both cxadc and DdD.
 
 ## JVC Consumer / Prosumer Models
 
@@ -33,15 +33,15 @@ This page is for initial and long term notes about VCR testing however not to be
 - JVC HR-J658 
     - oyvindln, signal too low for cxadc, doable with DdD, but not sure if the signal was strong enough for good chroma decoding (need to re-test with DdD, may have used probe in 10x mode.
 
-- [JVC HR-S7500](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#jvc-jvc-hr-s7500)
+- [JVC HR-S7500](004-The-Tap-List.md#jvc-jvc-hr-s7500)
     - Jitterbug, damaged deck? tested good signal for video RF required 10uf cap on test point.
 
-- [JVC-BR-S622U](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#jvc-br-s622u)
+- [JVC-BR-S622U](004-The-Tap-List.md#jvc-br-s622u)
     - adam_r / Ack Ack, tested will with amplifiers and 10uf caps added to test points.
 
 ## Panasonic Consumer / Prosumer Models
 
-- [Panasonic NV-HD630](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-hd630b) 
+- [Panasonic NV-HD630](004-The-Tap-List.md#panasonic-hd630b) 
     - harrypm, DdD Min Gain, RTLSDR, RG316/BNC taps with 10uf caps, duel HiFi tap and RF-C test point taps, stable and high SNR captures obtained.
     - zcooger, Green CX Card (CX23883-39)(CXADC), Head Amp tap, RG58 cabling used, electrolytic caps in-line 4.7uf stable captures obtained.
     - jitterbug, CX White (CX23883-39), TW502 HiFi + video, TW501 no HiFi (or too low?), TW2001 HSW, head amp tap pin 4 video, pin 13 HiFi, pin 2 HSW (pointless). Video should be tapped after the resistor/on the pin else worse signal, HiFi requires 100ohm resistor else worse signal.
@@ -52,31 +52,31 @@ This page is for initial and long term notes about VCR testing however not to be
 - Panasonic NV-F77 
     - oyvindln, captured fine with scope probe + DdD from both rf c and rf y outputs (not sure which is best), cxadc not tested.
 
-- [Panasonic NV-HS950](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-nv-hs950b) 
+- [Panasonic NV-HS950](004-The-Tap-List.md#panasonic-nv-hs950b) 
     - harrypm, head amp & tbc card env tap tested, requires a capp added in-line to allow standard playback and stable SVHS capture, tested well on DdD directly 2.02 Gain and 1x probe, CX Blue card as well, cracked solder joints inside headlamp board required re-flowing.
 
-- [Panasonic NV-HS1000](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-nv-hs1000) 
+- [Panasonic NV-HS1000](004-The-Tap-List.md#panasonic-nv-hs1000) 
     - Itewreed#2179, direct head amplifier ''pin push-in'' tap 10uf electrolytic capacitors used cable ground soldered to amplifier shield, BNC's mounted at the back, video RF and HiFi RF working.    
 
 ## Panasonic AG (Professional line)
 
-- [Panasonic AG-5700](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-ag5700) 
+- [Panasonic AG-5700](004-The-Tap-List.md#panasonic-ag5700) 
     - oyvindln, captured ok with scope probe + DdD from env TP on top board, at back on hinge side (Gives RF C out from head amp + 0.1 uf cap)
 
-- [Panasonic AG-5260](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-ag-5260-compact-k-mech) 
+- [Panasonic AG-5260](004-The-Tap-List.md#panasonic-ag-5260-compact-k-mech) 
     - Harrypm, ENV Test point (top board) needs 10uf Cap, HiFi RF is just called ENV at the back near standard A/V output left channel is low (high pass filter?), Note very stable transport and tracking with clean freeze frame and fast-forward playback decodes fine if tracking is adjusted correctly during a slow advance.
 
-- [Panasonic AG-7150, AG-7350](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-ag-7150-professional-3u-rackmount-player) 
+- [Panasonic AG-7150, AG-7350](004-The-Tap-List.md#panasonic-ag-7150-professional-3u-rackmount-player) 
     - Harrypm, First board V1, TP4 ENV Video with TP Ground next to it under plastic cover tests fine without any caps needed in-line with VHS, ( need to do SVHS SP) via DdD 2.02 Gain and 1x probe, Audio board A2 TP707 (TP4707 In manual) underneath plastic retaining clamp, left channel is low (high pass filter?).
     - Rene Wolf, Head head amplifier tap with amplifier board, and duel sync CX White (CX23883-39), HiFi working via direct taps. 
 
-- [Panasonic AG-7350](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-ag-7150-professional-3u-rackmount-player) 
+- [Panasonic AG-7350](004-The-Tap-List.md#panasonic-ag-7150-professional-3u-rackmount-player) 
     -  Harrypm, Same as Panasonic AG-7150 for playback (just recording to tape components are populated on the A/V boards, and head amplifier pins)
 
 - Panasonic AG-7650
     - Harrypm, Testing to be done. (notation)
 
-- [Panasonic MD-830](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-ag-md280) 
+- [Panasonic MD-830](004-The-Tap-List.md#panasonic-ag-md280) 
     - Harrypm, Testing to be done when serviced. (notation)
 
 
@@ -99,10 +99,10 @@ This page is for initial and long term notes about VCR testing however not to be
 # BetaMax PAL
 
 
-- [Sanyo VTC5000](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#sanyo-vtc5000) 
+- [Sanyo VTC5000](004-The-Tap-List.md#sanyo-vtc5000) 
     - Harrypm, DdD 1x Probe to ENV test point (first pin to the left of shielded PCB) 2.02 Gain initial tests decoded fine, however, dropouts with PVM connected requires capacitor in-line for real-time conventional alongside for audio/reference used 100uf without issue for permanent tap.
 
-- [Sony SL-C40 ES](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#sony-sl-c40es) 
+- [Sony SL-C40 ES](004-The-Tap-List.md#sony-sl-c40es) 
     - phelissimo_#0292, 
 
 
@@ -114,14 +114,14 @@ This page is for initial and long term notes about VCR testing however not to be
 
 ## VCR's
 
-- [Sony Video8 EV-A60](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#sony-video8-ev-a60-ntsc)
+- [Sony Video8 EV-A60](004-The-Tap-List.md#sony-video8-ev-a60-ntsc)
     - Titan91, 2.54mm header pins DuPont Tap.
 
 
 ## Camcorders
 
 
-Sony camcorders are tapped via jig points [Sony 8mm Formats](https://github.com/oyvindln/vhs-decode/wiki/Sony-8mm-Formats), this can also apply to some Samsung units too.
+Sony camcorders are tapped via jig points [Sony 8mm Formats](Sony-8mm-Formats.md), this can also apply to some Samsung units too.
 
 - [Sony HI8 CCD-TRV318]()
 
@@ -130,7 +130,7 @@ Sony camcorders are tapped via jig points [Sony 8mm Formats](https://github.com/
 - Sony DCR-TRV355E 
     - Jitterbug, low signal, requires cap, may require amp (further testing required). Uses a 16 pin 0.5mm FPC for tap, PB RF pin 2
 
-- [Sony Digital8 DCR-TRV840, DCR-738E](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#sony-digital8-dcr-trv840-video8--hi8-ntsc)
+- [Sony Digital8 DCR-TRV840, DCR-738E](004-The-Tap-List.md#sony-digital8-dcr-trv840-video8--hi8-ntsc)
 
 - [Sony HI8 CCD-TRV328]()
     - kaliohelix#5414, Direct solder to AGC pin, Due to the AGC (Automatic Gain Control IC) the signal output level of the Raw RF is very strong no capacitors or resistors are required in line for solid captures to be made on the CX or DdD.

@@ -29,11 +29,11 @@ Ceramic Cap - Solid State Capacitor (defacto for FM RF taps)
 
 ![](assets/images/graphics/RF-Tap-TV-Pack-Scart-Deck.png){: style="width:700px"}
 
-An RF Tap is a [BNC or SMA (bulkhead type)](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide#types-of-rf-connectors) connector that's mounted to the back normally (if there is space) of an analogue playback device, then a cable normally RG178/RG316 is routed going to a Video or HiFi audio [Test Points](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide#types-of-test-points) alongside a grounding point or soldered to a point in the mainboard or amplification boards ware a full unprocessed modulated signal can be found this is referred to as a "Tap Point".
+An RF Tap is a [BNC or SMA (bulkhead type)](Hardware-Installation-Guide.md#types-of-rf-connectors) connector that's mounted to the back normally (if there is space) of an analogue playback device, then a cable normally RG178/RG316 is routed going to a Video or HiFi audio [Test Points](Hardware-Installation-Guide.md#types-of-test-points.md) alongside a grounding point or soldered to a point in the mainboard or amplification boards ware a full unprocessed modulated signal can be found this is referred to as a "Tap Point".
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/vhs/Panasonic-HD630/Panasonic-HD630B-CVBS-Out-Sony-ILCE-7RM3-2022.10.01-18.16.26.JPG){: style="width:200px"}
+![](assets/images/vhs/Panasonic-HD630/Panasonic-HD630B-CVBS-Out-Sony-ILCE-7RM3-2022.10.01-18.16.26.JPG){: style="width:200px"}
 
-> CVBS & HiFi FM/Video FM to mounted BNC's - [NV-HS630B](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#panasonic-nv-hd630b)
+> CVBS & HiFi FM/Video FM to mounted BNC's - [NV-HS630B](004-The-Tap-List.md#panasonic-nv-hd630b)
 
 Adding a bulkhead to a VCR allows reliable easy and permanent access to the signals for external capture, without disrupting the shielding by keeping the lid off and such or ripping your test point away if a cable is snagged.
 
@@ -79,7 +79,7 @@ Composite is combined Y+C so 1 signal and 1 ground.
 
 S-Video has Y + C (Modulated C) on 2 pairs of shielded signal and ground wires 
 
-# [Colour-Under Tape Formats](https://github.com/oyvindln/vhs-decode/wiki/assets/docs/Technical-Standards-Docs/Sencore-VCR-Tape-Colour-Under-Formats.pdf)
+# [Colour-Under Tape Formats](assets/docs/Technical-Standards-Docs/Sencore-VCR-Tape-Colour-Under-Formats.pdf#FIXME)
 
 
 * JVC 1/2inch `VHS`, `VHS-C`, `SVHS`, `SVHS-C`
@@ -104,7 +104,7 @@ Hence Luminance & Chrominance ends up as 2 separate .TBC files a digital "S-Vide
 ## Baseband RF
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Signal-Examples/CVBS-EBU_75_Ossiliscope-Sony-ILCE-6000-2023.03.12-11.11.50.jpg){: style="width:200px"}
+![](assets/images/Signal-Examples/CVBS-EBU_75_Ossiliscope-Sony-ILCE-6000-2023.03.12-11.11.50.jpg){: style="width:200px"}
 
 > EBU 75% Bars - ONWON HSS2102S 100Mhz Digital DMM/Oscilloscope/Signal Generator*
 
@@ -114,7 +114,7 @@ This is an RF signal that has no modulation such as Linear audio that goes from 
 ## Composite & S-Video
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Cables-&-Connectors/Sony-ILCE-6000-2023.02.22-23.52.23.jpg){: style="width:400px"}
+![](assets/images/Cables-&-Connectors/Sony-ILCE-6000-2023.02.22-23.52.23.jpg){: style="width:400px"}
 
 S-Video (Black), RCA Video (Yellow), RCA Left Audio (White), RCA Right Audio (Red)
 
@@ -183,7 +183,7 @@ This can be on a line level, 4fsc frame level, or entire signal level, the softw
 
 | Frame With Bad TBC | Frame With Good TBC |
 | ------------------ | ------------------- |
-| ![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Wedding-1999/Wedding-VHS-ADV-BlackMagic-NV-HS-950B-PAL.jpg){: style="width:400px"} | ![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Wedding-1999/Wedding-VHS-DdD-Decode-NV-HS-950B-PAL.jpg){: style="width:400px"} |
+| ![](assets/images/example-media/Wedding-1999/Wedding-VHS-ADV-BlackMagic-NV-HS-950B-PAL.jpg){: style="width:400px"} | ![](assets/images/example-media/Wedding-1999/Wedding-VHS-DdD-Decode-NV-HS-950B-PAL.jpg){: style="width:400px"} |
 
 
 ## TBC - Time Base Corrected (File Format)
@@ -214,7 +214,7 @@ Each channel of video data can be viewed and inspected directly inside of [ld-an
 
 | Luma Y TBC File Frame | Chroma C TBC File Frame | TBC Luma & Chroma Y + C |
 |-----------------------|-------------------------|-------------------------|
-| ![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/TBC/frame_pal_source_107_Munday-Walking-Around-Garden-luma-y-tbc.png){: style="width:500px"} | ![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/TBC/frame_pal_chroma_107_Munday-Walking-Around-Garden-c-chroma-tbc.png){: style="width:500px"} | ![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/TBC/frame_pal_chroma_ar43_114_Munday-Walking-Around-Garden-y-&-c-tbc.png){: style="width:500px"} |
+| ![](assets/images/TBC/frame_pal_source_107_Munday-Walking-Around-Garden-luma-y-tbc.png){: style="width:500px"} | ![](assets/images/TBC/frame_pal_chroma_107_Munday-Walking-Around-Garden-c-chroma-tbc.png){: style="width:500px"} | ![](assets/images/TBC/frame_pal_chroma_ar43_114_Munday-Walking-Around-Garden-y-&-c-tbc.png){: style="width:500px"} |
 
 
 ## RF
@@ -224,7 +224,7 @@ Each channel of video data can be viewed and inspected directly inside of [ld-an
 
 In the context of this project, FM RF information is stored on the tape and transmitted via analogue electric signals over copper cable and or traces on the VCR'S PCB boards after being read by tiny magnetic heads in the head drum and amplified by 90s hardware.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Signal-Examples/SDRPP_UK_FM-Radio-RTL-SDR.png){: style="width:600px"}
+![](assets/images/Signal-Examples/SDRPP_UK_FM-Radio-RTL-SDR.png){: style="width:600px"}
 
 Example of waterfall visualisation of the local FM radio waves and a tuned-in radio station on an RTL-SDR using the free [SDR++](https://www.sdrpp.org/) application.
 
@@ -236,7 +236,7 @@ Example of waterfall visualisation of the local FM radio waves and a tuned-in ra
 
 This is an audio or video signal but the information is compressed via modulation onto carriers for transmission or storage like FM Radio or VHS tapes etc, formats like Video8/Hi8 use multiple modulated carriers to put video/hifi/timecode and output it via a single signal path on playback ware as formats like vhs/betamax have separate audio and video FM signal points.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Signal-Examples/VHS-FM-RF-Waveform.png){: style="width:300px"}
+![](assets/images/Signal-Examples/VHS-FM-RF-Waveform.png){: style="width:300px"}
 
 > ONWON HSS2102S Limited resolution raster of live S-VHS FM RF.
 
@@ -316,7 +316,7 @@ The 4fsc frequency sample rate is typically:
 
 In simple terms the same system used for D2/D3 tape.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/docs/Book-Extracts/Poynton/Book-02/Page-171.png){: style="width:400px;height:500px"}![](https://github.com/oyvindln/vhs-decode/wiki/assets/docs/Book-Extracts/Poynton/Book-02/Page-172.png){: style="width:400px;height:500px"}
+![](assets/docs/Book-Extracts/Poynton/Book-02/Page-171.png#FIXME){: style="width:400px;height:500px"}![](assets/docs/Book-Extracts/Poynton/Book-02/Page-172.png#FIXME){: style="width:400px;height:500px"}
 
 
 ## DdD - DomesdayDuplicator
@@ -348,7 +348,7 @@ Warning: There is a later series (CX23884 - CX23889) that will not work as they 
 ## CXADC
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Hardware/Timeout-10sec-CXADC-Capture.gif){: style="width:400px"}
+![](assets/images/Hardware/Timeout-10sec-CXADC-Capture.gif){: style="width:400px"}
 
 This is a modified Linux driver that replaces the stock control & capture driver for CX Cards onboard hardware.
 
@@ -530,11 +530,11 @@ These are used for SD/HD/UHD Video and Game delivery media today hence why all c
 
 Millennial Disc made by Millenniata (Fabricated and sold by Verbatim/Ritek today)
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/M-disc-comparison-blank-vs-written.jpg){: style="width:300px"}
+![](assets/images/archival-hardware/M-disc-comparison-blank-vs-written.jpg){: style="width:300px"}
 
 M-Discs have a black/grey look when burned, shiny golden look when non-burned, sliver looking discs are not M-Discs.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/Blu-Ray-&-BDXL-Sony-ILCE-6000-2023.04.02-19.22.16.jpg){: style="width:400px"}
+![](assets/images/archival-hardware/Blu-Ray-&-BDXL-Sony-ILCE-6000-2023.04.02-19.22.16.jpg){: style="width:400px"}
 
 M-Disc Logo on the current generation [Asus BW-16D1HT](https://www.asus.com/uk/motherboards-components/optical-drives/internal-blu-ray-drive/bw16d1ht/).
 
@@ -563,7 +563,7 @@ All Current DVD, BD, and BDXL burners support their respective M-Disk versions.
 ## DM Archive 
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/DM-Archive-Disc-Reader.png){: style="width:300px"}
+![](assets/images/archival-hardware/DM-Archive-Disc-Reader.png){: style="width:300px"}
 
 
 [Pioneer DM Archive](https://web.archive.org/web/20230303071045/https://www.cdrinfo.com/d7/content/pioneer-japan-releases-new-bdr-wx01dm-external-bddvdcd-writer-jis-x6257-standard-and-100) - Basically Japan Gov backed M-Disc
@@ -593,15 +593,15 @@ The real-world value however is little, unless you have endless money these are 
 
 Sony has there own in-house version of M-Disk starting from 2006 to today with there translucent high-density duel sided write once disks.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/sony-ods-d380u_front.png){: style="width:300px"}
+![](assets/images/archival-hardware/sony-ods-d380u_front.png){: style="width:300px"}
 
 Using a platter of 12 (500GB) duel sided disks in a cartridge at 200USD per 5.5TB 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/Sony-ODC-Optical-Disc-Cartrige-Open.png){: style="width:300px"}
+![](assets/images/archival-hardware/Sony-ODC-Optical-Disc-Cartrige-Open.png){: style="width:300px"}
 
 A very cost-effective solution for large archives i.e 100+ 3-6 hour tapes, but at a cost of 4000-5000USD for the desktop reader/writer units these have a high entry adoption cost, the software suite is free and self-contained for Linux/MacOS/Windows but not open source however, disks do use the UDF (Universal Disk Format) system so can be read easily later on rated for a 50-100+ year shelf life.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/ODA_Petasite_Library_Components.png){: style="width:300px"}
+![](assets/images/archival-hardware/ODA_Petasite_Library_Components.png){: style="width:300px"}
 
 Rackmount scale in 7U units [PetaSite](https://pro.sony/en_GB/products/optical-disc/petasite-solutions) system with automated loading and unloading of cartridges providing a full-scale optical version of LTO, meant primarily for permanent offline or recovery backup storage as they can't be overwritten by software and require mechanical destruction to be erased, water chemical and electronic interference cant damage this format in most real-world disaster situations.
 
@@ -619,7 +619,7 @@ IBM's 20-year tried and true digital tape archival.
 
 Currently, we are on Generation 9 (LTO9), LTO8 and newer readers are still 3000USD or more however LTO 5-7 readers can be had for 100~500USD on average via the used market.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/LTO-Tape-Insides.jpg){: style="width:300px"}
+![](assets/images/archival-hardware/LTO-Tape-Insides.jpg){: style="width:300px"}
 
 Modern external desktop readers use USB 3.0, Thunderblot 3, and SAS/MiniSAS interfaces. 
 
@@ -627,7 +627,7 @@ Fibre Channel autoloaders all have standard Molex power once removed from there 
 
 Like with Sony's system this scales from desktop units to rackmount scale units with automated loading systems, meant primarily for long-term offline or on-site backup recovery storage.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/archival-hardware/Types-of-LTO-reader-writer-units.png){: style="width:300px"}
+![](assets/images/archival-hardware/Types-of-LTO-reader-writer-units.png){: style="width:300px"}
 
 (Image credit benjojo blog [Live](https://blog.benjojo.co.uk/post/lto-tape-backups-for-linux-nerds) / [Archive](https://web.archive.org/web/20220127113637/https://blog.benjojo.co.uk/post/lto-tape-backups-for-linux-nerds))
 

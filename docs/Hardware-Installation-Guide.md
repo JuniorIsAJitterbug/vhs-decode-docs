@@ -58,7 +58,7 @@ Sony decks normally have 2.54mm pin-header test points
 
 [DuPont Female to BNC](https://www.aliexpress.com/item/1005004394809131.html?) / [DuPont Male to BNC](https://www.aliexpress.com/item/1005004385167455.html?) / [SMA to DuPont Female](https://www.aliexpress.com/item/1005004381724856.html?) adapters.
 
-[Example](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List#sony-slv-677hf) (This applies to VHS/Beta/Video8/High8)
+[Example](004-The-Tap-List.md#sony-slv-677hf) (This applies to VHS/Beta/Video8/High8)
 
 If you go the Dupont pin method use an In-line Capacitor (Limits signal draw to allow for live playback alongside RF capture) [AliExpress](https://www.aliexpress.com/item/4001006213158.html) / [Amazon US](https://www.amazon.com/DC-Block-Connector-Include-SMA-MF-50KHz-8GHz/dp/B07JR5ZNW7)
 
@@ -80,7 +80,7 @@ BNC probes can be used for a solderless hook-up, but may not have as reliable si
 ## Jig Method Video8 & Hi8
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Sony-8mm/Sony-Digital8-DCR-TRV238E/Sony-Digital8-TVR238E_With_Notes.jpg){: style="width:500px"}
+![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV238E/Sony-Digital8-TVR238E_With_Notes.jpg){: style="width:500px"}
 
 
 On most Sony Video8, Hi8 and later Digital8 camcorders that had support backwards playback, at the battery area, there is a cover plate with a single screw, once removed this exposes the Jig connection point for testing this is normally 16/18/20 pin FPC type connector with a 0.5mm pitch, with is readily available and generic cables & jigs being off-shelf parts.
@@ -885,7 +885,7 @@ Sony 8mm Camcorders
 
 Sony-Hi8-CCD-TRV66E
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV66E/Sony-Hi8-CCD-TRV66E_2023.08.06_12.09.51.jpg){: style="width:500px"}
+![](assets/images/Sony-8mm/Sony-Hi8-CCD-TRV66E/Sony-Hi8-CCD-TRV66E_2023.08.06_12.09.51.jpg){: style="width:500px"}
 
 Sony-Digital8-DCR-TRV238E
 

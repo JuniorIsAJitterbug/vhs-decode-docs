@@ -6,7 +6,7 @@ This doc has a list of basic visual examples of the same frames from the same me
 # Media Examples
 
 
-RAW & Processed data can be directly obtained for viewing, testing and or presenting the projects [Here](https://github.com/oyvindln/vhs-decode/wiki/Submitting-&-Downloading-Sample-Data).
+RAW & Processed data can be directly obtained for viewing, testing and or presenting the projects [Here](Submitting-&-Downloading-Sample-Data.md).
 
 [Offical Tape/CVBS Odysee](https://odysee.com/@vhs-decode:7) - TheRealHarrypm
 
@@ -59,7 +59,7 @@ Decoded RF from ENV Point (TBC Card)
 
 https://imgsli.com/MjI4MjEx
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Wedding-1999/Wedding-VHS-ADV-BlackMagic-NV-HS-950B-PAL.jpg){: style="width:478px"} ![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/example-media/Wedding-1999/Wedding-VHS-DdD-Decode-NV-HS-950B-PAL.jpg){: style="width:470px"}
+![](assets/images/example-media/Wedding-1999/Wedding-VHS-ADV-BlackMagic-NV-HS-950B-PAL.jpg){: style="width:478px"} ![](assets/images/example-media/Wedding-1999/Wedding-VHS-DdD-Decode-NV-HS-950B-PAL.jpg){: style="width:470px"}
 
 
 ## DoaJC_Blogger

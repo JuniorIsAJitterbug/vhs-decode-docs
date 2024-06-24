@@ -56,7 +56,7 @@ an imperfect analog signal.
 # Specification
 
 
-![]("assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Specification-Signal-on-Luma-TBC.jpg){: style="width:250px"}
+![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Specification-Signal-on-Luma-TBC.jpg){: style="width:250px"}
 
 The audio subcarrier is a simple stream of
 brightness values, sampled once per line within the active
@@ -77,7 +77,7 @@ red power LED and a green activity LED when speaking.
 
 ------
 
-![]("assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Specification-Ossiliscope-View.jpg){: style="width:500px"}
+![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Specification-Ossiliscope-View.jpg){: style="width:500px"}
 
  Each audio sample is approximately
 the length of the colorburst. At maximum
@@ -132,7 +132,7 @@ Ruxpin decode may not produce ideal results at first. Because of the nature of a
 video, you may get a high pitched noise or buzzing/crackling sounds. Three main factors can
 cause this: field order, phase alignment, and head switching.
 
-![]("assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Adjustments and Troubleshooting_GNU-1.jpg){: style="width:300px"}
+![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Adjustments and Troubleshooting_GNU-1.jpg){: style="width:300px"}
 
 The flow graph assumes a specific
 field order (even/odd or odd/even). If the field
@@ -172,7 +172,7 @@ Too Far Left / Centered / Too Far Right
 
 -------
 
-![]("assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Adjustments and Troubleshooting_Decode-1.jpg){: style="width:300px"}
+![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Adjustments and Troubleshooting_Decode-1.jpg){: style="width:300px"}
 
 VCR video head switching is
 necessary to obtain a seamless RF signal

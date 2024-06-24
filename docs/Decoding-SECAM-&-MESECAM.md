@@ -9,7 +9,7 @@ The graph is based on GnuRadio 3.10
 
 Download the Graph & Script here:
 
-[secam_to_yuv.sh](https://github.com/oyvindln/vhs-decode/wiki/assets/gnu-radio/secam_to_yuv.sh) & [secam_to_yuv.grc](https://github.com/oyvindln/vhs-decode/wiki/assets/gnu-radio/secam_to_yuv.grc)
+[secam_to_yuv.sh](assets/gnu-radio/secam_to_yuv.sh#FIXME) & [secam_to_yuv.grc](assets/gnu-radio/secam_to_yuv.grc#FIXME)
 
 
 ## Quick usage guide

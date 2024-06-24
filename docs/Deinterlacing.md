@@ -64,7 +64,7 @@ letter first = frame rate, letter second = frame rate for progressive, field rat
 ## Example 1080i to 576i Composite
 
 
-Interlaced Image (4:3 Anamorphic - White lines are [WSS](https://github.com/oyvindln/vhs-decode/wiki/Wide-Screen-Signalling))
+Interlaced Image (4:3 Anamorphic - White lines are [WSS](Wide-Screen-Signalling.md))
 
 ![](assets/images/Post-Processing/Interlaced-Frame-00.30.778.png){: style="width:400px"}
 

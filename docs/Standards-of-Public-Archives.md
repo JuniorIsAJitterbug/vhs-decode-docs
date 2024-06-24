@@ -136,7 +136,7 @@ Included in this archive is the RF information, log notes [If any] and self cont
 
 Please visit the project GitHub if you wish to obtain newer versions of the decoders and other tools and or more information past limited example use presented here.
 
-https://github.com/oyvindln/vhs-decode/wiki/ 
+https://github.com/oyvindln/vhs-decode/wiki#FIXME
 
 
 ## Release Media 
@@ -186,7 +186,7 @@ Description Example:
     Date of Recording: 13.08.1996
     Date of Capture: 11.12.2018
     
-    VHS-Decode Wiki: https://github.com/oyvindln/vhs-decode/wiki/
+    VHS-Decode Wiki: https://github.com/oyvindln/vhs-decode/wiki/#FIXME
     VHS-Decode Reddit: https://www.reddit.com/r/vhsdecode/
     Domesday86 Discord: https://discord.gg/pVVrrxd
 

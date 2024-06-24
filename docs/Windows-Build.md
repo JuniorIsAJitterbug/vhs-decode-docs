@@ -1,7 +1,7 @@
 # Windows Native Builds 
 
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/vhs-decode-gui/VHS-Decode-Windows-Overview-2023.png){: style="width:800px"}
+![](assets/images/vhs-decode-gui/VHS-Decode-Windows-Overview-2023.png){: style="width:800px"}
 
 
 ## YouTube Video
@@ -108,7 +108,7 @@ Analogue playback (CVBS/S-Video) for TBC files is also somewhat supported via [F
 
 [RTLSDR Decode](RTLSDR.md) is also fully supported as GNU-Radio has universal platform support.
 
-CVBS & S-Video RAW capture can be provided via the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md).
+CVBS & S-Video RAW capture can be provided via the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md#FIXME).
 
 !!! WARNING
     The DomesDay Duplicator can have sample drop issues on Windows, this has not been observed on MacOS or Linux builds however.

@@ -1,6 +1,6 @@
 The orignally used for the NTSC format in broadcast and release media, closed captions or subtitling data that allowed various consumer equipment to super-impose dialog subtitles over video.
 
-It should be noted that while it was orignally for NTSC, PAL release media also has it, however PAL broadcast mainly used [Teletext](https://github.com/oyvindln/vhs-decode/wiki/Teletext) for subtitle data and on LaserDiscs of course.
+It should be noted that while it was orignally for NTSC, PAL release media also has it, however PAL broadcast mainly used [Teletext](Teletext.md) for subtitle data and on LaserDiscs of course.
 
 ## Genarating Closed Caption Signals
 

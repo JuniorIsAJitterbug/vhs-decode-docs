@@ -1,7 +1,7 @@
 # Deployment of Capture Hardware
 
 
-Please read [The Tap List](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List) / [Hardware Installation Guide](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide) / [VCR Reports](https://github.com/oyvindln/vhs-decode/wiki/VCR-reports)
+Please read [The Tap List](004-The-Tap-List.md) / [Hardware Installation Guide](Hardware-Installation-Guide.md) / [VCR Reports](VCR-reports.md)
 
 Information on various VCRs that have been documented alongside high resolution pictures of VCR's that have had RF taps installed, guidance on recommended cables/connectors & tools to use are also included.
 
@@ -13,7 +13,7 @@ If you have digital formats please read [The Digital Tape Guide](Digital-Tape-Gu
 
 First find a working VCR or VRT unit!
 
-- Check Model Number with [The Tap List](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List)
+- Check Model Number with [The Tap List](004-The-Tap-List.md)
 - Unplug unit, Open-Lid via screws (watch your hands on metal rims of covers)
 - Clean Heads, Drum, Guide Rollers, Remove head cleaner if present.
 - Re-lubricate and clean internals if dusty and or contaminated
@@ -25,7 +25,7 @@ First find a working VCR or VRT unit!
 
 If you have a VCR this is the same as the above formats, if you have a camcorder you will need a Jig board (most units are jig compatible)
 
-- Check Model Number with [The Tap List](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List)
+- Check Model Number with [The Tap List](004-The-Tap-List.md)
 - Remove back cover & check pin count
 - Order 2.54mm Jig Boards & Cable
 - Read service manual to find out Signal/Ground pins
@@ -59,7 +59,7 @@ FM RF Capture ==> Software Decoding ==> Lossless TBC Files ==> Audio/Video File 
 ## Parts for RF Tap
 
 
-[What tools do I need?](https://github.com/oyvindln/vhs-decode/wiki/Hardware-Installation-Guide)
+[What tools do I need?](Hardware-Installation-Guide.md)
 
 * 50ohm BNC connectors, normally a [premade bulkhead](https://www.aliexpress.com/item/4000981154513.html), or [solderable thread mounted](https://www.aliexpress.com/item/4000639816847.html).
 * 50-100cm of [RG316](https://www.aliexpress.com/item/32726071013.html) or [RG178](https://www.aliexpress.com/item/32879341402.html) 50 ohm coaxial cable.

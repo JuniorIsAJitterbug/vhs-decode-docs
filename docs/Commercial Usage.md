@@ -13,7 +13,7 @@ Yes.
 No, we do wish for appropriate credits in any production use if using this suit and its freely provided resources are employed.
 
 
-Supporting the project is always encouraged. [Donations](https://github.com/oyvindln/vhs-decode/wiki/Donations)
+Supporting the project is always encouraged. [Donations](Donations.md)
 
 
 ## Is the suite commercially viable for production usage?
@@ -25,7 +25,7 @@ Currently from an archival & preservation perspective.
 Capture is fully viable as of 2023 with ''add-in'' integration into existing SDI & PCIe based workflows ideally on a separate workstation or server solution with RAID or SSD based ingest discs, and FLAC compression to cold storage.
 
 
-Please See [Diagram Visuals](https://github.com/oyvindln/vhs-decode/wiki/Diagram-Visuals) for full-scale breakdowns and workflows.
+Please See [Diagram Visuals](Diagram-Visuals.md) for full-scale breakdowns and workflows.
 
 
 Decoding is an ever-evolving part of the project, while it beats all off-shelf solutions today, decoded data, however, should not be considered a final product as each year new improvements can make drastic differences, only the FM RF data can be considered final if a good capture is obtained.

@@ -32,20 +32,20 @@ Storage:
 There is 2 ways to use the decode software suite, self-contained or built locally.
 
 
-- [Linux Install Docs](https://github.com/oyvindln/vhs-decode/wiki/Linux-Build)
-- [Windows Install Docs](https://github.com/oyvindln/vhs-decode/wiki/Windows-Build)
-- [MacOS Install Docs](https://github.com/oyvindln/vhs-decode/wiki/MacOS-Build)
+- [Linux Install Docs](Linux-Build.md)
+- [Windows Install Docs](Windows-Build.md)
+- [MacOS Install Docs](MacOS-Build.md)
 
 !!! TIP
     If making archives you will want to bundle the source code and self-contained binary's.
 
-- [Demo Media to Test](https://github.com/oyvindln/vhs-decode/wiki/Submitting-&-Downloading-Sample-Data)
+- [Demo Media to Test](Submitting-&-Downloading-Sample-Data.md)
 
 
 ## Basic Command line Guide
 
 
-[Universal Command List](https://github.com/oyvindln/vhs-decode/wiki/Command-List)
+[Universal Command List](Command-List.md)
 
 A "directory" is simply a folder in the system.
 
@@ -229,7 +229,7 @@ Please be sure to read and use the [Submission Guidelines Naming System](https:/
 ## Creating Archives and Preservation
 
 
-[Media Archive Guide](https://github.com/oyvindln/vhs-decode/wiki/Media-Archival-Guide) & [LTO Tape Guide](https://github.com/oyvindln/vhs-decode/wiki/LTO-Linear-Open-Tape-Guide)
+[Media Archive Guide](Media-Archival-Guide.md) & [LTO Tape Guide](LTO-Linear-Open-Tape-Guide.md)
 
 Currently, we only have M-Disk & DataLifePlus, DM Archive as a solid archive format widely alliable using the standard Blu-Ray format
 
@@ -245,11 +245,11 @@ Once written all modern DVD/BluRay readers/writers & players support the UDF dat
 # Reference Diagrams
 
 
-[Diagrams Visuals Page](https://github.com/oyvindln/vhs-decode/wiki/Diagram-Visuals)
+[Diagrams Visuals Page](Diagram-Visuals.md)
 
 **Note!** open the image in another tab or download it to view full scale in case of viewing issues.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/graphics/VHS-Decode-Continuous-New-2023-Consumer-Workflow-16-by-9.png){: style="width:800px"}
+![](assets/images/graphics/VHS-Decode-Continuous-New-2023-Consumer-Workflow-16-by-9.png){: style="width:800px"}
 
 
 # Page End 

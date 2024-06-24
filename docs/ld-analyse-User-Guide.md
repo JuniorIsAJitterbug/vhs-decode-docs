@@ -98,7 +98,7 @@ The decoded frame is made up of several distinct areas.  The following diagram s
 ## VITC - Timecode Readout
 
 
-`ld-process-vbi` can scan for common [SMPTE VITC Timecode](https://github.com/oyvindln/vhs-decode/wiki/VITC-SMPTE-Timecode) and add that to the .JSON files if the data is detected you will see the `HH:MM:SS:FF` readout automatically, this is the exact hour/min/sec/frame information the for current frame displayed at the bottom, typically this is runtime on commercial media or time of day information on prosumer/broadcast tapes.
+`ld-process-vbi` can scan for common [SMPTE VITC Timecode](VITC-SMPTE-Timecode.md) and add that to the .JSON files if the data is detected you will see the `HH:MM:SS:FF` readout automatically, this is the exact hour/min/sec/frame information the for current frame displayed at the bottom, typically this is runtime on commercial media or time of day information on prosumer/broadcast tapes.
 
 ![](assets/ld-analyse-rev7/ld-analyse_VITC_readout.png){: style="width:px"}
 

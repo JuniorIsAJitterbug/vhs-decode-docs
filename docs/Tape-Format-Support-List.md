@@ -81,7 +81,7 @@ HDVS/MUSE/Hi-Vision (1125-lines 1035-lines active 1035i)
 | CVBS 288p     | 288 Lines  | Progressive  | PAL       | 4:3 / 16:9   | Yes*               | Yes*             |
 | 960h CCTV     | 960 x 576  | Interlaced   | N/A       | 16:9 Only    | Yes*               | Not Tested       |
 
-*Capture is currently only reliable with the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md)
+*Capture is currently only reliable with the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md#FIXME)
 
 Capture is possible via [CX Cards](CX-Cards.md) currently (Other SDR units may also work with the correct input filter range)
 

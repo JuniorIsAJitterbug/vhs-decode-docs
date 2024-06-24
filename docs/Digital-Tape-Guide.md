@@ -489,7 +489,7 @@ Monitoring Window
 ## How to Process Tapes?
 
 
-There is 3 things you can do, [`deinterlace`](https://github.com/oyvindln/vhs-decode/wiki/Deinterlacing), `upscale` & `de-noising`.
+There is 3 things you can do, [`deinterlace`](Deinterlacing.md), `upscale` & `de-noising`.
 
 Denoising is a matter of personal preference as its already digital with digital noise, so preservation wise it should be left alone unless upscaling for a 2160p timeline etc.
 

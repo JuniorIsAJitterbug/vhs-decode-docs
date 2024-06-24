@@ -203,7 +203,7 @@ LTO1-4 Used the SCSI interface.
 
 PCIe to SCSI
 
-![](assets/lto-wiki/interfaces/PCIe-to-SCSI.jpg){: style="width:400px"}
+![](assets/lto-wiki/interfaces/PCIe-to-SCSI.jpg#FIXME){: style="width:400px"}
 
 
 USB to SCSI

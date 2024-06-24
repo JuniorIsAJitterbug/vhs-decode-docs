@@ -190,7 +190,7 @@ The Crystal: [Generic 40mhz Fundamental](https://www.aliexpress.com/item/1005004
 # Clockgen Mod
 
 
-- [Simple Wiki Version](https://github.com/oyvindln/vhs-decode/wiki/Clockgen-Mod)
+- [Simple Wiki Version](Clockgen-Mod.md)
 - [Original Wiki Version](https://gitlab.com/wolfre/cxadc-clock-generator-audio-adc)
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.05.15_21.52.28.jpg){: style="width:500px"}

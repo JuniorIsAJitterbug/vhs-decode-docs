@@ -42,7 +42,7 @@ The order of explaining and demonstrating the projects one should bare this in m
 
 - `FM RF Capture` 
 
-This should be referred to as the `FM RF Archival Method` as its the most direct and clear definition, as capture should not be conflated or limited by association with any particular hardware product or software processing chain, its just the ingest method for the decode projects, but an archival method in of its self using any [analogue to digital converters](https://github.com/oyvindln/vhs-decode/wiki/Technical-Breakdowns) with enough sampling rate and suitable frequency input range per format.
+This should be referred to as the `FM RF Archival Method` as its the most direct and clear definition, as capture should not be conflated or limited by association with any particular hardware product or software processing chain, its just the ingest method for the decode projects, but an archival method in of its self using any [analogue to digital converters](Technical-Breakdowns.md) with enough sampling rate and suitable frequency input range per format.
 
 Its the equivalent of just capturing PCM lossless audio from microphones or baseband tape directly in concept and data formatting is a standard waveform just like audio, you can literally open a FLAC compressed archive and cut individual fields/frames out of a signal and decode it via any standard audio editing tools.
 
@@ -84,7 +84,7 @@ It should be clearly stated that this is not just a single project, in fact it's
 
 The RF Capture projects & hardware in order of development is CXADC (Driver for PCI/PCIe 1x CX Cards) & DomesDayDuplicator (USB 3.0 based solution), The [RTLSDR](RTLSDR.md) has also been added for use in HiFi Audio capture and Realtime decoding via [GNU Radio](https://www.gnuradio.org/) scripts.
 
-The Decoding projects and tools are in order of development [LD-Decode](https://github.com/happycube/ld-decode/wiki), [VHS-Decode](https://github.com/oyvindln/vhs-decode#readme), [CVBS-Decode](https://github.com/oyvindln/wiki/CVBS-Composite-Decode), [HiFi-Decode](https://github.com/oyvindln/vhs-decode/wiki/003-Audio#hifi-decode-hifi-rf-into-audio-installation-and-usage), [TBC-To-Analogue-FL2K](https://github.com/oyvindln/vhs-decode/wiki/TBC-To-Analogue), [RTLSDR-Decode](RTLSDR.md), [tbc-video-export](https://github.com/JuniorIsAJitterbug/tbc-video-export).
+The Decoding projects and tools are in order of development [LD-Decode](https://github.com/happycube/ld-decode/wiki), [VHS-Decode](https://github.com/oyvindln/vhs-decode#readme), [CVBS-Decode](https://github.com/oyvindln/wiki/CVBS-Composite-Decode), [HiFi-Decode](003-Audio.md#hifi-decode-hifi-rf-into-audio-installation-and-usage), [TBC-To-Analogue-FL2K](TBC-to-Analogue.md), [RTLSDR-Decode](RTLSDR.md), [tbc-video-export](https://github.com/JuniorIsAJitterbug/tbc-video-export).
 
 
 The projects are all under the DomesDay86 discord community umbrella with members sharing code, sample data and generally assisting and advancing each others work, with core members and developers in the United Kingdom, United States, Scandinavia & Mainland Europe.
@@ -93,7 +93,7 @@ The projects are all under the DomesDay86 discord community umbrella with member
 # Tape Decoding & HiFi Decoding 
 
 
-To see more expanded diagram examples see the [The Visual Diagrams Page](https://github.com/oyvindln/vhs-decode/wiki/Diagram-Visuals).
+To see more expanded diagram examples see the [The Visual Diagrams Page](Diagram-Visuals.md).
 
 ![](assets/images/graphics/VHS-Decode-Continuous-New-2023-Consumer-Workflow-16-by-9.png){: style="width:800px"}
 
@@ -119,13 +119,13 @@ These TBC files can be played and inspected with `ld-analyse` (GNU radio too!), 
 ## Software extraction of Vertical Blanking Interval (VBI) data such as:
 
 
-- [Closed Captions](https://github.com/oyvindln/vhs-decode/wiki/NTSC-Closed-Captioning) (CC) Subtitling found on broadcast airings and NTSC/PAL home TV/Movie releases.
+- [Closed Captions](NTSC-Closed-Captioning.md#FIXME) (CC) Subtitling found on broadcast airings and NTSC/PAL home TV/Movie releases.
 
-- [Teletext](https://github.com/oyvindln/vhs-decode/wiki/PAL-Teletext-Subtitles) - UK/European Subtitles & Information Boards
+- [Teletext](PAL-Teletext-Subtitles.md#FIXME) - UK/European Subtitles & Information Boards
 
-- [VITC](https://github.com/oyvindln/vhs-decode/wiki/VITC-SMPTE-Timecode) -  Vertical Interval TimeCode, widely found in broadcast and SVHS tapes.
+- [VITC](VITC-SMPTE-Timecode.md) -  Vertical Interval TimeCode, widely found in broadcast and SVHS tapes.
 
-- [VITS](https://github.com/oyvindln/vhs-decode/wiki/VITS-Vertical-Interval-Test-Signals) - Vertical Interval Test Signals, widely found in broadcast.
+- [VITS](VITS-Vertical-Interval-Test-Signals.md) - Vertical Interval Test Signals, widely found in broadcast.
 
 
 # Is this new technology?
@@ -141,7 +141,7 @@ Now anyone who is well informed will know Cube-Tec have there own version of RF 
 
 We have three standardised methods.
 
-![](https://github.com/oyvindln/vhs-decode/wiki/assets/images/Hardware/DdD-Rev3-CX-White-Sony-ILCE-7RM3-2022.12.20-21.54.48.png){: style="width:600px"}
+![](assets/images/Hardware/DdD-Rev3-CX-White-Sony-ILCE-7RM3-2022.12.20-21.54.48.png){: style="width:600px"}
 
 >CX Card is propped up on a M.2 to PCIe 8x riser, this does not have any significance, but it can be used on the Pi5.
 
@@ -151,11 +151,11 @@ We have three standardised methods.
 
 [CX Card (Right)](https://github.com/happycube/cxadc-linux3#where-to-find-current-pcie-1x-cx2388x-cards--notes) a PCIe 1x computer add-in card, PCIe version was standardised due to noise performance and ease of modification.
 
-[Analogue Devices AD8367 (Green PCB)](https://github.com/oyvindln/vhs-decode/wiki/CX-Cards#external-amplification) a basic RMS amplifier that allows you to replace the on-board gain stage of the CX Card or extend cabling.
+[Analogue Devices AD8367 (Green PCB)](CX-Cards.md#external-amplification) a basic RMS amplifier that allows you to replace the on-board gain stage of the CX Card or extend cabling.
 
 ------
 
-[Clockgen Mod](https://github.com/oyvindln/vhs-decode/wiki/Clockgen-Mod) Allows for multiple CX Cards to sample synchronised RF off Video/HiFi alongside linear or hifi baseband audio outputs from decks via off shelf ADC boards. 
+[Clockgen Mod](Clockgen-Mod.md) Allows for multiple CX Cards to sample synchronised RF off Video/HiFi alongside linear or hifi baseband audio outputs from decks via off shelf ADC boards. 
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.02.19_23.30.25.jpg){: style="width:650px"}![](assets/images/Hardware/External-Clock-CX-Card/cxadc-clock-generator-audio-adc-pc-connections.png){: style="width:280px"}
 
@@ -163,7 +163,7 @@ We have three standardised methods.
 # Media Examples
 
 
-RAW & Processed data can be directly obtained for viewing or presenting the projects [Here](https://github.com/oyvindln/vhs-decode/wiki/Submitting-&-Downloading-Sample-Data).
+RAW & Processed data can be directly obtained for viewing or presenting the projects [Here](Submitting-&-Downloading-Sample-Data.md).
 
 !!! NOTE
     While this media is publicly available, we respectfully ask for it to be correctly attributed to the contributors of the community as this segment of the project is 100% community member driven.

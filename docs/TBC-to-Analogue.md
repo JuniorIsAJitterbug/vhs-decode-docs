@@ -16,7 +16,7 @@ VGA to BNC Breakout Adapter
 
 VG to RCA Breakout Adapter
 
-![](assets/images/Hardware/){: style="width:px"}
+![](assets/images/Hardware/#FIXME){: style="width:px"}
 
 ## Limitations 
 
