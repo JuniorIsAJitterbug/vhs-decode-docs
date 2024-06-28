@@ -318,7 +318,7 @@ Front & Back
 
 
 !!! IMPORTANT
-> **Ensure** orientation of opening fins are suited for the airflow of your case/fan setup.
+    **Ensure** orientation of opening fins are suited for the airflow of your case/fan setup.
 
 L 40mm X W 40mm X H 11mm heatsinks are readily available. 
 
@@ -333,7 +333,7 @@ AliExpress [Black](https://www.aliexpress.com/item/32624104352.html?) / [Silver]
 
 
 !!! WARNING
->Ensure all parts are populated in the correct orientation as shown in the image below.
+    Ensure all parts are populated in the correct orientation as shown in the image below.
 
 
 ![](assets/cxadc-clockgen-mod/photo_2024-02-20_03-03-41.jpg){: style="width:400px"}
@@ -351,14 +351,14 @@ AliExpress [Black](https://www.aliexpress.com/item/32624104352.html?) / [Silver]
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.01.27_10.53.53.jpg){: style="width:500px"}
 
 !!! CAUTION
-> This PCB when connected to a CX Card will be under tension, ensure strong adhesive tape is used or use glue/epoxy and ensure both surfaces are cleaned with 99.9% IPA and dry before adhering.
+    This PCB when connected to a CX Card will be under tension, ensure strong adhesive tape is used or use glue/epoxy and ensure both surfaces are cleaned with 99.9% IPA and dry before adhering.
 
 
 ### Mainboard 
 
 
 !!! WARNING
-> Always check via line indicator on SMD ports the polarity of diodes are in-line with indicator on PCB
+    Always check via line indicator on SMD ports the polarity of diodes are in-line with indicator on PCB
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-6000_2024.02.04_23.29.43.jpg){: style="width:400px"}
 
@@ -417,10 +417,10 @@ Secondary:
 
 
 !!! CAUTION
-> Ensure all parts are populated on the PCB as shown in the top-down photo below if parts are missing you will have issues!
+    Ensure all parts are populated on the PCB as shown in the top-down photo below if parts are missing you will have issues!
 
 !!! NOTE
-> The PCM1802 Board requires a bodge wire bypass mod in most cases if 3.3v lines are not connected, its always good to test with a multi-meter if possible.
+    The PCM1802 Board requires a bodge wire bypass mod in most cases if 3.3v lines are not connected, its always good to test with a multi-meter if possible.
 
 
 Parts

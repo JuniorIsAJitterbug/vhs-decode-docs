@@ -337,7 +337,7 @@ Unscaled `928x608 PAL` & `760x508 NTSC`
 Full 4fsc Signal Frame  `910x524 NTSC` & `1135x624 PAL`
 
 !!! NOTE
-> Due to current code with the chroma-decoder this option is not available on current builds. 
+    Due to current code with the chroma-decoder this option is not available on current builds. 
 
 ![](assets/images/example-media/Full-Frame-Exports/Eden_Project_Demo_Tape_VHS_SP_denterlaced_Video_Levels_MPC_Window.png){: style="width:600px"}
 
