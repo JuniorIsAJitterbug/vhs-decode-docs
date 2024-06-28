@@ -1,11 +1,12 @@
-# Command List
-
+---
+title: Command List
+---
 
 This command list has every command under `vhs-decode`/`cvbs-decode`/`hifi-decode`/`ld-decode` and secondary items such as key scripts and the ld-tools suite.
 
 
 
-# Universal Things 
+## #Universal Things 
 
 These must be set for any decoder to work period. 
 
@@ -15,70 +16,11 @@ These must be set for any decoder to work period.
 - TV System (Defines tape speed & colour system)
 - Input & Output (Input files & Output names either local folder or full path)
 
-# Table of Contents 
+
+## VHS Decode Command List
 
 
-------------
-
-- [VHS-Decode](#vhs-decode-command-list)
-  - [Data Input & Processing Speed](#data-input-processing-speed)
-  - [Debug & Statistics Data Output](#debug-statistics-data-output)
-  - [Time & Location Control](#time-file-location-control)
-  - [Decode TBC - Time Base Correction Control](#decode-tbc-time-base-correction-control)
-  - [Dropout Correction \& Compensation (DOC)](#dropout-correction-compensation-doc)
-  - [Advanced Frequency Controls](#advanced-frequency-controls)
-  - [TV Colour System Setting](#tv-colour-system-setting)
-  - [CXADC Sample Rates (Stock)](#cxadc-sample-rates-stock)
-
------------
-
-- [HiFi Decode](#hifi-decode)
-  - [Usage](#usage_1)
-  - [TV System](#tv-system)
-  - [HiFi Decode Sample Rate Commands](#hifi-decode-sample-rate-commands)
-  - [HiFi Decode Control Options](#hifi-decode-control-options)
-
------------
-
-- [CVBS Composite Decode](#cvbs-composite-decode)
-  - [Usage](#usage)
-  - [Set Input Frequency](#set-input-frequency)
-  - [Set TV System](#tv-colour-system-setting_1)
-  - [Decode Control](#decode-control)
-
------------
-
-- [LD-Decode](#ld-decode)
-  - [Input/Output Arguments](#inputoutput-arguments)
-  - [Time Positional Arguments](#time-positional-arguments)
-  - [TV System](#tv-system_1)
-  - [Audio Decoding](#audio-decoding)
-  - [Decoder Control](#decoder-control)
-  - [TBC Control](#tbc-control)
-
-------------
-
-- [TBC-Video-Export](#tbc-video-export-tool)
-  - [Legacy Gen Chroma Script](#legacy-gen-chroma-script-chroma-decoder-combined-command-list)
-  - [Basic Operation](#basic-operation)
-  - [Image Colour Control](#image-colour-control)
-  - [Image Colour Format & Frame Size Output Control](#image-colour-format-frame-size-output-control)
-  - [Vertical Framing Adjustment](#vertical-framing-adjustment)
-
-- [Useful Data Handling Commands](#useful-data-handling-commands)
-
-- [ld-chroma-decoder Export Commands](#ld-chroma-decoder-export-commands)
-
-
-
-# VHS Decode Command List
-
-
-Example Command 
-
-
-
-## Data Input & Processing Speed
+### Data Input & Processing Speed
 
 
 `-f`, `frequency` Manual setting of Input Frequency in integers of hz, mhz, ghz or 4fsc/5fsc/8fsc/10fsc (or [CXADC Designators](Command-List.md#cxadc-sample-rates-stock)) the default is 40msps 16-bit the rate the DomesDayDuplicator uses (decoder is 8-bit/16-bit agnostic & 10-bit packed is unpacked automatically) 
@@ -118,7 +60,7 @@ Note these values vary by tape format & TV System please read [Advanced Paramete
 ````````
 
 
-## Debug & Statistics Data Output
+### Debug & Statistics Data Output
 
 
 `--debug` Outputs full debug logging with timestamps, helpful for damaged tapes or keeping track of frames and decode time, costs a small but relatively negligible amount of extra processing time.
@@ -136,7 +78,7 @@ Note these values vary by tape format & TV System please read [Advanced Paramete
 ![--dp demodblock](assets/images/graphics/dp-demodblock-matplotlib-figure.png)
 
 
-## Time & File Location Control
+### Time & File Location Control
 
 
 `-s`, `--start`  Jumps ahead to any given frame in the capture.
@@ -148,7 +90,7 @@ Note these values vary by tape format & TV System please read [Advanced Paramete
 `--overwrite` Overwrite existing decode files if present.
 
 
-## Decode TBC - Time Base Correction Control
+### Decode TBC - Time Base Correction Control
 
 
 `--sl`, `--sharpness`  Sharpness Level 0-100 Value sets the level of visual sharpness, default 0, Higher values are better suited for plain, flat images i.e. cartoons and animated material, as strong ghosting can occur and or excessive noise (akin to cranking up the sharpness on any regular TV set.)
@@ -184,7 +126,7 @@ Note these values vary by tape format & TV System please read [Advanced Paramete
 `--export_raw_tbc` Export a raw TBC without deemphasis applied, intended for filter tuning.
 
 
-## Dropout Correction & Compensation (DOC)
+### Dropout Correction & Compensation (DOC)
 
 
 `-D`, `--dod_t`, `--dod_threshold_p` RF Dropout level fraction	Threshold for dropouts in percentage of average (in decimal)
@@ -200,7 +142,7 @@ Note these values vary by tape format & TV System please read [Advanced Paramete
     RF levels vary greatly between tapes & recording setups.
 
 
-## Advanced Frequency Controls
+### Advanced Frequency Controls
 
 
 `--clamp` Enable blanking DC offset clamping/compensation, disabled by default can improve if white level is extremely high.
@@ -231,7 +173,7 @@ Tape corrected with `--high_boost 5`
 `--notch_q` define Q factor Intended primarily for reducing noise from interference however, the decoder logic already compensates based on tape type and TV System values.
 
 
-## TV Colour System Setting
+### TV Colour System Setting
 
 
 `--system` = `pal`, `pal-m`, `ntsc`, `ntsc-j`, `--mesecam`
@@ -247,7 +189,7 @@ Tape corrected with `--high_boost 5`
 `--MESECAM` = MESECAM Support Added.
 
 
-## CXADC Sample Rates (Stock)
+### CXADC Sample Rates (Stock)
 
 
 `--cxadc`    28.6 MHz/8-bit  (8fsc) Stock Crystal Native 8xFsc 8bit Unsigned
@@ -259,7 +201,7 @@ Tape corrected with `--high_boost 5`
 `--10cxadc3` 17.9 MHz/16-bit (5fsc)	Stock Crystal 1.25x  4xFsc 16bit Unsigned
 
 
-# TBC Video Export Tool
+## TBC Video Export Tool
 
 
 Full real-world usage is in  its own independent [tbc-video-export doc](TBC-to-Video-Export-Guide.md)
@@ -283,7 +225,7 @@ This tool is an more advanced evolution of the `gen_chroma_vid.sh`, using python
 - Correctly flagged interlaced and progressive video files
 - FFmpeg Based Encoding Profiles
 
-# Legacy Gen Chroma Script / Chroma Decoder Combined Command-List
+## Legacy Gen Chroma Script / Chroma Decoder Combined Command-List
 
 
 This script allows for chroma TBC data to be decoded by ld-chroma-decoder and combined to make standard colour video files.
@@ -295,7 +237,7 @@ Outputs an FFV1 10-bit 4:2:2 .mkv video file to the same directory as the TBC fi
 **Note!** inputs and outputs can be drag and drop added in Ubuntu/Mint GUI environments.
 
 
-## Basic Operation
+### Basic Operation
 
 
 `-i` or `--input`                                 
@@ -323,7 +265,7 @@ Specify the start frame number.
 Specify the length (number of frames to process)
 
 
-## Image Colour Control
+### Image Colour Control
 
 
 `--chroma-gain`  (Saturation) Gain factor applied to chroma components (default 1.5 for PAL, 2.0 for NTSC)
@@ -333,7 +275,7 @@ Specify the length (number of frames to process)
 `-b` or `--blackandwhite` Output video in black and white.
 
 
-## Image Colour Format & Frame Size Output Control
+### Image Colour Format & Frame Size Output Control
 
 
 Pixel formats (colour encoding) are currently:
@@ -357,7 +299,7 @@ RGB - `RGB48` (RGB 16-16-16)
 `--pad` or `--output-padding` <number> Pad the output frame to any multiple of 2 (needs testing)
 
 
-## Vertical Framing Adjustment
+### Vertical Framing Adjustment
 
 
 The Following commands adjust the image output in the vertical plane, horizontal adjustment is yet to be implemented.
@@ -395,10 +337,10 @@ Range's
 1-620 for PAL (default: 620)
 
 
-## Example usage of these commands:
+### Example usage of these commands
 
 
-### Full-Frame Output "Open Matte"
+#### Full-Frame Output "Open Matte"
 
 
 `-f` or `--full`
@@ -408,7 +350,7 @@ Sets output to full-frame of composite video signal `1135x625 PAL` & `910x525 NT
 [![Panasonic-NV7-Humid-Tropics-Biome-VITC-Full-Frame](assets/images/VITC/Eden_Project_Demo_Tape_VHS_SP_deinterlaced_Video_Levels.png#FIXME)](https://odysee.com/@vhs-decode:7/vhs-decode-full-frame-pal-2022:9)
 
 
-### Standard + VBI (Full Vertical Blanking Top Area)
+#### Standard + VBI (Full Vertical Blanking Top Area)
 
 
 These set your output to give you a full vertical image with the VBI area `928x624 PAL` `760x528 NTSC`
@@ -426,7 +368,7 @@ This produces an image like this on SVHS allowing you to see or manually read da
 ![VITC Frame Export Example](assets/images/VITC/Ebay-NV-S7-VHS-SP-Full-Frame-Interlaced-25i-VITC-centered-crop.jpg)
 
 
-### 16:9 Widescreen Letterbox Crop
+#### 16:9 Widescreen Letterbox Crop
 
 
 These commands work well for 16:9 widescreen letterbox crop tapes rendering only the centre making a `928x432 PAL` & `760x432 NTSC` Image ideal for scaling/de-interlacing to 1280x720p 50/60p for Blu-Ray mastering.
@@ -443,7 +385,7 @@ NTSC:
 ![Walking-Around-Garden-QTGMC](assets/images/Post-Processing/Munday-Walking-Around-Garden-Letter-Box-Crop.png)
 
 
-## Gen Chroma Script - Chroma Decoder Control
+### Gen Chroma Script - Chroma Decoder Control
 
 
 `--decoder` <decoder>  Manually sets chroma decoder to use (default is automatic)
@@ -477,7 +419,7 @@ NTSC `ntsc1d`, `ntsc2d`, `ntsc3d`, `ntsc3dnoadapt`
 `--ntsc-phase-comp` Use NTSC QADM decoder taking burst phase into account (BETA)
 
 
-# Exporting VITC to file
+## Exporting VITC to file
 
 
 (Semi-Deprecated due to ld-process-vbi support)
@@ -487,7 +429,7 @@ Thanks to FFmpeg we have a useful filter to read this data in software, although
 Simply edit the below commands and replace "input.tbc" / "input.mkv" and "output.mkv" / "vitc.txt" with your input files and desired output name.
 
 
-#### Decode VITC Data to .JSON
+### Decode VITC Data to .JSON
 
     ld-process-vbi
 
@@ -496,14 +438,14 @@ You will see the `HH:MM:SS:FF` counter at the bottom of `ld-analyse` when viewin
 ![ld-anlyse-VITC-readout](assets/ld-analyse-rev7/ld-analyse_VITC_readout.png)
 
 
-##### Extract VITC from a video file with a VBI area.
+### Extract VITC from a video file with a VBI area.
 
     ffmpeg -i input.mkv -vf "readvitc=scan_max=-1,metadata=print:file=vitc.txt" -f null -
 
 This will make a human-readable .txt file if the filter correctly detects the data.
 
 
-##### ld-chroma-decoder direct luma export:
+### ld-chroma-decoder direct luma export
 
 
 .TBC to Luma (Black & White) only.
@@ -529,7 +471,7 @@ NTSC
     ffmpeg -hide_banner -y -async 1 -f rawvideo -pix_fmt gray16 -video_size 910x526 -i "input.tbc" -vf "readvitc=scan_max=-1,metadata=print:file=vitc.txt" -f null -
 
 
-#### FFMPEG Quick Export Luma B/W FFV1 .MKV
+## FFMPEG Quick Export Luma B/W FFV1 .MKV
 
 
 PAL
@@ -554,10 +496,10 @@ NTSC
 
 
 
-# CVBS Composite Decode
+## CVBS Composite Decode
 
 
-# Usage
+### Usage
 
 
 Currently, this decoder will work just fine with <u>stable signals and live media</u>.
@@ -577,7 +519,7 @@ Export to Video
 You can use tbc-video-export or [ld-chroma-decoder](#ld-chroma-decoder-export-commands) manually.
 
 
-## Set Input Frequency
+### Set Input Frequency
 
 
 Just like vhs-decode & ld-decode the default is 40msps 8-bit/10-bit/16-bit input.
@@ -595,7 +537,7 @@ Captures can be FLAC compressed (.cvbs) or Uncompressed `.u8`/`u16` etc
 `--10cxadc3` 17.9 MHz/16-bit (5fsc) Stock Crystal 1.25x 4xFsc 16bit
 
 
-## TV Colour System Setting
+### TV Colour System Setting
 
 
 `-n` NTSC
@@ -607,7 +549,7 @@ Captures can be FLAC compressed (.cvbs) or Uncompressed `.u8`/`u16` etc
 `--pm` PAL-M
 
 
-## Decode Control
+### Decode Control
 
 
 `--debug` Enables debug detailed logging output.
@@ -634,10 +576,10 @@ Captures can be FLAC compressed (.cvbs) or Uncompressed `.u8`/`u16` etc
 
 
 
-# HiFi Decode
+## HiFi Decode
 
 
-## Usage
+### Usage
 
 
 In-file **RF Data** can be FLAC compressed or raw 8-bit or 16-bit 
@@ -658,7 +600,7 @@ Windows
     decode.exe hifi --pal --cxadc HiFI-Audio-PAL-DdD.s16 hifi-decode-output.flac
 
 
-## GUI
+### GUI
 
 `--ui` Enables GUI mode using QT. 
 
@@ -666,7 +608,7 @@ Windows
 ![](assets/images/vhs-decode-gui/hifi-decode-gui-2024-windows-main-window.png){: style="width:400px"}
 
 
-## TV System
+### TV System
 
 `--system` `pal` / `ntsc`
 
@@ -675,7 +617,7 @@ Windows
 `p`, `--pal` - PAL
 
 
-## HiFi Decode Sample Rate Commands
+### HiFi Decode Sample Rate Commands
 
 
 `-f`, `--frequency` Manual Input Hz, MHz, GHz.
@@ -695,7 +637,7 @@ Windows
 `--10cxadc3` 17.9 MHz/16-bit (5fsc) (Technically 4fsc PAL)
 
 
-## HiFi Decode Control Options
+### HiFi Decode Control Options
 
 
 `--bg` Forces guessing of the carrier bias.
@@ -722,7 +664,7 @@ Windows
 
 
 
-# LD-Decode
+## LD-Decode
 
 
 `-h`, `--help`    show this help message and exit
@@ -730,7 +672,7 @@ Windows
 `--debug`         enable verbose logging
 
 
-## Input/Output Arguments
+### Input/Output Arguments
 
 
 `-t threads`, `--threads threads` number of CPU threads to use
@@ -744,7 +686,7 @@ Windows
 `outfile`               base name for destination files
 
 
-## Time Positional Arguments
+### Time Positional Arguments
 
 
 `--start file-location`, `-s file-location` rough jump to frame n of capture (default is 0)
@@ -756,7 +698,7 @@ Windows
 `--start_fileloc start_fileloc` jump to precise sample # in the file
 
 
-## TV System
+### TV System
 
 
 `--PAL`, `-p`, `--pal`     Source is in PAL format
@@ -766,7 +708,7 @@ Windows
 `--NTSCJ`, `-j`            Source is in NTSC-J (IRE 0 black) format
 
 
-## Audio Decoding
+### Audio Decoding
 
 
 `--noEFM`               Disable EFM front end
@@ -780,7 +722,7 @@ Windows
 `--audio_filterwidth`   FREQ Analog audio filter width
 
 
-## Decoder Control
+### Decoder Control
 
 
 `--noAGC`               Disable AGC
@@ -796,7 +738,7 @@ Windows
 `--lowband`             Use more restricted RF settings for noisier disks
 
 
-## TBC Control
+### TBC Control
 
 
 `--RF_TBC`              Create a .tbc.ldf file without decoding, only time base corrects the signal.
@@ -820,7 +762,7 @@ Windows
 `--video_lpf_order`     VLPF_ORDER Video low-pass filter order
 
 
-# Useful Data Handling Commands
+## Useful Data Handling Commands
 
 
 Say for some reason you have a source file in a certain format that you are either piping or otherwise can't change the extension of to get *-decode to recognize the datatype.
@@ -832,7 +774,7 @@ Example: mkfifo link.u8
 `flac -d u8capture.flac --force-raw-format --endian=little --sign=unsigned -o link.u8 -f |vhs-decode link.u8 out/u8capture`
 
 
-# ld-chroma-decoder Export Commands 
+## ld-chroma-decoder Export Commands 
 
 
 `ld-chroma-decoder` is used to render the TBC to a full-colour video file you can render to y4m or pipe to FFmpeg.
@@ -842,7 +784,7 @@ The chroma-decoder can use over 20GB of ram if available and can run in real-tim
 The decoder has lots of options that can be tweaked but the list of pre-made commands below will get you started with a good basic export with proper interlaced flagging.
 
 
-## CVBS (Composite) TBC files to video
+### CVBS (Composite) TBC files to video
 
 
 Use `ld-chroma-decoder -h` to list all the options available to the decoder.
@@ -850,24 +792,11 @@ Use `ld-chroma-decoder -h` to list all the options available to the decoder.
 Replace `INPUT.tbc` and `OUTPUT.mkv` with your desired names.
 
 
-## Note 
+!!! NOTE
+    For standard output this list of export commands is provided you only need to change `setdar=4/3` to `setdar=16/9` for widescreen content.
 
 
-For standard output this list of export commands is provided you only need to change `setdar=4/3` to `setdar=16/9` for widescreen content.
-
-
-### Table Of Contents 
-  - [Active + VBI area](#active-vbi-area)
-  - [FFV1 (4:2:2) (Lossless Compressed)](#ffv1-422-lossless-compressed)
-  - [V210 (4:2:2) (Uncompressed)](#v210-422-uncompressed)
-  - [ProRes HQ (4:2:2) (Visually Lossless)](#prores-hq-422-visually-lossless)
-  - [Y4M (4:4:4) (Uncompressed)](#y4m-444-uncompressed)
-  - [V410 (4:4:4) (Uncompressed)](#v410-444-uncompressed)
-  - [ProRes 4444QX (4:4:4) (Visually Lossless)](#prores-4444qx-444-visually-lossless)
-
-
-
-## [Active + VBI Area](Command-List.md#vertical-framing-adjustment)
+### [Active + VBI Area](Command-List.md#vertical-framing-adjustment)
 
 
 (Y4M Only*) you can use these 2 commands.
@@ -883,7 +812,7 @@ PAL
 ![Example To Update Later](assets/images/VITC/Ebay-NV-S7-VHS-SP-Full-Frame-Interlaced-25i-VITC-centered-crop.jpg)
 
 
-## FFV1 (4:2:2) (Lossless Compressed)
+### FFV1 (4:2:2) (Lossless Compressed)
 
 
 NTSC
@@ -895,7 +824,7 @@ PAL
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v ffv1 -level 3 -coder 1 -context 1 -g 60 -slicecrc 1 -vf setfield=tff -flags +ilme+ildct -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -pix_fmt yuv422p10le -vf setdar=4/3,setfield=tff OUTPUT.mkv
 
 
-## V210 (4:2:2) (Uncompressed)
+### V210 (4:2:2) (Uncompressed)
 
 
 NTSC
@@ -908,7 +837,7 @@ PAL
 
 ----
 
-## ProRes HQ (4:2:2) (Visually Lossless)
+### ProRes HQ (4:2:2) (Visually Lossless)
 
 
 NTSC
@@ -919,7 +848,7 @@ PAL
 
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v prores -profile:v 3 -vendor apl0 -bits_per_mb 8000 -quant_mat hq -f mov -top 1 -vf setfield=tff -flags +ilme+ildct -pix_fmt yuv422p10le -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -vf setdar=4/3,setfield=tff OUTPUT.mov
 
-## Y4M (4:4:4) (Uncompressed)
+### Y4M (4:4:4) (Uncompressed)
 
 
 NTSC
@@ -931,7 +860,7 @@ PAL
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc OUTPUT.mov
 
 
-## V410 (4:4:4) (Uncompressed)
+### V410 (4:4:4) (Uncompressed)
 
 
 NTSC
@@ -943,7 +872,7 @@ PAL
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v v410 -f mov -top 1 -vf setfield=tff -flags +ilme+ildct -pix_fmt yuv444p10le -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -vf setdar=4/3,setfield=tff OUTPUT.mov
 
 
-## ProRes 4444QX (4:4:4) (Visually Lossless)
+### ProRes 4444QX (4:4:4) (Visually Lossless)
 
 
 NTSC
@@ -953,5 +882,3 @@ NTSC
 PAL
 
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v prores -profile:v 5 -vendor apl0 -bits_per_mb 8000 -mbs_per_slice 8 -f mov -top 1 -vf setfield=tff -flags +ilme+ildct -pix_fmt yuv444p10le -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -vf setdar=4/3,setfield=tff OUTPUT.mov
-
-# Page End

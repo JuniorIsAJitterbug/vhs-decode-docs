@@ -1,5 +1,6 @@
-# Material Handling Guide
-
+---
+title: Material Handling Guide
+---
 
 This guide has a clear set of standards for handling tape media and its digital counterparts.
 
@@ -13,10 +14,10 @@ Now VHS/Beta tape is not as good as Video8/Hi8 and Betacam later gen tapes in te
 
 For long term storage tape should be vacuum packed and kept in an temp stable environment ideally 10c or 3-6m underground moisture free and cool stable temperature is key for archival of source media weather it be tape or celluloid film.
 
-# Chapter 1: The Basics
+## The Basics
 
 
-## What do you have?
+### What do you have?
 
 
 video master. the archival master, the exhibition copy or a viewing copy?
@@ -24,24 +25,24 @@ video master. the archival master, the exhibition copy or a viewing copy?
 In consumer terms this is mostly first genaration copy, and second genaration copy, for chomercail tapes this is a viewing copy.
 
 
-## What format are you dealing with?
+### What format are you dealing with?
 
 
 Masters for consumer media is normally (S)-VHS-C SP / (S)-VHS-C LP or a mix of the two this is uncommon for Video8 & Hi8 tapes.
 
 
-## Is media protected?
+### Is media protected?
 
 
 This is a 2 term question, is there a locking or "do not write" tab broken or slid into the lock position.
 
 
-## Physical Handling
+### Physical Handling
 
 
 When inserting an tape ensure proper in injection with 2 fingers at both sides and push until there is no longer tension.
 
-## Biological Safety Guidelines:
+### Biological Safety Guidelines
 
 **Dont Breath! Its Toxic!**
 
@@ -49,9 +50,9 @@ When inserting an tape ensure proper in injection with 2 fingers at both sides a
 
 (Avon C50 with 2x conformal 40mm ABEK2P3 standard filters)
 
-#### Risk Type: "Air & Blood-Stream Contaminate"
+**Risk Type: "Air & Blood-Stream Contaminate"**
 
-#### Risk Level: Nominal with Protection
+**Risk Level: Nominal with Protection**
 
 While in most cases mould is not a taken as a real threat and its like house spiders mostly wont kill you but some breeds can, tape mould however can be years developed and evolved so really it should not be in your lungs/eyes or any cuts/breaks in the skin.
 
@@ -72,7 +73,7 @@ When using a VCR at speed to strip the mould off while most will end up in your 
     40mm NATO ABEKP2P3 Rated Filter (Clean P3 layer After Use)
 
 
-##### Decontamination:
+### Decontamination
 
 
 Keep Gloves **On** after handling contaminated material, if using disposable FFP2~FFP3 filters take them off with gloves then dispose of gloves taking them off inwards of each then bin or incinerate.
@@ -85,7 +86,7 @@ remove gloves inwards of them-self's and then shower afterwards rinse and softly
 
  and then remove filter and wash mask fully with basic soap.
 
-## Notes:
+#### Notes
 
 P100 = P3 filter (USA Naming vs NATO Universal)
 
@@ -104,14 +105,14 @@ For more info read the ISO/NSN/NIOSH standards here:
 Cleaning the top of tapes is important most mould will build-up on the rim of a tape, rather then the surface of tapes.
 
 
-## Wet to Dry Method
+### Wet to Dry Method
 
 
 Using a sacrificial VCR make 2 rods one with a wet-wipe with 99.9% IPA or de-ionised water and one with dry wipe or microfiber cloth run for 5-8 seconds at a time and swap repeat for both sides of the media.
 
 ![](assets/images/meterials-handling-guide/Wet-Dry-Wipe-Method-Sony-ILCE-7RM3-2022.02.21-14.46.45.jpg){: style="width:600px"}
 
-## Visual Tape Inspection Guide
+### Visual Tape Inspection Guide
 
 Visual Inspection -> Mould No -> Hinge and Spooling Check -> Playback Check
 
@@ -125,7 +126,7 @@ Full Captures Confirmed -> 99.9% Isopropanol wipe down and internal plastic cond
 
 
 
-## Sticky Tape Syndrome (Shedding / Shed)
+### Sticky Tape Syndrome (Shedding / Shed)
 
 
 Common on some tapes but mostly ones stored in a non-vacuum or wet envierment's with high moisture the bane of all tape archives.
@@ -135,7 +136,7 @@ are exposed to moisture worse case this means mould, most annoying case this mea
 This can be resolved via a process called **tape baking**
 
 
-## Tape Baking
+### Tape Baking
 
 
 Tape baking is a method of evaporating moisture build-up which re-binds tapes layers separated by the water content
@@ -145,7 +146,7 @@ A equal applied heat via an convection oven this re-bonds layers and strips the 
 You can use an temperature controlled food dehydrator for around 50~250USD mark for this task.
 
 
-## Silica Packets
+### Silica Packets
 
 
 Bake at 150°C for 2 hours
@@ -155,7 +156,7 @@ Pack each tape with 30g of silica in its own individual packaging.
 Silica should be 2 hour baked before use if form a no-vacuum packed package.
 
 
-## Vacuum Archival
+### Vacuum Archival
 
 
 Vacuum archival is used to store tapes isolated from moisture and sudden thermal events this provides an affordable yet very practical method for home and large scale cold archival in non-dry places like old warehouses or homes (unless you have a salt mine handy)
@@ -165,7 +166,7 @@ You can use any Vacuum Sealer for food for this task for under 30~50USD any ware
 Generally a 1~2 hour bake is recommended to de-hydrate the contents of the tapes.
 
 
-## Indexing & Sanity Check
+### Indexing & Sanity Check
 
 
 Information to be included with tapes.
@@ -183,7 +184,7 @@ Recording/Dubbing VCR and or Camcorder if known.
 If Media is SP/LP SVHS or VHS etc that should always be noted as its essential for multi format recorded tapes as VHS-Decode can not switch format on the fly as the playback speed modes are not digitally noted in logs.
 
 
-# QR Code Generation/Reading Software
+## QR Code Generation/Reading Software
 
 
 These are the best examples I could find in 2022, but this list will be updated over time.
@@ -197,7 +198,7 @@ QREncoder - [Mac App Store](https://apps.apple.com/mx/app/qrencoder/id452695239?
 Android/IOS have dozens of apps but most first party apps now have readers built in.
 
 
-# Cleaning
+## Cleaning
 
 
 Its a complex concept involving (C6H1O5)n & C3H8O
@@ -208,7 +209,7 @@ Simply cut a paper strip printer paper works fine, fold once, wet with alcohol, 
 
 Its recommended to first clean around the drum the whole cylinder, including its track then tape guides or rollers you can use swabs, don't ever use a cotton swab or Q-Tip on the video heads the fibres will tare them off they are fine however for linear audio heads, that's it really clean heads and lubricated mechanical tracks is all a happy VCR needs to ensure the best results, but be sure to clean before and after use to remove any contaminant.
 
-## Items
+### Items
 
 - Lint Free Microfiber ("Ultra-Fine")
 - Isopropanol 99.9% (IPA/Rubbing alcohol)
@@ -227,7 +228,7 @@ These will be mounted on audio heads, erase heads and the drum depending on if y
 Example Pictures
 
 
-# Digital Handling
+## Digital Handling
 
 
 RF Source --> FM RF Capture to File --> Checksums -->
@@ -247,5 +248,3 @@ Testing Protocol Revision 001 In Place as of 2022
 RF -> Capture -> 4 point test 10sec each -> TBC Generation -> Metadata Export -> Dropout Inspection -> ld-analyse -> Signal To Noise and Quality Checking -> Dropout Correction Test -> Gen Chroma Export Test
 
 MKV - FFV1 10bit 4:2:2 70-100mbps interlaced file
-
-

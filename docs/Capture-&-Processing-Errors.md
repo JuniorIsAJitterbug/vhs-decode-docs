@@ -1,4 +1,6 @@
-# Capture & Processing Errors
+---
+title: Capture & Processing Errors
+---
 
 This page details information about what can cause errors such as dropped samples during capture, handling or processing of FM RF signals.
 

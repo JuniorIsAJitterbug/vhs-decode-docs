@@ -1,4 +1,6 @@
-# RF Tapping
+---
+title: RF Tapping
+---
 
 This is a semi-depricated overview information page about the concept and process of RF Tapping
 
@@ -12,13 +14,13 @@ Tape Inside VCR Running across Drum --> Drum With Magnetic Heads Reading Tape Si
 
 The signal range of any usable information across all formats of VHS is approx. 250khz-8mhz, this extends into the 9-10mhz range for Beta tape formats so any SDR that covers this range and can do 16msps but ideally 20-28msps like the CX Cards can do a perfectly good job here more data on inital capture is not wasteful as it can always be resampled down and as always FLAC compressed stright away.
 
-# Signal Location Types
+## Signal Location Types
 
 There are several locations to tap a VCR for its modulated video & HiFi audio, [The Tap List](004-The-Tap-List.md) has all relevant data on the physical points located on various common VCRs and how to cable them, this list is updated as members of the DD86 discord collectively contribute more information.
 
 We are tapping into and capturing the tracked full video signal that's a pre-amplified signal this needs to contain both Y/C (Luminance & Chrominance) signals so when looking at a schematic the RF-C test point or Video ENV is mostly the current go-to default tap as it normally has a full signal.
 
-## Test Point Names
+### Test Point Names
 
 
 **Video FM RF Signal:**
@@ -31,7 +33,7 @@ We are tapping into and capturing the tracked full video signal that's a pre-amp
 
 These are all valid points for tap testing and creating amplified or non-amplified BNC backports if signal issues occur try a 0.1uf~100uf 16-25v capacitor in-line Electrolytic/Polymer is recommended normally 10uf is a good coverall point to start with if you get visually good looking captures after test decodes leave it as is.
 
-## How to read service manuals
+### How to read service manuals
 
 
 **Follow the yellow brick road (The Contrasting Line Indicators)**
@@ -52,7 +54,7 @@ There is always contrasting arrows showing the signal path on service manual dia
 Pro Decks: Some have external RF output for duplication use these ports need further testing.
 
 
-## What is a good capture? 
+### What is a good capture? 
 
 
 Good stable first genaration media is normally 38-45dB SNR under the Back SNR tab in `ld-analyse` ware as lower then 20 on VHS is pretty terrible less then 10 is normally unwatchable but SNR values dont 100% reflect "visual quality" in all cases.
@@ -60,7 +62,7 @@ Good stable first genaration media is normally 38-45dB SNR under the Back SNR ta
 Visually you can tell the noise level in ld-analyse the VBI space will be pure black with higher SNR to grainy with lower SNR.
 
 
-# Outher Tap Methods
+### Outher Tap Methods
 
 
 1. Mainboard & Processing Boards (Test Point Method)
@@ -78,7 +80,7 @@ As higher-end units normally have their control and amplification unit on a user
 This method will require either a modified control board or an external amplifier as its the "True Raw" untouched unamplified signal this tapping method is intended for **testing and development only**, as such its easier to do later generation VCRs that expose the solder points with topside control boards allowing for ease of direct solder tap to 50Ohm SMA or DIN 1.0/2.3 connectors to be run off of said points then amplified for direct capture, with multi-card CX setups viable as of 2022 this is now a viable R&D segment.
 
 
-# Types of Cable and Connectors And Length!
+### Types of Cable and Connectors And Length!
 
 
 The only set standard here is 50Ohm cable and connectors.
@@ -98,7 +100,7 @@ https://www.amazon.com/dp/B09VBC7611/ - DuPont Male BNC
 ![](https://github.com/happycube/cxadc-linux3/wiki/assets/images/Cables/Dupont-Male-BNC.jpg)
 
 
-# Connector Types To Consider
+## Connector Types To Consider
 
 
 **Full-BNC** is the best for fixed backports with a locking and reliable connector used in everything from 1960's communications gear to current-day cine cameras, this is the most preferred connector due to reliability.
@@ -110,7 +112,7 @@ https://www.amazon.com/dp/B09VBC7611/ - DuPont Male BNC
 **Micro-BNC** (DIN 1.0/2.3) Is the smallest locking knock safe connector seen on portable equipment. (Reference Part Number: 45K201-400L5)
 
 
-# Amplification
+## Amplification
 
 
 While there are few benefits for maintaining the signal level and lowering noise for weak output VCR most benefit is for extended cabling and for CX Card users having sixdb (6dB Digital Gain) set to off level set to 0 on the CX cards for cleaner RF captures & VCRs with a low signal output from a test point at the lowest settings CVBS raw captures are also possible.

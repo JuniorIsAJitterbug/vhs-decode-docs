@@ -1,5 +1,6 @@
-## Technical Breakdowns 
-
+---
+title: Technical Breakdowns 
+---
 
 A collection of technical breakdowns and explainers about FM RF signals.
 
@@ -90,13 +91,13 @@ Left side: 2 distinct sine waves with a mathematically "perfect" transition (wit
 Right: if the bandwidth is limited around each signal, the transition is forced to be more mixed and gradual
 
 
-# Time Base Correction 
+## Time Base Correction 
 
 
 ![](assets/ld-analyse-rev7/ld-analyse_Annotated_video_areas.png){: style="width:px"}
 
 
-## The Decode Process 
+### The Decode Process 
 
 
 [Discord Note](https://discord.com/channels/665557267189334046/665834485975351307/1147712663489630268)
@@ -105,7 +106,7 @@ RF -> FFT -> RF Filter -> iFFT -> Demod -> FFT -> VideoFilter(Deemphasis) -> iFF
 
 TBC (CVBS or Y+C) --> Chroma-Decoder -->  RGB48 or YUV44416P --> FFmpeg Merge Planes --> Standard Video Files. 
 
-## Software Decoding
+### Software Decoding
 
 
 - Detect sync/blank level from reference
@@ -131,7 +132,7 @@ For laserdisc there is additional code that also aligns using burst on NTSC and 
 
 
 
-## Novagood non-linear de-emphasis 
+### Novagood non-linear de-emphasis 
 
 
 [Discord Note](https://discord.com/channels/665557267189334046/665834485975351307/1151941027809206363)
@@ -165,7 +166,7 @@ Output: (11)
 There are certainly more elegant ways to implement this, especially making the parameter choice more convenient. Anyway, the basic idea is that the second (dynamic) de-emphasis step reduces the HF part of the luma signal (just like the first static step), but now the amount of reduction depends on the instantaneous level of this same HF part (signal 9). Imagine in step 10 you just take the high-pass filtered luma and subtract it as-is from the (statically) de-emph'd luma (signal 6) - that's the same as simply low-pass filtering (6) with the inverse of (3) and you lose all HF detail. By level-dependent scaling of (10) you can control how much of the HF part you subtract, i.e. most of it when the HF-level is low (e.g. noise) and none of it when the HF-level is high (e.g. bright/dark edge). The nonlinear scaling approach in step 9 is a simple empirical approximation which seems to work reasonably well. This can (and should) be replaced if someone comes across the actual specs of the expander circuits used for the different tape formats (including the shape of filter 3) and a smart way to implement it digitally...
 
 
-## Individual Head Capture 
+### Individual Head Capture 
 
 
 [DomesDay86 Discord Note](https://discord.com/channels/665557267189334046/782578245408653313/1192172101495443526)
@@ -192,7 +193,7 @@ The decoded individual head pictures are illustrative of what each head captures
 
 
 
-## Why Not use more bit depth?
+### Why Not use more bit depth?
 
 
 https://discord.com/channels/665557267189334046/665834485975351307/1192297281953734677
@@ -210,7 +211,7 @@ Of course you want to avoid clipping, so there is some safety margin which costs
 With a 12bit ADC, your signal can be as small as ~6% of the full range and you still get 8bits of resolution. So it's entirely a practical consideration and you don't need more bits if you condition your signal properly..
 
 
-# Technical Analysis of Bit-Depth with FM Tape
+## Technical Analysis of Bit-Depth with FM Tape
 
 !!! NOTE
     TLDR; 6-bit from 12-8 bit ADC sources is good enough with down-sampling with higher MSPS not having a visual impact when viewing colour decoded images.
@@ -234,7 +235,7 @@ As the last step, I downscaled the vertical resolution for every field by mappin
 That means, the maximum gain is applied to the signal without clipping for every field in order to most efficiently use the full N bit range. With the dynamic range maximized in that way, the achievable FLAC compression ratio is about 75% of the uncompressed bits per sample.
 
 
-## The Final Conclusion 
+### The Final Conclusion 
 
 
 With this test dataset's findings `6-bit 16msps` is the lowest viable minimum storage format for Video8 LP and VHS, but this has not been tested on all formats and should be cross checked on SVHS/Hi8/SuperBeta/SMPTE-C formats.
@@ -250,7 +251,3 @@ Attached is the image results of these tests:
 ![](assets/test-data/Novgorod-bit-depth-analysis/5bit_16M.png){: style="width:480px"}
 ![](assets/test-data/Novgorod-bit-depth-analysis/4bit_16M.png){: style="width:480px"}
 ![](assets/test-data/Novgorod-bit-depth-analysis/3bit_16M.png){: style="width:480px"}
-
-
-
-# Page End

@@ -1,10 +1,11 @@
-# RTL SDR
-
+---
+title: RTL SDR
+---
 
 RTL SDRs are one of the cheapest and most generic USB 2.0 Software Defined Radio (SDR) devices on the market while not enough sampling for video has become quite useful for HiFi decoding and calibration.
 
 
-### RF Connector Adapters BNC Male to SMA Male [Aliexpress Link](https://www.aliexpress.com/item/1005003752819752.html?)
+## RF Connector Adapters BNC Male to SMA Male [Aliexpress Link](https://www.aliexpress.com/item/1005003752819752.html?)
 
 
 ![Nooelec RTLSDR V5](assets/images/Hardware/RTLSDR-3rd-Party-Sony-ILCE-7RM3-2023.03.04-22.25.45.jpg)
@@ -12,13 +13,13 @@ RTL SDRs are one of the cheapest and most generic USB 2.0 Software Defined Radio
 Pictured Order: TNC Male to SMA Male / TNC Female to SMA Male / BNC Male to SMA Male / BNC Female to SMA Male / [Nooelec RTL-SDR v5](https://www.amazon.co.uk/dp/B01HA642SW/)
 
 
-# RTL-SDR HiFi-Decode 
+## RTL-SDR HiFi-Decode 
 
 
 These 2 GNU Radio Scripts (NTSC/PAL) will automatically connect to the RTL-SDR and use it as an RF input.
 
 
-## Features
+### Features
 
 
 - Real-Time Playback
@@ -34,7 +35,7 @@ This allows for fine adjusting of HiFi FM tracking before doing a full capture w
 [Example FLAC File Output](https://drive.google.com/u/1/uc?id=1DHR3vZYgDFcDiITpXyChp5JhdPWVKOIM&export=download)
 
 
-## RTL SDR Driver Windows Install
+### RTL SDR Driver Windows Install
 
 
 The RTL SDR (and clones) will show up as "Bulk-In, Interface (Interface 0)
@@ -46,7 +47,7 @@ Simply select the device, then click install WinUSB.
 ![Driver Install](assets/images/GNU-Radio/zadig-No-Driver-Installed.png)
 
 
-## Usage 
+### Usage 
 
 
 Install GNU Radio [Linux](https://wiki.gnuradio.org/index.php/InstallingGR) / [Windows](https://github.com/ryanvolz/radioconda/releases/)
@@ -72,7 +73,7 @@ You need to set the output location, to do this double click on a module and set
 ![RTLSDR HiFi Output Location](assets/images/GNU-Radio/GNU-Radio-HiFi-Decode-Output-Location.png) 
 
 
-## The Scripts
+### The Scripts
 
 
 There are 2 standard `.grc` GNU radio scripts are provided below.
@@ -90,7 +91,7 @@ There are 2 standard `.grc` GNU radio scripts are provided below.
 ![](assets/images/GNU-Radio/GNU-Radio-HiFi-Decode-Low-Overhead.png)
 
 
-## RTL SDR Sample Rates
+### RTL SDR Sample Rates
 
 
 The max sample rate of the RTLSDR is 3.2 MSPS I/Q or 3.2 MHz of total bandwidth.
@@ -105,7 +106,7 @@ RTL-SDR Rates In GNU Radio
 `2048000.000000`, `2160000.000000`, `2560000.000000`, `2880000.000000`, `3200000.000000`.
 
 
-## Working sample rates for Real-Time HiFi-Decode PAL (GNU Radio)
+### Working sample rates for Real-Time HiFi-Decode PAL (GNU Radio)
 
 
 3 sample rates work with the script before it starts skipping (Tested on Ryzen 5800x) 
@@ -117,8 +118,7 @@ RTL-SDR Rates In GNU Radio
 1.9 MSPS = `1920000.000000`
 
 
-## Credit 
+### Credit 
 
 
 [Adam R](https://github.com/AR1972) for creating these scripts and [Tony Andersan](https://github.com/tandersn) for R&D. 
-

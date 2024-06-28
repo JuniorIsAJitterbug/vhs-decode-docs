@@ -1,4 +1,6 @@
-# Troubleshooting Guide
+---
+title: Troubleshooting Guide
+---
 
 List of common and semi common issues and questions you would be asked if you have said issues. 
 
@@ -58,6 +60,3 @@ There mini converters have 2 major flaws
 - ESD Protection (There ports die A LOT)
 - Lack of power filtering (Requires a clean and very stable DC 12.1v to 12.8v power supply)
 - Lack of TBC/3D comb being enabled (issue applies to all there hardware)
-
-
-# Page End

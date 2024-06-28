@@ -1,4 +1,6 @@
-## Index
+---
+title: Video 8 & Hi8
+---
 
 These formats are all currently indexed on the [Sony 8mm Formats](Sony-8mm-Formats.md) page.
 

@@ -1,4 +1,6 @@
-# MacroVision
+---
+title: MacroVision
+---
 
 ![](assets/images/VBI/frame_pal_source_ar43_953_Twin-Town-PAL-1997-MacroVision_2023-04-18.tbc.png){: style="width:700px"}
 
@@ -16,9 +18,3 @@ Clean 4fsc Frame
 CVBS Raster with MacroVison contrast blocks
 
 ![](assets/images/VBI/VIDEO-ID-2-IEC-61880.png){: style="width:800px"}
-
-
-
-# Page End
-
-[Main Identifying VBI Data Page](Identifying-vbi-data.md)

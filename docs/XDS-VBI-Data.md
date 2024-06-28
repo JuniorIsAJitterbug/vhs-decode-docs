@@ -1,8 +1,6 @@
-Back Page [Identifying VBI Data](Identifying-vbi-data.md)
-
-
-# XDS Data
-
+---
+title: XDS Data
+---
 
 This is a signalling standard used by [PBS](https://www.pbs.org/) for analogue TV Transmissions
 
@@ -106,8 +104,3 @@ Example from drfsupercenter — 20/01/2023 18:12
 
 
 <https://discordapp.com/channels/665557267189334046/687532251868823553/1066067285674037369>
-
-
-# Page End
-
-Back Page [Identifying VBI Data](Identifying-vbi-data.md)

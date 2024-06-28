@@ -1,6 +1,6 @@
-# ld-tools is your video TBC handling toolset
-
-
+---
+title: ld-tools is your video TBC handling toolset
+---
 
 ## ld-process-vbi
 This application examines the input TBC file and determines the available VBI data for each available frame.  The VBI data is stored as both the raw data value for the 3 VBI lines as well as a full decode of the VBI according to the IEC specifications.  The resulting information is written back into the JSON metadata file for the TBC output.

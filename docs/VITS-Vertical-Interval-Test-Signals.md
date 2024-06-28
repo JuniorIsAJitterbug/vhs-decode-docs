@@ -1,4 +1,8 @@
-# What is VITS?
+---
+title: VITS Vertical Interval Test Signalsy
+---
+
+## What is VITS?
 
 
 **V**ertical **I**nterval **T**est **S**ignals
@@ -14,13 +18,13 @@ Expanded View
 ![](assets/images/VITS/brady2_F1277_crop_resize_200x3000percent.png){: style="width:500px"}
 
 
-# Useful Resources 
+## Useful Resources 
 
 
 [Detailed Interactive Breakdown](http://www.kmlab.co.jp/menu_16_vits.html)
 
 
-# Using it in ld-process-vits
+## Using it in ld-process-vits
 
 
 This application performs an analysis of the VITS (Vertical Interval Test Signals) and recalculates the white and black SNR values in the metadata.  Note that any TBC file will already have this metadata provided by ld-decode.  
@@ -50,7 +54,3 @@ Arguments:
   input                     Specify input TBC file
 
 ```
-
-# Page End
-
-Back Page [Identifying VBI Data](Identifying-vbi-data.md)

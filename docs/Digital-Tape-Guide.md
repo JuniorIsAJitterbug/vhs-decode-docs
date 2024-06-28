@@ -1,5 +1,6 @@
-# Digital Tape Guide
-
+---
+title: Digital Tape Guide
+---
 
 Why? because while digital tapes are the least complex for ingest they still require care in post, and people have asked enough to warrant adding such a guide that covers it all.
 
@@ -10,10 +11,10 @@ Why? because while digital tapes are the least complex for ingest they still req
 !!! IMPORTANT
     **Please use the "Save" tab when handling tapes** in camcorders as it's too easy to wipe and or break segments by overwriting timecode/datecode information that will be gone forever.
 
-![](assets/images/meterials-handling-guide/Sony_ILCE-6000_2023.07.24_13.46.14.JPG){: style="width:300px"}
+    ![](assets/images/meterials-handling-guide/Sony_ILCE-6000_2023.07.24_13.46.14.JPG){: style="width:300px"}
 
 !!! WARNING
->**NEVER hot plug DV cameras** This means always power them off before hooking up to a PCI/PCIe/Native FireWire port, this is not an issue with Thunderbolt adapters that are current limited, but full spec ports can send 12V 5A the wrong way so be careful...
+    **NEVER hot plug DV cameras** This means always power them off before hooking up to a PCI/PCIe/Native FireWire port, this is not an issue with Thunderbolt adapters that are current limited, but full spec ports can send 12V 5A the wrong way so be careful...
 
 !!! WARNING
     **`The only "Firewire to USB" devices are the old Pinnacle Studio USB 2.0 units`** anything that's just a generic Chinese cable could damage your device, some select Panasonic models could use USB Mini-B transfer but never used the firewire port in that manner and the `Sony DCR-TRV75E` is the only exception... 
@@ -90,7 +91,7 @@ Sony: `XDCAM Optical`
 
 
 
-# Data Cartridges
+## Data Cartridges
 
 
 There is 3 types here Tape, Optical, Solid State, these hold data in a file system manner rather then video/audio only.
@@ -108,7 +109,7 @@ IBM: IBM 3592 (There own version of LTO currently upto 20TB)
 Tandberg: RDX (SSD Hot Swap desktop system)
 
 
-## Workflow Overview 
+### Workflow Overview 
 
 
 There is 3 steps, Identification, Ingest and then processing.
@@ -122,7 +123,7 @@ HDV
 `FireWire Data Trasfer` --> `File On System` --> `Split By Date Information` --> `Mux or Transcode to MKV Archive`
 
 
-## Format Resolution & Framerate Standards
+### Format Resolution & Framerate Standards
 
 
 PAL SD: 720x576  (625i25) (25fps in 50 fields or 50i)
@@ -140,7 +141,7 @@ HDV 720p: 1280x720p (25p/29.94p & 50p/59.94p Panasonic/JVC/Cannon)
 Full-HD: 1920x1080i / 1920x1080p (25i/29.97i) (25p/29.97p/50p/59.94p/60p) (24p Pulldown)
 
 
-## Format Notes
+### Format Notes
 
 
 Interlaced Field Order: Is nearly always BFF with digital tape formats, normally TFF with analogue tape formats.
@@ -168,7 +169,7 @@ The Bitrate of DV/HDV is 25-30mbps only thing that changes is DV/DVCam codec is 
 **Panasonic** - Created & Adopted `DVC`/`DVCPro`/`DVCPro50`/`DVCPro100`/`DVCProHD` (Slightly bigger then MiniDV tapes)
 
 
-# Capture Workflows
+## Capture Workflows
 
 
 Camcorder/VCR --> FireWire --> Computer/Recorder --> Digital File Stream --> `.dv` or `.avi` files --> DVrescue Dropout & Error Analysis `.xml` --> Notes logbook.txt --> Archival To Optical.
@@ -182,7 +183,7 @@ Its that simple, how the file is handled either to a untouched or muxed state is
 With DV/HDV if files are saved to `.mov` & `.mkv` they are being muxed, the best example is files transferred with Final Cut which breaks each recording into a separate file by date and muxes the original date an timecode to QuickTime TC in the `.mov` container and audio saved in `32-bit` rather then original.
 
 
-## Data Sizes
+### Data Sizes
 
 The DV codec known as DV25 is 25mbps to 30mbps 4:2:0 PAL and 4:1:1 NTSC.
 
@@ -193,10 +194,10 @@ DV-Medium - (16GB) - 25GB Optical Disc
 MiniDV/Digital8 (14GB SP / 21.3GB LP) - 25GB Optical Disc
 
 
-# Capture Hardware 
+## Capture Hardware 
 
 
-## DV, DVCAM, HDV, DVC, DVCPro, DVCProHD - Firewire
+### DV, DVCAM, HDV, DVC, DVCPro, DVCProHD - Firewire
 
 
 The formats all use `FireWire` - Also Called `IEEE 1394`, `DV`, `i. LINK` interface which can do 800mbps & 400mbps. 
@@ -218,7 +219,7 @@ FireWire also carries 12v 3A of power **this is why hot plugging can kill equipm
 
 ------------------
 
-### Mac: 
+#### Mac
 
 
 Older Units have FireWire 400 & 800 newer units will need to adapt from ThunderBolt.
@@ -232,7 +233,7 @@ Older Units have FireWire 400 & 800 newer units will need to adapt from ThunderB
 These also work on some Windows PCs with thunderblot 3 today.
 
 
-### Windows, Linux & Hackintosh: 
+#### Windows, Linux & Hackintosh
 
 
 
@@ -246,7 +247,7 @@ These also work on some Windows PCs with thunderblot 3 today.
 ![](assets/images/Hardware/Pinnacle-710-USB-2.0-Externals.png){: style="width:300px"}
 
 
-### External Recorders:
+#### External Recorders
 
 
 Firewire interface is like HDMI/SDI its a constant video stream with an added play/advance/rewind command system during its final production run days of 2007-2010 external dedicated units came out to upgrade camcorders to Cfast/CompactFlash cards to match there DSLR workflow counter parts.
@@ -265,22 +266,11 @@ Sony, DataVideo, MCE, SoundDevices all made recorders however the cost of these 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-# SDI - Serial Digital Interface 
+## SDI - Serial Digital Interface 
 
 This covers:
 
-## D1, D2, D3, D5, DigiBeta, BetaCam SX, MPEG IMX, HDCAM, HDCAM SR - SDI 
+### D1, D2, D3, D5, DigiBeta, BetaCam SX, MPEG IMX, HDCAM, HDCAM SR - SDI 
 
 
 Digital pro formats without a direct to file interface, fall into SDI capture territory.
@@ -288,10 +278,10 @@ Digital pro formats without a direct to file interface, fall into SDI capture te
 `SDI Out` ---> `SDI Card`  ---> `YUV Stream Out` ---> `YUV File.`
 
 
-## Hardware
+### Hardware
 
 
-## PCIe Desktop (Windows, Linux & Hackintosh):
+#### PCIe Desktop (Windows, Linux & Hackintosh):
 
 
 `Blackmagic Decklink Recorder`
@@ -310,7 +300,7 @@ Cheapest most readily available SDI/HDMI capture cards with modern drivers.
 
 `Magewell PCie Cards`
 
-## USB 3.0 (Universal)
+#### USB 3.0 (Universal)
 
 [U-TAP SDI - AJA](https://www.aja.com/products/u-tap-sdi) | [Magewell USB SDI Gen 2](https://www.magewell.com/products/usb-capture-sdi-gen-2) | 
 [Magewell USB AIO](https://www.magewell.com/products/usb-capture-aio)
@@ -318,7 +308,7 @@ Cheapest most readily available SDI/HDMI capture cards with modern drivers.
 ![](assets/images/Conventional/AJA-U-TAP-SDI.png){: style="width:300px"}![](assets/images/Conventional/Magewell-SDI-USB.PNG){: style="width:300px"}![](assets/images/Conventional/Magewell-USB-Capture-AIO.PNG){: style="width:300px"}
 
 
-## Mini-PCIe/M.2 
+#### Mini-PCIe/M.2 
 
 
 These are capture cards ideal for embedded systems, modified laptops or compact PC systems.
@@ -329,7 +319,7 @@ These are capture cards ideal for embedded systems, modified laptops or compact 
 ![](assets/images/Conventional/decklink_micro_mini_pcie_m.2.png){: style="width:300px"}![](assets/images/Conventional/Magewell_Eco_Capture_Quad_SDI_M-2_2.png){: style="width:300px"}
 
 
-## Thunderblot:
+#### Thunderblot
 
 
 *Normally limited to macOS, with newer software and TB3/TB4 laptops windows support is appearing for Windows.
@@ -340,7 +330,7 @@ These are capture cards ideal for embedded systems, modified laptops or compact 
 ![](assets/images/Conventional/blackmagic_ultra_studio_mini.png){: style="width:300px"}![](assets/images/Conventional/blackmagic_ultrastudio_hd_mini.png){: style="width:300px"}
 
 
-## Dedicated External Recorders
+#### Dedicated External Recorders
 
 
 This is more a if you have one it works option as SDI input recorders that can do ProRes/DNxHD/HEVC 10-bit 4:2:2. 
@@ -357,10 +347,10 @@ This is more a if you have one it works option as SDI input recorders that can d
 
 
 
-# Capture & Archive format
+## Capture & Archive format
 
 
-## Initial Capture
+### Initial Capture
 
 
 With SDI capture workflows the defacto standard is V210 YUV 4:2:2 Uncompressed in mov or avi containers alongside PCM 24/16-Bit 48khz audio.
@@ -370,7 +360,7 @@ HDCAM/HDCAM SR when used in a master tape setting, can have 4:4:4 content this c
 SDI to HDMI workflows are generally to be avoided as this will destroy all ancillary data in the conversion, such as timecode.
 
 
-## Archive 
+### Archive 
 
 
 Most users getting into SDI may not have a higher end workstation able to encode lossless compressed codecs in real-time using software like V-Record/VirtualDub2 so will require re-muxing to a archive suitable format after initial ingest capture.
@@ -380,7 +370,7 @@ Most users getting into SDI may not have a higher end workstation able to encode
 `Audio: FLAC 24-bit 48khz` - Lossless Compressed 
 
 
-# Handling Software 
+## Handling Software 
 
 
 SDI Based Systems:
@@ -389,7 +379,7 @@ This normally falls native capture applications from the hardware makers i.g AJA
 
 
 
-## Universal:
+### Universal
 
 
 [AMCDX Video Patcher](https://mogurenko.com/2021/01/29/amcdx-video-patcher-v0-6-7/) / [Archive Download](https://drive.google.com/open?id=1oZbpRDxrBZlvx-nl1FgK722InqhyeLKC) (PC/MacOS/Linux) - Metadata Correction 
@@ -424,7 +414,7 @@ Cutting, Splitting, Splitting by Date Code (Takes DVanalyse Data)
 ![](assets/images/Post-Processing/Mediainfo_Digital_Tape_Guide.png){: style="width:400px"}
 
 
-## Windows:
+### Windows
 
 
 [Media Info Lite](https://www.majorgeeks.com/files/details/mediainfo_lite.html)
@@ -459,7 +449,7 @@ Image needed of current Magex suite*
 ![](assets/images/Post-Processing/dvdate_dvcam.png){: style="width:400px"}
 
 
-## MacOS:
+### MacOS
 
 
 `Final Cut Pro`
@@ -482,11 +472,11 @@ Monitoring Window
 
 
 
-# Capture 
+## Capture 
 
 
 
-## How to Process Tapes?
+### How to Process Tapes?
 
 
 There is 3 things you can do, [`deinterlace`](Deinterlacing.md), `upscale` & `de-noising`.
@@ -500,7 +490,7 @@ It's recommended to break files by date cuts, and save each file's metadata with
 For SDI capture formats, capture V210 then re-encode to Lossless FFV1 with FLAC compressed audio, unless you have V-Record setup then directly capture lossless compressed to save time.
 
 
-## Splitting DV Files
+### Splitting DV Files
 
 
 With DV files depending on capture you may want to keep these as one single file or split by sub-clip or scenes, generally you want to split by each date change to avoid metadata issues, such as loss of date or timecode information.
@@ -554,7 +544,7 @@ The result is all sub-clips are exported by date code.
 And so rename the files in this case `Cats_Test_Tape_2002-01-05_11-35-36.avi`
 
 
-## Muxing to MKV (Windows)
+### Muxing to MKV (Windows)
 
 
 These scripts will take your DV tape Files and convert them for archive use, copy to a text file and save it as a `.bat` and drag and drop the files you wish yo process onto the script file.
@@ -595,7 +585,7 @@ PAUSE
 ``````
 
 
-## Deinterlacing
+### Deinterlacing
 
 
 There is a [dedicated sub-doc](Deinterlacing.md) on the subject of interlaced & de-interlacing
@@ -613,7 +603,7 @@ If your not editing the files or playing them on limited hardware use the archiv
 Replace `bwdif` with `bwdif_cuda` if you want to use NVidia GPU accelerated encoding. 
 
 
-## BDWIF with ProRes HQ (.mov) (Ready to Edit)
+### BDWIF with ProRes HQ (.mov) (Ready to Edit)
 
 
 PAL:
@@ -630,7 +620,7 @@ HD:
     ffmpeg -i INPUT.xxx -movflags use_metadata_tags -map_metadata 0 -vf bwdif=1:1:0 -c:v prores -profile:v 3 -vendor apl0 -bits_per_mb 8000 -quant_mat hq -mbs_per_slice 8 -pix_fmt yuv422p10le -color_range tv -color_primaries bt709 -colorspace bt709 -c:a pcm_s16le -ar 48000 OUTPUT_BDWIF_Progressive.mov
 
 
-## BDWIF with FFV1 (.mkv) (Ready to Archive)
+### BDWIF with FFV1 (.mkv) (Ready to Archive)
 
 
 PAL:
@@ -650,7 +640,7 @@ HD:
     ffmpeg -i INPUT.xxx -movflags use_metadata_tags -map_metadata 0 -vf bwdif=1:1:0 -c:v ffv1 -coder 1 -context 1 -g 1 -level 3 -slices 16 -slicecrc 1 -pixel_format yuv422p10le -color_range tv -color_primaries bt709 -colorspace bt709 c:a flac -sample_fmt s16 -ar 48000 OUTPUT_BDWIF_Progressive.mkv
 
 
-## Using FFmpeg with digital tapes 
+### Using FFmpeg with digital tapes 
 
 
 Conform all audio to 
@@ -684,7 +674,7 @@ Audio comes in `48khz 16-bit` & `32khz 12-bit` with 4 channels in PCM uncompress
 `-map 1 -map_metadata 0 -c copy -movflags use_metadata_tags` maps mov metadata flags.
 
 
-## Colr & CLAP Atom Setting
+### Colr & CLAP Atom Setting
 
 
 This is for altering the flagging data inside the `mov`, `mp4` & `mxf` containers.
@@ -700,7 +690,7 @@ Example of a blank and correctly flagged progressive exports for NTSC & PAL usin
 | ![](assets/images/Post-Processing/AMCDXVideoPatcher_Blank.png){: style="width:600px"} | ![](assets/images/Post-Processing/AMCDXVideoPatcher_Digital_Tape_Guide.png){: style="width:600px"} | ![](assets/images/Post-Processing/AMCDXVideoPatcher_NTSC_SD_Flags.png){: style="width:600px"} |
 
 
-## Preserving Timecode & Flagging 
+### Preserving Timecode & Flagging 
 
 
 Ancillary Data can be a pain so `AMCDX Video Patcher` allows us to manually take the metadata values we can read from files with tools like `Media Info` and update the values in our final processed file if its an `.mov`, `.mp4` or `.mxf`.
@@ -728,7 +718,7 @@ Note this handy `.bat` convert all in a directory script for modern progressive 
     pause
 
 
-## Archival of Media
+### Archival of Media
 
 
 For media archival this falls to 
@@ -749,11 +739,3 @@ If using only smaller discs you can split files, we recommend [Winrar](https://w
 With little or extra space left over on discs this leaves room for ECC data from [dvdsasater](https://github.com/speed47/dvdisaster#readme) and a optical disc tool kit of the software to extract and re-combine split archives for example.
 
 DataLifePlus / M-Disc - Blu-Ray discs are recommended due to archival grade plastics bonding and in-orgnaic meterials.
-
-
----------
-
-
-Sub-Page [Deinterlacing](Deinterlacing.md)
-
-Next Page [Media Archival Guide](Media-Archival-Guide.md)

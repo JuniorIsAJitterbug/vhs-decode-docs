@@ -1,4 +1,6 @@
-# Tinkering Scripts 
+---
+title: Tinkering Scripts 
+---
 
 These are not 100% approved workflow scripts but ones that do have or are a work in progress.
 
@@ -27,7 +29,7 @@ PAUSE
 ``````
 
 
-# Gen Chroma For Windows
+## Gen Chroma For Windows
 
 
 Save into text file and rename to `.bat` i.e `gen_chroma_xxx.bat`
@@ -275,4 +277,3 @@ ld-chroma-decoder.exe "%chromafile%" --ffll 2 --lfll 308 --ffrl 2 --lfrl 620 --i
 echo end of the script
 pause
 ``````
-

@@ -1,5 +1,6 @@
-# Linux Installation 
-
+---
+title: Linux Installation 
+---
 
 The [README](https://github.com/oyvindln/vhs-decode#readme) in the main GitHub repository will always be kept up-to-date for current builds and basic user guide help.
 
@@ -38,7 +39,7 @@ Run `./tbc-tools.AppImage` like any normal GUI app to open ld-analyse, the `ld-x
 Run `./tbc-video-export --appimage tbc-tools.AppImage` for 100% self contained use (requires FFmpeg installed system wide)
 
 
-# Manual Building 
+## Manual Building 
 
 
 This is the workflow to manually build the decoders and toolchain.
@@ -46,7 +47,7 @@ This is the workflow to manually build the decoders and toolchain.
 The vhs-decode repository also has [hifi-decode](HiFi-Decode.md), [cvbs-decode](CVBS-Composite-Decode.md) & [ld-decode](https://github.com/happycube/ld-decode) included.
 
 
-## Install all dependencies
+### Install all dependencies
 
     sudo apt install clang python3-setuptools python3-numpy python3-scipy python3-matplotlib git qt5-default libqwt-qt5-dev libfftw3-dev python3-tk python3-numba libavformat-dev libavcodec-dev libavutil-dev ffmpeg openssl pv python3-setuptools make cython3 cmake pipx
 
@@ -90,7 +91,7 @@ QT6
     pipx install .[hifi_gui_qt6]
 
 
-## Build VHS-Decode & LD-Tools Suite
+### Build VHS-Decode & LD-Tools Suite
 
 
 Download VHS-Decode:
@@ -119,7 +120,7 @@ Go back to the main directory with
     cd .. 
 
 
-## Updating
+### Updating
 
 
 To update the decoders and tools do `git pull` while inside of the vhs-decode directory, and repeat the above build & compile steps. 
@@ -137,9 +138,3 @@ Between 2021-2024 there was 2 notable turning points in the building process.
 Pre-Pipx switchover
 
 Pre-Cmake switchover
-
-
-# Page End
-
-
-Previous Page [Home](index.md)

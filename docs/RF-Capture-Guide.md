@@ -1,9 +1,6 @@
-# RF Capture Guide
-
-
-Previous Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-Next Page [RF Compression & Decompression Guide](RF-Compression-&-Decompression-Guide.md)
+---
+title: RF Capture Guide
+---
 
 This guide go's over what options you have for [FM RF](Acronyms-Guide.md) (Frequency Modulated Radio Frequency) capture and best practices.
 
@@ -18,7 +15,7 @@ You know what USB 3.0 is and or can twist a screwdriver and install an basic PCI
 You have followed setup docs for your operating system and or hardware.
 
 
-# Cleaning
+## Cleaning
 
 
 !!! IMPORTANT
@@ -35,7 +32,7 @@ Its recommended to first clean around the drum the whole cylinder, including its
 VHS drums are quite robust, but for Beta it is best to only use paper, Sony 8mm camcorders chamois swabs are a go to.
 
 
-# Capture Device Support
+## Capture Device Support
 
 
 Hardware:
@@ -68,7 +65,7 @@ The RTLSDR does not have enough bandwidth for FM video.
 The DomesDayDuplicator Rev 3, does not have the correct filtering for CVBS.
 
 
-# Hardware
+## Hardware
 
 
 ![](assets/images/Hardware/DdD-Rev3-CX-White-Sony-ILCE-7RM3-2022.12.20-21.54.48.png){: style="width:600px"}
@@ -84,7 +81,7 @@ The DomesDayDuplicator Rev 3, does not have the correct filtering for CVBS.
 [RTLSDR](RTLSDR.md) is an affordable SDR radio that can capture HiFi signals for real-time decoding and saving to file. 
 
 
-# Example Setup & Workflow
+## Example Setup & Workflow
 
 
 `Right-Click --> Open in new tab`
@@ -100,7 +97,7 @@ The DomesDayDuplicator Rev 3, does not have the correct filtering for CVBS.
 ![](assets/images/graphics/VHS-Decode-Continuous-New-2023-Sony-8mm-Expanded-Master.png){: style="width:400px"}
 
 
-# Cabling
+## Cabling
 
 
 If possible direct coupling is the best method with the DdD, but 1m of 50Ohm cable is normally fine but less cable = more signal.
@@ -206,7 +203,7 @@ Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to copy then <kbd>Ctrl</kbd>+<kbd>P</kbd> to 
 ![CXADC-CLI](assets/images/Hardware/Timeout-10sec-CXADC-Capture.gif)
 
 
-## Preview The Live Signal
+### Preview The Live Signal
 
 
 To validate there is a signal going to the correct input on a CX Card (VMUX) you can use ffplay to read the data stream coming off the card in real time.
@@ -223,7 +220,7 @@ To validate there is a signal going to the correct input on a CX Card (VMUX) you
     - You need to be in 28mhz mode for stock preview of CVBS signals to work.
 
 
-## CX Cards & Clockgen 
+### CX Cards & Clockgen 
 
 
 Example:
@@ -238,7 +235,7 @@ The Resulting Output:
 ![](assets/cxadc-clockgen-mod/cxadc-sync-capture-output.PNG){: style="width:600px"}
 
 
-## FLAC Compress Captures
+### FLAC Compress Captures
 
 
 !!! NOTE
@@ -249,7 +246,7 @@ See the CXADC FLAC Compression Doc [here](https://github.com/happycube/cxadc-lin
 Windows scripts for CXADC Captures can be found [here](https://github.com/happycube/cxadc-linux3/tree/master/CXADC-Compression-Scripts/Windows)
 
 
-## Driver Config
+### Driver Config
 
 
 List current configuration setting
@@ -314,7 +311,7 @@ If an RMS amplifier is employed set your gain level manually between `0~10` for 
 
 
 
-## Fix Ownership
+### Fix Ownership
 
 
 Use chmod command on your installation directory's and or the driver files under dev/cxadc if permissions are broken and you need to `sudo su` to enter root to even operate it. (<kbd>CTRL</kbd> + <kbd>D</kbd>)
@@ -388,7 +385,7 @@ We use 10-bit packed as its the most space effective before FLAC compression, de
 Straight Forward GUI capture
 
 
-## FLAC Compression of RF Captures - DomesDayDuplicator
+### FLAC Compression of RF Captures - DomesDayDuplicator
 
 
 To compress your 10-bit packed captures on Linux use this command
@@ -398,7 +395,7 @@ To compress your 10-bit packed captures on Linux use this command
 There is two ld-compress scripts `ld-compress.bat` &  `ld-compress-nvidia-gpu.bat` with the windows download bundle.
 
 
-# Windows 7~11 Usage - DomesDayDuplicator
+### Windows 7~11 Usage - DomesDayDuplicator
 
 - [Install Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701)
 - [Download Decode Suite For Windows](https://github.com/oyvindln/vhs-decode/releases)
@@ -439,7 +436,7 @@ Install SoX
     choco install sox.portable
 
 
-## MacOS Usage?
+### MacOS Usage?
 
 
 Currently DdD is the only directly usable device on MacOS systems unless you have a desktop based mac with duel boot with Linux or thunderbolt 3/4 to PCIe Docks for laptops and AIO desktop units running Linux natively.
@@ -461,14 +458,4 @@ There has yet to be full docs for current Intel hardware.
     The DomesDayDuplicator can have issues with ground loops if put on top of metal VCR lids directly best to insulate them,
 
 !!! WARNING
->EMI interference from microwaves and radios can affect any RF capture same for noise on the power line interfering with hardware normally, a shielded case for the DomesDayDuplicator is recommended.
-
-
-# Page End
-
-
-Next Page [RF Decoding Guide](RF-Capture-Decoding-Guide.md)
-
-Sub Page [RF Compression & Decompression Guide](RF-Compression-&-Decompression-Guide.md)
-
-Previous Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
+    EMI interference from microwaves and radios can affect any RF capture same for noise on the power line interfering with hardware normally, a shielded case for the DomesDayDuplicator is recommended.

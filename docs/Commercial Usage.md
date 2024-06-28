@@ -1,5 +1,6 @@
-# Commercial Usage
-
+---
+title: Commercial Usage
+---
 
 ## Can I use vhs-decode commercially?
 

@@ -1,5 +1,6 @@
-## ld-chroma-decoder
-
+---
+title: ld-chroma-decoder
+---
 
 This application takes the output of ld-decode (a PAL or NTSC TBC file) and performs chroma decoding (i.e. colourises it).
 
@@ -123,7 +124,7 @@ Arguments:
 
 
 
-# Manual Commands 
+## Manual Commands 
 
 
 
@@ -140,13 +141,13 @@ Use `ld-chroma-decoder -h` to list all the options available to the decoder.
 
 Replace `INPUT.tbc` and `OUTPUT.mkv` with your desired names.
 
-## Note 
+### Note 
 
 For standard output this list of export commands is provided you only need to change `setdar=4/3` to `setdar=16/9` for widescreen content.
 
 ## Pre-Made Command List
 
-## Full Vertical Export (VBI Area)
+### Full Vertical Export (VBI Area)
 
 Y4M Only* you can use these 2 commands. (Will be resolved with tbc-video-export later)
 
@@ -163,7 +164,7 @@ PAL
 ![Example To Update Later](assets/images/VITC/Ebay-NV-S7-VHS-SP-Full-Frame-Interlaced-25i-VITC-centered-crop.jpg)
 
 
-## FFV1 (4:2:2) (Lossless Compressed)
+### FFV1 (4:2:2) (Lossless Compressed)
 
 NTSC
 
@@ -174,7 +175,7 @@ PAL
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v ffv1 -level 3 -coder 1 -context 1 -g 1 -slicecrc 1 -vf setfield=tff -flags +ilme+ildct -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -pix_fmt yuv422p10le -vf setdar=4/3,setfield=tff OUTPUT.mkv
 
 
-## V210 (4:2:2) (Uncompressed)
+### V210 (4:2:2) (Uncompressed)
 
 NTSC
 
@@ -186,7 +187,7 @@ PAL
 
 ----
 
-## ProRes HQ (4:2:2) (Visually Lossless)
+### ProRes HQ (4:2:2) (Visually Lossless)
 
 NTSC
 
@@ -196,7 +197,7 @@ PAL
 
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v prores -profile:v 3 -vendor apl0 -bits_per_mb 8000 -quant_mat hq -f mov -top 1 -vf setfield=tff -flags +ilme+ildct -pix_fmt yuv422p10le -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -vf setdar=4/3,setfield=tff OUTPUT.mov
 
-## Y4M (4:4:4) (Uncompressed)
+### Y4M (4:4:4) (Uncompressed)
 
 NTSC
 
@@ -207,7 +208,7 @@ PAL
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc OUTPUT.mov
 
 
-## V410 (4:4:4) (Uncompressed)
+### V410 (4:4:4) (Uncompressed)
 
 NTSC
 
@@ -217,7 +218,7 @@ PAL
 
     ld-chroma-decoder --decoder transform3d -p y4m -q INPUT.tbc| ffmpeg -i - -c:v v410 -f mov -top 1 -vf setfield=tff -flags +ilme+ildct -pix_fmt yuv444p10le -color_primaries bt470bg -color_trc bt709 -colorspace bt470bg -color_range tv -vf setdar=4/3,setfield=tff OUTPUT.mov
 
-## ProRes 4444XQ (4:4:4) (Visually Lossless)
+### ProRes 4444XQ (4:4:4) (Visually Lossless)
 
 
 NTSC

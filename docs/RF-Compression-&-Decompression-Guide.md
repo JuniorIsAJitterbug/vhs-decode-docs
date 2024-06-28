@@ -1,12 +1,6 @@
-# FLAC Compression & De-Compression Guide 
-
-
-Previous Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Sub-Page [Speed & Decoding Testing](Speed-Testing.md)
-
-Next Page [RF Decoding Guide](RF-Capture-Decoding-Guide.md)
-
+---
+title: FLAC Compression & De-Compression Guide 
+---
 
 ## What is RF Compression & Down-Sampling?
 
@@ -129,7 +123,7 @@ This process can be done for low bandwidth formats like HiFi FM signals with lit
     Video8/Hi8 is a single modulated signal, video & hifi are just on different carriers so you use 1 file for both video/hifi decoding like LaserDiscs, down sampling is not recommended for the formats at this time.
 
 
-# DomesDay Duplicator (DdD)
+## DomesDay Duplicator (DdD)
 
     ld-compress DdD-capture.lds
 
@@ -149,7 +143,7 @@ You have 2 working capture modes
 
 
 
-## Linux Scripts
+### Linux Scripts
 
 
 Copy the scripts below into a text document, save and then add `.sh` extension to the end of the file, you can use these in any directory witch the script file is put inside of, you can name the scripts however you like but the below example is clear enough.
@@ -161,7 +155,7 @@ Will make `DdD-capture_NTSC_16msps_8-bit.flac`
 The scripts below automatically append the sample rate/bit-depth/TV System accordingly.
 
 
-## `.lds` 10-bit Packed to FLAC
+### `.lds` 10-bit Packed to FLAC
 
 
 There is two drag and drop ld-compress scripts `ld-compress.bat` & `ld-compress-nvidia-gpu`.
@@ -183,7 +177,7 @@ Drag and Drop Script `16-bit-singed-to-flac.bat`
     ffmpeg -i "%~1" -f s16le -ar 40k -ac 1 -acodec flac -compression_level 11 -f ogg "%~dp1%~n1.ldf"
 
 
-## Linux Down-Sampling Scripts
+### Linux Down-Sampling Scripts
 
 
 !!! NOTE
@@ -191,7 +185,7 @@ Drag and Drop Script `16-bit-singed-to-flac.bat`
     - Only stable media that is within spec of the format is recommended to ever be down sampled.
 
 
-### 40msps to 24msps 8-bit - NTSC/PAL 
+#### 40msps to 24msps 8-bit - NTSC/PAL 
 
     #!/bin/bash
 
@@ -201,7 +195,7 @@ Drag and Drop Script `16-bit-singed-to-flac.bat`
     ld-lds-converter -i $1 | sox -r 40000 -b 16 -c 1 -e signed -t raw - -b 8 -r 24000 -c 1 -t flac $1_24msps_8-bit.flac sinc -n 2500 0-9400
  
 
-### 40msps to 20msps 8-bit - NTSC/PAL VHS 
+#### 40msps to 20msps 8-bit - NTSC/PAL VHS 
 
     #!/bin/bash
 
@@ -210,7 +204,7 @@ Drag and Drop Script `16-bit-singed-to-flac.bat`
 
     ld-lds-converter -i $1 | sox -r 40000 -b 8 -c 1 -e signed -t raw - -b 8 -r 20000 -c 1 -t flac $1_20msps_8-bit.flac sinc -n 2500 0-9650
 
-### 40msps to 10msps 8-bit (S)VHS-HiFi
+#### 40msps to 10msps 8-bit (S)VHS-HiFi
 
     #!/bin/bash
 
@@ -220,7 +214,7 @@ Drag and Drop Script `16-bit-singed-to-flac.bat`
     ld-lds-converter -i $1 | sox -r 40000 -b 16 -c 1 -e signed -t raw - -b 8 -r 10000 -c 1 -t flac $1_VHS_HiFi_10msps_8-bit.flac sinc -n 2500 0-3050
 
 
-# SoX Commands
+## SoX Commands
 
 
 Initial application call command
@@ -230,7 +224,7 @@ Linux: `sox`
 Windows `"C:\Program Files (x86)\sox-14-4-2\sox.exe"`
 
 
-## Export Spectrogram
+### Export Spectrogram
 
     sox Input.flac -n spectrogram
 
@@ -239,20 +233,20 @@ SoX can export a handy spectrogram chart of RF & Audio waveform data.
 ![](assets/images/graphics/SoX_Example_Spectrogram.png){: style="width:600px"}
 
 
-## 28msps 8-bit to 18msps 8-bit FLAC
+### 28msps 8-bit to 18msps 8-bit FLAC
 
     sox -r 286363 -b 8 -c 1 -e unsigned -t raw infile.u8 -b 8 -r 18000 -c 1 -t flac outfile_18msps_8-bit.flac sinc -n 2500 0-8670
 
-## 40msps 8-bit to 18msps 8-bit FLAC
+### 40msps 8-bit to 18msps 8-bit FLAC
 
     sox -r 40000 -b 8 -c 1 -e unsigned -t raw infile.u8 -b 8 -r 18000 -c 1 -t flac outfile_18msps_8-bit.flac sinc -n 2500 0-8670
 
-## 40msps 16bit to 10msps 8-bit FLAC
+### 40msps 16bit to 10msps 8-bit FLAC
 
     sox -r 40000 -b 8 -c 1 -e signed -t raw infile.s16 -b 8 -r 10000 -c 1 -t flac outfile_10msps_8-bit.flac sinc -n 2500 0-8670
 
 
-## RF Compression & Resampling Commands - Windows Users
+### RF Compression & Resampling Commands - Windows Users
 
 
 Download Windows scripts for CXADC Captures can be found [here!](https://github.com/happycube/cxadc-linux3/tree/master/CXADC-Compression-Scripts/Windows)
@@ -260,7 +254,7 @@ Download Windows scripts for CXADC Captures can be found [here!](https://github.
 Manual Downloads [SoX](https://www.videohelp.com/download/sox-14.4.2-win32.zip) / [FLAC](https://ftp.osuosl.org/pub/xiph/releases/flac/flac-1.4.2-win.zip) / [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
 
 
-# Windows Scripts 
+## Windows Scripts 
 
 
 Included with windows build bundle is the following scripts:
@@ -271,7 +265,7 @@ Included with windows build bundle is the following scripts:
 - s16-to-flac.bat
 
 
-# Bit Crushing 
+## Bit Crushing 
 
 
 The minimum you can down sample data to is 7-6 bit before visual degradation in a video signal this is a extreme compression method 
@@ -286,7 +280,7 @@ Applies to VHS/Beta/Video8/EIAJ level formats and has not been tested on Hi8/SVH
 3. Run `ffmpeg -i input.flac -af "volume=precision=fixed:volume=<your level without the minus here>dB*0.7071*0.5,aformat=sample_fmts=u8" -compression_level 12 small.flac` (you can skip `-compression_level 12` for much faster compression and very slightly bigger filesize)
 
 
-# Naming & Formatting Your Files
+## Naming & Formatting Your Files
 
 
 Ensure the following is stated
@@ -303,12 +297,3 @@ Optionally but very useful
 - Playback Hardware Used
 
 You can also rename the `.flac` to your media format name using [standard designators & standard naming guide](Capture-Naming-Guide.md) that can be very useful for mass .xxx extension lookup for archives, if you want to keep things simple ignore this and ensure format is in file name.
-
-# Page End
-
-
-Sub-Page [Speed & Decoding Testing](Speed-Testing.md)
-
-Previous Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Next Page [RF Decoding Guide](RF-Capture-Decoding-Guide.md)

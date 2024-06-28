@@ -1,5 +1,6 @@
-## Donations
-
+---
+title: Donations
+---
 
 If you would like to donate to Harry Munday for his efforts with daily documentation of the project and writing the wiki, and guides you can donate via [PayPal](https://www.paypal.com/donate/?hosted_button_id=5LDFLEY5HZMLY) or [Ko-Fi](https://ko-fi.com/harrypm).
 

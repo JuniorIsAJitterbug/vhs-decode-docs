@@ -1,13 +1,14 @@
-# Ruxpin Decode
-
+---
+title: Ruxpin Decode
+---
 
 ![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/ruxpin-decode-logo.png){: style="width:200px"}
 
-# Archive Data 
+## Archive Data 
 
 The TV Teddy Tape FM RF archive is published on [The Internet Archive](https://archive.org/details/tv-teddy-yankee-doodle-cricket-vhs-rf-capture) for public download and decoding.
 
-# Background
+## Background
 
 TV Teddy is an interactive Teddy Ruxpin children’s toy
 developed and sold by Shoot the Moon Products, Inc. in 1993.
@@ -31,7 +32,7 @@ tapes could also be purchased.
 ![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Box-Logo.jpg){: style="width:250px"}
 
 
-# Theory of Operation
+## Theory of Operation
 
 
 According to Shoot the Moon's website, two patents behind
@@ -53,7 +54,7 @@ Although the Teddy audio used a fixed sample rate, it is still
 an imperfect analog signal.
 
 
-# Specification
+## Specification
 
 
 ![](assets/gnu-radio/Ruxpin-Decode-TV-Teddy/Specification-Signal-on-Luma-TBC.jpg){: style="width:250px"}
@@ -91,7 +92,7 @@ not produce any adverse affects on any
 consumer equipment.
 
 
-# Software Implementation
+## Software Implementation
 
 
 Software decoding of the tapes is achieved with [vhs-decode](https://github.com/oyvindln/vhs-decode#readme) & [GNU Radio](https://wiki.gnuradio.org/index.php?title=InstallingGR).
@@ -126,7 +127,7 @@ crackles, and static caused by tape dropouts. The dropout correction process sub
 with dropouts with the last known good line.
 
 
-# Adjustments and Troubleshooting
+## Adjustments and Troubleshooting
 
 Ruxpin decode may not produce ideal results at first. Because of the nature of analog
 video, you may get a high pitched noise or buzzing/crackling sounds. Three main factors can
@@ -188,7 +189,7 @@ signal. If it is too close, noise will result. 4
 
 -------
 
-# Credits
+## Credits
 
 Original concept and technology:
 Shoot the Moon Products, Inc., YES! Entertainment
@@ -201,7 +202,9 @@ Shoot the Moon Products, Inc., YES! Entertainment
 
 titan91 on lddb.com forums / videohelp.com forums / DD86 Discord
 
-# Disclaimer
+---
+title: Disclaimer
+---
 
 This flow chart and people involved in its development are not affiliated with Shoot the
 Moon Products, Inc., YES! Entertainment, or Family Home Entertainment. 
@@ -213,7 +216,7 @@ The patents are listed in this documentation for background purposes only.
 
 This flow chart may be freely redistributed and modified, and is unlicensed.
 
-# Reference Materials
+## Reference Materials
 
 [Orignal PDF of This Page](https://drive.google.com/open?id=1TOYZxVq45zxYQjZLn_waJXQvuNmOU_WX&)
 
@@ -229,4 +232,3 @@ This flow chart may be freely redistributed and modified, and is unlicensed.
 “TV Teddy Featured on the BBC”
 
 [Live (Dead)](https://www.youtube.com/watch?v=OVBQFxR6yhw) / [Archive To Be Aquired]()
-

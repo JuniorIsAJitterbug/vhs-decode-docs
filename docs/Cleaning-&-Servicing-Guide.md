@@ -1,20 +1,13 @@
-# Cleaning & Servicing Guide 
+---
+title: Cleaning & Servicing Guide 
+---
 
-
-Previous Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-Next Page [RF Capture Guide](RF-Capture-Guide.md)
-
-
-## This Guide Covers:
+This Guide Covers:
 
 
 VHS, Beta
 
 Video8, Hi8, MiniDV 
-
-
-## Key
 
 
 !!! NOTE
@@ -27,7 +20,7 @@ Video8, Hi8, MiniDV
     Critical content demanding immediate user attention due to potential risks.
 
 
-# Servicing VCRs
+## Servicing VCRs
 
 
 This breaks down into 3 category's
@@ -43,12 +36,12 @@ This breaks down into 3 category's
 **Repairing** Is the act of replacing capacitors, replacing flex cables, integrated circlets (IC's) or very simple things like momentary switches for front panel buttons.
 
 
-# Inspect Your VCR
+## Inspect Your VCR
 
 
 Firstly before you start doing anything, check the model number on the top or back label of the unit, use this to find the service manual online or inside the Discord or Wiki Pages, then open the lid/top panel be careful around the edges on metal ones as it can cut though skin if run across the edge carelessly but should slide off upwards from the back of most standard VCR units.
 
-# Colour Atlas of VHS VCR Hardware
+## Colour Atlas of VHS VCR Hardware
 
 
 This varies based off year and market of the VCR modern later decks use more multirole IC's, ware as prosumer to rackmount units will have core parts for each processing task on dedicated boards and be majority though hole parts
@@ -108,7 +101,7 @@ Once cleaning has finished double check, if there is signal issues always good t
 ![](assets/images/Hardware/Head-Cleaners-Sony-ILCE-6000-2023.05.19-06.42.46.jpg){: style="width:400px"}
 
 
-# Cleaning The Basics
+## Cleaning The Basics
 
 
 Its a complex concept involving (C6H1O5)n & C3H8O
@@ -122,7 +115,7 @@ Its recommended to first clean around the drum the whole cylinder, including its
 **Note!** for Betamax players using only alcohol-wetted paper is recommended for head cleaning as they will catch easily on anything else.
 
 
-## Items You Will Need 
+### Items You Will Need 
 
 
 Cleaning
@@ -146,7 +139,7 @@ Lubricating
 - Generic Sowing Machine Oil (useful on metal bearings such as pinch roller and all metal gears)
 
 
-## Example Videos 
+### Example Videos 
 
 
 Cleaning a VHS Head Drum
@@ -158,7 +151,7 @@ Cleaning a Camcorder (Video8/Hi8/Digital8/MiniDV)
 [![Camcorder Cleaning](http://img.youtube.com/vi/1KCz59TCy8E/0.jpg)](https://www.youtube.com/watch?v=1KCz59TCy8E "Camcorder Cleaning")
 
 
-## Cleaning
+### Cleaning
 
 
 Guides & Guide Tracks, initially use wet wipes to remove old grease then apply some Isopropanol to the wipes and lastly do a Isopropanol only wipe.
@@ -170,7 +163,7 @@ Head Drum, cut a small strip of printer paper, fold once wet with Isopropanol wa
 Erase Head & Linear Audio head, clean with cotton bud, wipe with microfiber cloth.
 
 
-## Lubricating
+### Lubricating
 
 
 Guides & Guide Tracks, after it is clean and dry apply a coat of super-lube grease on both sides run a test or throwaway tape though the vcr to move the lubrication a though the guides, remove excess.
@@ -178,7 +171,7 @@ Guides & Guide Tracks, after it is clean and dry apply a coat of super-lube grea
 Pinch Roller, 1-2 drops of lubrication on its baring can be a quick fix to squeaky rollers, however its more practical to fully remove wash dry with lint free cloths and coat the internal baring with super-lube.
 
 
-## Reflowing
+### Reflowing
 
 
 Good solder joints are paramount to good electrical signal transmission weather it be power or audio/video/data signals, a broken/cracked/cold joint means issues.
@@ -204,12 +197,3 @@ Video:
 
 !!! NOTE
     A clean & tinned soldering tip is a happy long lasting tip a light coat of solder or tinning is for good heat transference and for protecting the iron from oxidisation after use, alongside using brass wire ball and never sponge cleaners.
-
-
-# Page End
-
-
-Previous Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-Next Page [RF Capture Guide](RF-Capture-Guide.md)
-

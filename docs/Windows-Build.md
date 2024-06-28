@@ -1,5 +1,6 @@
-# Windows Native Builds 
-
+---
+title: Windows Native Builds 
+---
 
 ![](assets/images/vhs-decode-gui/VHS-Decode-Windows-Overview-2023.png){: style="width:800px"}
 
@@ -76,7 +77,7 @@ Install FLAC
 Install [SoX 14.4.2](https://sourceforge.net/projects/sox/files/sox/14.4.2/) manually. 
 
 
-# Quality of Life Improvements 
+## Quality of Life Improvements 
 
 
 Setting `.tbc` files to always open with ld-analyse via `right click --> open with` then at the bottom `look for anouther app on this PC` then after browsing to `ld-analyse.exe` in your decode or ld-tools folder `always use this app to open .tbc files` and your done!
@@ -84,7 +85,7 @@ Setting `.tbc` files to always open with ld-analyse via `right click --> open wi
 Dark mode for ld-analyse can be run with `ld-analyse -style fusion` via CMD, or you can modify a shortcut for it.
 
 
-## Compressing FM RF Captures
+### Compressing FM RF Captures
 
 
 There is `ld-compress.bat`, `ld-compress-nvidia-gpu.bat`, `s16-to-flac.bat`
@@ -120,12 +121,12 @@ CVBS & S-Video RAW capture can be provided via the [MISRC](MISRC-Multi-Input-Sim
     The use of Linux via Live USB or dedicated secondary install on a SSD is recommended for capture however decoding/compressing/export can be done all windows side without issue today.
 
 
-# Manually Building on Windows (WIP)
+## Manually Building on Windows (WIP)
 
 
 Install Python then run inside a windows terminal:
 
-## Install via pypy package
+### Install via pypy package
 
     py -m pip install vhs-decode[hifi-gui]
 
@@ -139,7 +140,7 @@ https://github.com/oyvindln/vhs-decode/assets/56382624/f9a90f5b-7a32-48bb-b79c-0
 ###  Python parts (vhs-decode/ld-decode/cvbs-decode/hifi-decode)
 
 
-## Installing dependencies
+#### Installing dependencies
 
 
 Install Git:
@@ -186,7 +187,7 @@ From the MSVC tools command prompt, with the virtual environment activated eithe
 ```python setup.py build_ext --inplace``` in the source directory.
 
 
-### Building Tools
+#### Building Tools
 
 
 Install needed tools:
@@ -217,6 +218,4 @@ Once finished, navigate into the build directory with ```cd build``` and run:
 ```msbuild /nologo -m .\ld-decode-tools.sln /property:Configuration=Release``` to compile the tools themselves.
 
 MSVC will put some, but not all the needed .dll files together with the tools into the sub-directories where the .exe files end up, so you will have to manually copy some dll files and .dll plugins over from the ```<vhs-decode-source>/build/vcpkg_installed/x64-windows/bin>``` directory to get them to run. (Qt Plugins will be under the ```<vhs-decode-source>/build/vcpkg_installed/x64-windows/Qt6>```directory). There may be some ways to automate this in the future.
-
-
-# Page End
+```

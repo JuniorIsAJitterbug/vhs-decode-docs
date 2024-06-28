@@ -1,3 +1,7 @@
 .wy-nav-content {
     max-width: none;
 }
+
+.md-grid {
+    max-width: 100%;
+  }

@@ -1,5 +1,6 @@
-# ld-decode-tools
-
+---
+title: ld-decode-tools
+---
 
 ld-decode-tools is a suite of applications for processing the `.tbc`, `_chroma.tbc` & `.JSON` output files from the decoders.
 
@@ -492,13 +493,13 @@ Arguments:
 ```
 
 
-# Installation Notes
+## Installation Notes
 
 
 The tools are as of 2024 available in self contained binary's or installed manually.
 
 
-## cmake (2023 and newer versions)
+### cmake (2023 and newer versions)
 
 ```
     mkdir build2
@@ -513,7 +514,7 @@ Note: ```-DUSE_QT_VERSION=5 ```is needed if both qt5 and qt6 are installed but q
 Note: If updating from an older release that used qmake to one that used cmake you may have to start with a fresh checkout as remnants of the qmake build can cause issues for a new cmake build.
 
 
-## qmake (2022 and older versions)
+### qmake (2022 and older versions)
 
 ```
     cd vhs-decode && make -j8 && sudo make install && make clean
@@ -534,5 +535,3 @@ qmake
 make all
 sudo make install
 ```
-
-# Page End

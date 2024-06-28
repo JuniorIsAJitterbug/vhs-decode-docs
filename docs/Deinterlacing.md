@@ -1,11 +1,8 @@
-Back Page [Decoding RF Data](RF-Capture-Decoding-Guide.md)
+---
+title: Deinterlacing
+---
 
-Sub Page's [Digital Tape Guide](Digital-Tape-Guide.md) & [Conventional Digitisation Guide](Conventional-Digitisation-Guide.md)
-
-Next Page [Post Processing Guide](Post-Processing-Guide.md)
-
-
-# The Joy of Analogue Compression
+## The Joy of Analogue Compression
 
 
 Interlacing was originally intended and is to this still to this day of writing the first edition, still used for analogue & digital TV transmission systems as it takes half the signal and data bandwidth to transmit or encode interlaced then full progressive video frames this is why 1080i is still common even in the 2020s with HDTV 1440x1080i for example.
@@ -61,7 +58,7 @@ But you now will say "It looks off if I just deinterlace to 25/30p" with your ho
 letter first = frame rate, letter second = frame rate for progressive, field rate for interlaced.  fps always stands for frames per second
 
 
-## Example 1080i to 576i Composite
+### Example 1080i to 576i Composite
 
 
 Interlaced Image (4:3 Anamorphic - White lines are [WSS](Wide-Screen-Signalling.md))
@@ -77,7 +74,7 @@ De-Interlaced (De-Squeezed 16:9)
 ![](assets/images/Post-Processing/ProRes-Complient-Test-Tape.MOV_snapshot_09.07.026.png){: style="width:600px"}
 
 
-## Exurb
+### Exurb
 
 Digital Video and HD Algorithms and Interfaces 2nd Edition (Charles Poynton 2012-02-07) (PDF Page 173)
 
@@ -94,7 +91,7 @@ This is done via combining both fields together, and for motion accurate de-inte
 But for film content you want to get an 24fps motion accurate image or 12fps 
 
 
-## What decides the Deinterlacer I use?
+### What decides the Deinterlacer I use?
 
 
 Consumer Video is 25i PAL (50i) 29.97i NTSC (59.94i)
@@ -112,7 +109,7 @@ Anime Falls between 12-24fps wrapped in 25i/29.97i etc
 Super8 Movies are typically 18fps wrapped in 25i/29.97i etc
 
 
-## What deinterlacer filters are there today?
+### What deinterlacer filters are there today?
 
 
 A filter is a scripted processing method in basic terms this tells a processing software toolset like FFmpeg or Avisynth for example do x thing to y stored frame and so on. 
@@ -139,7 +136,7 @@ Topaz - Just uses BWDIF.
 Shout out to Andrew Swan's [posts about QTGMC with Avisynth](http://macilatthefront.blogspot.com/2021/05/which-deinterlacing-algorithm-is-best.html) Who started me down the QTGMC rabbit hole 3 years ago before StaxRip - Harry
 
 
-## Film Frame Rates 
+### Film Frame Rates 
 
 
 Silent films - 16fps 
@@ -155,7 +152,7 @@ Super8 film - 18fps
 70mm film - 24fps
 
 
-# Telecine Pull-Down Deinterlacing
+## Telecine Pull-Down Deinterlacing
 
 
 Pronounced: "tel-uh-sin-ee" and "tel-uh-scene"
@@ -163,7 +160,7 @@ Pronounced: "tel-uh-sin-ee" and "tel-uh-scene"
 Pull down deinterlacing applies to film or more accurately telecine content, but only professional content ware the sync is locked as consumer reel-to-camcorder duplicators were free running so there is no locked reference to the frame rate of the camera to the frame rate of the film format. 
 
 
-## 3:2 Pull-Down
+### 3:2 Pull-Down
 
 
 ![](assets/images/graphics/1200px-3_2_pulldown.png){: style="width:400px"}
@@ -176,26 +173,16 @@ So across 4 film frames you get `2:3:2:3` (it's easier to think in `2:3`) you ge
 But once you continue that cadence you do get 3 progressive, 2 mixed, 3 progressive, 2 mixed etc. video frames.
 
 
-## 2:2 Pull-Down
+### 2:2 Pull-Down
 
 
 25fps transfers to 50Hz it's `2:2` which just means there should be either a `1:1` mapping between film frames and video frames, or if the transfer is out of phase, then every video frame is mixed as it contains one field from two different film frames.
 
 
-## 2:2:2:2:2:2:2:2:2:2:3 Pull-Down
+### 2:2:2:2:2:2:2:2:2:2:3 Pull-Down
 
 Sometimes referred to as `12:1` or `24:1` Pulldown, is used to convert 24fps video from film sources to 25fps for PAL video. 
 
 Although not as common a method for standards conversion as simply speeding up the video by approximately 4%, it doesn't result in the slight pitch difference for the audio either.
 
 Like any pulldown pattern that doesn't repeat all fields, it results in a slight amount of judder due to a single Field being displayed longer than the 11 before or after, however it's less noticeable than in NTSC's 2:3 Pulldown, in which every fifth field is repeated.
-
-
-# Page End 
-
-
-Back Page [Decoding RF Data](RF-Capture-Decoding-Guide.md)
-
-Sub Page's [Digital Tape Guide](Digital-Tape-Guide.md) & [Conventional Digitisation Guide](Conventional-Digitisation-Guide.md)
-
-Next Page [Post Processing Guide](Post-Processing-Guide.md)

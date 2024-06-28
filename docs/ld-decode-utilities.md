@@ -1,4 +1,8 @@
-# ld-ldf-reader
+---
+title: ld-decode Utilities
+---
+
+## ld-ldf-reader
 
 
 ld-ldf-reader is a streaming decompressor for `.ldf` files that can jump to a specific location in the file.  
@@ -13,7 +17,7 @@ Usage:
     ld-ldf-reader infile [seek location] | (consumer)
 
 
-# ld-cut
+## ld-cut
 
 
 ld-cut is a utility for cutting samples from raw RF LaserDisc captures (useful to create samples of trouble-areas when issue reporting), and can now also be used to compress .lds files.  The utility allows you to seek and specify start and end frames similar to the main ld-decode application.
@@ -48,7 +52,7 @@ for i in f1.lds f2.lds f3.lds f4.lds; do (ld-cut $i /someotherdirectory/`basenam
 ```
 
 
-# ld-compress
+## ld-compress
 
 
 ld-compress is a bash script to simplify the compression of `.lds` 40msps 10-bit packed DdD RF Captures into `.ldf` files.
@@ -100,5 +104,3 @@ Options:
 `-l` Compression level 1 - 12 (1 - 11 for GPU encoding). Default is 11 (10 for GPU). 6 is recommended for faster but fair compression.
 `-g` Use .raw.oga extension instead of .ldf when compressing.
 ```
-
-# Page End

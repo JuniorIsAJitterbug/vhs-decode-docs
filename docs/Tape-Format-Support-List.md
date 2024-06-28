@@ -1,4 +1,8 @@
-# WE NEED SAMPLES!
+---
+title: Tape Format Support List
+---
+
+## WE NEED SAMPLES!
 
 
 [Support List (Issue #20)](https://github.com/oyvindln/vhs-decode/issues/20)
@@ -19,38 +23,6 @@ Video2000
 1" SMPTE A/B/C
 
 
-# Index 
-
-- [CVBS Composite](#composite-video)
-
-## Open Reel Formats
-
-   - [EIAJ-1](#eiaj)
-   - [EIAJ-2](#eiaj)
-
-## Colour Under Formats
-
-   - [VHS](#vhs)
-   - [SVHS](#s-vhs-super-vhs)
-   - [Betamax](#betamax-eta)
-   - [Sony 8mm](#sony-8mm)
-     - [Video8](#video8)
-     - [HI8](#hi8)
-   - [Umatic](#umatic)
-   - [VCR](#philips-vcr)
-   - [Video2000](#philips-video-2000)
-
-
-## Broadcast Formats
-
-   - [1" Type C](#1-smpte-type-c)
-   - [Betacam](#betacam)
-   - [Betacam SP](#betacam-sp)
-
-## Toy Formats
-
-  - [PLX2000](#pxl-2000)
-
 
 ## Types Of TV Systems 
 
@@ -70,7 +42,7 @@ SECAM / MESECAM (The French being [French](https://en.wikipedia.org/wiki/SECAM))
 HDVS/MUSE/Hi-Vision (1125-lines 1035-lines active 1035i)
 
 
-# Composite Video
+## Composite Video
 
 
 | Signal Format | Resolution | Field System | TV System | Aspect Ratio | RF Capture Support | Decoding Support |
@@ -86,7 +58,7 @@ HDVS/MUSE/Hi-Vision (1125-lines 1035-lines active 1035i)
 Capture is possible via [CX Cards](CX-Cards.md) currently (Other SDR units may also work with the correct input filter range)
 
 
-# VHS
+## VHS
 
 
 ![](https://user-images.githubusercontent.com/56382624/222057095-b9de201e-948d-43d4-b034-2bc83bb338c0.png){: style="width:200px;height:100px"}
@@ -112,7 +84,7 @@ Capture is possible via [CX Cards](CX-Cards.md) currently (Other SDR units may a
 Ruxpin Tapes **GNU Radio Scripts available** [PDF Info](https://github.com/oyvindln/vhs-decode/blob/695d7d7afff524883c71c5d3ebedd0765fab6de8/tools/ruxpin-decode/readme.pdf) / [Lost Media Link](https://www.lostmediawiki.com/The_New_World_of_Teddy_Ruxpin_(partially_lost_animatronic_voiceovers_for_VHS_and_TV_content;_1998))
 
 
-# S-VHS (Super VHS)
+## S-VHS (Super VHS)
 
 
 ![](https://user-images.githubusercontent.com/56382624/222057175-724197dd-4f34-4dee-9afc-fe4f3b7e7247.png){: style="width:200px;height:90"}
@@ -128,7 +100,7 @@ Ruxpin Tapes **GNU Radio Scripts available** [PDF Info](https://github.com/oyvin
 | JVC SVHS    | 400 Lines  | EP         | 525 NTSC  | Yes                | Yes              |
 
 
-# BetaMax (βeta)
+## BetaMax (βeta)
 
 
 ![](assets/images/logos/Betamax_Logo.png){: style="width:px"}
@@ -148,7 +120,7 @@ Ruxpin Tapes **GNU Radio Scripts available** [PDF Info](https://github.com/oyvin
    - PAL Betamax however works like VHS HiFi with depth multiplex and separate heads with different azimuth to the video heads, requiring two physical RF taps and two capture paths - one for video, one for HiFi audio. (There's no space in the video RF to squeeze the HiFi audio in PAL Betamax) 
 
 
-# ED Beta 
+## ED Beta 
 
 
 Extended Definition Betamax
@@ -162,7 +134,7 @@ Extended Definition Betamax
 | ED Beta     | 500 Lines  | βI         | NTSC      | Yes                | Not implemented  |
 
 
-# Umatic
+## Umatic
 
 More Samples & Testing Required!
 
@@ -183,7 +155,7 @@ More Samples & Testing Required!
 | Sony Umatic | 320 lines  | HiBand SP | 625 PAL   | Yes                | Implemented      |
 
 
-# Sony 8mm
+## Sony 8mm
 
 
 Sony's portable consumer format had both camcorders and a limited range of VCRs.
@@ -198,7 +170,7 @@ Video8/Hi8 Runtime & File Sizes
 | NTSC-LP | 300 minutes  | 5 Hours    |                               |                             |
 
 
-## Video8
+### Video8
 
 
 ![](assets/images/logos/Video_8_Logo.png){: style="width:140px"}
@@ -210,7 +182,7 @@ Video8/Hi8 Runtime & File Sizes
 | Sony Video8 | 280 Lines  | SP/LP      | 525 NTSC  | Yes                | Yes*                   | Yes                         |
 
 
-## HI8
+### HI8
 
 
 ![](assets/images/logos/Hi8_logo.png){: style="width:180px"}
@@ -225,7 +197,7 @@ Video8/Hi8 Runtime & File Sizes
 
 *HiFi PAL needs fine tuning. 
 
-# EIAJ
+## EIAJ
 
 | Tape Format | Resolution | Tape Mode  | TV System | RF Capture Support | Decoding Support |
 |-------------|------------|------------|-----------|--------------------|------------------|
@@ -237,7 +209,7 @@ Video8/Hi8 Runtime & File Sizes
 | EIAJ        | 300 Lines  | Colour     | 525 NTSC  | Yes                | Not implemented  |
 
 
-# 1" SMPTE Type C
+## 1" SMPTE Type C
 
 
 | Tape Format | Resolution | TV System | RF Capture Support | Decoding Support |
@@ -249,7 +221,7 @@ Video8/Hi8 Runtime & File Sizes
 *Requires `--fallback_vsync` currently
 
 
-# 1" SMPTE Type B
+## 1" SMPTE Type B
 
 
 | Tape Format | Resolution | TV System | RF Capture Support | Decoding Support |
@@ -259,7 +231,7 @@ Video8/Hi8 Runtime & File Sizes
 | Type B      | 430 Lines  | 625 SECAM | Yes                | Not implemented  |
 
 
-# Philips VCR 
+## Philips VCR 
 
 Philips N1500, Philips N1700
 
@@ -272,7 +244,7 @@ Philips N1500, Philips N1700
 | VCR LP      | 200 Lines? | 625 PAL   | Yes                | Preliminary      |
 
 
-# Philips Video 2000
+## Philips Video 2000
 
 
 | Tape Format | Resolution | TV System | RF Capture Support | Decoding Support |
@@ -282,7 +254,7 @@ Philips N1500, Philips N1700
 ![](assets/images/logos/Video2000_logo.png){: style="width:150px"}
 
 
-# BetaCam
+## BetaCam
 
 
 ![](assets/images/logos/Betacam_logo.png){: style="width:250px"}
@@ -298,7 +270,7 @@ Samples are Required!
 RF capture requires MISRC or CX Cards with Clockgen Mod as this requires 2 channels for Video.
 
 
-# BetaCam SP
+## BetaCam SP
 
 
 ![](assets/images/logos/Betacam_sp_logo.png){: style="width:250px"}
@@ -317,7 +289,7 @@ RF capture requires MISRC or CX Cards with Clockgen Mod as this requires 2 chann
 4ch Baseband Capture but AFM could be RF Captured and run though HiFi-Decode, samples are required. 
 
 
-## MII
+### MII
 
 
 ![](assets/images/logos/MII_logo.png){: style="width:130px"}
@@ -334,14 +306,7 @@ Samples are Required!
 RF capture requires MISRC or CX Cards with Clockgen Mod as this requires 2 channels for Video.
 
 
-# PXL-2000
+## PXL-2000
 
 
 There is already a [decoder](https://github.com/sevkeifert/pxl-2000-decoder) and [YouTube Documentation](https://www.youtube.com/watch?v=G4hM5X7m5_k) on this.
-
-# Page End 
-
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-Sub-Page [Identifying VBI Data](Identifying-vbi-data.md)

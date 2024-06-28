@@ -1,5 +1,6 @@
-# Acronyms Guide
-
+---
+title: Acronyms Guide
+---
 
 This guide is something most projects forget, technical detail while needed to understand the scope and scale of abilities, is not easy to learn from the outside nor is common short-hand speak between new and current userbase members or the layman users who may stumble upon the project, we hope this guide provides some clarity.
 
@@ -43,7 +44,7 @@ This can also allow you to add a Composite output on for example SCART-only PAL 
     Most current setups have a 3.3uf to 10uf decoupling capacitor on the Video RF test points this allows real-time normal playback alongside FM RF capture, so you can get standard audio and video playback as a reference if needed, and can avoid the white snow or streak effect which is hard signal losses.
 
 
-# TV Systems 
+## TV Systems 
 
 
 Analog TV Systems
@@ -66,7 +67,7 @@ PAL decks for example can also playback NTSC tapes but the video output will be 
 Australia of note had a 576p50 standard for broadcasting.
 
 
-## Y+C, Luma + Chroma, Luminance/Chrominance
+### Y+C, Luma + Chroma, Luminance/Chrominance
 
 
 Luma = Light, Black & White Image information
@@ -79,7 +80,7 @@ Composite is combined Y+C so 1 signal and 1 ground.
 
 S-Video has Y + C (Modulated C) on 2 pairs of shielded signal and ground wires 
 
-# [Colour-Under Tape Formats](assets/docs/Technical-Standards-Docs/Sencore-VCR-Tape-Colour-Under-Formats.pdf#FIXME)
+### [Colour-Under Tape Formats](assets/docs/Technical-Standards-Docs/Sencore-VCR-Tape-Colour-Under-Formats.pdf#FIXME)
 
 
 * JVC 1/2inch `VHS`, `VHS-C`, `SVHS`, `SVHS-C`
@@ -101,7 +102,7 @@ Ranges slightly differ based on TV system & format.
 Hence Luminance & Chrominance ends up as 2 separate .TBC files a digital "S-Video" as we now call it.
 
 
-## Baseband RF
+### Baseband RF
 
 
 ![](assets/images/Signal-Examples/CVBS-EBU_75_Ossiliscope-Sony-ILCE-6000-2023.03.12-11.11.50.jpg){: style="width:200px"}
@@ -111,7 +112,7 @@ Hence Luminance & Chrominance ends up as 2 separate .TBC files a digital "S-Vide
 This is an RF signal that has no modulation such as Linear audio that goes from a head to a pre-amp to speakers directly, or composite video that's meant to go directly to an analogue CRT television, or comes directly off an analogue camera.
 
 
-## Composite & S-Video
+### Composite & S-Video
 
 
 ![](assets/images/Cables-&-Connectors/Sony-ILCE-6000-2023.02.22-23.52.23.jpg){: style="width:400px"}
@@ -119,7 +120,7 @@ This is an RF signal that has no modulation such as Linear audio that goes from 
 S-Video (Black), RCA Video (Yellow), RCA Left Audio (White), RCA Right Audio (Red)
 
 
-### Composite (CVBS)
+#### Composite (CVBS)
 
 
 ![](assets/images/Signal-Examples/CVBS-RF-Waveform.png){: style="width:300px"}
@@ -137,7 +138,7 @@ S-Video (Black), RCA Video (Yellow), RCA Left Audio (White), RCA Right Audio (Re
 The defacto baseband video signal standard with 1 signal (centre) and 1 ground (outer) wire, used in all cameras from the 1950's to the 2010s and was the defacto video signal standard with Yellow RCA & BNC connectors used for physically interfacing with equipment.
 
 
-### S-Video
+#### S-Video
 
 
 Also called: **S**eprated **V**ideo, **Y**+**C**, **Y**/**C** **443**
@@ -166,7 +167,7 @@ There are three versions of S-video:
 S-video-525 (NTSC), S-video-525-J (used in Japan), and S-video-625 (PAL).
 
 
-# Time Base Correction
+## Time Base Correction
 
 
 Abbreviated as "TBC" 
@@ -186,7 +187,7 @@ This can be on a line level, 4fsc frame level, or entire signal level, the softw
 | ![](assets/images/example-media/Wedding-1999/Wedding-VHS-ADV-BlackMagic-NV-HS-950B-PAL.jpg){: style="width:400px"} | ![](assets/images/example-media/Wedding-1999/Wedding-VHS-DdD-Decode-NV-HS-950B-PAL.jpg){: style="width:400px"} |
 
 
-## TBC - Time Base Corrected (File Format)
+### TBC - Time Base Corrected (File Format)
 
 
 This `.tbc` is the processed file output of VHS-Decode (Colour-Under & Composite Modulated Tapes), LD-Decode (Composite Modulated LaserDiscs) & CVBS-Decode (RAW Composite Signal Decoding).
@@ -217,7 +218,7 @@ Each channel of video data can be viewed and inspected directly inside of [ld-an
 | ![](assets/images/TBC/frame_pal_source_107_Munday-Walking-Around-Garden-luma-y-tbc.png){: style="width:500px"} | ![](assets/images/TBC/frame_pal_chroma_107_Munday-Walking-Around-Garden-c-chroma-tbc.png){: style="width:500px"} | ![](assets/images/TBC/frame_pal_chroma_ar43_114_Munday-Walking-Around-Garden-y-&-c-tbc.png){: style="width:500px"} |
 
 
-## RF
+### RF
 
 
 **R**adio **F**requency
@@ -229,7 +230,7 @@ In the context of this project, FM RF information is stored on the tape and tran
 Example of waterfall visualisation of the local FM radio waves and a tuned-in radio station on an RTL-SDR using the free [SDR++](https://www.sdrpp.org/) application.
 
 
-## FM RF
+### FM RF
 
 
 **F**requency **M**odulated **R**adio **F**requency
@@ -245,7 +246,7 @@ This is an audio or video signal but the information is compressed via modulatio
 > Adobe Audition Full Resolution Raster from FM RF capture (.flac file) with spectrograph.
 
 
-## ADC & DAC
+### ADC & DAC
 
 
 **A**nalouge to **D**igital **C**onverter / **D**igital to **A**nalouge **C**onverter (also called AD/DA)
@@ -261,7 +262,7 @@ The rate at which these devices can convert signals is normally in SPS - Samples
 Example the human hearing range is around 20hz to 20khz to sample this range of sounds we record an analogue microphones signal at 48khz today which covers over the standard range and compensates ideally for person to person differences but minimum sampling for example is 44.1khz used for CD audio, but ware vast points of sound are needed to be captured for expanded example an orchestra you would use something like 192khz more information more range of signals to be captured.
 
 
-## MSPS
+### MSPS
 
 
 **M**illion **S**amples **P**er **S**econd 
@@ -269,7 +270,7 @@ Example the human hearing range is around 20hz to 20khz to sample this range of 
 2msps = 1mhz of effective information sampling of an analogue signal this is a basic concept of digitisation of analogue information called Nyquist sampling.
 
 
-## SNR
+### SNR
 
 
 **S**ignal to **N**oise **R**atio
@@ -297,7 +298,7 @@ CVBS-Decode
 `38-60 dB` - Good Signal
 
 
-## 4fsc
+### 4fsc
 
 
 Four times the frequency of sub-carrier, or actual signal within a range in simple terms. 
@@ -319,7 +320,7 @@ In simple terms the same system used for D2/D3 tape.
 ![](assets/docs/Book-Extracts/Poynton/Book-02/Page-171.png#FIXME){: style="width:400px;height:500px"}![](assets/docs/Book-Extracts/Poynton/Book-02/Page-172.png#FIXME){: style="width:400px;height:500px"}
 
 
-## DdD - DomesdayDuplicator
+### DdD - DomesdayDuplicator
 
 
 ![](https://user-images.githubusercontent.com/56382624/183899501-a1914f3f-0710-4095-8f0e-b84e6d266d1c.png){: style="width:300px"}
@@ -329,7 +330,7 @@ The 40msps (20mhz of bandwidth) USB 3.0 based RF capture device is purpose-built
 [How to Order a Domesday Duplicator (DdD) for Dummies](https://docs.google.com/document/d/1k2bPPwHPoG7xXpS1NCYEe3w_jD_ts0yRCp-2aQ6QoKY)
 
 
-## CX Card
+### CX Card
 
 
 ![](https://github.com/happycube/cxadc-linux3/wiki/assets/images/CX-Cards/CX-Card-White-Frount-High-Res-Scaled-2022.12.21.png){: style="width:300px"}
@@ -345,7 +346,7 @@ These are the most common and affordable (16-25USD) RF capture cards on the mark
 Warning: There is a later series (CX23884 - CX23889) that will not work as they use a whole new architecture.
 
 
-## CXADC
+### CXADC
 
 
 ![](assets/images/Hardware/Timeout-10sec-CXADC-Capture.gif){: style="width:400px"}
@@ -355,10 +356,10 @@ This is a modified Linux driver that replaces the stock control & capture driver
 This allows via a testing mode called `RAW16` to output all signal information that's digitised directly to a RAW file `.u8` & `.u16` instead of just digitising and decoding TV Signals and Composite ones to video streams as it was originally made to do.
 
 
-# Secondary Acronyms You Will Encounter
+## Secondary Acronyms You Will Encounter
 
 
-# Poynton 
+### Poynton 
 
 
 Lord Poynton, Saint Poynton, The God of standards Poynton.
@@ -374,13 +375,13 @@ The books you need to get your hands on to understand why are the following (PDF
 - `Digital Video and HDTV: Algorithms and Interfaces 2nd Edition` - 2012
 
 
-## ADV / Analog Devices
+### ADV / Analog Devices
 
 
 Analog Devices, Inc. chips of note, i.e. [ADV7842](https://www.analog.com/media/en/technical-documentation/data-sheets/adv7842.pdf) used by AJA, Blackmagic, Magewell and Ensembledesigns (Bright Eyes) in desktop cards USB cards and SDI equipment, lower end devices do not leverage this chips TBC abilities and will not work well with unstable signals. 
 
 
-## PEC Pads / Cleaning Pads
+### PEC Pads / Cleaning Pads
 
 
 These are just lint-free same as generic high-quality wet wipes just dry and clean look-up nail wipes same stuff, you can get smaller "nail wipes" same exact thing.
@@ -388,10 +389,10 @@ These are just lint-free same as generic high-quality wet wipes just dry and cle
 There is also Suede (Pronounced ''Swayed'') cleaning sticks these are mostly a ripoff for camera sensor and VCR cleaning but are useful.
 
 
-# Codecs & Containers 
+## Codecs & Containers 
 
 
-## Codecs 
+### Codecs 
 
 
 These fall into pretty clear types
@@ -402,7 +403,7 @@ For example `V210` is lossless YUV and `R410` is lossless RGB, `ProRes HQ` is vi
 
 When people talk about a `mp4` file they generally are encoding a video codec like AVC/H.264 to that container without knowing context past higher bitrate good and lower means mushy video which is why lossy codecs should never really be used for analogue media as FFV1 8-bit is smaller then even DVCPro50 an common lossy capture codec.
 
-## Containers 
+### Containers 
 
 
 These fall into 3 main types
@@ -424,7 +425,7 @@ There is key terms here in standard video world,
 Hardware codecs are also a thing but its outside of the scope, but hardware supported codecs does affect playback support on devices.
 
 
-# Magnetic Storage Mediums HDD, SSHD, SSD, NVME.
+## Magnetic Storage Mediums HDD, SSHD, SSD, NVME.
 
 
 Interfaces: SAS, SATA, SCSI, PCIe, FC - Fibre Channel 
@@ -440,7 +441,7 @@ There is two main interfaces internally used by computer systems and phones toda
 There is also SAS using an extended version of the SATA connector which has 12GB/s instead of SATA's 6GB/s speed used in the datacenter/server space, controller cards are available and work on consumer PC's this is note worthy if a good deal is found for HDD sales.
 
 
-## HDD - Hard Disk Drive
+### HDD - Hard Disk Drive
 
 
 Affectionately called spinning rust this is a plater of magnetic disks in an airtight helium-filled box they go upto 22TB in storage capacity in the 3.5-inch desktop sizing form factor.
@@ -450,13 +451,13 @@ Affectionately called spinning rust this is a plater of magnetic disks in an air
 HDD's are speed limited to around 200-320MB/s per drive at the 7200rpm spec this is due ot the physical speed of actuators, however current generation HDDs can reach 500MB/s.
 
 
-## SSHD - Solid State Hard Drive
+### SSHD - Solid State Hard Drive
 
 
 SSHD's go up to 4TB its basically an HDD with an 8-64GB solid-state buffer (flash/nvme) that caches data for quick use from writing data to the drive locally faster or storing heavy use files like small game data for quick loading, however, this adds a layer of reliability and recovery issues as the SSD part can fail a lot faster then the mechanical drive.
 
 
-## SSD - Solid State Drive
+### SSD - Solid State Drive
 
 
 It's used in your phone it's used in all modern storage, provides lower heat and high shock resistance, 1000x faster access times but less durable in some regards mostly in their read/write cycles and how much data they can move onto/off of is limited, so they don't die from operation hours they die from operating.
@@ -466,7 +467,7 @@ These got up to 100TB in the 3.5-inch desktop size using stacked boards, and 16T
 Hardware speed is limited to 550MB/s (SATA 6Gbps) per drive due to interface limitations.
 
 
-## NVME SSD (Non-Volatile Memory Express)
+### NVME SSD (Non-Volatile Memory Express)
 
 
 Today becoming more commonly known as its been widely adopted in the "M.2 SSD" format NVME is a high-speed solid-state drive that directly connects to a system CPU (central processing unit) via PCIe lanes which is how most secondary hardware is connected on computers such as video/graphics cards and HDMI/SDI capture cards and so on.
@@ -488,10 +489,10 @@ Current fastest speed consumer drive:
 7,450 MB/s Read / 6,900 Write (SAMSUNG 990 PRO Gen 4 PCIe)
 
 
-# Non-Volatile Optical Storage Mediums
+## Non-Volatile Optical Storage Mediums
 
 
-## DVD
+### DVD
 
 
 One of the most common disc formats made, with dye based ones being cheep as anything, with much more stable metal/composite based discs being the defacto today.
@@ -503,7 +504,7 @@ One of the most common disc formats made, with dye based ones being cheep as any
 These formats also have gold/silver based "archival grade" discs, but overall cost per GB it's more practical to go Blu-Ray unless making legacy distros and duplicates or people are stuck on DVD/CD hardware.
 
 
-## Blu-Ray: BD & BDXL
+### Blu-Ray: BD & BDXL
 
 
 BD or Blu-Ray Disks same physical size & mechanical operation as CD/DVD (120mm) but a (405nm) blue laser hence the name but the standard really means to the layman more pits per disc so more storage per disc/layer.
@@ -525,7 +526,7 @@ There are also re-writable versions of note their usage in the Sony XDCAM camera
 These are used for SD/HD/UHD Video and Game delivery media today hence why all current-gen disk reading systems have a BDXL player.
 
 
-## M-Disk
+### M-Disk
 
 
 Millennial Disc made by Millenniata (Fabricated and sold by Verbatim/Ritek today)
@@ -560,7 +561,7 @@ All Current DVD, BD, and BDXL burners support their respective M-Disk versions.
 50GBP / 70USD per top-end BDXL reader/writers M-Disk wins in terms of future-proofing and cost of interface hardware with UDF disk formatting supported on all computer platforms from desktops and even IOS/Android based smartphones.
 
 
-## DM Archive 
+### DM Archive 
 
 
 ![](assets/images/archival-hardware/DM-Archive-Disc-Reader.png){: style="width:300px"}
@@ -579,7 +580,7 @@ This is the newest system standardised by Japan for Blu-Ray based discs using th
 Limited to 25GB Discs possible to see upto 128GB in the future.
 
 
-## GlassMaserDisc
+### GlassMaserDisc
 
 
 While being the most rugged optical media on the market in terms of stress tests at 1000 Euros for a 25GB or 50GB disc, they are fabricated on-demand primarily used for archive and master copies for duplication of release media.
@@ -587,7 +588,7 @@ While being the most rugged optical media on the market in terms of stress tests
 The real-world value however is little, unless you have endless money these are just not as cost practical as M-Discs or even Sony Optical Archive for small or large-scale archival due to the 50GB limit compared to 100GB/128GB & 5.5TB on standard systems today.
 
 
-## Sony Optical Archive & PetaSite
+### Sony Optical Archive & PetaSite
 
 [Sony Official Webpage](https://pro.sony/en_GB/products/optical-disc)
 
@@ -606,7 +607,7 @@ A very cost-effective solution for large archives i.e 100+ 3-6 hour tapes, but a
 Rackmount scale in 7U units [PetaSite](https://pro.sony/en_GB/products/optical-disc/petasite-solutions) system with automated loading and unloading of cartridges providing a full-scale optical version of LTO, meant primarily for permanent offline or recovery backup storage as they can't be overwritten by software and require mechanical destruction to be erased, water chemical and electronic interference cant damage this format in most real-world disaster situations.
 
 
-## LTO Linear Tape-Open
+### LTO Linear Tape-Open
 
 
 IBM's 20-year tried and true digital tape archival.
@@ -636,6 +637,3 @@ Current datacentres, broadcasters, production houses and small to large business
 LTO tapes use high partial density magnetic tape, with current data storage encoding methods and physical manufacturing methods, sadly these are still very susceptible to high electromagnetic radiation but more so heat and moisture alongside mechanical ware and like videotape, these won't last long in high temperatures or survive floods but they are good for 20-35 years of shelf life in stable environments but have a high media migration cost to consumers.
 
 High Density, Kinetically un affected by physical travel, and standardised fixed sizing allows this format to me a replace readers upgrade path for autoloader systems making it very affordable at the 100TB mark or higher of archival requirement.
-
-
-# Page End

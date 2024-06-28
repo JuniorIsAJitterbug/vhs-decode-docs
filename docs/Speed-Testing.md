@@ -1,4 +1,6 @@
-# Processing Speed Testing Guide 
+---
+title: Processing Speed Testing Guide 
+---
 
 This guide is for testing processing speed on hardware configurations with new or old code in the vhs/ld/cvbs decode suits. 
 

@@ -1,5 +1,6 @@
-# The Tap List 
-
+---
+title: The Tap List
+---
 
 This list contains a large library of images and details on "RF Taps" community members have done to get signals out of there VCRs, VTRs, Camcorders & Open-Reel systems for FM RF capture, varying from probes to more permanent BNC installs.
 
@@ -25,35 +26,13 @@ There are 4 types of RF taps you will observe:
 * Direct Head Amplifier Tap see Panasonic [NV-HS1000](#panasonic-nv-hs1000) & [NV-HS950B](#panasonic-nv-hs950b) for examples for this.
 
 
-## Index 
-
-- [Open Reel Formats](#open-reel-formats)
-    - [EIAJ 1 & 2](#eiaj-12)
-
-- [Colour-Under Formats](#colour-under-formats)
-   -  [VHS / SVHS](#vhs-svhs-decks)
-   -  [Umatic](#umatic-decks)
-   -  [BetaMax](#betamax-decks)
-   -  [Sony 8mm](#sony-8mm)
-       - [Video8](#video-8)
-       - [HI8](#hi8)
-
-- [Broadcast Formats](#broadcast-tape-formats)
-   - [Umatic](#umatic-decks)
-   - [Umatic SP](#umatic-decks)
-   - [SMPTE 1" Type C](#smpte-1-type-c-decks)
-   - [SMPTE 1" Type B](#smpte-1-type-b-decks)
-   - [BetaCam](#betacam-decks)
-   - [BetaCam SP](#betacam-sp-decks)
+## Colour-Under Formats
 
 
-# Colour-Under Formats
+### VHS & SVHS Decks
 
 
-# VHS & SVHS Decks
-
-
-## Panasonic NV-HS950B
+#### Panasonic NV-HS950B
 
 
 K-Mech S-VHS HiFi VCR 90s era
@@ -74,7 +53,7 @@ K-Mech S-VHS HiFi VCR 90s era
 Standard test point tap this can fit a 25v 10uf cap nicely inside the removable TBC module easy access to a solder-able surface for grounding, then thread RG178 cable through the plastic mounting gap to a BNC.
 
 
-### Direct Head Amplifier Tap Example 01
+##### Direct Head Amplifier Tap Example 01
 
 !!! NOTE
     This is a direct tap testing deck, you do not need to directly tap the head amplifiers but if you do it will require a capacitor added in-line, and the pin wedge method will be easier.
@@ -96,13 +75,13 @@ Requires a 10uf capacitor in-line for SVHS RF captures on direct taps the signal
 6.  Test Point TWGND Ground next to HiFi RF
 
 
-## Panasonic NV-HS1000
+#### Panasonic NV-HS1000
 
 
 K-Mech, the easiest tap point is the head amplifier, removal of the mainboard is ideal for adding BNCs for RF taps, but is quite a tight case.
 
 
-### Direct Head Amplifier Tap Example 02
+##### Direct Head Amplifier Tap Example 02
 
 
 ![](assets/images/vhs/Panasonic-NV-HS1000/Panasonic-NV-HS1000_head-amp-mod_2.jpg){: style="width:400px"}
@@ -119,7 +98,7 @@ From left to right:
 The pin tap method wedges the capacitor negative leg between the ribbon cable and the board connector, 3.3uf electrolytic tested and working well.
 
 
-## Panasonic AG1980P
+#### Panasonic AG1980P
 
 01. TP1 ENV - Video RF 
 
@@ -129,7 +108,7 @@ The pin tap method wedges the capacitor negative leg between the ribbon cable an
 
 
 
-## Panasonic AG5700
+#### Panasonic AG5700
 
 
 01. TP3301 ENV Test point on top of main PCB (which is RF C from head amp via 0.01 uf capacitor) - tested ok with DDD
@@ -137,7 +116,7 @@ The pin tap method wedges the capacitor negative leg between the ribbon cable an
 02. todo: hi-fi
 
 
-## SANYO VHR-VT221A / NZ 
+#### SANYO VHR-VT221A / NZ 
 
 
 (Made by Orion?)
@@ -147,7 +126,7 @@ The pin tap method wedges the capacitor negative leg between the ribbon cable an
 02. TP4001 Head Switching Pulse
 
 
-## Samsung-SV623F
+#### Samsung-SV623F
 
 
 Samsung made VCR Range late 90s and on (including early 2000s and later Sony)
@@ -176,7 +155,7 @@ With the Domesday duplicator at least, it seems the test point ground doesn't wo
 HiFi RF Capture is not possible, due to the modern IC used.
 
 
-## Sony SLV-SE60
+#### Sony SLV-SE60
 
 
 Sony late 90s/early 2000s
@@ -199,13 +178,13 @@ Separate 2-pin connector for FM audio right of mechanism (CN341 on SLV-SE60 and 
 DuPont Connector RF Tap [Female Cable Link](https://www.amazon.com/dp/B09VB9TS89/) [Male Cable Link](https://www.amazon.com/dp/B09VBC7611/)
 
 
-## Notes
+##### Notes
 
 
 For the PAL variants at least, it seems these often have some capacitors in the power supply go bad, which can cause interference on image on normal playback, and failure to turn on depending on which ones are bad.
 
 
-## Sony SLV-677HF
+#### Sony SLV-677HF
 
 
 ![](assets/images/vhs/Sony-SLV-677HF/Sony-SLV-677HF-Dupont-Tap-Croped-Papapishu3230.jpg){: style="width:500px"}
@@ -221,7 +200,7 @@ DuPont Connector RF Tap [Female Cable Link](https://www.amazon.com/dp/B09VB9TS89
 ![](assets/images/vhs/Sony-SLV-677HF/Sony-SLV-677HF-Dupont-Tap-Close-Up-Papapishu3230.jpg){: style="width:300px"}
 
 
-## Sony SVO-2100
+#### Sony SVO-2100
 
 
 Top Board, Floating Bar Type Test Point 
@@ -254,7 +233,7 @@ Shield - Ground
 
 
 
-## Sony SVO-5800
+#### Sony SVO-5800
 
 
 Head Amplifier board right to left order (based off expansion probe board)
@@ -269,7 +248,7 @@ Head Amplifier board right to left order (based off expansion probe board)
 ![](assets/images/vhs/Sony-SVO-5800/Sony-SVO-5800-Head-Amp-2023.02.01_19.19.16.45.42.jpg){: style="width:400px"}
 
 
-## Sony SLV-E730
+#### Sony SLV-E730
 
 
 ![](assets/images/vhs/Sony-SLV-E730/Sony_SLV-E730_IMG_3328.jpg){: style="width:400px"}
@@ -279,7 +258,7 @@ Head Amplifier board right to left order (based off expansion probe board)
 ![](assets/images/vhs/Sony-SLV-E730/Sony_SLV-E730_IMG_3334.jpg){: style="width:300px"}
 
 
-## Samsung SV-DVD (1E) line (DVD/VHS Combo Decks)
+#### Samsung SV-DVD (1E) line (DVD/VHS Combo Decks)
 
 
 They have a dedicated header of test points called TP01
@@ -294,7 +273,7 @@ They have a dedicated header of test points called TP01
 HiFi RF Capture is not possible, due to the modern IC used.
 
 
-## Bush VCR925NSIL (Orion-made)
+#### Bush VCR925NSIL (Orion-made)
 
 
 Test Points are left-hand side of the mainboard, using a floating bar style next to the TV pack.
@@ -314,7 +293,7 @@ Deck With mechanical and Fused IEC14 & BNC Bulkhead Mods
 ![](assets/images/vhs/Bush-VCR925NSIL/Bush-VCR925NSIL-Sony-ILCE-7RM3-2022.04.26-04.19.15.jpg){: style="width:400px"}
 
 
-## Thomson VP-4650
+#### Thomson VP-4650
 
 
 pal/secam/ntsc Thomson vp-4650
@@ -322,7 +301,7 @@ pal/secam/ntsc Thomson vp-4650
 01. PB_YC (PB On Board Label)
 
 
-## Panasonic AG-MD830
+#### Panasonic AG-MD830
 
 
 ![](assets/images/vhs/Panasonic-AG-MD830/Panasonic-AG-MD830-Overview-Sony-ILCE-7RM3-2022.10.12-19.04.01.JPG){: style="width:500px"}
@@ -333,7 +312,7 @@ pal/secam/ntsc Thomson vp-4650
 Due to the removable back service panel easy bulkhead space for 2-6 BNC's.
 
 
-## Panasonic AG-7150 (Professional 3U Rackmount Player)
+#### Panasonic AG-7150 (Professional 3U Rackmount Player)
 
 
 ![](assets/images/vhs/Panasonic-AG-7150/Panasonic-AG-7150-Overview-Sony-ILCE-7RM3-2022.10.12-19.02.32.JPG){: style="width:800px"}
@@ -348,7 +327,7 @@ Due to the removable back service panel easy bulkhead space for 2-6 BNC's.
 
 
 
-## Panasonic AG-5260 (Compact K-Mech)
+#### Panasonic AG-5260 (Compact K-Mech)
 
 
 [User Manual](assets/images/vhs/Panasonic-AG5620/Panasonic-AG-5260-User-Manual.pdf) / [Service Manual](assets/images/vhs/Panasonic-AG5620/Panasonic-AG-5260-Service-Manual.pdf)
@@ -378,7 +357,7 @@ Direct Head Amp Taps are needed for full hifi, this allows this deck to do HiFi 
 
 With the bottom of the shield conrnoer being cut off there is enough space for RG178/RG316 routed out the testing cut out of the main PCB.
 
-### Audio Control
+##### Audio Control
 
 HiFi Output
 
@@ -393,7 +372,7 @@ Linear Only Output
     for NV-HD/NV-SD models, the non-European and multi-system variants are sometimes closer to the next year's central Europe variant with the same number (excl letter prefix).
 
 
-## Panasonic NV-HD610EC
+#### Panasonic NV-HD610EC
 
 
 ![](assets/images/vhs/Panasonic-NV-HD610/nv_hd610 full.jpg){: style="width:600px"}
@@ -404,7 +383,7 @@ Linear Only Output
 2. RF TP4502 Hi-Fi RF (on head amp, not tested) 
 
 
-## Panasonic NV-HD620EC
+#### Panasonic NV-HD620EC
 
 
 ![](assets/images/vhs/Panasonic-NV-HD620/nv_hd620 full.jpg){: style="width:600px"}
@@ -415,7 +394,7 @@ Linear Only Output
 2. RF - TP4502(on head amp) / TL4519 on hi-fi pack - Hi-Fi RF (don't remember which one I used)
 
 
-## Panasonic NV-HD630
+#### Panasonic NV-HD630
 
 
 NV-HD630, NV-HD630B etc
@@ -452,7 +431,7 @@ Stock [AD8367](https://www.aliexpress.com/item/1005004251551614.html) amplifyer 
 ![](assets/images/vhs/Panasonic-HD630/Panasonic-HD630B-CVBS-Out-Sony-ILCE-7RM3-2022.10.01-18.16.26.JPG){: style="width:400px"}
 
 
-## Panasonic NV-J30 HQ
+#### Panasonic NV-J30 HQ
 
 
 01. TP-3001 - Video RF
@@ -460,7 +439,7 @@ Stock [AD8367](https://www.aliexpress.com/item/1005004251551614.html) amplifyer 
 **Note:** No HiFi on this deck.
 
 
-## Panasonic Panasonic AG-1730
+#### Panasonic Panasonic AG-1730
 
 
 Unknown Tap Points to Update
@@ -477,14 +456,14 @@ Unknown Tap Points to Update
 
 
 
-## JVC HR-S9800U
+#### JVC HR-S9800U
 
 
 01. A.FM
 02. PB.FM
 
 
-## JVC JVC HR-S7500
+#### JVC JVC HR-S7500
 
 
 There is enough space for 2 BNC bulkheads next to the right side of the TV Modulation back.
@@ -503,7 +482,7 @@ There is enough space for 2 BNC bulkheads next to the right side of the TV Modul
 ![](assets/images/vhs/JVC-HR-S7500/JVC-HR-S7500-BNC-On-Back.jpeg){: style="width:400px"}
 
 
-## JVC-BR-S622U
+#### JVC-BR-S622U
 
 
 **Note** we have [data & dumped EPROM chips](https://drive.google.com/open?id=1pZup6UA-aphUDAUQtvUblo1P73u8qpID&authuser=harry%40opcomedia.com&usp=drive_fs) for this VCR.
@@ -519,7 +498,7 @@ There is enough space for 2 BNC bulkheads next to the right side of the TV Modul
 
 
 
-## JVC BR-S800U
+#### JVC BR-S800U
 
 
 **Note** we have [data & dumped EPROM chips](https://drive.google.com/open?id=1rzTsGS0e33lAOFoW04JKMUVgPuzAiZGZ&authuser=harry%40opcomedia.com&usp=drive_fs) for this VCR.
@@ -536,14 +515,14 @@ For video .1uf polymer capacitor.
 
 ![](assets/images/vhs/JVC-BR-S800/JVC-BR-S800-20230113_150715.jpg){: style="width:400px"}
 
-## AKAI-VS-G245EA
+#### AKAI-VS-G245EA
 
 TP851 - PB ENV Directly On Head Amplifier Board
 
 ![](assets/images/vhs/AKAI-VS-G245EA/AKAI-VS-G245EA-20230121-215039.jpg){: style="width:400px"}
 
 
-## LG-V280
+#### LG-V280
 
 
 ENV is on a flat touch test point pad, easily solder able onto. 
@@ -557,7 +536,7 @@ ENV is on a flat touch test point pad, easily solder able onto.
 ![](assets/images/vhs/LG-V280/LG-V280_IMG_20200120_152636.jpg){: style="width:400px"}
 
 
-## Samsung DVD-VR336
+#### Samsung DVD-VR336
 
 
 Test Points are off to the left side of the VCR next to the power supply shield.
@@ -576,7 +555,7 @@ Metal Chassis.
 ![](assets/images/vhs/Samsung-DVD-VR336/Samsung-DVD-VR336-2023.03.17-18.06.00.jpg){: style="width:400px"}
 
 
-## Panasonic NV-VP30
+#### Panasonic NV-VP30
 
 
 DVD VHS Combo VCR
@@ -593,7 +572,7 @@ DVD VHS Combo VCR
 ![](assets/images/vhs/Panasonic-NV-VP30/Video-FM-RF-Panasonic-NV-VP30-55.jpg){: style="width:400px"}
 
 
-## Panasonic PV-7450-K
+#### Panasonic PV-7450-K
 
 
 1997 era unit.
@@ -607,7 +586,7 @@ HiFi Unknown
 ![](assets/images/vhs/Panasonic-PV-7450-K/Panasonic-PV-7450-K-2022.12.30_16.07.14.jpg){: style="width:400px"}
 
 
-## Panasonic-PV-4612S
+#### Panasonic-PV-4612S
 
 
 Panasonic PV-V4612S( Tested), PV-V402, PV-V4022, PV-V4522, PV-V4612
@@ -629,7 +608,7 @@ HIFI Tap: TP4207 (10uf/50v)
 ![](assets/images/vhs/Panasonic-PV-4612S/luisvhs-4577-20230421_184130.jpg){: style="width:400px"}
 
 
-## JVC-HR-S2912I
+#### JVC-HR-S2912I
 
 
 Video RF: TP106 PB FM 
@@ -649,7 +628,7 @@ HiFi RF: TP2253 A.PB
 ![](assets/images/vhs/JVC-HR-S2912I/SkinnyV-2739_Test_Points_IMG_8078.jpg){: style="width:400px"}
 
 
-## Samsung-DVD-V5450
+#### Samsung-DVD-V5450
 
 
 CVBS Test Point: V.OUT W326
@@ -666,7 +645,7 @@ Ground: W321
 ![](assets/images/vhs/Samsung-DVD-V5450/Samsung-DVD-V5450_2023.03.30_20.59.09.jpg){: style="width:400px"}
 
 
-## JVC-HR3800U
+#### JVC-HR3800U
 
 
 TP2253 A.PB.FM
@@ -680,7 +659,7 @@ TP106 PB.FM
 
 ![](assets/images/vhs/JVC-HR3800U/JVC-HR3800U-Grounding.jpg){: style="width:600px"}
 
-## Panasonic AW1 
+#### Panasonic AW1 
 
 
 World Wide System VCR, Similar layout to NV-HS1000
@@ -690,7 +669,7 @@ World Wide System VCR, Similar layout to NV-HS1000
 ![](assets/images/vhs/Panasonic-AW1/Panasonic-AW1-RF-Tap-3.jpg){: style="width:600px"}
 
 
-## Mitsubishi-HS-U780
+#### Mitsubishi-HS-U780
 
 
 SVHS / HiFi
@@ -710,7 +689,7 @@ TP2A   - HiFI RF
 ![](assets/images/vhs/Mitsubishi-HS-U780/Mitsubishi-HS-U780_IMG_6899.jpg){: style="width:600px"}
 
 
-## Tevion MD 2588
+#### Tevion MD 2588
 
 
 VHS HQ / HiFI
@@ -745,7 +724,7 @@ SCART / RCA Outputs
 ![](assets/images/vhs/Tevion-MD-2588/Tevion_MD_2588_Sony_XQ-BQ52_2023.07.28_15.16.46.jpg){: style="width:600px"}
 
 
-## Loewe OC3800H 
+#### Loewe OC3800H 
 
 Rebadged Panasonic HS1000
 
@@ -764,7 +743,7 @@ TP1: Video RF
 ![](assets/images/vhs/Loewe-OC3800H-Rebadged-HS1000/Loewe-OC3800H_2023.08.06_08.31.58.jpg){: style="width:600px"}
 
 
-## Fisher FVH-P450S (Sanyo)
+#### Fisher FVH-P450S (Sanyo)
 
 ![](assets/images/vhs/Fisher-FVH-P450S/fvh-p450s.jpg){: style="width:600px"}
 
@@ -777,7 +756,7 @@ Most Sanyo/Fisher decks from the early-mid-late 90s use similar setups with vide
 Audio RF does not have a separate test point
 
 
-## Philips DVP3345V17
+#### Philips DVP3345V17
 
 
 TP 310 - C-PB
@@ -791,13 +770,13 @@ J28 - Ground
 ![](assets/images/vhs/Philips-DVP3345V17/Philips-DVP3345V17-IMG_20230829_213846970.png){: style="width:600px"}
 
 
-# BetaMax Decks
+### BetaMax Decks
 
 
 Sony generally used the generic 2.54mm header pins on there VCR formats for test points so you can easily use DuPont Connectors [Cable Guide & Links](Hardware-Installation-Guide.md)
 
 
-## Sanyo VTC5000
+#### Sanyo VTC5000
 
 
 ![](assets/images/Beta/Sanyo-VTC5000/Sanyo-VTC5000-Front-Sony-ILCE-6000-2023.03.19-13.25.04.jpg){: style="width:400px"}
@@ -812,7 +791,7 @@ Alignment Test Point (3x 2.54mm header pins) 3rd one right back orientation 3rd 
 ![](assets/images/Beta/Sanyo-VTC5000/Sanyo-VTC5000-RF-Tap-Sony-NEX-3N-2022.09.01-20.49.52.JPG){: style="width:400px"}
 
 
-## Sony SL-C40 ES
+#### Sony SL-C40 ES
 
 
 ![](assets/images/Beta/Sony-SL-C40-ES-Betamax/Sony-SL-C40-ES-Betamax-External-Example.jpg){: style="width:400px"}
@@ -827,7 +806,7 @@ Test points on the left side of the main board, there is a 3 pin header and a 5 
 2.  Pin 2 - Ground
 
 
-## Sony SL-F1 E/UB
+#### Sony SL-F1 E/UB
 
 
 E is Europe model, UB is UK I think?
@@ -849,7 +828,7 @@ See also notes on betamax palsite about unit for servicing notes (important to r
 http://www.palsite.com/slf1tech.html
 
 
-## Sony SL-2710
+#### Sony SL-2710
 
 
 RF info:
@@ -889,7 +868,7 @@ Various captures attached for reference with variable info in file names
 
 
 
-# Sony 8mm
+### Sony 8mm
 
 
 [Dedicated Sony 8mm Wiki Page](Sony-8mm-Formats.md)
@@ -902,10 +881,10 @@ Sony's newer 8mm camcorders can already give excellent results with lossless con
 
 
 
-# Digital8
+### Digital8
 
 
-## Sony Digital8 DCR-TRV840 (Video8 & Hi8) (NTSC)
+#### Sony Digital8 DCR-TRV840 (Video8 & Hi8) (NTSC)
 
 Also Applys to,  DCR-TRV738E, DCR-TRV740, and DCR-TRV740E.
 
@@ -928,7 +907,7 @@ At the back of the camcorder, battery area, there is a rubber or plastic grommet
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV840/Sony-Digital8-DCR-TRV840-Jig-Points.PNG){: style="width:400px"}
 
 
-## Sony Digital 8 DCR-TRV238E (Video8 & Hi8) (PAL)
+#### Sony Digital 8 DCR-TRV238E (Video8 & Hi8) (PAL)
 
 
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV238E/Sony-Digital8-TVR238E_With_Notes.jpg){: style="width:400px"}
@@ -941,7 +920,7 @@ At the back of the camcorder, battery area, there is a rubber or plastic grommet
 2. Pin 5 - Ground
 
 
-## Sony Digital8 DCR-TRV355E
+#### Sony Digital8 DCR-TRV355E
 
 
 16-pin JIG
@@ -957,7 +936,7 @@ Requires Capacitor In Line
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV355E/Sony-Digital8-DCR-TRV355E-RF-Tap.jpeg){: style="width:400px"}
 
 
-## Sony Digital8 DCR-TRV320E
+#### Sony Digital8 DCR-TRV320E
 
 20 Pin Jig
 
@@ -972,7 +951,7 @@ Pin 6 - Ground
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV320E/DCR-TRV320E_Jig_Point_20pin.png){: style="width:400px"}
 
 
-## Sony Digital8 DCR-TRV480
+#### Sony Digital8 DCR-TRV480
 
 
 16-pin JIG 
@@ -993,7 +972,7 @@ Pin 6 - Ground
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV480/Sony-Digital8-DCR-TRV480_Jig.jpg){: style="width:400px"}
 
 
-## Sony Digital8 DCR-TRV460
+#### Sony Digital8 DCR-TRV460
 
 
 Apply's to DCR-TRV360/TRV361/TRV460/TRV460E/TRV461E.
@@ -1010,10 +989,10 @@ Pin 6 - Ground
 
 
 
-# Video 8 
+### Video 8 
 
 
-## Sony Video8 EV-A60 (NTSC)
+#### Sony Video8 EV-A60 (NTSC)
 
 
 Right-hand side of the mech, connector CN402
@@ -1032,7 +1011,7 @@ Standard 2.54mm header pins used.
 ![](assets/images/Sony-8mm/Sony-Video8-EV-A60/Titan91-DSC_3186.JPG){: style="width:400px"}
 
 
-## Sony Video8 PAL-VPL150
+#### Sony Video8 PAL-VPL150
 
 
 ![](assets/images/Sony-8mm/Samsung-Video8-PAL-VPL150/Samsung-PAL-VPL150_2023.09.09_18.41.46.jpg){: style="width:400px"}
@@ -1050,7 +1029,7 @@ https://es.farnell.com/en-ES/samtec/fte-107-03-g-dv/header-0-8mm-2x7way-smt/dp/3
 `CONNECTOR-SOCKET;14P,2R,0.8mm,STRAIGHT,S`
 
 
-## Sony Video8 CCD-TR517
+#### Sony Video8 CCD-TR517
 
 
 `XR` Era Camcorder
@@ -1070,10 +1049,10 @@ Pin 6 - Ground
 
 
 
-# Hi8
+### Hi8
 
 
-## Sony Hi8 CCD TVR66E
+#### Sony Hi8 CCD TVR66E
 
 
 FPC adapter is six pin and secured to to the battery by Gorilla double sided tape to strain relief the fpc
@@ -1093,7 +1072,7 @@ Pin 8 is Ground
 ![](assets/images/Sony-8mm/Sony-Hi8-CCD-TRV66E/Sony-Hi8-CCD-TRV66E_2023.08.06_08.31.43.jpg){: style="width:200px"}
 
 
-## Sony Hi8 TVR318
+#### Sony Hi8 TVR318
 
 
 [Jig Method](Hardware-Installation-Guide.md#jig-method) 16pin Jig + Cap Used (Appears to require external amplification on inital testing)
@@ -1107,7 +1086,7 @@ Pin 8 is Ground
 ![](assets/images/Sony-8mm/Sony-Hi8-TRV318/Sony-Hi8-TRV318-Cover-Removed_2023.03.17_15.38.51.jpg){: style="width:400px"}
 
 
-## Sony Hi8 CCD TRV615
+#### Sony Hi8 CCD TRV615
 
 
 [User Manual](https://github.com/oyvindln/vhs-decode/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV615/Sony-Hi8-CCD-TRV615-User-Manual.pdf#FIXME) / [Service Manual](https://github.com/oyvindln/vhs-decode/assets/images/Sony-8mm/Sony-Hi8-CCD-TRV615/Sony-Video8-Hi8_CCD-TRV15_TRV15E_TRV15EP_TRV15PK_TRV25_TRV25PK_TRV35_TRV35E_TRV65_TRV65PK_TRV85_TRV93_TRV215_TRV61.pdf#FIXME)
@@ -1133,7 +1112,7 @@ Pin 8 - Ground
 
 
 
-# Broadcast Tape Formats
+### Broadcast Tape Formats
 
 
 These are video-tape formats that have Composite video and or chroma/luma separated tracks on tape instead of colour-under tapes like the consumer~prosumer formats.
@@ -1147,13 +1126,13 @@ These are video-tape formats that have Composite video and or chroma/luma separa
 
 
 
-# Umatic Decks
+### Umatic Decks
 
 
 There is two types of Umatic decks standard Umatic with Lo-Band PAL/NTSC and Hi-Band PAL and then the later to last generation decks with Umatic SP with HiBand PAL/NTSC.
 
 
-## Sony BVU-800
+#### Sony BVU-800
 
 
 Should apply to  NTSC / PAL / SECAM versions.
@@ -1168,7 +1147,7 @@ Tap point is TP29 on board YD.
 ![](assets/images/Umatic/Sony-BVU-800/BVU-800_1.jpg){: style="width:400px"}
 
 
-## Sony VO-5630
+#### Sony VO-5630
 
 
 Tri-standard Umatic Deck (NTSC / PAL / SECAM).
@@ -1190,13 +1169,13 @@ Video RF tap point is TP18 on board RP-8B.
 
 
 
-# SMPTE 1" Type C Decks
+### SMPTE 1" Type C Decks
 
 
 Wildly found in UK/USA/France 
 
 
-## Sony BVH-3100PS
+#### Sony BVH-3100PS
 
 
 Sony BVH-3100 (Applies to NTSC/PAL/SECAM versions)
@@ -1218,7 +1197,7 @@ Test Point Tap
 
 
 
-# SMPTE 1" Type B Decks
+### SMPTE 1" Type B Decks
 
 
 Widely found in Germany/Mainland Europe 
@@ -1235,17 +1214,17 @@ Decks Yet to be tapped and tested
 
 
 
-# Open Reel Formats
+### Open Reel Formats
 
 
 These are formats that are non-cassette based like film reels and are manually laced onto a take-up reel for playback or recording, and pre-dates most formats you will see or know about in most common use.
 
 
 
-# EIAJ 1/2
+### EIAJ 1/2
 
 
-## Sony AV-3670CE
+#### Sony AV-3670CE
 
 
 1/2 inch EIAJ
@@ -1276,10 +1255,10 @@ Use a capacitor, especially if you want to monitor the composite output at the s
 
 
 
-# BetaCam Decks
+### BetaCam Decks
 
 Decks Yet to be tapped and tested 
 
-# BetaCam SP Decks
+### BetaCam SP Decks
 
 Decks Yet to be tapped and tested 

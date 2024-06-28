@@ -1,13 +1,6 @@
-## Teletext
-
-Previous Page [Identifying VBI data](Identifying-vbi-data.md)
-
-Next Page [Decoding RF Captures](RF-Capture-Decoding-Guide.md)
-
-![](assets/images/VBI/Teletext-Test-Card-F-1994-Full-Frame.png){: style="width:800px"}
-
-*BBC Testcard F 1994 PAL VHS sample with teletext in the VBI space.*
-
+---
+title: Teletext
+---
 
 ## What Is & Was Teletext?
 
@@ -21,7 +14,7 @@ Teletext data packets were embedded into the top VBI picture area on live broadc
 ![](assets/images/Teletext/BBC-Shares-Teletext.png){: style="width:394px"}![](https://user-images.githubusercontent.com/56382624/210111287-442291da-c253-4cdf-b82e-481ccf7a2ed7.png){: style="width:400px"}
 
 
-# Teletext Decoding
+## Teletext Decoding
 
 
 ![](assets/images/graphics/VHS-Decode-Teletext-Decode-Workflow.png){: style="width:800px"}
@@ -46,7 +39,7 @@ This will eventually have a proper GUI viwer for extracted data.
 ![](https://user-images.githubusercontent.com/651970/84570456-7dbcc400-ad85-11ea-9c83-62511e43a74e.png){: style="width:600px"}
 
 
-# Generating Teletext
+## Generating Teletext
 
 
 [Raspberry Pi Teletext](https://github.com/ali1234/raspi-teletext)
@@ -58,15 +51,7 @@ Raspberry Pi based Closed Captions & Teletext generator tool that uses the compo
 The HackTV application can generate CVBS or modulated TV signals to file or pipe them to SDRs such as the FL2K & HackRF units.
 
 
-## Teletext Viewer Tools
+### Teletext Viewer Tools
 
 
 [Zapping](https://zapping.sourceforge.net/Zapping/Zapzilla.html) - Linux
-
-
-# Page End 
-
-
-Previous Page [Identifying VBI data](Identifying-vbi-data.md)
-
-Next Page [Decoding RF Captures](RF-Capture-Decoding-Guide.md)

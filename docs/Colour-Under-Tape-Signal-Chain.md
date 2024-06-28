@@ -1,3 +1,7 @@
+---
+title: Colour Under Tape Signal Chain
+---
+
 ## How a VCR works
 
 Magical Magnetic Tape, Little magnets flying around on a drum.
@@ -20,18 +24,18 @@ Tape moving over heads --> Heads reading signal --> Amplified & Tracked by ICs -
 
 Time Base Correction is done directly after demodulation inside VCRS with a TBC but is done after full processing with external TBC's.
 
-# Capture 
+## Capture 
 
-## CVBS - Composite & S-Video 
+### CVBS - Composite & S-Video 
 
 Takes the processed signal from a VCR out of the baseband Composite or CVBS output, S-Video is Y/C separated and can yield cleaner results.
 
-## FM RF 
+### FM RF 
 
 Takes the unprocessed signal from a VCR before the filtering & demodulation stage, this is right after the pre-amplifiers or amplification stage.
 
 Tape Inside VCR --> Tape Heads --> Signal Amplification & Tracking --> FM RF Signal Test Points --> Demodulation and filtering boards --> CVBS Baseband Signal
 
-## Baseband Hardware 
+### Baseband Hardware 
 
 So anyone who is 1-2 days into this rabbit hole will have found Blackmagic Analogue to SDI / AJA Analogue to SDI / Magewell AIO etc etc there are desktop and usb versions of these capture devices, but while yes they all use the analogue devices [ADV8472](https://www.analog.com/media/en/technical-documentation/data-sheets/adv7842.pdf) chips while they pretty much the end of the analogue all-in-one processing IC's if you give it enough ram for its TBC/Frame Store its very good but its still a baseband capture granted an over 8 times oversampled one but its still limited to the initial processing made by the VCRs filtering and demodulation boards.

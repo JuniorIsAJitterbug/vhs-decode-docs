@@ -1,9 +1,6 @@
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-Previous Page [Home](index.md)
-
-Sub-Page [FAQ - Frequently Asked Questions](FAQ.md)
+---
+title: Quick Setup Guide
+---
 
 ## Read the Readme
 
@@ -66,7 +63,7 @@ In WSL2 & most Linux install use cases open an terminal and paste `cd vhs-decode
 Its recommend to use the [standardised naming guide](https://docs.google.com/document/d/1MZkBUmwyugljB2uJONPhKLsbcQLz2Q5Glr98EF31XbI/edit?usp=sharing).
 
 
-# Quick Capture & Process Basics
+## Quick Capture & Process Basics
 
 
 RF Capture--> FLAC Compress --> Archive 
@@ -199,7 +196,7 @@ You can have a complete reference capture setup for around 50USD or less globall
 
 
 
-# Storage Solutions!
+## Storage Solutions!
 
 
 Allocate 500GB to 2TB of storage 100MB/s Write Speed Safe Minimum.
@@ -242,7 +239,7 @@ Once written all modern DVD/BluRay readers/writers & players support the UDF dat
 [Amazon US](https://www.amazon.com/gp/product/B017H13DFS/) / [Amazon UK](https://www.amazon.co.uk/gp/product/B011PIJPOC/) has a constant supply.
 
 
-# Reference Diagrams
+## Reference Diagrams
 
 
 [Diagrams Visuals Page](Diagram-Visuals.md)
@@ -250,11 +247,3 @@ Once written all modern DVD/BluRay readers/writers & players support the UDF dat
 **Note!** open the image in another tab or download it to view full scale in case of viewing issues.
 
 ![](assets/images/graphics/VHS-Decode-Continuous-New-2023-Consumer-Workflow-16-by-9.png){: style="width:800px"}
-
-
-# Page End 
-
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-Previous Page [Home](index.md)

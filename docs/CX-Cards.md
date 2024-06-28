@@ -1,4 +1,8 @@
-# What is a CX Card?
+---
+title: CX Cards
+---
+
+## What is a CX Card?
 
 
 Conexant CX2388x-xx is an 2002 era PCI-based chip, today found with a PCIe bridge chip (Asmedia or ITE) in the 1x PCIe desktop card form factor.
@@ -11,7 +15,7 @@ With [CXADC](https://github.com/happycube/cxadc-linux3/) it becomes an powerful 
 CX White (CX23883-39) S-Video/RCA input.
 
 
-# CXADC Driver & CX Card Wiki
+## CXADC Driver & CX Card Wiki
 
 
 This page has overview information, for more in-depth information on the driver and cards click the links below.
@@ -20,7 +24,7 @@ This page has overview information, for more in-depth information on the driver 
 - [Wiki](https://github.com/happycube/cxadc-linux3/wiki/) - Detailed Hardware Information
 
 
-# Where do I buy a CX Card?
+## Where do I buy a CX Card?
 
 
 Recommended card type: [White CX25800](https://github.com/happycube/cxadc-linux3/wiki/Types-Of-CX-Cards) 
@@ -50,7 +54,7 @@ Owning an [RTLSDR](RTLSDR.md) is ideal for calibrating HiFi while servicing or a
 The CXADC driver now supports up to 256 cards so setups can be scaled as much as you need, and external timing sources allow it to do clock locked sampling of different signals in the same deck, so zero hardware audio/video drift issues.
 
 
-# Cables & Adapters
+## Cables & Adapters
 
 
 On the white card without physical modification, it's recommended to use the **S-Video port (Luma or Y signal pin and ground) for FM RF signal capture** if you wish to not solder your own cables or modify the card in any way, but C31 removal mod is encouraged.
@@ -61,10 +65,10 @@ On the white card without physical modification, it's recommended to use the **S
 - [RCA to BNC](https://www.aliexpress.com/item/4000552892790.html)
 
 
-# How to Improve CX Cards
+## How to Improve CX Cards
 
 
-## YouTube Modification Video
+### YouTube Modification Video
 
 - [YouTube](http://www.youtube.com/watch?feature=player_embedded&v=O8pYwFwY9VY) / [Odysee](https://odysee.com/@vhs-decode:7/CX-Cards-Basic-Modification-Guide-2023:3)
 
@@ -73,7 +77,7 @@ On the white card without physical modification, it's recommended to use the **S
 
 
 
-# External Amplification
+### External Amplification
 
 
 The CX chips have an internal digital gain amplifier, which if used, can generate unwanted self noise. To mitigate this, you may use an external amplifier to increase the amplitude before it gets to the card, this can also compensate for longer cabling if unavoidable.
@@ -101,7 +105,7 @@ The ADA4857 board also provides a way to better match the impedance of the test 
 [AD8367 Pot-less AliExpress Link](https://www.aliexpress.com/item/32860308324.html) / [AD8367 with Pot AliExpress Link](https://www.aliexpress.com/item/1005003457407163.html?) / [4.5v AA Battery Holder](https://www.aliexpress.com/item/4001194487990.html) / [Wiki Setup Link](https://github.com/tandersn/cxadc-hw-mod/wiki/AD8367-RMS-Setup)
 
 
-## ADA4857
+#### ADA4857
 
 The dual channel ADA4857 IC based amplifier board is has been designed to work well with the high impedance output from the VCR head amplifiers, ideal for CX Card based setups with stock 75ohm termination providing fixed gain amplification.
 
@@ -109,7 +113,7 @@ The dual channel ADA4857 IC based amplifier board is has been designed to work w
  based board by Rene Wolf 
 
 
-# Cooling Mod 
+### Cooling Mod 
 
 
 ![](https://github.com/happycube/cxadc-linux3/wiki/assets/images/CX-Cards/CX-White-Card-Heatsync-Fan-Mod-Sony-ILCE-7RM3-2023.05.14-01.29.09.jpg){: style="width:400px"}![](assets/images/Hardware/External-Clock-CX-Card/CX-White-Card-Heatsync-Jig-Horisontal-SMA-Jitterbug.jpg){: style="width:345px"}
@@ -131,7 +135,7 @@ Requirements:
 - [Silicone Glue](https://www.aliexpress.com/item/4000959632758.html?)
 
 
-# C31 Removal 
+### C31 Removal 
 
 Features:
 
@@ -146,7 +150,7 @@ Features:
 Its best to always remove either with a iron tap both sides then lightly pressure from one side to knock it off the 2 pads its soldered to, or remove with a gentle twist with tweezers/plyers.
 
 
-## RCA to BNC Replacement
+### RCA to BNC Replacement
 
 
 ![](https://github.com/happycube/cxadc-linux3/wiki/assets/images/CX-Cards/CX-White-BNC-Mod-Sony-ILCE-7RM3-2023.05.13-13.47.03.jpg){: style="width:400px"}
@@ -159,7 +163,7 @@ Can I just use the unpopulated pad? (get a drill bit and make a new hole bracket
 [OEM DOSIN-801-0073](https://www.lcsc.com/product-detail/RF-Connectors-Coaxial-Connectors_dosinconn-DOSIN-801-0073_C5155164.html) / [AliExpress 1](https://www.aliexpress.com/item/32872810479.html) [AliExpress 2](https://www.aliexpress.com/item/1005004719996407.html?) / [Amazon US](https://www.amazon.com/dp/B07F9WN3CJ) / [Amazon UK](https://www.amazon.co.uk/dp/B07F9WN3CJ/) / [Walmart Canada](https://www.walmart.ca/en/ip/PRD5NERLGP00LEU)
 
 
-# Crystal Mod - (5-25USD)
+### Crystal Mod - (5-25USD)
 
 
 Features:
@@ -187,7 +191,7 @@ The Crystal: [Generic 40mhz Fundamental](https://www.aliexpress.com/item/1005004
     Not all crystals are perfect and some can be defective and dramatically out of spec.
 
 
-# Clockgen Mod
+### Clockgen Mod
 
 
 - [Simple Wiki Version](Clockgen-Mod.md)
@@ -234,16 +238,9 @@ Clock Speed rate (20/28/40/50 modes) is controlled by a CLI application per card
 ![](assets/images/Hardware/device-cxclock-alsamixer.png){: style="width:600px"}
 
 
-# LaserDisc Capture
+## LaserDisc Capture
 
 
 For laserdisc you may want to use the LPF mod (low pass filter) and more information can be read in greater details here:
 
 [Tony's CX Hardware mod wiki](https://github.com/tandersn/cxadc-hw-mod/wiki)
-
-
-# Page End
-
-
-- [CXADC Readme](https://github.com/happycube/cxadc-linux3/)
-- [CXADC Wiki](https://github.com/happycube/cxadc-linux3/wiki/)

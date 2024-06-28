@@ -1,10 +1,12 @@
-## Encyclopaedia of Video Signal Errors 
-
+---
+title: Encyclopaedia of Video Signal Errors 
+---
 
 This is doc much required for archival, understanding what is a result of errors of recording onto media, physical damage on the media to errors of capture and software decoding visually knowing what your looking at is key to getting the best possible results out of any media preservation or analysis.
 
 
-### Note Right Click & Open Image In a new tab to view full-size images.
+!!! NOTE
+    Right Click & Open Image In a new tab to view full-size images.
 
 
 ## How to make an export
@@ -101,7 +103,7 @@ https://github.com/oyvindln/vhs-decode/assets/3205312/20f50c02-f510-47ad-babc-99
 https://github.com/oyvindln/vhs-decode/assets/3205312/2580d6d2-dc29-4541-a6df-c2a618802843
 
 
-# Credit & References
+## Credit & References
 
 [AV Artefacts Atlas](https://www.avartifactatlas.com/)
 

@@ -1,4 +1,8 @@
-# What is WSS or Wide Screen Signalling?
+---
+title: Wide Screen Signalling
+---
+
+## What is WSS or Wide Screen Signalling?
 
 It tells you what format the media is via vertical Interval code.
 
@@ -12,12 +16,12 @@ This allows television broadcasters to enable both 4:3 and 16:9 television sets 
 
 On broadcast camcorders with Composite/S-Video output you will see this signalling is quite common.
 
-## Does the decoders support this?
+### Does the decoders support this?
 
 Not currently but there is flags for 16:9 called `isWidesceen` in the .JSON format for this but its not a critical issue as this can be adjusted and flagged on render to file.
 
 
-# Examples of Wide Screen Signalling
+## Examples of Wide Screen Signalling
 
 (Example refrance CVBS RF/TBC/Video files) [Google Drive Mirror](https://drive.google.com/open?id=1PVKRyKeu74RXmwJSAc4Zm2CXZomfhMc9) / [Internet Archive Mirror](https://archive.org/details/wss-wide-screen-signaling)
 
@@ -34,7 +38,7 @@ De-Squeezed (Viewed in 1:1) (16:9 Anamorphic)
 ![Anamorphic De-Squeezed](assets/images/cvbs-decode/frame_pal_chroma_15_2023-SMPTE-WSS-Squeeze-CXADC-CX-Blue-8bit.tbc.png)
 
 
-## Technical
+### Technical
 
 Line 23 is its standard position typically observed.
 
@@ -50,7 +54,7 @@ Example of how this is used take last generation Sony Camcorders with composite/
 
 (Note on older digital TV's it will automatically switch to 16:9)
 
-## WSS Basic Flags
+### WSS Basic Flags
 
 * full format 4:3
 
@@ -62,10 +66,10 @@ Example of how this is used take last generation Sony Camcorders with composite/
 
 * zoomed letterbox
 
-## WSS Full Flags
+### WSS Full Flags
 
 ![image](https://user-images.githubusercontent.com/56382624/210447622-2fba3afd-44e2-4463-88f1-1c5d90d441d4.png)
 
-## Raster Example
+### Raster Example
 
 ![Wide-Screen-Signalling-WSS-White-Lines-Raster](https://user-images.githubusercontent.com/56382624/210447722-d81c716c-2363-4834-8d9e-780ab7eeb53e.jpg)

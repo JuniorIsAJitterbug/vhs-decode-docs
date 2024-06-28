@@ -1,13 +1,6 @@
-# Clockgen Mod
-
-
-Previous Page [CX Cards](CX-Cards.md)
-
-Sub-Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-
+---
+title: Clockgen Mod
+---
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.05.02_01.54.38.jpg){: style="width:600px"}
 
@@ -21,26 +14,26 @@ This doc is a 1 page version of Rene Wolfs "cxadc-clock-generator-audio-adc" clo
 - [Namazso's simplified Version](https://github.com/namazso/cxadc-clockgen-mod?tab=readme-ov-file)
 
 
-# User Operation
+## User Operation
 
 
 !!! IMPORTANT
     This Guide Assumes you have [CXADC](https://github.com/happycube/cxadc-linux3#readme) Installed and have tested your cards before starting modification of them and know the basics of capture with a CX Card, and have at least overview info about its mods, the clockgen + ADC mod assumes external amplifiers are employed for optimal signal to noise ratio of the raw signal's intended to be captured.
 
 !!! IMPORTANT
-C31 Mod & BNC Mod is normally recommended and assumed deployed with this mod.
+    C31 Mod & BNC Mod is normally recommended and assumed deployed with this mod.
 
 
-# Capture
+### Capture
 
 - Direct capture creates 2 40msps files 
 - Resampling uses SoX on the HiFi RF to make a 10msps 8-bit file
 
 If your system is slow and or very low end direct capture is the most safe option if your noticing differences between decoded HiFi and baseband captures of HiFi for example.
 
-## Direct Capture Script
+#### Direct Capture Script
 
-## Capture Script With Resampling 
+#### Capture Script With Resampling 
 
 Synchronised capture is all scripted into a single `.sh` file to run it simply download it and define the output path
 
@@ -78,7 +71,7 @@ The file set is automatically date stamped `yyyy.hh.dd-hh.mm.ss`
 - [SoX Benchmark Script](https://github.com/harrypm/RF-Scripts/blob/main/clockgen%20scripts/sox-benchmark.sh)
 
 
-## Web Server 
+#### Web Server 
 
 
 - [Namazso's CXADC Web Server](https://github.com/namazso/cxadc_vhs_server)
@@ -86,7 +79,7 @@ The file set is automatically date stamped `yyyy.hh.dd-hh.mm.ss`
 This web server capture workflow can be done locally on a single computer or allow for captures to networked storage pools.
 
 
-# Auto Audio Align
+### Auto Audio Align
 
 
 - [Download The Latest Binary](https://gitlab.com/wolfre/vhs-decode-auto-audio-align/-/releases)
@@ -101,36 +94,36 @@ With a standard configuration you just need to alter the following:
 - `baseband_aligned.flac` - Output name at the end (also s16 will do 16-bit if s24 is replaced)
 
 
-## Windows:
+#### Windows
 
 
-### Stereo
+##### Stereo
 
 `"ffmpeg.exe" -i baseband.wav -filter 'channelmap=map=FL-FL|FR-FR' -f s24le -ac 2 - | mono VhsDecodeAutoAudioAlign.exe stream-align --sample-size-bytes 6 --stream-sample-rate-hz 46875  --json capture.tbc.json --rf-video-sample-rate-hz 40000000 | ffmpeg -f s24le -ar 46875 -ac 2 -i - -af aresample=48000 -sample_fmt s24 baseband_aligned.flac`
 
 
-### Mono
+##### Mono
 
 `"ffmpeg.exe" -i baseband.wav -filter_complex "[0:a]channelsplit=channel_layout=2.1:channels=FL[FL]" -map "[FL]" -f s24le -ac 1 - | mono VhsDecodeAutoAudioAlign.exe stream-align --sample-size-bytes 3 --stream-sample-rate-hz 46875  --json capture.tbc.json --rf-video-sample-rate-hz 40000000 | ffmpeg -f s24le -ar 46875 -ac 1 -i - -af aresample=48000 -sample_fmt s24 baseband_aligned.flac`
 
 
-## Linux & MacOS:
+#### Linux & MacOS
 
 
 You need to [install mono](https://www.mono-project.com/docs/getting-started/install/)
 
 
-### Stereo
+##### Stereo
 
 `ffmpeg -i baseband.wav -filter 'channelmap=map=FL-FL|FR-FR' -f s24le -ac 2 - | VhsDecodeAutoAudioAlign.exe stream-align --sample-size-bytes 6 --stream-sample-rate-hz 46875  --json capture.tbc.json --rf-video-sample-rate-hz 40000000 | ffmpeg -f s24le -ar 46875 -ac 2 -i - -af aresample=48000 -sample_fmt s24 baseband_aligned.flac`
 
 
-### Mono
+##### Mono
 
 `ffmpeg -i baseband.wav -filter_complex "[0:a]channelsplit=channel_layout=2.1:channels=FL[FL]" -map "[FL]" -f s24le -ac 1 - | VhsDecodeAutoAudioAlign.exe stream-align --sample-size-bytes 3 --stream-sample-rate-hz 46875  --json capture.tbc.json --rf-video-sample-rate-hz 40000000 | ffmpeg -f s24le -ar 46875 -ac 1 -i - -af aresample=48000 -sample_fmt s24 baseband_aligned.flac`
 
 
-## Alsamixer
+### Alsamixer
 
 
 Sample rate modes are the following:
@@ -162,11 +155,11 @@ Press `Space` to enable audio control.
 That is about it, you only play with these settings when doing manual overrides for stock settings.
 
 
-# Setup 
+## Setup 
 
 
 
-## Software Setup
+### Software Setup
 
 
 Install asmixer 
@@ -183,7 +176,7 @@ Fix Capture Script Permissions
 `chmod +x cxadc-sync-capture.sh`
 
 
-## Pi Pico Firmware Flashing
+### Pi Pico Firmware Flashing
 
 
 [Clock Gen Firmware](https://gitlab.com/wolfre/cxadc-clock-generator-audio-adc/-/releases)
@@ -199,7 +192,7 @@ To reset an Pi Pico Hold the button on it while unplugged then plug into usb, an
 After a successful flashing this will show up as a microphone 3ch 48khz device to any systems sound manager application.
 
 
-## USB Connection
+### USB Connection
 
 
 Internal USB headers can be used for the data connection to the Pi Pico
@@ -208,7 +201,7 @@ Normally PC's and Servers have internal USB 2.0 header's for basic devices.
 
 
 
-## Shielded Case & Bracket
+### Shielded Case & Bracket
 
 
 As the audio ADC is unbalanced, and the clock gen board is sensitive to EMI due to high frequency clock signals being generated its recommended to shield the setup.
@@ -218,10 +211,10 @@ You can print a PCI bracket or you can drill out metal brackets.
 Copper Tape + [3D Printed Case](https://gitlab.com/wolfre/cxadc-clock-generator-audio-adc/-/tree/main/mechanical?ref_type=heads)
 
 
-# Debugging
+## Debugging
 
 
-## Software Debugging
+### Software Debugging
 
 
 Check USB Devices with 
@@ -233,7 +226,7 @@ Check PCI & PCie Devices with
     lspci
 
 
-### Device Busy
+#### Device Busy
 
 
 Test
@@ -249,7 +242,7 @@ Solution:
 Restart, try again
 
 
-## Hardware Debugging
+### Hardware Debugging
 
 
 PC Wont boot 
@@ -302,7 +295,7 @@ Part Sizes
 - 0805 SMD - Resistor & Capacitor
 
 
-# Deployed Clockgen
+## Deployed Clockgen
 
 
 (With 3D printed bracket & metal drilled bracket)
@@ -310,7 +303,7 @@ Part Sizes
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.05.02_01.54.38.jpg){: style="width:600px"}![](assets/images/Hardware/External-Clock-CX-Card/cxadc-clock-generator-audio-adc-pc-connections.png){: style="width:260px"}
 
 
-## Jig Modified CX Card
+### Jig Modified CX Card
 
 
 !!! IMPORTANT
@@ -336,7 +329,7 @@ Amazon UK [Silver](https://www.amazon.co.uk/dp/B0BFVNVDC7?) / [Black](https://ww
 AliExpress [Black](https://www.aliexpress.com/item/32624104352.html?) / [Silver](https://www.aliexpress.com/item/4000516293020.html?) 
 
 
-## Jig Board 
+### Jig Board 
 
 
 !!! WARNING
@@ -361,7 +354,7 @@ AliExpress [Black](https://www.aliexpress.com/item/32624104352.html?) / [Silver]
 > This PCB when connected to a CX Card will be under tension, ensure strong adhesive tape is used or use glue/epoxy and ensure both surfaces are cleaned with 99.9% IPA and dry before adhering.
 
 
-## Mainboard 
+### Mainboard 
 
 
 !!! WARNING
@@ -420,7 +413,7 @@ Secondary:
     The Si5351A kit headers are not recommended for socketed connectors, its recommended to solder headers then the board to said 2.54mm headers directly to ensure a secure connection.
 
 
-## PCM1802 Board
+### PCM1802 Board
 
 
 !!! CAUTION
@@ -441,14 +434,14 @@ MODE0 with 3.3v Bridge Mod
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-6000_2024.01.24_08.10.35.jpg){: style="width:300px"}![](assets/cxadc-clockgen-mod/Sony_ILCE-6000_2024.01.24_08.10.26.jpg){: style="width:294px"}
 
 
-### Grounding The PCM to shield
+#### Grounding The PCM to shield
 
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-6000_2024.01.24_08.22.45.jpg){: style="width:300px"}
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-6000_2024.01.24_08.22.22.jpg){: style="width:300px"}
 
 
-### Insulating & Shielding the RCA connections
+#### Insulating & Shielding the RCA connections
 
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.04.25_21.40.36.jpg){: style="width:500px"}
@@ -458,17 +451,7 @@ MODE0 with 3.3v Bridge Mod
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.04.25_21.47.05.jpg){: style="width:500px"}
 
 
-# Finished
+## Finished
 
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.05.02_01.54.38.jpg){: style="width:1000px"}
-
-
-# Page End 
-
-
-Previous Page [CX Cards](CX-Cards.md)
-
-Sub-Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)

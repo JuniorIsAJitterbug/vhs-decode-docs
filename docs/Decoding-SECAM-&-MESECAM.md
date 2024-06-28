@@ -1,7 +1,8 @@
-# Decoding [MESECAM](https://en.wikipedia.org/wiki/SECAM#MESECAM_(home_recording))
+---
+title: Decoding MESECAM
+---
 
-
-This doc covers the motions of decoding MESECAM colour from tapes decoded via a GNURadio based graph to generate colour video files.
+This doc covers the motions of decoding [MESECAM](https://en.wikipedia.org/wiki/SECAM#MESECAM_(home_recording)) colour from tapes decoded via a GNURadio based graph to generate colour video files.
 
 Combination with original mkv file possible to benefit from dropout correction.
 
@@ -106,4 +107,3 @@ If the majority of the video is affected by pink overpainting there is a possibl
 To shift the offset by one frame we have to take account, that one field in this graph is 1135 samples per line over 626 lines. So the formula is (1135*626)*startfield.
 
 The startfield is a variable that should be toggled between 0 and 2. Theoretically it can be anything between zero and the last field of the video. So use this to find a start frame where both fields are not pink. (As said usually only 0 and 2 make sense)
-

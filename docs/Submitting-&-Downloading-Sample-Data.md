@@ -1,4 +1,8 @@
-# Data Repositories
+---
+title: Submitting and Downloading Sample Data
+---
+
+## Data Repositories
 
 [Sample Dump Telegram Channel](https://t.me/decodeteam)
 
@@ -9,7 +13,7 @@
 [DomesDay86 Media - The Internet Archive](https://archive.org/details/@sinns86) / [GitHub Index](https://github.com/happycube/ld-decode/wiki/Disc-images-to-download)
 
 
-# Sample Data Doc
+## Sample Data Doc
 
 
 There are no limits on length type or content type.
@@ -19,13 +23,13 @@ FLAC compressed captures are preferred due to ease of upload and download for th
 If possible include VCR/Player/Camera used and or original source of generation if known, feel free to create relevant documents separately in a txt file or md format for this purpose one per each media article, or spreadsheet format for larger file collections.
 
 
-## Submitting Context
+### Submitting Context
 
 
 Please include your notes in a plain text `.txt` or markdown formatted `.md` file, google docs are also allowed but standard text data is preferred, due to ease of traslation & migration doing both or all 3 is fine.
 
 
-## Naming Rules
+### Naming Rules
 
 
 Naming should be the following or similar to keep files orderly and easy to copy/paste and index.
@@ -49,7 +53,7 @@ Tape format, bit depth and sample rate should always be stated unless  `.ldf`/`.
 Files with just `.flac`/`.oga` and so on should always have descriptive names. 
 
 
-## Help
+### Help
 
 
 DomesDay Duplicator (DdD) Gain Config states.
@@ -154,7 +158,7 @@ Please visit Tony’s GNRC flowgraph wiki for re-sampling/conversion scripts
 OGG is no longer critically needed for archives due to flac being updated. - September 2022
 
 
-## Mass Archive Submissions
+### Mass Archive Submissions
 
 
 We all love large datasets for testing a good example of this is Itewreed’s RF Archive witch has 5.7 Terabytes (TB) of German off-air TV recordings.
@@ -162,7 +166,7 @@ We all love large datasets for testing a good example of this is Itewreed’s RF
 Sadly however to changes in Google Workspace as of July 2023 we no longer can accept mass submissions to the google shared drive, we do accept physical submissions in LTO5/SSD/HDD/Optical with index files on the shared drive however, sadly due to the 5TB cap the public shared drive will be limited to 1-2TB of active data at any given time for the foreseeable future.
 
 
-## Checksums
+### Checksums
 
 
 Checksums are recommended typically CRC & Sha3-512 for verifying data integrity are appreciated in separate files & index names alongside captures to verify a clean file upload/download and local transferring.

@@ -1,4 +1,6 @@
-# VIDEO ID (IEC 61880)
+---
+title: VIDEO ID (IEC 61880)
+---
 
 ![](assets/images/VBI/VIDEO-ID-1-IEC-61880.png){: style="width:600px"}
 

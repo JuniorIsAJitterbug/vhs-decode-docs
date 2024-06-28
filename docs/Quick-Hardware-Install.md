@@ -1,5 +1,6 @@
-# Deployment of Capture Hardware
-
+---
+title: Deployment of Capture Hardware
+---
 
 Please read [The Tap List](004-The-Tap-List.md) / [Hardware Installation Guide](Hardware-Installation-Guide.md) / [VCR Reports](VCR-reports.md)
 
@@ -8,7 +9,7 @@ Information on various VCRs that have been documented alongside high resolution 
 If you have digital formats please read [The Digital Tape Guide](Digital-Tape-Guide.md)
 
 
-## VHS, SVHS, Umatic, Betamax, VCR, EIAJ, SMPTE-C, SMPTE-B
+### VHS, SVHS, Umatic, Betamax, VCR, EIAJ, SMPTE-C, SMPTE-B
 
 
 First find a working VCR or VRT unit!
@@ -20,7 +21,7 @@ First find a working VCR or VRT unit!
 - Find video and or audio tests points.
 
 
-## Video8, Hi8 
+### Video8, Hi8 
 
 
 If you have a VCR this is the same as the above formats, if you have a camcorder you will need a Jig board (most units are jig compatible)
@@ -36,7 +37,7 @@ if your unit is compatible, we recommend Digital8 camcorders due to there better
 Unlike other formats Audio/Video/Timecode is all one one signal RF Signal which means 1 and done for RF capture via a 28msps or faster ADC device, alongside conventual methods for preserving the secondary data and providing a reference file.
 
 
-# RF Tapping General Info 
+## RF Tapping General Info 
 
 The setup process for RF capture involves running a short cable internally from points that provide the unprocessed video and or audio signals to a BNC jack at back of a metal/plastic VCR chassis or threaded out a vent, this allows direct access to the FM RF signals conveniently & reliably, we call this a Tap Point or RF Tap, for some decks and camcorders however Dupont connectors and ribbon jigs can be used.
 
@@ -56,7 +57,7 @@ FM RF Capture ==> Software Decoding ==> Lossless TBC Files ==> Audio/Video File 
 `HiFi`, `A.PB`, `A FM`, `A.PB.FM`, `Audio FM`, `A-Out`, `A ENV`, `HIFI Envelope`, `FM Mix Out`
 
 
-## Parts for RF Tap
+### Parts for RF Tap
 
 
 [What tools do I need?](Hardware-Installation-Guide.md)
@@ -74,7 +75,7 @@ Connection Cables
 On CX White Cards you use the S-Video Luma pin for the RF input, but a BNC can be easily added.
 
 
-## Install A RF Tap
+### Install A RF Tap
 
 
 [Hardware Installation Guide](Hardware-Installation-Guide.md) Goes over the install steps for VHS Decks to Sony 8mm camcorders.
@@ -87,7 +88,7 @@ The Negative leg (shorter) goes on test/signal point, Positive leg (longer) on c
 
 While type and voltage does not matter much its best to use new/tested capacitors.
 
-## Notes:
+### Notes:
 
 **Note** We use AliExpress links for wide availability globally, but local venders are a thing.
 
@@ -98,7 +99,7 @@ While type and voltage does not matter much its best to use new/tested capacitor
 **Note** Some UMATIC decks have an RF output on the back, however this only provides Luma RF for dropout detection and not the full signal required for RF capture.
 
 
-# CXADC Basic Use 
+## CXADC Basic Use 
 
 
 To see if you have a connection, use the live preview mode and then hook up your RF cable, normally you will see a white flash as a signal, if not change your vmux or input within a 0-2 range with the below command.
@@ -126,6 +127,3 @@ For 16-bit, simply change the output filename extension to `.u16`
 For FLAC captures, set the output filename extension to your desired tape format, for example `.VHS`
 
 It is recommended to use a fast storage device with 40-100 MB/s or faster write capacity, in order to avoid dropped samples, ideally an dedicated SSD (via M.2 or SATA connector, not USB) formatted with the exFAT filesystem.
-
-
-

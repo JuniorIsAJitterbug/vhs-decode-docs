@@ -1,5 +1,6 @@
-## Sony 8mm Formats
-
+---
+title: Sony 8mm Formats
+---
 
 This is Video8, Hi8 and its transition/phase out format Digital8.
 
@@ -56,7 +57,7 @@ Check the service manual to see what pins have the RF signal. A cap may be requi
 [Jigs (Unpopulated)](https://www.aliexpress.com/item/4001156449357.html?) / [Jigs (With 2.54mm pins)](https://www.aliexpress.com/item/1005003713202720.html?) / [Flex Cable 0.5mm Pitch](https://www.aliexpress.com/item/32916422564.html?) / [DuPont to BNC](https://www.aliexpress.com/item/1005004394809131.html?) [Type 2 USB Power Adapter](https://www.aliexpress.com/item/33033058175.html?) / [Type 1 USB Power Adapter](https://www.aliexpress.com/item/32963987768.html?)
 
 
-# LANC Control 
+## LANC Control 
 
 
 Build your own control interface! 
@@ -65,7 +66,7 @@ Thanks to [Novgorod's Arduino LANC to USB](https://github.com/Novgorod/LANC-USB-
 
 ![](https://user-images.githubusercontent.com/13183195/238098564-2eec6d55-677c-4667-8e20-94b751ad3fd1.png){: style="width:500px"}
 
-# Digital8
+## Digital8
 
 
 !!! WARNING
@@ -85,7 +86,7 @@ Note it is a very `Lossy Compressed` codec the minimum for no artefacts is consi
 
 
 
-# Field Player/Recorders 
+## Field Player/Recorders 
 
 
 | Model	     | Type      | TV System    | User Manual  | Service Manual | Video8 / Hi8 Support | Service Jig Point | Tapped & Tested      |
@@ -98,7 +99,7 @@ Note it is a very `Lossy Compressed` codec the minimum for no artefacts is consi
 | GV-8       | Video8    | PAL          | Not Indexed  | Not Indexed    | Video8               | Unknown           | None Documented      | 
 
 
-## NTSC (29.97i)
+### NTSC (29.97i)
 
 
 | Model	     | User Manual  | Service Manual | Video8 / Hi8 Support | Service Jig Point | Tapped & Tested      |
@@ -142,7 +143,7 @@ Note it is a very `Lossy Compressed` codec the minimum for no artefacts is consi
 
 
 
-## PAL (25i)
+### PAL (25i)
 
 
 These European camcorder models end with an “E”, the list below is backward compatible and can still playback Video8 and Hi8 PAL tapes originally recorded at 25 frames per second. 
@@ -182,13 +183,13 @@ Not confirmed.
 
 
 
-# Dedicated Recorders/Players
+## Dedicated Recorders/Players
 
 
 Model / Format / Sound / PCM / DCF / Year / € / Drive Comments
 
 
-## Video 8 PAL
+### Video 8 PAL
 
 | Model	      | Format Support | Sound Support  | Year      | Price EUR | Drive Type | Frank Hirsinger's Notes                                                                                                |          
 |-------------|----------------|----------------|-----------|-----------|------------|------------------------------------------------------------------------------------------------------------------------|
@@ -206,7 +207,7 @@ Model / Format / Sound / PCM / DCF / Year / € / Drive Comments
 | EV-C45      | V8             | st - -         | 1992-1994 | €500      | U          | developed from the C3E, now with stereo sound                                                                              
 
 
-## Hi8 PAL
+### Hi8 PAL
 
 
 | Model	      | Format Support | Sound Support  | Year      | Price EUR | Drive Type | Frank Hirsinger's Notes                                                                                                    |
@@ -223,7 +224,7 @@ Model / Format / Sound / PCM / DCF / Year / € / Drive Comments
 | SLV-T2000   | V8 & Hi8       | VHSst - -      | 1997-2001 | €1000     | F          | Inexpensive successor of the EV-T1VC                                                                                       |
 
 
-## Explanations:
+### Explanations:
 
 
 
@@ -262,4 +263,3 @@ With the U drive, 2 pins loop the tape around the head drum from both sides and 
 Thanks to [Bob Hennessey](https://transfervideotapes.com/digital8-camcorders-with-8mm-and-hi8-playback/) & [Frank Hirsinger](http://www.1ivanka.de/) for there charts, materials and collected manuals.
 
 https://forum.videohelp.com/threads/355121-List-of-Sony-Handycam-Digital8-camcorders-with-analog-digital-passthru
-

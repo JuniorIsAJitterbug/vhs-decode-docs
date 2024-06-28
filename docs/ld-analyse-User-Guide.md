@@ -1,8 +1,12 @@
+---
+title: ld-analyse
+---
+
 ![](assets/images/graphics/256-analyse.png){: style="width:200px"}
 
 2023 Icon with a raster of a composite signal like seen on a analogue CRT based oscilloscope. 
 
-# Introduction
+## Introduction
 
 
 ld-analyse is a graphical application originally designed to assist with the analysis of LaserDisc images decoded by ld-decode but now supports a wider range of uses including analysis of video tapes and decoded raw composite sources.  
@@ -14,7 +18,7 @@ TBC files are usually identified by the `.tbc` & `_chroma.tbc` file-extensions.
 The application also presents source and tool-chain metadata (supplied by `.json` files) that provide additional details about the TBC file's contents such as VBI data and TV System.
 
 
-# Command line
+## Command line
 
 
 Note: The input file name is optional (you can either specify it from the command line or use the GUI once the application is running).
@@ -35,7 +39,7 @@ Arguments:
 ```
 
 
-# Opening a Time-Base Corrected (TBC) video file
+## Opening a Time-Base Corrected (TBC) video file
 
 
 To open a TBC file for analysis, click on the File menu and select open
@@ -47,7 +51,7 @@ This will display a list of available files filtered by the .tbc extension.  Sim
 If you decoded a videotape using vhs-decode, then you will have two TBC files, one for luma and one for chroma - you can select either of them and ld-analyse will open both automatically.
 
 
-# The ld-analyse main window
+## The ld-analyse main window
 
 
 Once a TBC file is opened the main window provides a view of the currently selected video frame as well as information about the current frame.  There are two primary frame views selected by the 'Source' button which changes to 'Chroma' when clicked to indicate the currently selected viewing mode.
@@ -79,7 +83,7 @@ The main window shows information about the first and second field including the
 The order of the field lines can be reversed if required.  Please see the section 'Normal/Reverse field order' below.
 
 
-## Understanding the make-up of a frame
+### Understanding the make-up of a frame
 
 
 The decoded frame is made up of several distinct areas.  The following diagram shows the location of the main areas (please see the PAL and NTSC specification documents for more detailed descriptions of the frame contents):
@@ -95,7 +99,7 @@ The decoded frame is made up of several distinct areas.  The following diagram s
 - Visible area - The area of the frame which is usually visible on the end-system device such as a TV set
 
 
-## VITC - Timecode Readout
+### VITC - Timecode Readout
 
 
 `ld-process-vbi` can scan for common [SMPTE VITC Timecode](VITC-SMPTE-Timecode.md) and add that to the .JSON files if the data is detected you will see the `HH:MM:SS:FF` readout automatically, this is the exact hour/min/sec/frame information the for current frame displayed at the bottom, typically this is runtime on commercial media or time of day information on prosumer/broadcast tapes.
@@ -103,7 +107,7 @@ The decoded frame is made up of several distinct areas.  The following diagram s
 ![](assets/ld-analyse-rev7/ld-analyse_VITC_readout.png){: style="width:px"}
 
 
-## Frame navigation and analysis controls
+### Frame navigation and analysis controls
 
 
 The most common controls are present on the main window under the frame slider-bar:
@@ -130,7 +134,7 @@ Note that clicking on the 'interactive oscilloscope' button opens the line oscil
 ![](assets/ld-analyse-rev7/ld-analyse_Oscilloscope.png){: style="width:700px"}
 
 
-## Highlight dropouts
+### Highlight dropouts
 
 
 Dropouts are temporary losses of signal caused by dirt, damage, scratches or other defects on the originally sampled LaserDisc or other source media.  ld-decode detects areas of dropouts during the decoding process.  These detected areas are shown in the currently selected frame.  Red lines represent drop-outs in the first field of the frame and blue lines represent drop-outs in the second field.
@@ -140,7 +144,7 @@ Dropouts are highlighted by clicking on the 'Dropouts Off' button which will the
 ![](assets/ld-analyse-rev7/ld-analyse_Highlight_dropouts.png){: style="width:600px"}
 
 
-## Source selection
+### Source selection
 
 
 For TBC files produced by ld-decode, this button will say 'One Source' and be greyed out.
@@ -152,7 +156,7 @@ If you opened a TBC file produced by vhs-decode, where luma and chroma are store
 * `C Source` - View only the chroma signal
 
 
-## Normal/Reverse field order
+### Normal/Reverse field order
 
 
 Some sources are mastered with the expected field order reversed.  This causes ld-analyse to combine the wrong fields and the resulting frame is a mix of two adjacent frames.  Clicking on the 'Normal Field-order' button reverses the displayed field order:
@@ -163,49 +167,49 @@ Some sources are mastered with the expected field order reversed.  This causes l
 Clicking again on the same button will revert back to normal field order.  Note that switching the field order will cause ld-analyse to return to the first frame of the TBC file.
 
 
-# The File menu
+## The File menu
 
 
 The file menu contains options for handling the loading and saving of various files.
 
 
-## Open TBC file
+### Open TBC file
 
 
 This option opens a new TBC file as described above.
 
 
-## Reload TBC
+### Reload TBC
 
 
 This option reloads the current TBC file (this is useful when checking a TBC file that is still being decoded in order to view any new frames that have decoded since the file was originally loaded).
 
 
-## Save JSON
+### Save JSON
 
 
 This action saves any changes you've made to the JSON metadata for the current TBC file. The menu item is greyed out if no changes have been made.
 
 
-## Save frame as PNG
+### Save frame as PNG
 
 
 This option saves the currently selected frame as a PNG image.  The image saved contains both the visible and non-visible frame image.  The option saves the currently displayed image (however, drop-out highlighting is not included).
 
 
-## Exit
+### Exit
 
 
 This option quits ld-analyse and closes all windows.
 
 
-# The View Menu
+## The View Menu
 
 
 The view menu contains a number of options used to control the main window's frame view.
 
 
-## Zoom in
+### Zoom in
 
 
 This option zooms into the frame image.  Note: if dropout highlighting is selected, highlighting will also zoom to make it easier to see DO areas.
@@ -213,37 +217,37 @@ This option zooms into the frame image.  Note: if dropout highlighting is select
 ![](assets/ld-analyse-rev7/ld-analyse_Zoom.png){: style="width:600px"}
 
 
-## Zoom out
+### Zoom out
 
 
 This option zooms out of the frame image.
 
 
-## Zoom to original size
+### Zoom to original size
 
 
 The zoom to original size option causes the main window to resize the frame viewer to the actual size of the captured frame (i.e. a 1:1 pixel representation).
 
 
-## Zoom to 2x size
+### Zoom to 2x size
 
 
 This option zooms the frame viewer to 2 times the original size.
 
 
-## Zoom to 3x size
+### Zoom to 3x size
 
 
 This option zooms the frame viewer to 3 times the original size.
 
 
-# The Window Menu
+## The Window Menu
 
 
 The Window menu contains a number of options that open additional windows to assist with analysis.
 
 
-## Dropout analysis
+### Dropout analysis
 
 
 The dropout analysis window shows a graph of dropouts detected in the whole TBC file.  The dropouts are averaged over multiple fields to simplify the view (the number of fields used per average increases as the total number of fields increases).  The graph shows the dropouts on the X axis (represented by the total length in picture 'dots' of all detected dropouts in the field) and the field number on the Y axis:
@@ -251,7 +255,7 @@ The dropout analysis window shows a graph of dropouts detected in the whole TBC 
 ![](assets/ld-analyse-rev7/ld-analyse_Dropout_loss_analysis.png){: style="width:600px"}
 
 
-## Visible dropout analysis
+### Visible dropout analysis
 
 
 The visible dropout analysis shows a similar view to the overall dropout analysis however, on the dropouts in the visible area of a frame are counted:
@@ -261,7 +265,7 @@ The visible dropout analysis shows a similar view to the overall dropout analysi
 This view is useful as only dropouts in the visible area will be noticeable to the end-viewer; therefore sources that have less visible dropouts are more desirable that sources with more visible dropouts.
 
 
-## Black SNR analysis
+### Black SNR analysis
 
 
 The Black SNR analysis window shows the reported black peak SNR across the whole TBC video file (the black lines) and the average (the red line).  Black SNR (Signal to Noise Ratio) gives a view of the quality of the original source (and the capture set-up).  
@@ -277,13 +281,13 @@ A rule of thumb scale is as follows:
 - 10-20 - Severe Signal loss (rotten or badly damaged media)
 
 
-### Video Tape
+#### Video Tape
 
 
 Generally the signal will be quite "flat" profile of SNR per recording segment, excluding areas of high mould or damage or multiple years difference between recordings on a particular tape, however of course any thermal shift, magnetic or moisture exposure can be a varying factor in terms of cause of dropout and loss of signal, alongside the initial level of clean amplification the VCR provides for capture.
 
 
-### LaserDisc
+#### LaserDisc
 
 
 Generally the signal will be worst at the beginning of a LaserDisc disc (due to the MTF effect on the optics) and then reach a peak quality around frame 15,000.  Some discs exhibit quality loss towards the end of the disc (as this area is most likely damaged by both handling and edge-rot issues).
@@ -291,7 +295,7 @@ Generally the signal will be worst at the beginning of a LaserDisc disc (due to 
 ![](assets/ld-analyse-rev7/ld-analyse_BlackSNR.png){: style="width:600px"}
 
 
-## White SNR analysis
+### White SNR analysis
 
 
 White SNR signal analysis is similar to black SNR however, the measurement is taken at the white IRE video point rather than the black.  White SNR is a measure of signal quality but is less important (in general) than the black SNR result (since noise at the white level has generally less visible effect on the overall image):
@@ -299,7 +303,7 @@ White SNR signal analysis is similar to black SNR however, the measurement is ta
 ![](assets/ld-analyse-rev7/ld-analyse_WhiteSNR.png){: style="width:600px"}
 
 
-## VBI
+### VBI
 
 
 The VBI (Vertical Banking Interval) contains a number of metadata fields providing information about the current frame and LaserDisc such as frame number, audio type and disc type.
@@ -315,7 +319,7 @@ The VBI (Vertical Banking Interval) contains a number of metadata fields providi
 * Picture stop code - a flag indicating the player should pause on the current frame
 
 
-### Original specification VBI
+#### Original specification VBI
 
 
 The original specification VBI tab shows the interpretation of the raw VBI data according to the original LaserDisc specification.  This generally applies to very early LaserDiscs (pre-1986).
@@ -333,7 +337,7 @@ The original specification VBI tab shows the interpretation of the raw VBI data 
 ![](assets/ld-analyse-rev7/ld-analyse_VBI_Original.png){: style="width:300px"}
 
 
-## Amendment 2 Specification VBI
+### Amendment 2 Specification VBI
 
 
 The amendment 2 tab shows the VBI according to the amendment 2 version of the LaserDisc specifications (and generally covers most LaserDiscs).
@@ -349,7 +353,7 @@ The amendment 2 tab shows the VBI according to the amendment 2 version of the La
 ![](assets/ld-analyse-rev7/ld-analyse_VBI_Ammend2.png){: style="width:300px"}
 
 
-## Line Scope
+### Line Scope
 
 
 The line scope provides an oscilloscope style view of a video line.  The current video line can be selected by clicking on the current frame (this will also open the line scope window if required).
@@ -394,7 +398,7 @@ If you select `YC` and `Y` or `C`, the `YC` line will dim to allow easier viewin
 ![](assets/ld-analyse-rev6/ld-analyse_osc-all.png){: style="width:800px"}
 
 
-## Vectorscope
+### Vectorscope
 
 
 !!! NOTE
@@ -436,7 +440,7 @@ Some LaserDiscs, Betamax & Broadcast tapes include colour bars as part of the pr
 The `Defocus` checkbox blurs the dots on the display a little; this can be useful if you have a very good-quality source video and the colour blobs are hard to see.
 
 
-## Closed Captions
+### Closed Captions
 
 
 On some sources closed caption subtitle information is included, typically 90s and later 2000s movies for tapes and some OTA broadcasts, but was fairly standard for NTSC laserdiscs. 
@@ -455,7 +459,7 @@ The closed captions viewer is as follows:
 ![](assets/ld-analyse-rev7/ld-analyse_ClosedCaptions.png){: style="width:400px"}
 
 
-## Video Parameters
+### Video Parameters
 
 
 The Video Parameters window allows you to adjust some of the metadata for the current TBC file. You can save these parameters back to the TBC's JSON file using 'File > Save JSON'.
@@ -463,7 +467,7 @@ The Video Parameters window allows you to adjust some of the metadata for the cu
 ![](assets/ld-analyse-rev7/ld-analyse_Video_parameters_NTSC.png){: style="width:px"}
 
 
-### Black & White Level
+#### Black & White Level
 
 
 The `Black level` & `White level` adjust the signal levels in the input file that correspond to black and white. 
@@ -483,7 +487,7 @@ The `Reset` buttons return the black or white level to their standard values. Fo
     The difference between the white and black levels is used to adjust the scaling of colour information, so you should set the black/white levels correctly before adjusting the chroma gain.
 
 
-### Display Aspect Ratio
+#### Display Aspect Ratio
 
 
 `Display aspect ratio` allows you to choose the aspect ratio at which the video is intended to be displayed.
@@ -493,13 +497,13 @@ For most video, this should be set to 4:3. You should only change it to 16:9 if 
 16:9 will also update the `.json` metadata, setting the `isWidesceen` flag.
 
 
-## Chroma Decoder Configuration
+### Chroma Decoder Configuration
 
 
 This window lets you adjust the chroma decoder's settings. Most of the options here correspond to command-line arguments to the `ld-chroma-decoder` tool, so you can use it prior to decoding to find the best settings.
 
 
-### Chroma Gain
+#### Chroma Gain
 
 
 The `Chroma gain` slider adjusts the saturation of the colour information in the image; it's like the Colour control on a monitor.
@@ -507,7 +511,7 @@ The `Chroma gain` slider adjusts the saturation of the colour information in the
 In an ideal world, this should be set to 1.0. Because colour information is stored in high frequencies in composite video, and high frequencies are usually the first to be lost in low-quality video, in practice you will often need to set this to a higher value in order to get correct colour reproduction. Make sure that you've set the black and white levels correctly first, though (see Video Parameters above).
 
 
-### Chroma Phase
+#### Chroma Phase
 
 
 The 'Chroma phase' slider adjusts the phase of the chroma signal before it is decoded into colour information. For NTSC, this behaves like the Hue control on a monitor. PAL monitors don't have a Hue control because they cancel phase errors automatically at the cost of reduced saturation; you can adjust this to maximise saturation with a standard PAL decoder, or to minimise Hanover bars with a Simple PAL decoder.
@@ -515,7 +519,7 @@ The 'Chroma phase' slider adjusts the phase of the chroma signal before it is de
 The best way to adjust chroma gain and phase is to use the vectorscope display with colour bars; see above.
 
 
-### Luma Noise Reduction (NR)
+#### Luma Noise Reduction (NR)
 
 
 Luma noise reduction applies a simple noise reduction algorithm to the luma signal.  High-frequency signals will be discarded unless they're larger than the value set here.
@@ -523,13 +527,13 @@ Luma noise reduction applies a simple noise reduction algorithm to the luma sign
 Many LaserDisc players use this kind of noise reduction. For command-line decoding, you usually want to disable this and use a better-quality external noise reduction algorithm (ffmpeg provides several).
 
 
-### PAL and NTSC tabs
+#### PAL and NTSC tabs
 
 
 There are separate tabs for PAL- and NTSC-specific options. In both cases, there are some options that control how chroma (colour) and luma (brightness) information are separated - the chroma filter - and then some that control how chroma information is turned into actual colours.
 
 
-### PAL
+#### PAL
 
 
 ![](assets/ld-analyse-rev7/Chroma_Decoder_Config_PAL.png){: style="width:400px"} 
@@ -544,7 +548,7 @@ The `Transform threshold` slider controls how Transform PAL identifies chroma in
 Normally the output of Transform PAL is fed through PalColour's PAL-D decoder to produce colour output. 'Use Simple PAL decoder' uses a PAL-S decoder instead - it produces better vertical colour resolution, but it's sensitive to phase errors in the input (producing "Hanover bars", where adjacent pairs of lines have different hue).
 
 
-### NTSC
+#### NTSC
 
 
 ![](assets/ld-analyse-rev7/Chroma_Decoder_Config_NTSC.png){: style="width:400px"}
@@ -563,16 +567,16 @@ Unticking `Enable adaptive filter` disables the 3D filter's heuristic, making it
 `Chroma noise reduction` applies a simple noise reduction algorithm to the chroma signals.  High-frequency signals will be discarded unless they're larger than the value set here. Many LaserDisc players use this kind of noise reduction. For command-line decoding, you usually want to disable both of these and use a better-quality external noise reduction algorithm (ffmpeg provides several).
 
 
-# The Help menu
+## The Help menu
 
 
 The help menu contains an about option that displays information about the application.
 
 
-# Notes
+## Notes
 
 
-## Y + C Combining With SOX
+### Y + C Combining With SOX
 
 **(Legacy Updated as of 2022.05.24 LD-Analyse Supports Seprate Chorma TBC Files Now)**
 
@@ -590,9 +594,3 @@ NTSC:
     sox -m -r 14318181 -b 16 -c 1 -e unsigned -t raw olncolorbars.tbc -r 17778400 -b 16 -c 1 -e unsigned -t raw olncolorbars_chroma.tbc -r 17778400 -b 16 -c 1 -e unsigned -t raw soxtest.tbc gain 5.75
 
 Then just copy the original ‘’tapename.tbc.json’’ file to match the new file.  
-
-
-# Page End
-
-
-Next Page [Exporting TBC Files To Video Files](TBC-to-Video-Export-Guide.md)

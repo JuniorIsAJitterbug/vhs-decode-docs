@@ -1,5 +1,6 @@
-## CVBS Decode 
-
+---
+title: CVBS Decode 
+---
 
 This spin-off project uses RAW CVBS captures and uses the signal processing and time base correction code, from vhs-decode & ld-decode there is no de-modulation like FM media.
 
@@ -36,7 +37,7 @@ Composite analogue video signals have been used from the pre-digital era to earl
 
 
 
-# Capturing RAW CVBS
+## Capturing RAW CVBS
 
 
 !!! IMPORTANT
@@ -63,7 +64,7 @@ However for Linux you might need to do:
 That's it you are ready to use CVBS-Decode!
 
 
-# Usage
+## Usage
 
 
 Currently, this decoder will work just fine with <u>stable signals and live media</u>.
@@ -78,7 +79,7 @@ Example Usage Command:
 To stop the decode press <kbd>Ctrl</kbd>+<kbd>C</kbd>
 
 
-## File Output
+### File Output
 
 
 cvbs-decode only outputs 3 files
@@ -90,14 +91,14 @@ cvbs-decode only outputs 3 files
 `filename.log`        - Timecode Indexed Action/Output Log
 
 
-## Inspect TBC and adjust inside ld-analyse
+### Inspect TBC and adjust inside ld-analyse
 
     ld-analyse composite.tbc
 
 ![](assets/ld-analyse-rev7/ld-analyse_main_smpte_bars_pal.png){: style="width:800px"}
 
 
-## Export to Video File 
+### Export to Video File 
 
 
 The [TBC-Video-Export](TBC-to-Video-Export-Guide.md) tool will automatically detect NTSC/PAL input, it can also run `ld-dropout correct` & `ld-process-vbi` and will embed the updated .json file inside the mkv, and export a FFV1 10-bit 4:2:2 interlaced file, read the wiki doc for detailed use of its [profiles](TBC-to-Video-Export-Guide.md#ffmpeg-profiles).
@@ -116,13 +117,13 @@ Windows:
 !!! NOTE
     You can also manually export via the [chroma-decoder directly](ld-chroma-decoder.md) for any single composite type .tbc media type such as LD/CVBS/SMPTE-C.
 
-## Command List
+### Command List
 
 
 Click the [here](Command-List.md) for the full list, the below are just basic usage commands only.
 
 
-## Set Input Frequency
+### Set Input Frequency
 
 
 Just like vhs-decode & ld-decode the default is 40msps 8-bit/10-bit/16-bit input.
@@ -140,7 +141,7 @@ Captures can be FLAC compressed (.cvbs) or Uncompressed .u8/u16 etc
 `--10cxadc3` 17.9 MHz/16-bit (5fsc) Stock Crystal 1.25x 4xFsc 16bit Filtered Vertical Blanking Interval Data
 
 
-## Set TV System
+### Set TV System
 
 
 `-n` NTSC
@@ -152,7 +153,7 @@ Captures can be FLAC compressed (.cvbs) or Uncompressed .u8/u16 etc
 `--pm` PAL-M
 
 
-## Decode Control
+### Decode Control
 
 
 `--debug` Enables debug detailed logging output.
@@ -172,7 +173,7 @@ Captures can be FLAC compressed (.cvbs) or Uncompressed .u8/u16 etc
 `--notch_q` defines the Q factor Intended primarily for reducing noise from interference however, the decoder logic already compensates based on tape type and TV System values.
 
 
-## Time Base Corrected Output
+### Time Base Corrected Output
 
 
 The Composite signal is stored in a single `.tbc`
@@ -190,5 +191,3 @@ This is a lossless digital file of the entire baseband composite signal like a D
 - Chroma issues with NTSC VHS use `ntsc-phase-comp` with chroma-decoder.
 
 - CVBS-Decode is not like ld-decode or vhs-decode so highly unstable sources will most likely require tinkering.
-
-

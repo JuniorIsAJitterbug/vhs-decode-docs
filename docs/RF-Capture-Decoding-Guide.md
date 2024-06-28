@@ -1,9 +1,8 @@
-Previous Page [RF Capture Guide](RF-Capture-Guide.md)
+---
+title: RF Capture Decoding Guide
+---
 
-Next Page [Exporting To Video Files](Video-Exporting-&-Gen-Chroma-Scripts.md)
-
-
-# Welcome to the 21st, its the future.
+## Welcome to the 21st, its the future.
 
 
 Software decoding simply is just doing what was done on dedicated components, then on dedicated IC's and finally on FPGAs and all in one IC's, its not magic and its not black box hardware either its entirely software emulating the ability's of hardware with an order of magnitude more flexibility.
@@ -23,7 +22,7 @@ Do you need to have a basic understanding of a VCR does and what a TBC does?
 **It makes life easier** and decoding a thoughtless copy-paste clean, new tape, clean, hit enter and decode workflow after hardware hook-up.
 
 
-# What does decoding do?
+## What does decoding do?
 
 
 [Technical Doc](Technical-Breakdowns.md)
@@ -39,7 +38,7 @@ HiFi-Decode Produces a PCM sampled audio stream 2:1 compressed with FLAC so a `.
 RTLSDR-Decode is a real-time GNURadio based decoder/encode script that creates a 8msps `.u8` RF file, a 48khz `.flac` audio file and decodes the signal live with a 1-3sec delay.
 
 
-# Running the decoders 
+## Running the decoders 
 
 
 There are 4 decoders are bundled inside vhs-decode repository and binary versions.
@@ -47,7 +46,7 @@ There are 4 decoders are bundled inside vhs-decode repository and binary version
 The prefix to run these decoders are as such:
 
 
-## Linux/MacOS
+### Linux/MacOS
 
 
 `vhs-decode` / `ld-decode` / `cvbs-decode` / `hifi-decode`
@@ -63,7 +62,7 @@ Example:
 As the decoders and scripts are normally installed to path you can decode files from and to any ware on the system.
 
 
-## Windows
+### Windows
 
 
 `decode.exe vhs` / `decode.exe ld` / `decode.exe cvbs` / `decode.exe hifi`
@@ -79,7 +78,7 @@ Example:
 VHS is the assumed format by default, and 40msps the DdD rate is assumed by default, but these defaults should never be taken for granted as its bad habit when dealing with other formats, but are helpful for short hand quick use.
 
 
-## Mandatory Settings
+### Mandatory Settings
 
 
 - TV System i.g `--system pal`, `--system ntsc`, `--system palm`, `--system ntscj` (PAL-M - Brazil / NTSC-J - Japan)
@@ -99,7 +98,7 @@ VHS is the assumed format by default, and 40msps the DdD rate is assumed by defa
 Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to copy then <kbd>Ctrl</kbd>+<kbd>P</kbd> to past the command use <kbd><</kbd>+<kbd>></kbd> to move edit position on the command line to edit the name or command and <kbd>Enter</kbd> to run the command.
 
 
-## Basic Decoding Command Examples
+### Basic Decoding Command Examples
 
 
 There is 2 ways to write commands, long hand and short hand such as `--tape_format` & `--tf` or `-f` & `--frequency` each version is documented together in the [command list](Command-List.md) master doc.
@@ -108,7 +107,7 @@ There is 2 ways to write commands, long hand and short hand such as `--tape_form
 
 
 
-## VHS-Decode:
+### VHS-Decode
 
 
 Example Long:  `vhs-decode --debug --tape_format vhs --system pal --cxadc --threads 8 --recheck_phase my-tape.u8 my-tape-decoded`
@@ -116,7 +115,7 @@ Example Long:  `vhs-decode --debug --tape_format vhs --system pal --cxadc --thre
 Example Short: `decode.exe vhs --debug -p -t 8 --tf vhs --cxadc --recheck_phase my-tape.u8 my-tape-decoded`
 
 
-## LD-Decode:
+### LD-Decode
 
 
 Note: NTSC AC3 Audio discs need `--AC3` enabled to decode that data to a `.efm`.
@@ -128,7 +127,7 @@ Example Long:  `ld-decode --system pal --threads 8 DdD_8.5_Gain.ldf First_Decode
 Example Short: `decode.exe ld -p -t 8 DdD_8.5_Gain.ldf First_Decoded_LD`
 
 
-## CVBS-Decode:
+### CVBS-Decode
 
 
 [CVBS-Decode Wiki Page](HiFi-Decode.md).
@@ -144,7 +143,7 @@ Example Short: `decode.exe cvbs --debug -t 8 -p -A --cxadc CX_Blue_Level_0db_6db
 You have full control over the baseband processing, fine control over how colour is processed with virtual vector scope and scan-line oscilloscope with the chroma-decoder in ld-analyse, you have a full 625/525 lines of image information to work with.
 
 
-## HiFi-Decode:
+### HiFi-Decode
 
 [HiFi-Decode Wiki Page](HiFi-Decode.md).
 
@@ -157,7 +156,7 @@ Example Long:  `HiFi-decode --system pal -t 8 --audio_rate 48000 HiFi_Capture_40
 Example Short: `decode.exe hifi -p -t 8 --audio_rate 48000 HiFi_Capture_40msps.s16 Tape-name_HiFi_Decode.flac`
 
 
-## RTL-SDR Decode:
+### RTL-SDR Decode
 
 
 [RTL-SDR Decode Wiki Page](RTLSDR.md).
@@ -170,7 +169,7 @@ Ideal for testing HiFi tap points or tracking/physical calibration, and capture 
     This will require manual sync alinement, not recommended for full captures without a reference capture.
 
 
-## Audio Alinement
+### Audio Alinement
 
 
 [Auto Audio Align](https://gitlab.com/wolfre/vhs-decode-auto-audio-align) can be used to sync audio based on your json metadata, if the audio is captured in sync.
@@ -181,7 +180,7 @@ AAA takes your following files:
 
 
 
-## Notes
+### Notes
 
 
 The following commands are your key commands for speeding things up with vhs-decode.
@@ -193,7 +192,7 @@ The following commands are your key commands for speeding things up with vhs-dec
 `--use_saved_levels` Experimental Skips doing most of the level detect code on each frame and only does it at the start or if there are issues detecting syncs. Provides a speedup in decoding and seems to work okay on captures that only have one single recording of media.
 
 
-## VBI Data Decoding
+### VBI Data Decoding
 
 
 !!! TIP
@@ -233,7 +232,7 @@ This data is decoded and stored in the updated `.json` file.
 TBC-Video-Export automatically runs vbi processing and embeds the `.json` into mkv files for safety.
 
 
-# Viewing TBC Files in ld-analyse
+## Viewing TBC Files in ld-analyse
 
 
 [Full Wiki Page For ld-analyse](ld-analyse-User-Guide.md)
@@ -245,13 +244,13 @@ You can open it as a standard GUI application or call it with `ld-analyse` in th
 ![](assets/images/Post-Processing/ld-analyse-chroma-frame-107-2023-02-23-23-01-21.png){: style="width:600px"}
 
 
-# Determining Capture Quality 
+### Determining Capture Quality 
 
 
 There is 2 ways to assess the quality of a decode.
 
 
-## Black Signal To Noise Ratio 
+### Black Signal To Noise Ratio 
 
 
 ![](assets/ld-analyse-rev7/Black-SNR-Readout.png){: style="width:550px"}
@@ -277,7 +276,7 @@ Sudden dips in the graph are ware there are dropouts, interference or weak signa
 `10~20 dB` - Poor Signal 
 
 
-## Export Dropout Analysis 
+### Export Dropout Analysis 
 
 
 (Open window & screenshot it currently)
@@ -285,7 +284,7 @@ Sudden dips in the graph are ware there are dropouts, interference or weak signa
 ![](assets/ld-analyse-rev7/Dropout-Loss-Analsys.png){: style="width:600px"}
 
 
-## Visually Checking
+### Visually Checking
 
 
 [Visual Video Errors Doc](Visual-Video-Signal-Errors.md) / [VBI Data Identification Doc](Identifying-vbi-data.md)
@@ -309,7 +308,7 @@ Clean Macrovision Example
 ![](assets/images/example-media/Signal-&-Capture-Errors/Clean-Decoded-Macrovision_2023-03-25_04-43-09.tbc.png){: style="width:800px"}
 
 
-## Adjusting your TBC in ld-analyse
+### Adjusting your TBC in ld-analyse
 
 
 As [ld-analyse](ld-analyse-User-Guide.md) reads the `.tbc` & `_chroma.tbc` files and combines them together in real-time with the ld-chroma-decoder this allows you to play with different chroma decoders and filtering settings on a basic level.
@@ -332,7 +331,7 @@ You can manually set the 16:9 Flag for widescreen content (`iswidescreen` inside
 ![](assets/ld-analyse-rev7/ld-analyse_ld-analyse_white_&_black-level-adjust-dark.png){: style="width:400px"}
 
 
-## Vector Scope & Chroma Decoder 
+### Vector Scope & Chroma Decoder 
 
 
 !!! NOTE
@@ -400,11 +399,3 @@ SMPTE-A, SMPTE-B, SMPTE-C, 2" Quadruplex, LaserDisc - Composite Modulated
 Betacam, Betacam SP, W-VHS - Duel Channel Component (Support not yet implemented)
 
 W-VHS / HDVS, Hi-Vision are all under the MUSE system that we need more samples of.
-
-
-# Page End 
-
-
-Previous Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Next Page [Video Export Guide](TBC-to-Video-Export-Guide.md)

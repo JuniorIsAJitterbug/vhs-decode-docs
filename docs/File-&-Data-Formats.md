@@ -1,4 +1,8 @@
-# RF Capture Formats
+---
+title: File & Data Formats
+---
+
+## RF Capture Formats
 
 
 CXADC 16-bit Unsigned
@@ -12,7 +16,7 @@ DdD   16-bit Signed
 MISRC 32-bit word file (2x 40msps 12-bit channels + 8-bit aux interleaved)
 
 
-# Context of Extension Formats
+## Context of Extension Formats
 
 
 `.bin`      - MISRC RAW 32-bit interleaved word file (extracted to s16 signed or u16 unsigned)
@@ -48,7 +52,7 @@ Archives have been standardised to native capture rate + FLAC compression, altho
 VHS and Video8 NTSC can be compressed down lower then 325MB/min with with 16msps 6-bit down sampling in the FLAC codec for example.
 
 
-# TBC Data Output Formats
+## TBC Data Output Formats
 
 
 `filename.tbc`        - Luminance Image Data (Full Composite if `cvbs-decode`/`ld-decode`)
@@ -60,7 +64,7 @@ VHS and Video8 NTSC can be compressed down lower then 325MB/min with with 16msps
 `filename.log`        - Timecode Indexed Action/Output Log
 
 
-# The TBC Format
+## The TBC Format
 
 
 TBC Acronym, Time Base Corrected .TBC is a lossless digital file format containing time base corrected digitized composite signal.
@@ -80,7 +84,7 @@ Decoding takes the 2 channels chrominance and luminance (C & Y) and creates sepa
 Originally developed for LD-Decode, the TBC format contains the full time base corrected [4fsc](Signal-Sampling.md) video signal in the digital component space using standard 16-bit unsigned greyscale values or `GREY16`, however the chrominance (colour data) and luminance (image data) are separated for tape decoding as these are separated signals on the [colour-under-tape formats] this allows more post decoding control with the gen chroma scripts that interact with the chroma decoder to combine the two TBC files in real time for FFMPEG to take and encode to a normal video file.
 
 
-# The JSON Metadata Format
+## The JSON Metadata Format
 
 
 Please read the [JSON Metadata Format](JSON-Metadata-format.md) doc for full information about the metadata pipeline.
@@ -125,10 +129,10 @@ The extra 4 PAL samples (two from each field) would go on 626
 These have to be removed to play the files back via ADC.
 
 
-## Frame Sizes 
+### Frame Sizes 
 
 
-## Full-Frame
+#### Full-Frame
 
 1135x624 PAL
 
@@ -141,20 +145,20 @@ These have to be removed to play the files back via ADC.
 
 760x488 NTSC SD
 
-##### Full Vertical (VBI Area)
+#### Full Vertical (VBI Area)
 
 928x624 PAL SD
 
 760x528 NTSC SD
 
-##### IMX D10 (+32 Lines)
+#### IMX D10 (+32 Lines)
 
 720x608 PAL SD
 
 720x512 NTSC SD
 
 
-# TBC-Video-Export & Chroma-Decoder
+## TBC-Video-Export & Chroma-Decoder
 
 
 The tbc-video-export.py and its exe version does several things, run the luma TBC though dropout compensation, combine Croma & Luma TBC's image data with FFmpeg with a filter complex and then pipes the merged image to encode a full-colour video stream, alongside embedding .json data, and setting timecode based off VITC if present.
@@ -179,7 +183,7 @@ Full-Frame output is 100-130mbps
     The experimental full 1135x625 PAL 910x525 NTSC frame output currently has issues with frame order and it's a few pixels off, this will be improved in the future and is not currently enabled in the chroma-decoder.
 
 
-# Generating Test Data
+## Generating Test Data
 
 
 [Vapoursynth Colourbars](https://github.com/ifb/vapoursynth-colorbars)
@@ -187,6 +191,3 @@ Full-Frame output is 100-130mbps
 [ld-chroma-encoder](ld-decode-tools.md)
 
 [HackTV](https://github.com/fsphil/hacktv)
-
-
-# Page End 

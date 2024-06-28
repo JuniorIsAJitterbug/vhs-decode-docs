@@ -1,3 +1,7 @@
+---
+title: Current Development State
+---
+
 Welcome to the Current State Document where current progression and performance are always noted down.
 
 ## Development Status

@@ -1,4 +1,8 @@
-# How & What to Capture?
+---
+title: Audio & HiFi Decoding
+---
+
+## How & What to Capture?
 
 
 **HiFi Audio is a Frequency Modulated (FM) format**, (also called AFM) which means more information can be encoded at the cost of extra circuits to de-modulate to baseband for playback allowing for a much higher range of information to be saved.
@@ -10,7 +14,7 @@ It's recommended to always do some form of standard audio/video capture with you
 HiFi audio capture (included with video FM for LaserDisc, Video8, Hi8) is the same practice as you would for video, but using the dedicated HiFi FM RF test point instead, though due to how HiFi is recorded if the playback hardware is out of spec or tracking slightly off this can cause drastic differences so its a little more fiddly on VHS and Betamax formats.
 
 
-## Recorded Information Range
+### Recorded Information Range
 
 
 100hz~15khz - Linear 
@@ -20,7 +24,7 @@ HiFi audio capture (included with video FM for LaserDisc, Video8, Hi8) is the sa
 20hz-24khz - PCM Digital (48khz)
 
 
-# Signal Range On Tape
+## Signal Range On Tape
 
 
 HiFi audio only requires 10msps or 5mhz of bandwidth half the 20msps or more recommended for video, as such audio takes up less space feel free to capture higher and down-sample later.
@@ -30,7 +34,7 @@ Linear audio, as its a baseband signal requires direct capture as such its recom
 Linear and or quad track reference capture is best done via SDI analogue to digital converter units, this allows for fluid cross platform setups thanks to affordable cards like the Blackmagic decklink that are supported universally, line-in or modern external audio interfaces & recorders like current Zoom/Sound Devices 32-bit float products such as the F3 or Mix-Pre II, these are ideal due to low self-noise, and ease of integration into capture workflows with standard capture software like virtual dub-2.
 
 
-## Types of Audio on VHS & SVHS
+### Types of Audio on VHS & SVHS
 
 
 FM HiFi Stereo (CH1/CH2) (1 Signal Modulated)
@@ -53,7 +57,7 @@ Dolby Stereo (CH1/CH2) (2 Signals Baseband) (1980's Prosumer & Broadcast Decks)
     Early Betamax and EIAJ also had 
 
 
-# Types of Audio on Video8 & Hi8
+## Types of Audio on Video8 & Hi8
 
 
 Double Mono - HiFi FM (Early and 3rd party models)
@@ -63,7 +67,7 @@ True Stereo - HiFi FM (Higher end and virtually all later models)
 True Stereo - PCM Digital (ENG/Pro Camcorder/Decks )
 
 
-# Types of Audio on LaserDisc
+## Types of Audio on LaserDisc
 
 
 Analog - Near CD Quality (In either mono or stereo normally with CX noise reduction)
@@ -73,7 +77,7 @@ DTS, AC3 - Digital
 MUSE/Hi-Vison/HDVS (also W-VHS) had digital audio tracks.
 
 
-# Types of Audio on Pro Tape Formats 
+## Types of Audio on Pro Tape Formats 
 
 
 !!! WARNING
@@ -92,13 +96,13 @@ BetaCam SP - 2ch Linear / 2ch AFM (Modulated "HiFi")
 MI/MII - 4ch FM Modulated tracks 
 
 
-## Types of Audio on D-VHS and W-VHS
+### Types of Audio on D-VHS and W-VHS
 
 
 These formats are all digital audio. 
 
 
-## Types of Audio on Video8 & Hi8
+### Types of Audio on Video8 & Hi8
 
 
 HiFi FM Stereo (CH1/CH2) - Carrier Modulated with TimeCode/Video (Video8/Hi8)
@@ -108,7 +112,7 @@ PCM Stereo (CH1/CH2) - Carrier Modulated with TimeCode/Video (Hi8)
 Video/Audio/Timecode is one one signal RF point.
 
 
-# HiFi Decode
+## HiFi Decode
 
 
 [HiFi-Decode Wiki Page](HiFi-Decode.md)
@@ -120,7 +124,7 @@ RF Input --> Demodulation --> Noise Reduction --> 192khz 24bit FLAC File
 FLAC Compressed & RAW Uncompressed Captures 8-bit or 16-bit are supported.
 
 
-## How Does Noise Reduction work?
+### How Does Noise Reduction work?
 
 
 From Videomem 14/03/2024: 
@@ -151,13 +155,13 @@ By spectral interpolation if it is mid length (that should sound like a bad gsm 
 And by muting / volume reduction if it is a long interruption.
 
 
-# Processing Recommendations?
+## Processing Recommendations?
 
 
 The [EBU R128 Standard](Documents.md) or -11 LUFS normalisation is recommended as its widely used in broadcast/online production this can be done with [StaxRip](https://github.com/staxrip/staxrip) or with [FFmpeg](https://github.com/slhck/ffmpeg-normalize.md#ebu-r128-normalization) tools.
 
 
-# ADAT Audio Tapes
+## ADAT Audio Tapes
 
 
 [DD86 Discord Notes](https://discord.com/channels/665557267189334046/687532251868823553/1136819104964161546)
@@ -187,14 +191,14 @@ Centre frequency is 1.6MHz at SP playback speed
 Bottom tone is constant. While this is going on a secondary carrier above it switches between two tones
 
 
-# PCM Audio & PCM Tapes
+## PCM Audio & PCM Tapes
 
 
 
 While quite rare, there is PCM standard audio on some VHS tapes, but there are numerous formats that are PCM audio only and this uses the video track to store PCM data blocks visually. 
 
 
-## PCM Audio Decoder & Hardware
+### PCM Audio Decoder & Hardware
 
 
 [SDVPCM Decoder](https://github.com/Fagear/SDVPCMdecoder)
@@ -202,12 +206,7 @@ While quite rare, there is PCM standard audio on some VHS tapes, but there are n
 [PCM VCD Digital](https://pcm.vcd.digital/)
 
 
-## Legacy Tools & Docs 
+### Legacy Tools & Docs 
 
 
 [VideoMem's Superheterodyne Decoding Tools](https://github.com/VideoMem/Superheterodyne-decoding-tools) a [GNU Radio](https://www.gnuradio.org/) script-based HiFi decoding tool. (Ouputs 16-bit 192khz PCM)
-
-
-# Page End
-
-Next Page [HiFi Decode](HiFi-Decode.md)

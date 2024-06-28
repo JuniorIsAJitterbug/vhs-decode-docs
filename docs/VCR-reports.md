@@ -1,10 +1,11 @@
-# VCR Reports
-
+---
+title: VCR Reports
+---
 
 This page is for initial and long term notes about VCR testing however not to be confused with [The Tap List](004-The-Tap-List.md) that has more upto-date information and images of many VCRs that don't *yet* have reports.
 
 
-# (S)VHS PAL
+## (S)VHS PAL
 
 
 - Philips VR900, Hitachi VT-MX730EVPS, VT-MX905EVPS (newer Philips turbo drive decks, not actually Hitachi!) 
@@ -17,12 +18,12 @@ This page is for initial and long term notes about VCR testing however not to be
     - Harrypm, DdD 2.02 Gain 1x Probe No issues, Test points to 50Ohm RG316 to BNC Bulkhead, Test Points are easy to access and plenty of space for 3 Bulkheads next to A/V connections but required a 100uf electrolytic capacitor for stable RF capture (HiFi needs re-testing)
 
 
-## Sony Consumer / Prosumer Models
+### Sony Consumer / Prosumer Models
 
 
 * [Sony SLV-SE60](004-The-Tap-List.md#sony-late-90searly-2000s-slv-se60) - oyvindln, used with scope probe, worked well with both cxadc and DdD.
 
-## JVC Consumer / Prosumer Models
+### JVC Consumer / Prosumer Models
 
 - JVC HR-J681
     - oyvindln, captured fine with scope probe + DdD from pb fm, though signal seemed a bit weaker than from e.g Sony and F77.
@@ -39,7 +40,7 @@ This page is for initial and long term notes about VCR testing however not to be
 - [JVC-BR-S622U](004-The-Tap-List.md#jvc-br-s622u)
     - adam_r / Ack Ack, tested will with amplifiers and 10uf caps added to test points.
 
-## Panasonic Consumer / Prosumer Models
+### Panasonic Consumer / Prosumer Models
 
 - [Panasonic NV-HD630](004-The-Tap-List.md#panasonic-hd630b) 
     - harrypm, DdD Min Gain, RTLSDR, RG316/BNC taps with 10uf caps, duel HiFi tap and RF-C test point taps, stable and high SNR captures obtained.
@@ -58,7 +59,7 @@ This page is for initial and long term notes about VCR testing however not to be
 - [Panasonic NV-HS1000](004-The-Tap-List.md#panasonic-nv-hs1000) 
     - Itewreed#2179, direct head amplifier ''pin push-in'' tap 10uf electrolytic capacitors used cable ground soldered to amplifier shield, BNC's mounted at the back, video RF and HiFi RF working.    
 
-## Panasonic AG (Professional line)
+### Panasonic AG (Professional line)
 
 - [Panasonic AG-5700](004-The-Tap-List.md#panasonic-ag5700) 
     - oyvindln, captured ok with scope probe + DdD from env TP on top board, at back on hinge side (Gives RF C out from head amp + 0.1 uf cap)
@@ -80,10 +81,10 @@ This page is for initial and long term notes about VCR testing however not to be
     - Harrypm, Testing to be done when serviced. (notation)
 
 
-# (S)VHS NTSC
+## (S)VHS NTSC
 
 
-## Sony Consumer / Prosumer Models
+### Sony Consumer / Prosumer Models
 
 
 - Sony SLV-677HF 
@@ -96,7 +97,7 @@ This page is for initial and long term notes about VCR testing however not to be
     - drfsupercenter#1337 PB RF output is very quiet with CX card the gain had to be almost fully maxed out to get a strong signal. Also, you CAN NOT tap Hi-Fi output on this VCR as it's too new and uses an IC. **Would recommend avoiding and going with one of the older models.**
 
 
-# BetaMax PAL
+## BetaMax PAL
 
 
 - [Sanyo VTC5000](004-The-Tap-List.md#sanyo-vtc5000) 
@@ -106,19 +107,19 @@ This page is for initial and long term notes about VCR testing however not to be
     - phelissimo_#0292, 
 
 
-# BetaMax NTSC
+## BetaMax NTSC
 
 
-# Sony 8mm 
+## Sony 8mm 
 
 
-## VCR's
+### VCR's
 
 - [Sony Video8 EV-A60](004-The-Tap-List.md#sony-video8-ev-a60-ntsc)
     - Titan91, 2.54mm header pins DuPont Tap.
 
 
-## Camcorders
+### Camcorders
 
 
 Sony camcorders are tapped via jig points [Sony 8mm Formats](Sony-8mm-Formats.md), this can also apply to some Samsung units too.
@@ -139,13 +140,13 @@ Sony camcorders are tapped via jig points [Sony 8mm Formats](Sony-8mm-Formats.md
     - harrypm, required 10uf cap, solid reliable signal at 8.5 gain on the DdD, black SNR of 45-48 dB on tapes tested with current code as good if not better then S-Video reference, Uses a 20 pin 0.5mm FPC for tap, pin 5 PB RF, Pin 6 GND.
 
 
-# Of Interest - Harry Munday
+## Of Interest - Harry Munday
 
 
 World Wide Multi-Region Players, W-VHS decks.
 
 
-# Notes 
+## Notes 
 
 
 [Sony Test Point Voltage Level](https://discord.com/channels/665557267189334046/782578245408653313/1078729904419504168)
@@ -163,9 +164,3 @@ RMT-V197/V197A/V197B/V198/V198A/V198K/V198J/V199/V199A
 SLV-E580EE/E580EG/E630AE/E630NP/E727VC/E730B/E730EX/E730NC/E730NP/E730UX/E730VC/E730VP/E735B/E735NC/E735VC/E780EE/E780EG/E780EN * All model names SLV- E580, E630, E727, E730, E735, E780  E580EE E580EG  RMT-V220B/V221D/V223/V223A/V223B/V224/V224C SLV-E780 E580 E630 E630AE E630NP  E727 E730 E727VC E730B E730EX E730NC E730NP E730UX E730VC E730VP AEP Model French Model East European Model SLV-E580EE/E780EE Middle European Model SLV-E580EG/E780EG/E780EN North European Model SLV-E730NC/E735NC Irish Model Spanish Model SLV-E630NP/E730NP German Model SLV-E727VC/E730VC/E730VP/E735VC E735 E735B E780EE E735NC E780EG E735VC E780EN.
 
 200mVp-p +- 500mVp-p
-
-
-# Page End
-
-
-Next Page [The Tap List](004-The-Tap-List.md)

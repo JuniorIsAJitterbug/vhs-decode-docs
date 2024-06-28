@@ -1,12 +1,6 @@
-Previous Page [Home](index.md)
-
-Main Page [Windows Native Install](Windows-Build.md)
-
-
-
-
-# WSL2 - Windows Sub-System For Linux 2
-
+---
+title: WSL2 - Windows Sub-System For Linux 2
+---
 
 !!! NOTE
     You can find the latest decode suite ready to go self contained binaries for Windows [here](https://github.com/oyvindln/vhs-decode/releases).
@@ -15,7 +9,7 @@ Main Page [Windows Native Install](Windows-Build.md)
     This doc is now considered legacy with the current workflow, but will be updated and maintained on request. 
     This guide may be broken and may not work/may need updates
 
-# Quick WSL2 Use
+## Quick WSL2 Use
 
 
 Stock install location in Windows File Explorer:
@@ -59,10 +53,10 @@ The resulting output is:
 In interlaced FFV1 10-bit 4:2:2 Top Field First.
 
 
-# Installation
+## Installation
 
 
-## Enable WSL2 (Windows Sub-System For Linux)
+### Enable WSL2 (Windows Sub-System For Linux)
 
 
 Tested on Ubuntu 20.04 & 22.04.1 LTS, On Windows 10.
@@ -72,7 +66,7 @@ WSL2 install YouTube video: https://youtu.be/IL7Jd9rjgrM
 While this is mostly copy-paste, this is still a very borky thing.
 
 
-## Enable the ability to install and run WSL2
+### Enable the ability to install and run WSL2
 
 
 Open Power Shell as Administrator and run
@@ -82,7 +76,7 @@ Open Power Shell as Administrator and run
     wsl --set-default-version 2
 
 
-## Install FFmpeg/SoX/FLAC inside windows
+### Install FFmpeg/SoX/FLAC inside windows
 
 
 These commands will install these in `PATH` so the tools are available system-wide.
@@ -106,7 +100,7 @@ Install SoX
     choco install sox.portable
 
 
-## Install Ubuntu 22.04.1 LTS (Windows Store)
+### Install Ubuntu 22.04.1 LTS (Windows Store)
 
 
 Install via Windows Store and then restart your computer.
@@ -114,13 +108,13 @@ Install via Windows Store and then restart your computer.
 ![](assets/images/WSL2/Ubuntu-WSL2-Install-22.04.1.png){: style="width:800px"}
 
 
-# Open Ubuntu
+## Open Ubuntu
 
 
 Total install setup size will be around 3~5GB.
 
 
-## Create your user account
+### Create your user account
 
 
 Run update
@@ -132,7 +126,7 @@ Then run
     sudo apt install software-properties-common
 
 
-## Install Utility Tools
+### Install Utility Tools
 
 
 Sox
@@ -148,7 +142,7 @@ FLAC
     sudo apt install flac
 
 
-## Compressing via WSL2
+### Compressing via WSL2
 
 
 `ld-compress /mnt/j/RF-Data/EXAMPLE-CAPTURE_VHS_PAL_DdD_Gain_8.5_2023-03-01_15-29-18.lds`
@@ -160,7 +154,7 @@ FLAC
     250GB disk limit, issues with larger captures i.g 180gb+ will require manlly expanding the default [virtual disk size](https://docs.microsoft.com/en-us/windows/wsl/vhd-size) if using data internally.
 
 
-# Install VHS-Decode 
+## Install VHS-Decode 
 
 
 (Also installs ld-decode/cvbs-decode/hifi-decode) 
@@ -182,7 +176,7 @@ Then
     sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
 
 
-## Using the Terminal
+### Using the Terminal
 
 
 Right-click to paste copied commands on your current windows clipboard
@@ -212,7 +206,7 @@ Then when inside the vhs-decode directory you can use
 To run the decoders
 
 
-# How to use storage drives and locations
+## How to use storage drives and locations
 
 
 WSL2 can be used as a self-contained system, this, however, is limited to a 250GB virtual disk as such you want to ideally use storage inside of windows in the NTFS file system this has two benefits, it keeps things easy to access and you can embed checksums into the files with [RapidCRC](https://www.ov2.eu/programs/rapidcrc-unicode) with ease to check for any errors in the data later.
@@ -238,7 +232,7 @@ Then go to your home directory
 `\LocalState\rootfs\home`
 
 
-## Example of using windows mounted drives
+### Example of using windows mounted drives
 
 
 You want to keep spaces out of folders & file names `like-this-for-example` if you want a fluid copy-paste experience with Linux.
@@ -257,13 +251,13 @@ Open CMD
 
 `wsl.exe --shutdown`
 
-## How do I dump/backup my WSL2 Install?
+### How do I dump/backup my WSL2 Install?
 
 This video covers all that.
 
 https://www.youtube.com/watch?v=ON_dPAO4KZs&t
 
-## Copy / Paste - Fixes
+### Copy / Paste - Fixes
 
 If any issues pop up run through this install command list until errors no longer occur.
 
@@ -313,7 +307,7 @@ If any issues pop up run through this install command list until errors no longe
     sudo apt install python3.9-dev libpython3.9-dev
 
 
-## For GUI (not needed really as its 3 command copy paste oprations)
+### For GUI (not needed really as its 3 command copy paste oprations)
 
 
     sudo pip install Gooey
@@ -321,7 +315,7 @@ If any issues pop up run through this install command list until errors no longe
     sudo pip3 install Gooey
 
 
-## GUI Deployment On Windows
+### GUI Deployment On Windows
 
 
 Windows 11 has a native GUI passthrough so ld-analyse will work out of the box and with gooey installed the basic vhs-decode GUI should not be an issue
@@ -329,7 +323,7 @@ Windows 11 has a native GUI passthrough so ld-analyse will work out of the box a
 For Windows 10 users, however, the issue of no GUI support is practically irrelevant as ld-analyse has a windows version and once you understand how to use it's 3 copy-paste-edit commands per tape so sticking to mixed use with the command line is normally less hassle.
 
 
-## Installing xfce and using xrdp (Remote Desktop Protocol)
+### Installing xfce and using xrdp (Remote Desktop Protocol)
 
 
     sudo apt update && sudo apt -y upgrade
@@ -366,7 +360,7 @@ Now in Windows, use Remote Desktop Connection to access the virtual desktop.
 Then log in using your username and password used for your WSL2 install.
 
 
-## Helpful Links:
+### Helpful Links:
 
 
 Mount a storage drive: https://learn.microsoft.com/en-gb/windows/wsl/wsl2-mount-disk
@@ -390,11 +384,3 @@ WSL 2 Announcement: https://devblogs.microsoft.com/commandline/announcing-wsl-2/
 File Names With Spaces: https://linuxhandbook.com/filename-spaces-linux/
 
 libqt5core Issues: <https://superuser.com/questions/1347723/arch-on-wsl-libqt5core-so-5-not-found-despite-being-installed> & <https://stackoverflow.com/questions/63627955/cant-load-shared-library-libqt5core-so-5>
-
-
-# Page End 
-
-
-Previous Page [Home](index.md)
-
-Main Page [Windows Native Install](Windows-Build.md)

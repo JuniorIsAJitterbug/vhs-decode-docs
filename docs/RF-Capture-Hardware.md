@@ -1,12 +1,8 @@
-# RF Capture Hardware
+---
+title: RF Capture Hardware
+---
 
-
-Next Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Previous Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
-
-# What are we looking for?
+## What are we looking for?
 
 
 This is a sub-doc about ADC's & SDRs that can be used for the decode projects this list includes standardised and validated methods and workflows and new options. 
@@ -14,7 +10,7 @@ This is a sub-doc about ADC's & SDRs that can be used for the decode projects th
 You can help expand this list via posting on the Discord, Sub-Reddit or Emailing Harry directly.
 
 
-## The Technical bit 
+### The Technical bit 
 
 
 The input frequency range required for most of the signals from HiFi to CVBS video is 1Mhz to 10Mhz at least, this can go upwards of 30Mhz for MUSE RF.
@@ -26,10 +22,10 @@ So most archival class solutions today will be based around the 28-40msps minimu
 Other factors such as input LPF (low pass filters) makes common SDRs a very mixed viability for straight to file and onto decoding with ease.
 
 
-# Standardised 
+## Standardised 
 
 
-## CX Card
+### CX Card
 
 
 [CX Cards Doc](CX-Cards.md)
@@ -55,7 +51,7 @@ The newest is the [vhs-rf-amp-ada4857](https://gitlab.com/wolfre/vhs-rf-amp-ada4
 ![](assets/images/vhs/Panasonic-HD630/Itewreed/hd630-eg_ada-amp_01.png){: style="width:400px"}
 
 
-## Duel Synchronised ADC CX Cards "Clockgen Mod"
+### Duel Synchronised ADC CX Cards "Clockgen Mod"
 
 
 [Clockgen mod simplified wiki](Clockgen-Mod.md)
@@ -100,7 +96,7 @@ Clock Speed & Audio is controlled by Alsamixer, and synchronised capture via scr
 ![](assets/images/Hardware/device-cxclock-alsamixer.png){: style="width:600px"}
 
 
-## DomesDay Duplicator (DdD)
+### DomesDay Duplicator (DdD)
 
 
 [DomesDay Duplicator Docs](https://github.com/happycube/ld-decode/wiki/Domesday-Duplicator)
@@ -120,7 +116,7 @@ DE0-Nano FPGA / FX3 USB 3.0 Board
 ![](assets/images/Hardware/DdD-OPA690-Sony-ILCE-6000-2023.03.09-01.56.59.jpg){: style="width:350px"}
 
 
-## RTLSDR
+### RTLSDR
 
 Used for [HiFi-Decode](003-Audio.md) & [RTL-SDR Decode](RTLSDR.md).
 
@@ -132,9 +128,9 @@ Pictured Order: TNC Male to SMA Male / TNC Female to SMA Male / BNC Male to SMA 
 
 
 
-# Currently Being Standardised
+## Currently Being Standardised
 
-## MISRC - Multi Input Simultaneous Raw RF Capture
+### MISRC - Multi Input Simultaneous Raw RF Capture
 
 Formerly called adc_usb3 / **SMIRF** - Simultaneous Multi Input RF Capture. - [DD86 Discord](https://discord.com/channels/665557267189334046/676084498097766451/1176979162536366111)
 
@@ -161,11 +157,11 @@ Features
 
 
 
-# Non-Standardised 
+## Non-Standardised 
 
 
 
-## RX888 MKII / RX-888 MKII 
+### RX888 MKII / RX-888 MKII 
 
 
 ![](assets/images/Hardware/RX888-MKII-2.jpg){: style="width:317px"}![](assets/images/Hardware/RX888-MK-II-Internals.jpg){: style="width:400px"}
@@ -186,7 +182,7 @@ Limited capture software support
 Limited Linux Support, developing slowly, working windows support more testing and testers required.
 
 
-## HackRF One 
+### HackRF One 
 
 [Original](https://greatscottgadgets.com/hackrf/one/) / [AliExpress Clone](https://www.aliexpress.com/item/1005003422032409.html?)
 
@@ -199,7 +195,7 @@ Limited Linux Support, developing slowly, working windows support more testing a
 The original has been used by several members for testing but the clones that are under half the price.
 
 
-## RSP1 / MSI-SDR / Msi2500 / Msi001
+### RSP1 / MSI-SDR / Msi2500 / Msi001
 
 
 [RSP1 RF Capture & Decoding](RSP1.md#FIXME)
@@ -244,7 +240,7 @@ MSPS from 9 to 10 MHz (8 bits)
 With a SNR of 60 dB.
 
 
-## ThunderScope 
+### ThunderScope 
 
 
 One of the most early open-source ADCs eyed by the members of the decode projects during the early hifi days.
@@ -256,7 +252,7 @@ One of the most early open-source ADCs eyed by the members of the decode project
 ![](assets/images/Hardware/Thunderscope-TB4-Front.jpg){: style="width:500px"}![](assets/images/Hardware/Thunderscope-TB4-Back.jpg){: style="width:500px"}
 
 
-## Hantek Oscilloscopes
+### Hantek Oscilloscopes
 
 
 [HanTek SDR](https://github.com/steve-m/sigrok-firmware-fx2lafw)
@@ -274,11 +270,3 @@ Software;
 sigrok-firmware-fx2lafw with librtlsdr modified for continuous write mode.
 
 This can also apply to the 6022BE a duel input BNC Oscilloscope.
-
-
-# Page End 
-
-
-Next Page [RF Capture Guide](RF-Capture-Guide.md)
-
-Previous Page [Hardware Installation Guide](Hardware-Installation-Guide.md)

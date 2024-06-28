@@ -1,12 +1,6 @@
-Back Page [RF Capture Decoding Guide](RF-Capture-Decoding-Guide.md) 
-
-Forward Page [Post Processing](Post-Processing-Guide.md)
-
-Sub-Page [Jitterbugs TBC-Video-Export Releases Page](https://github.com/JuniorIsAJitterbug/tbc-video-export/releases)
-
-
-# Video Exporting
-
+---
+title: Video Exporting
+---
 
 ![](assets/images/graphics/Main-Export-Diagram.png){: style="width:600px"}
 
@@ -31,7 +25,7 @@ CVBS formats `Composite, LaserDisc, SMPTE 1" Type C` are 1 single `.tbc` file.
 Always backup & keep your `.log` & `.json` files even if you delete your TBC files after you are happy with your export these still contain key metadata.
 
 
-# Basic Use
+## Basic Use
 
 
 !!! TIP
@@ -60,7 +54,7 @@ The default output format is:
 Ideal starting point for post processing footage without VBI data, but will require [de-interlacing](Deinterlacing.md) for online use.
 
 
-## File Paths
+### File Paths
 
 
 Defining input location and output location is useful if your data is not inside the same folder as the export tool.
@@ -75,7 +69,7 @@ For Windows this looks like
 `"C:\Users\harry\Desktop\Decode\Input.tbc"`
 
 
-## Time & Location Control
+### Time & Location Control
 
 
 - `--skip`, `-s` Skips number of frames `-s 25` for example skips 1 second of PAL video.
@@ -83,7 +77,7 @@ For Windows this looks like
 - `--length`, `-l` Defines length to export so `-l 1500` is 1 minute of PAL video at 25fps.
 
 
-## Audio 
+### Audio 
 
 
 Capture --> Decode --> [Auto Audio Align](https://gitlab.com/wolfre/vhs-decode-auto-audio-align) --> Mux with Video File
@@ -131,7 +125,7 @@ Example Advanced
 
 
 
-## Audio Muxing LaserDisc 
+### Audio Muxing LaserDisc 
 
 
 `--process-efm` Decodes 4.0 or 5.1 AC3 to file 
@@ -140,7 +134,7 @@ Example Advanced
 
 
 
-## FFmpeg Profiles
+### FFmpeg Profiles
 
 
 !!! CAUTION
@@ -192,7 +186,7 @@ Broadcast Profiles:
     The D10 or IMX50 standard is 720x512 NTSC & 720x608 PAL (SD + 32 lines for VBI area) standard for SD archive delivery and used by the BBC archive and many other broadcasters.
 
 
-## Chroma-Decoder
+### Chroma-Decoder
 
 
 Adjust values in ld-analyse to have your rough numbers
@@ -235,7 +229,7 @@ NTSC: `ntsc1d`, `ntsc2d`, `ntsc3d`, `ntsc3dnoadapt`
 
 
 
-## Metadata 
+### Metadata 
 
 
 `--export-metadata` 
@@ -287,10 +281,10 @@ Resulting Media Info Metadata Readout:
     VIDEO_SYSTEM                             : PAL
 
 
-# Frame Size Options
+## Frame Size Options
 
 
-## Standard Export (4:3 Standard)
+### Standard Export (4:3 Standard)
 
     tbc-video-export input.tbc
 
@@ -299,7 +293,7 @@ Standard 4:3 `760x488 NTSC` & `928x576 PAL`
 ![](assets/images/Post-Processing/TV-PC-Levels.png){: style="width:500px"}
 
 
-## `--luma-only`
+### `--luma-only`
 
 
 Makes a Monochrome or Black & White Image using the Y channel or strips the colour carrier from a CVBS TBC.
@@ -307,7 +301,7 @@ Makes a Monochrome or Black & White Image using the Y channel or strips the colo
 ![](assets/images/example-media/Monochrome/Munday-Demo-Tape-Monochrome.png){: style="width:500px"}
 
 
-## `--letterbox`
+### `--letterbox`
 
 
 16:9 Widescreen Letterbox Crop `928x432 PAL` & `760x432 NTSC`
@@ -317,7 +311,7 @@ These commands work well for 16:9 widescreen letterbox crop tapes rendering only
 ![](assets/images/Post-Processing/Munday-Walking-Around-Garden-Letter-Box-Crop-2.png){: style="width:550px"}
 
 
-## `--vbi`
+### `--vbi`
 
 
 Scaled `720x608 PAL` & `720x508 NTSC` (IMX/D10)
@@ -325,7 +319,7 @@ Scaled `720x608 PAL` & `720x508 NTSC` (IMX/D10)
 ![](assets/images/Post-Processing/Judgement-Day-Test-IMX-VBI.png){: style="width:550px"}
 
 
-## `--full-vertical`
+### `--full-vertical`
 
 
 Unscaled `928x608 PAL` & `760x508 NTSC`
@@ -337,7 +331,7 @@ Unscaled `928x608 PAL` & `760x508 NTSC`
 
 
 
-## `--full-frame` 
+### `--full-frame` 
 
 
 Full 4fsc Signal Frame  `910x524 NTSC` & `1135x624 PAL`
@@ -348,7 +342,7 @@ Full 4fsc Signal Frame  `910x524 NTSC` & `1135x624 PAL`
 ![](assets/images/example-media/Full-Frame-Exports/Eden_Project_Demo_Tape_VHS_SP_denterlaced_Video_Levels_MPC_Window.png){: style="width:600px"}
 
 
-## `--luma-4fsc`
+### `--luma-4fsc`
 
 This option passes the TBC files to FFmpeg directly and exports only luma information.
 
@@ -361,7 +355,7 @@ S-Video (Y with C Ignored) (VHS PAL SP Source)
 ![](assets/images/example-media/Full-Frame-Exports/VHS-Y-Scaled-Full-Frame-Luma.png){: style="width:620px"}
 
 
-# Viewing Video Files On Computers
+## Viewing Video Files On Computers
 
 
 | `0-255` PC Black Levels | `16-235` TV Black Levels |
@@ -379,7 +373,7 @@ Example Filter Settings:
 ![](assets/images/Post-Processing/Media-Player-Classic-Shader-Filters.png){: style="width:500px"}
 
 
-## Export Level Control 
+### Export Level Control 
 
 
 The chroma-decoder can produce images that are not to correct black levels for PC use.
@@ -393,7 +387,7 @@ If a single value is defined such as `32` this will uniformly apply to `R`/`G`/`
 This should only be used for PC as it will break TV Legal levels of `16-255`
 
 
-## DaVinchi Resolve Manual Curve Adjustment
+### DaVinchi Resolve Manual Curve Adjustment
 
 
 ![](assets/images/Post-Processing/Resolve-Curves-Adjustment-SD-Full-Frame.PNG){: style="width:1000px"}
@@ -402,7 +396,7 @@ This should only be used for PC as it will break TV Legal levels of `16-255`
 (**NOTE** BetaMax media releases will have ColourBars at the start for reference use with a vector scope to do proper corrections.)
 
 
-# Test your images on different displays 
+## Test your images on different displays 
 
 
 Depending on the colour accuracy of your display these images can look bright white in the yellows this is called `white level clipping` you need to adjust your display.
@@ -416,7 +410,7 @@ The example here is `2 sRGB photos taken of 2 displays`
 
 
 
-## Colr & CLAP Atom Setting
+### Colr & CLAP Atom Setting
 
 
 This is for altering the flagging data inside the `mov`, `mp4` & `mxf` containers.
@@ -432,7 +426,7 @@ Example of a blank and correctly flagged progressive exports for NTSC & PAL usin
 | ![](assets/images/Post-Processing/AMCDXVideoPatcher_Blank.png){: style="width:600px"} | ![](assets/images/Post-Processing/AMCDXVideoPatcher_Digital_Tape_Guide.png){: style="width:600px"} | ![](assets/images/Post-Processing/AMCDXVideoPatcher_NTSC_SD_Flags.png){: style="width:600px"} |
 
 
-## YouTube Upload 
+### YouTube Upload 
 
 
 Firstly, the correct way to word a video involving the projects is to state its an `FM RF Capture`.
@@ -467,7 +461,7 @@ You can pick either `x264_web` or `x265_web` depending on how much system/client
     Odysee uses direct streaming, no on the fly transcode/re-encoding so care has to be taken to avoid client side playback issues, i.g non phone users.
 
 
-## Export Tool Features 
+### Export Tool Features 
 
 
 - .tbc and extension-less file input
@@ -482,7 +476,7 @@ You can pick either `x264_web` or `x265_web` depending on how much system/client
 - AVC/H.264 & HEVC/H.265 De-interlaced Web Profiles
 
 
-## Credits
+### Credits
 
 
 - [Jitterbug](https://github.com/JuniorIsAJitterbug) / [Video Dump Channel](https://www.youtube.com/@videodumpchannel/videos) for making tbc-video-export!
@@ -490,13 +484,3 @@ You can pick either `x264_web` or `x265_web` depending on how much system/client
 - [Harry Munday](https://github.com/harrypm) for tbc-video-export's development direction, feature testing and its icon.
 
 - `Wrapscallion (Ty)` on the DD86 Discord for showing `AMDCX Videop Patcher` this truly invaluable and easy-to-use cross-platform tool.
-
-
-# Page End 
-
-
-Next Page [Post Processing](Post-Processing-Guide.md)
-
-Sub-Page [Jitterbugs TBC-Video-Export Releases Page](https://github.com/JuniorIsAJitterbug/tbc-video-export/releases)
-
-Back Page [RF Capture Decoding Guide](RF-Capture-Decoding-Guide.md) 

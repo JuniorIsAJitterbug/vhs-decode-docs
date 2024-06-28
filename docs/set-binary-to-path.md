@@ -1,5 +1,6 @@
-# What is PATH 
-
+---
+title: What is PATH 
+---
 
 What is `PATH` it just means an binary or application is available any ware on the system directly, on Linux this is common same for installed packages via package managers but for everything else this is still a manual task.
 

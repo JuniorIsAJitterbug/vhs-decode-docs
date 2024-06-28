@@ -1,3 +1,7 @@
+---
+title: Advanced Parameter Adjustment
+---
+
 This document contains advanced modify-able options inside of ld-decode, vhs-decode, hifi-decode.
 
 These are called "advanced parameters" but are more accurately, just tinkering with core components of the decoders.
@@ -6,7 +10,7 @@ These are called "advanced parameters" but are more accurately, just tinkering w
    Tweaks are on a per recording and per VCR basis and results can vary drastically from different recordings & formats.
 
 
-# VHS-Decode (Tape Decoding)
+## VHS-Decode (Tape Decoding)
 
 
 `--params_file <filename>` Changes the decoder settings to use an external `.json` file with the correct formatting
@@ -28,7 +32,7 @@ Note these values vary by tape format & TV System.
 }
 ````````
 
-# VHS Tune Tool
+## VHS Tune Tool
 
 
 `vhstune.py` is a filter adjustment tool used with tbc files that have been raw exported.
@@ -42,7 +46,7 @@ This can be used to derive a `custom-params` set of values to load into vhs-deco
 ![](assets/images/vhs-decode-gui/vhstune-SVHS.png){: style="width:800px"}
 
 
-# User Methods
+## User Methods
 
 
 Current State as of 12.10.2022 (DD.MM.YYYY)
@@ -77,7 +81,7 @@ if self.options.double_lpf:
             self.Filters["FVideo"] *= filter_video_lpf
 
 
-### Smooths out high-frequency noise in the chroma signal.
+#### Smooths out high-frequency noise in the chroma signal.
 
 
 [Discord Note](https://discordapp.com/channels/665557267189334046/665834485975351307/1070395739848577124)
@@ -91,7 +95,7 @@ stock luma filter settings, chromaafc.py settings:
 and `--nld`
 
 
-## Changes chroma filtering
+#### Changes chroma filtering
 
 
 [Discord Note](https://discord.com/channels/665557267189334046/665834485975351307/1070047012810137685)
@@ -116,12 +120,12 @@ Bottom is:
 (self.fsc_mhz + .34) / self.out_frequency_half,`
 
 
-# Deprecated Adjustments
+## Deprecated Adjustments
 
 [Discord Note](https://discord.com/channels/665557267189334046/665834485975351307/1030118081038655560)
 
 
-## NTSC
+### NTSC
 
 Titan91#1526's adjustments for NTSC video.
 
@@ -129,6 +133,3 @@ Titan91#1526's adjustments for NTSC video.
 2. Set rfparams["deemph_gain"] = 12 in vhs.py
 3. Set rfparams["deemph_mid"] = 280000 in vhs.py (I have not confirmed this)
 4. Disable double band pass filtering to improve sharpness slightly by commenting out lines 1554 and 1558 of process.py
-
-
-# Page End 

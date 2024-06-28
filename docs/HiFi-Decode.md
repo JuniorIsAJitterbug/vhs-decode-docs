@@ -1,9 +1,6 @@
-# HiFi Audio Decoding 
-
-
-Previous Page [Audio](003-Audio.md)
-
-Next Page [Video Export Guide](TBC-to-Video-Export-Guide.md)
+---
+title: HiFi Audio Decoding 
+---
 
 This page is for the full HiFi decoder, for real-time or adjustment decoding you want to look at the [RTLSDR Decode](RTLSDR.md) page.
 
@@ -45,7 +42,7 @@ HiFi FM signals can be captured with just about any basic SDR or ADC system its 
 - Multiple Tape Formats
 
 
-# HiFi Decode
+## HiFi Decode
 
 
 HiFi decode converts the FM signal into standard digital audio in a simple 1-command decode workflow.
@@ -55,7 +52,7 @@ HiFi decode converts the FM signal into standard digital audio in a simple 1-com
 FLAC Compressed & RAW Uncompressed Captures 8-bit or 16-bit are supported.
 
 
-## Usage
+### Usage
 
 !!! NOTE
     `samplerate` & `sounddevice` should be installed for Linux builds to work properly (if not automatically installed).
@@ -63,7 +60,7 @@ FLAC Compressed & RAW Uncompressed Captures 8-bit or 16-bit are supported.
 Infile **RF Data**, outfile **Audio Data** must have `.wav` or `.flac` extension at the end otherwise it will be an extension-less output and your default system audio player will not open the file automatically for example. 
 
 
-## Example Usage Command
+### Example Usage Command
 
 
 Linux/MacOS
@@ -82,7 +79,7 @@ With GUI
 
 
 
-## TV System
+### TV System
 
 
 `--system` `pal` / `ntsc`
@@ -92,7 +89,7 @@ With GUI
 `-p` - PAL
 
 
-## Input Sample Rate Commands
+### Input Sample Rate Commands
 
 
 `-f` Manual Input Hz, Mhz, Ghz.
@@ -106,7 +103,7 @@ With GUI
 `-f 10` - CX Card Clock Gen Setup
 
 
-### For CX Card Captures:
+#### For CX Card Captures:
 
 
 `--cxadc`    28.6 MHz/8-bit  (8fsc)
@@ -118,7 +115,7 @@ With GUI
 `--10cxadc3` 17.9 MHz/16-bit (5fsc) (Technically 4fsc PAL)
 
 
-## HiFi Decode Control Options
+### HiFi Decode Control Options
 
 
 `--audio_rate` Audio rate in Hz i.g `44100`, `48000`, `96000`, `192000` (48Khz Default)
@@ -160,7 +157,7 @@ With GUI
 `--overwrite` Overwrites local file if named file already exists.
 
 
-## HiFi Decode Output Formats
+### HiFi Decode Output Formats
 
 Recommended Standard Format 48khz.
 
@@ -172,7 +169,7 @@ Recommended Standard Format 48khz.
 | 44.1khz     | 24-bit    | FLAC  | .FLAC     |
 
 
-## HiFi Decode Notes
+### HiFi Decode Notes
 
 
 HiFi is recorded within a defined limited range the further it deviates from that range the more likely it is to have or cause interference with the luminance channel.
@@ -216,13 +213,13 @@ For example, in a badly calibrated VCR, the left channel is noisy and the right 
 You can fix this by adjusting tracking as you would normally for video and fine-adjusting pots on higher-end VCRs.
 
 
-## There is also the Videomem's original tool for inspection and tinkering
+### There is also the Videomem's original tool for inspection and tinkering
 
 
 [VideoMem's Superheterodyne Decoding Tools](https://github.com/VideoMem/Superheterodyne-decoding-tools) a [GNU Radio](https://www.gnuradio.org/) script-based HiFi decoding tool. (Ouputs 16-bit 192khz PCM)
 
 
-# Processing Recommendations?
+## Processing Recommendations?
 
 
 The [EBU R128 Standard](Documents.md) or -11 LUFS normalisation is recommended as its widely used in broadcast/online production this can be done with [StaxRip](https://github.com/staxrip/staxrip) or with [FFmpeg](https://github.com/slhck/ffmpeg-normalize.md#ebu-r128-normalization) tools.
@@ -230,7 +227,7 @@ The [EBU R128 Standard](Documents.md) or -11 LUFS normalisation is recommended a
 De-poping can be done very effectively with modern tools like [iZotope RX](https://www.izotope.com/en/products/rx.html).
 
 
-# PCM Audio 
+## PCM Audio 
 
 
 Video8/Hi8 Could have PCM audio to extract this Digital8 and DV25 FireWire transfer is recommended. 
@@ -238,7 +235,7 @@ Video8/Hi8 Could have PCM audio to extract this Digital8 and DV25 FireWire trans
 For PCM data in video streams you can decode it with [SDVPCM Decoder](https://github.com/Fagear/SDVPCMdecoder/)
 
 
-# Older Version Notes
+## Older Version Notes
 
 
 ### DomesDay Duplicator Users:
@@ -251,14 +248,6 @@ For PCM data in video streams you can decode it with [SDVPCM Decoder](https://gi
 To unpack your capture to 16-bit singed, this is very much worth noting for Video8/Hi8 users with 1 RF capture file.
 
 
-## Using FLAC Compressed Captures Via Pipe
+### Using FLAC Compressed Captures Via Pipe
 
     ld-ldf-reader input-hifi.flac | hifi-decode - --pal -f 40 --audio_rate 48000 Decoded_Output.flac
-
-
-# Page End 
-
-
-Previous Page [Audio](003-Audio.md)
-
-Next Page [Video Export Guide](TBC-to-Video-Export-Guide.md)

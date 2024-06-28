@@ -1,4 +1,6 @@
-# TBC To Analouge
+---
+title: TBC To Analouge
+---
 
 The TBC format is in simple terms a lossless digital file version of Composite & S-Video.
 

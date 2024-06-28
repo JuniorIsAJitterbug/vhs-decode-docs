@@ -1,5 +1,6 @@
-## The Internet Archive 
-
+---
+title: The Internet Archive 
+---
 
 The Internet archive is a massive archival library hosted across the world, mostly backing up webpages and assets.
 
@@ -20,7 +21,7 @@ An FM RF archive, needs to have a few basic things to be easily indexed and disc
 
 
 
-# Making an Archive
+## Making an Archive
 
 
 ### Basics
@@ -60,7 +61,7 @@ Save file inside your archive folder, if you upload this to older archives this 
 [Derivatives IA Doc](https://archive.org/help/derivatives.php)
 
 
-# Uploading Your Archive 
+## Uploading Your Archive 
 
 
 Once you have organised your files locally and all your assets are in order you can upload your archive.
@@ -70,17 +71,17 @@ Once you have organised your files locally and all your assets are in order you 
 - [Torrent Upload](https://help.archive.org/help/archive-bittorrents/#:~:text=Starting%20in%202011%2C%20the%20Internet,are%20available%20for%20the%20Torrent.)
 
 
-## Web
+### Web
 
 Web Upload is drag & drop via there site, slow and quite unreliable at times.
 
 
-## CLI
+### CLI
 
 CLI Upload is using there command line tool. (will make a expanded writeup on it later)
 
 
-## Torrent
+### Torrent
 
 Torrent upload is ware you create a page for your item and then upload a torrent i.g `my-archive.torrent` you have created with your files locally, this will allow slow but reliable upload and verification and allows you to also directly host and share the archive via the P2P bit torrent protocol. 
 

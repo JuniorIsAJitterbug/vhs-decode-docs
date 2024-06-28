@@ -1,7 +1,6 @@
-# Identifying VBI Data
-
-
-Next Page [Identifying Video Signal Errors](Visual-Video-Signal-Errors.md).
+---
+title: Identifying VBI Data
+---
 
 This document visually goes over the types of VBI data found in analogue video signals.
 
@@ -73,8 +72,3 @@ Teletext On VHS
 With MacroVison
 
 ![Video-ID-2](assets/images/VBI/VIDEO-ID-2-IEC-61880.png)
-
-
-# Page End 
-
-Next Page [Identifying Video Signal Errors](Visual-Video-Signal-Errors.md).

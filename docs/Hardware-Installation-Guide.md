@@ -1,14 +1,6 @@
-# RF Tap Installation Guide
-
-
-Next Page [The RF Capture Guide](RF-Capture-Guide.md)
-
-Sub-Page [RF Capture Hardware](RF-Capture-Hardware.md)
-
-Sub-Page [Troubleshooting Guide](Troubleshooting-Guide.md)
-
-Previous Page [The Tap List](004-The-Tap-List.md)
-
+---
+title: RF Tap Installation Guide
+---
 
 ## [First please look at The Tap list Example VCR's](004-The-Tap-List.md)
 
@@ -16,17 +8,7 @@ Previous Page [The Tap List](004-The-Tap-List.md)
 Firstly see if your VCR or similar has been added to the list or just want real-world visual examples of tapped decks, below is the methods we use, but the guide overall focuses on basic soldering which has the most use from both a RF Tapping but also a basic repair skill perspective.
 
 
-## Soldering-Free Setups
-
-
-While soldering is **encouraged and quite easy in practice** as the vast majority of VCRs without 2.54mm headers have easy to get at standard bar/floating bar test points, so the soldering method allows for 99% of decks to be tapped for RF capture, but the need to directly solder onto a VCR is not always required however it can make a clean and practical upgrade with safe locking BNC ports at the back.
-
-It can be scary to some and to get started, we understand some people might not want to take an iron to there VCR, especially a higher-end one and practicing basic soldering beforehand and reading this doc fully is highly recommended, however either way you go a clean setup requires proper cables and a proper electrical connection and soldering and melting/drilling a hole and adding a bulkhead protects the internal test points from snagged cables and the like.
-
-Either way you go however this **does not mean** you can neglect the basics of cleaning your VCR heads, guides and checking it over, as it's a mechanical machine just like a car or any other tool it requires some level of care, like re-lubrication and regular cleaning below is a document on that.
-
-
-### Soldered Method
+## Soldered Method
 
 
 This involves simple non-complex surface soldering of an signal and ground wire from test points or head amplifiers, with a 3.3uf to 10uf capacitor in-line to limit signal draw to allow normal playback for real-time reference capture during RF capture.
@@ -38,6 +20,15 @@ This involves simple non-complex surface soldering of an signal and ground wire 
 
 ![](assets/images/vhs/Panasonic-HD630/Panasonic-HD630B-Back-Ports-Sony-ILCE-7RM3-2022.10.03-01.00.27.JPG){: style="width:600px"}
 
+
+## Soldering-Free Setups
+
+
+While soldering is **encouraged and quite easy in practice** as the vast majority of VCRs without 2.54mm headers have easy to get at standard bar/floating bar test points, so the soldering method allows for 99% of decks to be tapped for RF capture, but the need to directly solder onto a VCR is not always required however it can make a clean and practical upgrade with safe locking BNC ports at the back.
+
+It can be scary to some and to get started, we understand some people might not want to take an iron to there VCR, especially a higher-end one and practicing basic soldering beforehand and reading this doc fully is highly recommended, however either way you go a clean setup requires proper cables and a proper electrical connection and soldering and melting/drilling a hole and adding a bulkhead protects the internal test points from snagged cables and the like.
+
+Either way you go however this **does not mean** you can neglect the basics of cleaning your VCR heads, guides and checking it over, as it's a mechanical machine just like a car or any other tool it requires some level of care, like re-lubrication and regular cleaning below is a document on that.
 
 ### Pushpin Method 
 
@@ -77,7 +68,7 @@ BNC probes can be used for a solderless hook-up, but may not have as reliable si
 ![](assets/images/vhs/Panasonic-AG5620/Panasonic-AG5620-Sony-NEX-3N-2022.09.16-07.30.12.JPG){: style="width:500px"}
 
 
-## Jig Method Video8 & Hi8
+### Jig Method Video8 & Hi8
 
 
 ![](assets/images/Sony-8mm/Sony-Digital8-DCR-TRV238E/Sony-Digital8-TVR238E_With_Notes.jpg){: style="width:500px"}
@@ -94,7 +85,7 @@ Check the service manual to see what pins have the RF signal, and your ready to 
 [Jigs (Unpopulated)](https://www.aliexpress.com/item/4001156449357.html?) / [Jigs (With 2.54mm pins)](https://www.aliexpress.com/item/1005003713202720.html?) / [FPC Flex Cables](https://www.aliexpress.com/item/32916422564.html?) / [DuPont to BNC](https://www.aliexpress.com/item/1005004394809131.html?) / [Type 1 USB Power Adapter](https://www.aliexpress.com/item/1005005548802645.html?) / [Type 2 USB Power Adapter](https://www.aliexpress.com/item/32963987768.html?)
 
 
-# Helpful Videos for Absolute Beginners
+## Helpful Videos for Absolute Beginners
 
 
 - [The NASA Standard of Soldering](https://www.youtube.com/watch?v=_RXugDd0xik)
@@ -114,13 +105,13 @@ How to use a Digital Multi Meter (DMM):
 - [Resistance & Continuity](https://www.youtube.com/watch?v=InJhgwmj2So)
 
 
-# Tooling & Equipment
+## Tooling & Equipment
 
 
 You will need the following items
 
 
-## Essentials
+### Essentials
 
 
 * Philips & Flathead Standard Screwdrivers
@@ -142,7 +133,7 @@ Optional but worth it for anything related to electronic's work
 Modern Combo DMMs like the [OWON HDS2202S](https://www.owon.com.hk/products_owon_hds200_series_digital_oscilloscope) / [Link 1](https://www.aliexpress.com/item/1005004686020795.html?) / [Link 2](https://www.aliexpress.com/item/1005005300888993.html?) / [Screen Protector](https://www.ebay.com/itm/363616997950) are a True RMS Digital Mustimeter, Oscilloscope & a Waveform/Tone Generator in one unit.
 
 
-## Building a Soldering Kit
+### Building a Soldering Kit
 
 
 - Sn 60/40 Pb Leaded Solder [Silverline](https://www.silverlinetools.com/en-GB/Product/ProductDetail?ModelName=AS15) / [Weller](https://www.amazon.com/Weller-SnPb-T0051403299-Lead-Solder/dp/B09LDJ4ZDT/) (Good quality solder is key)
@@ -168,7 +159,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 ![](assets/images/Hardware-Guide/KATSU-Desoldering-Rework-Station-140W.jpg){: style="width:600px"}
 
 
-## Extra Soldering Iron Tips
+### Extra Soldering Iron Tips
 
 
 - [More TS100 Type Tips](https://www.aliexpress.com/item/1005004444193347.html) - For PINCEL/TS100/TS101 (Hotswap self heating tips)
@@ -180,7 +171,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 - [More T12 Type Tips](https://www.aliexpress.com/item/1005003952276176.html?) - For Hakko/Generic T12 Type Irons (Hotswap self heating tips)
 
 
-## Basic Parts for making an RF Tap
+### Basic Parts for making an RF Tap
 
 
 !!! NOTE
@@ -193,7 +184,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 * 10uf Capacitors [standard assortment](https://www.aliexpress.com/item/1005003276169319.html?) or audio grade like Nichicon if you like.
 
 
-### Connection Cables
+#### Connection Cables
 
 
 - [Direct BNC to BNC](https://www.aliexpress.com/item/32530974771.html?)
@@ -203,7 +194,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 - [S-Video to BNC](https://www.aliexpress.com/item/1005003333398231.html)
 
 
-## DuPont Cables
+#### DuPont Cables
 
 
 - [DuPont Female to BNC](https://www.aliexpress.com/item/1005004394809131.html?)
@@ -212,7 +203,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 
 - [SMA to DuPont Female](https://www.aliexpress.com/item/1005004381724856.html?)
 
-## FPC Jigs (Sony Camcorders)
+#### FPC Jigs (Sony Camcorders)
 
 - [20pin Flex Cable](https://www.aliexpress.com/item/32916422564.html?)
 
@@ -221,7 +212,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 - [20pin Jig (With 2.54mm pins)](https://www.aliexpress.com/item/1005003713202720.html?)
 
 
-## Notes
+### Notes
 
 
 **Note** Having a 3rd arm holder with at least 2 metal clips is very helpful to hold connectors and the cable steady while soldering.
@@ -235,7 +226,7 @@ A fancy but immense lifespan saving item is a de-soldering vacuum station if you
 **Note** The In-line capacitor method is generally a coverall at the 10uf mark, 3.3uf-100uf range work fine but 10uf was standardised as its widely available and has worked perfectly with many VHS/SVHS/Betamax/Video8/Hi8/Digital8 units.
 
 
-## Cleaning Supplies
+### Cleaning Supplies
 
 
 This is all you need for cleaning the head drum & VCR tracks boards and plastics even a light servicing can make a world of difference in reliability of a VCR.
@@ -257,7 +248,7 @@ For initial board cleaning and removal of dust and other surface contaminants al
 - Assortment of Brushes
 
 
-## Maintenance Supplies
+### Maintenance Supplies
 
 
 - [Super Lube® Multi-Purpose Synthetic Grease](https://uk.rs-online.com/web/p/greases/1847967) (PTFE) (Tape Guides, Cogs) (Loctite 399420)
@@ -265,7 +256,7 @@ For initial board cleaning and removal of dust and other surface contaminants al
 - Sewing Machine Oil (Metal Barings)
 
 
-## Components that make a RF Tap
+### Components that make a RF Tap
 
 
 The Example image here contains the following 
@@ -279,7 +270,7 @@ The Example image here contains the following
 ![](assets/images/Hardware-Guide/Caps-BNC-Sony-ILCE-6000-2022.10.10-15.35.12.JPG){: style="width:600px"}
 
 
-# Step 00: Inspect & Clean Your Device
+## Step 00: Inspect & Clean Your Device
 
 
 !!! TIP
@@ -360,7 +351,7 @@ Once cleaning has finished double check, if there is signal issues always good t
 ---
 
 
-# Step 01: Find FM RF Test Points
+## Step 01: Find FM RF Test Points
 
 
 Video FM RF / HiFi FM RF
@@ -374,7 +365,7 @@ This list is a work in progress based on service manuals and direct user experie
     If your VCR was serviced likely there are some pen marks on the board at test point locations.
 
 
-## Test Point Names
+### Test Point Names
 
 
 These are the relative names, you may also want to look for `chroma amp` and `audio amp` when tracing paths from a IC chip.
@@ -416,7 +407,7 @@ There is always contrasting arrows showing the signal path on service manual dia
     Sometimes both test points can be called ENV.
 
 
-## Types of Test Points
+### Types of Test Points
 
 
 Test points vary in type generally all are through-hole, but SMD pad style is also a thing.
@@ -430,37 +421,37 @@ Most Sony-made Decks from VHS to Betamax will have 2.54mm headers for DuPont Con
 Some Video8 & Hi8 devices have service jig points via universal flex cables.
 
 
-### Flat Bar Style
+#### Flat Bar Style
 
 
 ![](assets/images/Hardware-Guide/Flat-Bar-Style-TP-2-Sony-ILCE-6000-2023.03.18-12.40.19.jpg){: style="width:500px"}
 
 
-### Floating Bar Style
+#### Floating Bar Style
 
 
 ![](assets/images/Hardware-Guide/Floating-Bar-Style-TP-Sony-ILCE-7RM3-2022.04.14-11.47.00-2.JPG){: style="width:500px"}
 
 
-### Poll Style
+#### Poll Style
 
 
 ![](assets/images/Hardware-Guide/Poll-Style-TP-Sony-ILCE-7RM3-2022.10.12-18.45.40.JPG){: style="width:500px"}
 
 
-### Loop Style
+#### Loop Style
 
 
 ![](assets/images/Hardware-Guide/Loop-Style-TP-Sony-ILCE-7RM3-2022.10.12-18.21.25.JPG){: style="width:500px"}
 
 
-### Pad Style
+#### Pad Style
 
 
 ![](assets/images/Hardware-Guide/Pad-Style-TP-2023.01.02_14.58.58.jpg){: style="width:500px"}
 
 
-### Header Pin (2.54mm) "DuPont"
+#### Header Pin (2.54mm) "DuPont"
 
 
 ![](assets/images/Hardware-Guide/Dupont-Header-Pin_Test_Point_2.png){: style="width:300px"}
@@ -468,16 +459,16 @@ Some Video8 & Hi8 devices have service jig points via universal flex cables.
 ![](assets/images/Hardware-Guide/Dupont-Header-Pin_Test_Point_1.png){: style="width:300px"}
 
 
-### Jig 0.5mm Flex Point
+#### Jig 0.5mm Flex Point
 
 
 ![](assets/images/Sony-8mm/Sony-Hi8-TRV318/Sony-Hi8-TRV318-Cover-Removed_2023.03.17_15.38.51.jpg){: style="width:300px"}
 
 
-## Types of RF Connectors
+### Types of RF Connectors
 
 
-## **BNC**  
+#### **BNC**  
 
 
 Is the best for fixed backports with a locking and reliable connector used in everything from 1960's communications gear to current-day cine cameras, this is the most preferred connector due to reliability.
@@ -498,7 +489,7 @@ Bulkhead Heavy Crimp (Standard for pre-crimped bulkhead cables)
 ![](assets/images/Cables-&-Connectors/BNC-Bulkhead-Large-RG316-Cable-Crimp-Type.jpg){: style="width:300.5px"}
 
 
-## **SMA**
+#### **SMA**
 
 
 Is a flat external-sided, threaded locking connector found on almost all common consumer RF devices such as 4G/5G, Wi-Fi Dongles, Handset radio units a small and versatile connector for internal use 
@@ -514,7 +505,7 @@ RP stands for reversed polarity so the signal is on the ground and the ground is
 ![](assets/images/Cables-&-Connectors/SMA-Connectors-Set.jpg){: style="width:400px"}
 
 
-## **SMB**
+#### **SMB**
 
 
 Is the lesser-known sibling of SMA but it's a tighter than TS-9 style non-locking connector.
@@ -522,7 +513,7 @@ Is the lesser-known sibling of SMA but it's a tighter than TS-9 style non-lockin
 ![](assets/images/Cables-&-Connectors/SMB-Connectors-Set.png){: style="width:500px"}
 
 
-## **Micro-BNC**
+#### **Micro-BNC**
 
 
 Also called DIN 1.0/2.3 Is the smallest locking knock-safe connector seen on portable equipment like PCIe cards and field recorders (Reference Part Number: 45K201-400L5)
@@ -530,7 +521,7 @@ Also called DIN 1.0/2.3 Is the smallest locking knock-safe connector seen on por
 ![](assets/images/Cables-&-Connectors/BNC-Connectors-Set.jpg){: style="width:500px"}
 
 
-## DuPont Connector "Header Pins"
+#### DuPont Connector "Header Pins"
 
 
 These are the most widely known connector technically called a 2.54mm Header Pin these are used for kid's kits to diagnostic test points or low-power/data connectors for computer hardware such as fans or Molex power, these normally use 26AGW wire.
@@ -540,7 +531,7 @@ These are the most widely known connector technically called a 2.54mm Header Pin
 Credit to Matthew Millman for the image and wonderful guide on the history and crimping these types of connectors that can be found [here](https://www.mattmillman.com/info/crimpconnectors/dupont-and-dupont-connectors/).
 
 
-## JST Connector 
+#### JST Connector 
 
 
 Shorthand for Japan Solderless Terminal, widely used on japan based electronics and critically Laserdisc Players.
@@ -550,7 +541,7 @@ Shorthand for Japan Solderless Terminal, widely used on japan based electronics 
 Credit to Matthew Millman for the image and wonderful guide on the history and crimping these types of connectors that can be found [here](https://www.mattmillman.com/info/crimpconnectors/common-jst-connector-types/).
 
 
-## JMC Connector
+#### JMC Connector
 
 Semi obscure today but was widely used in 1990s stacked electronics and for test points with "push in" jig modules, these are mostly found on Video8 camcorders.
 
@@ -559,7 +550,7 @@ Semi obscure today but was widely used in 1990s stacked electronics and for test
 ![](assets/images/Cables-&-Connectors/JMC-Connector.jpg){: style="width:300px"}
 
 
-## Header Pin "Jig Breakout Boards"
+### Header Pin "Jig Breakout Boards"
 
 
 With FPC Flex ribbon Cables jig points are broken out to dedicated pins, on basic PCB boards.
@@ -568,7 +559,7 @@ With FPC Flex ribbon Cables jig points are broken out to dedicated pins, on basi
 ![](assets/images/Hardware-Guide/Sony-Hi8-TRV318_2023.03.17_15.37.07.jpg){: style="width:355px"}
 
 
-## DuPont Cables
+### DuPont Cables
 
 
 If you wish to not hard modify players or a jig board then you can install a capacitor in-line or use a DC blocker this is very much so helpful with using test probes.
@@ -603,7 +594,7 @@ If you wish to not hard modify players or a jig board then you can install a cap
 - Premade BNC bulkheads can be chopped and cut to size, allowing you to mount first and solder later once routing is planned.
 
 
-## Step 02: Mounting & Routing 
+## Step 03: Mounting & Routing 
 
 
 Metal decks will normally need a drill press, but plastics decks can be easily melted and excesses cut away. 
@@ -622,7 +613,7 @@ After finding the best places for the BNC bulkheads and test fitting them you ca
 ![](assets/images/Hardware-Guide/Cabling-Sony-ILCE-6000-2023.03.23-04.09.12.jpg){: style="width:600px"}
 
 
-## Step 03: Striping & Soldering Cables
+## Step 04: Striping & Soldering Cables
 
 
 Keep these 3 things handy at this stage
@@ -701,7 +692,7 @@ Ends are finger twisted, then fresh solder is flowed onto them with a bevel/chis
 ![](assets/images/Hardware-Guide/RG316_BNC_Soldered_Sony_ILCE-6000_2024.03.28_14.07.22.jpg){: style="width:600px"}
 
 
-## Insulating Your Connectors
+### Insulating Your Connectors
 
 
 Once you know you have a good weld on the signal and ground solder joints this stops stray contact with dust and other wires.
@@ -720,10 +711,10 @@ You can do this with:
 ![](assets/images/Hardware-Guide/RG316_BNC_Insulated_Sony_ILCE-6000_2024.03.28_14.21.19.jpg){: style="width:500px"}
 
 
-# Step 03: Installing a capacitor on your RF tap
+## Step 05: Installing a capacitor on your RF tap
 
 
-## Bar Style 
+### Bar Style 
 
 
 Example Used `Panasonic NV-HD630` HiFi RF Tap.
@@ -768,7 +759,7 @@ This is very simple in practice.
 ![](assets/images/Hardware-Guide/Sony_ILCE-7RM3_2023.08.15_00.05.26.JPG){: style="width:300px"}
 
 
-# What NOT to do!
+### What NOT to do!
 
 
 !!! CAUTION
@@ -786,7 +777,7 @@ This is very simple in practice.
 ![](assets/images/Hardware-Guide/Bad_Cabling_Bad_Blob_Soldering.jpg){: style="width:281px"}![](assets/images/Hardware-Guide/Cold_Cracked_Joints.png){: style="width:500px"}
 
 
-## Direct Head Amplifier Style 
+### Direct Head Amplifier Style 
 
 
 More common on higher end decks due to easy removal of the head amplifier pack, and due to filtering on hifi and just more potential losses in the signal path direct head amp tapping is a lot more easy and flexible for the experienced in soldering.
@@ -808,7 +799,7 @@ Hooked upto BNCs on a 3D printed backplate module.
 ![](assets/images/Hardware-Guide/AG7150-Head-Amp-Tap-SMA-Hooked-Up-Apple_iPhone_X_2024.04.05_06.28.20.jpg){: style="width:400px"}
 
 
-## Push Pin Style 
+### Push Pin Style 
 
 
 Example Used `Panasonic NV-HS1000` & `Panasonic NV-HS950B`
@@ -825,7 +816,7 @@ Example Used `Panasonic NV-HS1000` & `Panasonic NV-HS950B`
 - Route your cables to the back of the VCR to BNC Bulkheads or though vents.
 
 
-## Flat Bar Style 
+### Flat Bar Style 
 
 
 !!! CAUTION
@@ -848,7 +839,7 @@ Once your test points have been located, depending on your available space, you 
     The Negative leg is always the shorter of the two which makes it easy to visually identify, for bi-directional parts its always equal 
 
 
-## Poll Style
+### Poll Style
 
 
 *Using an easy example here, as the rackmount decks have removable Audio/Video cards.*
@@ -877,7 +868,7 @@ Example Used: `Pannasonic AG7150` & `Pannasonic NV-HS950B`
 -----
 
 
-## Examples
+### Examples
 
 
 Sony 8mm Camcorders 
@@ -907,7 +898,7 @@ Panasonic-HD630 Video/HiFi FM & CVBS mounted to BNC Bulkheads.
 ![](assets/images/vhs/Panasonic-HD630/Panasonic-HD630B-Back-Ports-Sony-ILCE-7RM3-2022.10.03-01.00.27.JPG){: style="width:px"}
 
 
-# Hook-up your capture device & capture some FM RF archives!
+## Step 06: Hook-up your capture device & capture some FM RF archives!
 
 
 !!! NOTE
@@ -932,15 +923,3 @@ For [CX Cards](CX-Cards.md) use the Luma Pin with an [S-Video](https://github.co
 2x CX Card with BNC Mod, C31 Mod and used with the [clockgen mod](Clockgen-Mod.md) for Video RF + HiFi + Linear in sync.
 
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.02.19_23.30.25.jpg){: style="width:600px"}![](assets/images/Hardware/External-Clock-CX-Card/cxadc-clock-generator-audio-adc-pc-connections.png){: style="width:260px"}
-
-
-# Page End
-
-
-Next Page [The RF Capture Guide](RF-Capture-Guide.md)
-
-Sub-Page [Troubleshooting Guide](Troubleshooting-Guide.md)
-
-Sub-Page [RF Capture Hardware](RF-Capture-Hardware.md)
-
-Previous Page [The Tap List](004-The-Tap-List.md)

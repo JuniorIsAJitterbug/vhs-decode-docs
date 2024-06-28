@@ -1,3 +1,7 @@
+---
+title: Closed Captioning
+---
+
 The orignally used for the NTSC format in broadcast and release media, closed captions or subtitling data that allowed various consumer equipment to super-impose dialog subtitles over video.
 
 It should be noted that while it was orignally for NTSC, PAL release media also has it, however PAL broadcast mainly used [Teletext](Teletext.md) for subtitle data and on LaserDiscs of course.
@@ -38,7 +42,7 @@ To convert the SCC format file into SRT (and other common formats) you can use a
 
 This tool is available from [the ttconv github](https://github.com/sandflow/ttconv), the test page is available from [this link](https://ttconv.sandflow.com/)
 
-# SCCYOU
+## SCCYOU
 
 https://github.com/amiaopensource/sccyou
 

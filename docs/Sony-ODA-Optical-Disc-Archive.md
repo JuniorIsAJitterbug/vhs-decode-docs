@@ -1,4 +1,6 @@
-# Sony Optical Archive & PetaSite
+---
+title: Sony Optical Archive & PetaSite
+---
     
 https://pro.sony/en_GB/products/optical-disc
 
@@ -30,4 +32,3 @@ Rackmount scale in 7U units [PetaSite](https://pro.sony/en_GB/products/optical-d
 | ODC5500R	| 5500	        | Write-Once | 3          |
 
 The Interface is `SAS`, or `Fiber Channel`, however desktop units are `USB 3.0 Type-B`, `USB 3.2 (20Gbps) Type-C` or `Fiber` & `MiniSAS` with 19.5V power.
-

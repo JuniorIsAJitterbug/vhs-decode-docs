@@ -1,4 +1,8 @@
-# Contact
+---
+title: Press & Media
+---
+
+## Contact
 
 
 Harry Munday (UK - GMT Time) (harry@opcomedia.com)
@@ -15,7 +19,7 @@ Hardware: CX-Cards, DomesDay Duplicator, RTL-SDR, MISRC.
 For quick keyword lookup and historical development references and links please see my old (semi-deprecated) [Google Doc](https://docs.google.com/document/d/1ZzR3gbW6iSVSNP0qoDIS0ExeRecKehlTQ0EJyx2g568/edit).
 
 
-## Official Social Media Pages
+### Official Social Media Pages
 
 
 - [Twitter](https://twitter.com/vhsdecode)
@@ -25,7 +29,7 @@ For quick keyword lookup and historical development references and links please 
 - [Discord](https://discord.gg/pVVrrxd)
 
 
-# Wording and naming 
+## Wording and naming 
 
 
 The order of explaining and demonstrating the projects one should bare this in mind.
@@ -73,7 +77,7 @@ This is a clear way of avoiding conflation as people have done in the past calli
 Deinterlaced with QTGMC, encoded with Resolve or FFmpeg etc for example is also nice to be clear on alongside config as a poor config can lead to poor results no matter the initial quality source.
 
 
-# Who is this document for and why?
+## Who is this document for and why?
 
 
 This document is being made after a certain poorly written hack a day article, we love media coverage but hate when it promotes out of date information and lacks breaking down the most important aspect, that <u>the initial FM RF capture is the preservation method</u> and is very much so agnostic or universal on practically all analogue tape formats using FM modulation.
@@ -90,7 +94,7 @@ The Decoding projects and tools are in order of development [LD-Decode](https://
 The projects are all under the DomesDay86 discord community umbrella with members sharing code, sample data and generally assisting and advancing each others work, with core members and developers in the United Kingdom, United States, Scandinavia & Mainland Europe.
 
 
-# Tape Decoding & HiFi Decoding 
+## Tape Decoding & HiFi Decoding 
 
 
 To see more expanded diagram examples see the [The Visual Diagrams Page](Diagram-Visuals.md).
@@ -104,7 +108,7 @@ Unlike conventional capture, Closed Captions, Teletext, VITC timecode, VITS test
 These TBC files can be played and inspected with `ld-analyse` (GNU radio too!), and easily 1 command encoded into standard colour or black & white video files in codec formats such as FFV1 for further use or direct archival.
 
 
-## The Main Benefits
+### The Main Benefits
 
 
 - Source Signal Archival (Tape FM information is preserved)
@@ -116,7 +120,7 @@ These TBC files can be played and inspected with `ld-analyse` (GNU radio too!), 
 - Software Time Base Correction
 
 
-## Software extraction of Vertical Blanking Interval (VBI) data such as:
+### Software extraction of Vertical Blanking Interval (VBI) data such as:
 
 
 - [Closed Captions](NTSC-Closed-Captioning.md#FIXME) (CC) Subtitling found on broadcast airings and NTSC/PAL home TV/Movie releases.
@@ -128,7 +132,7 @@ These TBC files can be played and inspected with `ld-analyse` (GNU radio too!), 
 - [VITS](VITS-Vertical-Interval-Test-Signals.md) - Vertical Interval Test Signals, widely found in broadcast.
 
 
-# Is this new technology?
+### Is this new technology?
 
 
 Nope, the analogue to digital converter in the DomesDayDuplicator and the CX Cards are both using hardware from 2000~2002 era, but this is the first fully open-source workflow that has a built up a hardware and software tool chain anyone can deploy and that is truly future proofed due to being entirely open-sourced using universal raw data and standard waveform data formats. 
@@ -136,7 +140,7 @@ Nope, the analogue to digital converter in the DomesDayDuplicator and the CX Car
 Now anyone who is well informed will know Cube-Tec have there own version of RF capture called "RF Direct Transfer" under the "QUADRIGA" line but all processing is via a "black-box" solution using an FPGA based system, aimed primary at broadcast stable formats like BetaCam/BetaCam SP, witch vhs-decode has the ability to support, however what there solution fails to offer is an open source method to use the RF data captured, nor a universal decoded file format as they used DPX image sequence data rather then generic GREY16 data that can be piped to a DAC to produce CVBS/S-Video playback.
 
 
-## The RF Capture Hardware
+### The RF Capture Hardware
 
 
 We have three standardised methods.
@@ -160,7 +164,7 @@ We have three standardised methods.
 ![](assets/cxadc-clockgen-mod/Sony_ILCE-7RM3_2024.02.19_23.30.25.jpg){: style="width:650px"}![](assets/images/Hardware/External-Clock-CX-Card/cxadc-clock-generator-audio-adc-pc-connections.png){: style="width:280px"}
 
 
-# Media Examples
+### Media Examples
 
 
 RAW & Processed data can be directly obtained for viewing or presenting the projects [Here](Submitting-&-Downloading-Sample-Data.md).
@@ -178,10 +182,3 @@ There are a few people from the community/discord who have published their media
 [The Video Dump Channel](https://www.youtube.com/@videodumpchannel) - Jitterbug
 
 [Zcooger](https://odysee.com/@Zcooger:1) - Zcooger
-
-
-# Page End
-
-
-- [Home](index.md)
-- [Decode Releases](https://github.com/oyvindln/vhs-decode/releases)

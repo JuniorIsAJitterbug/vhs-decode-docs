@@ -1,5 +1,6 @@
-# Purpose
-
+---
+title: JSON Metadata Format
+---
 
 The decode projects are made up of a series of decoders and tools which form a processing tool-chain for processing, analysing decoded RF samples.  In order for each tool in the chain to communicate in an efficient manner a JSON metadata file is used to store and communicate information about the decoded RF capture and any data that has been determined.  
 
@@ -8,10 +9,10 @@ Tools should (as appropriate) be able to accept metadata as well as output metad
 This document describes the metadata format to be used by all tools in the decode tool-chain.
 
 
-# Conventions
+## Conventions
 
 
-## Supported JSON data types
+### Supported JSON data types
 
 | **Name**    | **Qt Equivalent** | **Description**                |
 | ----------- | ----------------- | ------------------------------ |
@@ -22,7 +23,7 @@ This document describes the metadata format to be used by all tools in the decod
 | Boolean     | Qbool             | Boolean value of true or false |
 
 
-##  File names
+###  File names
 
 
 When producing a JSON metadata file the application/utility will use its normal file extension with `.json` added.  For example, ld-decode & cvbs-decode produces a `.tbc` file containing the composite signal, and a `.tbc.json` file containing the metadata. (For colour-under formats, vhs-decode additionally produces a file with the suffix `_chroma.tbc` containing the chroma signal; this can be processed using the same `.tbc.json` metadata.)
@@ -30,21 +31,21 @@ When producing a JSON metadata file the application/utility will use its normal 
 All metadata should be considered as optional.  Each tool will add metadata as appropriate but should be able to handle the case when metadata is not available.
 
 
-## Invalid data fields
+### Invalid data fields
 
 
 A field with a null or -1 value (for integers) should be considered as invalid.
 
 
-## Object numbering
+### Object numbering
 
 VBI frame numbers, sequential field numbers and field-lines are numbered starting from 1. A value of 0 should be considered as invalid.
 
 
-# Objects
+## Objects
 
 
-## metaData
+### metaData
 
 | **Name**           | **Type**                  |
 | ------------------ | ------------------------- |
@@ -53,7 +54,7 @@ VBI frame numbers, sequential field numbers and field-lines are numbered startin
 | fields             | Array field               |
 
 
-## videoParameters
+### videoParameters
 
 
 | **Name**                 | **Type** | **Description**                                               |
@@ -79,7 +80,7 @@ VBI frame numbers, sequential field numbers and field-lines are numbered startin
 | gitCommit                | String   | The git commit ID of ld-decode used to decode the TBC         |
 
 
-## Notes:
+### Notes:
 
 A video system is a combination of a line standard and a colour standard - see [World TV Standards](http://web.archive.org/web/20190506044136/http://www.radios-tv.co.uk/Pembers/World-TV-Standards/index.html). `"PAL"` is standard 625-line PAL, and `"NTSC"` is standard 525-line NTSC; these are the only two systems used on LaserDisc. `"PAL-M"` is the 525-line PAL system used in Brazil, and is supported by vhs-decode. Other systems may be supported in the future.
 
@@ -90,7 +91,7 @@ The 'blackLevelStart' and 'blackLevelEnd' parameters point to a recommended sect
 `isSubcarrierLocked` indicates, for video sampling rates where there are not an integer number of samples in each line of video, whether the samples are aligned to the start of lines (line-locked) or to the colour subcarrier (subcarrier-locked). For subcarrier-locked sampling, any additional samples at the end of the frame can be found at the start of the second field's padding line. PAL digital video is often subcarrier-locked with a sample rate of 4fSC, giving four extra samples after the end of the second field; for NTSC, there are an integer number of 4fSC samples in a line so it doesn't make a difference.
 
 
-## pcmAudioParameters
+### pcmAudioParameters
 
 
 | **Name**       | **Type** | **Description**                                               |
@@ -101,7 +102,7 @@ The 'blackLevelStart' and 'blackLevelEnd' parameters point to a recommended sect
 | bits           | Integer  | The number of bits used per sample (i.e. 16)                  |
 
 
-## field
+### field
 
 
 | **Name**       | **Type**        | **Description**                                                                                                   |
@@ -124,7 +125,7 @@ The 'blackLevelStart' and 'blackLevelEnd' parameters point to a recommended sect
 | pad            | Boolean         | true = field is padded (contains no valid video data), false = normal field                                       |
 
 
-## vitsMetrics
+### vitsMetrics
 
 
 The VITS object contains data obtained by analysing the VITS field lines.  Not all data is available in all fields (i.e. white* on NTSC)
@@ -172,7 +173,7 @@ Additional fields With --verboseVITS:
     This object is preliminary, and is subject to change as features are implemented within the decoders or vbi-processing tool or newer tools.
 
 
-## vbi
+### vbi
 
 
 !!! NOTE
@@ -224,7 +225,7 @@ Flags (bit 0 is LSB):
 | 12      | standardAm2 | Am2 true = video signal is standard, false = future use                             |
 
 
-## ntsc
+### ntsc
 
 
 Note: This object contains the field data that is specific to NTSC (and not present in the PAL IEC specifications)
@@ -239,7 +240,7 @@ Note: This object contains the field data that is specific to NTSC (and not pres
 | videoIdData        | Number (integer) | The 14-bit VIDEO ID code data payload (IEC 61880)               |
 
 
-## cc
+### cc
 
 
 This object represents Closed Caption data for a field.
@@ -254,7 +255,7 @@ For `ccData0` and `ccData1`, if the value is `-1` or not present then no valid C
 Note: See ANSI/CTA-608 for details.
 
 
-## vitc
+### vitc
 
 
 This object represents Vertical Interval Timecode data for a field.
@@ -266,7 +267,7 @@ This object represents Vertical Interval Timecode data for a field.
 Each of the values in `vitcData` represents 8 bits of the raw VITC data, without the framing bits or CRC. The LSB of `vitcData[0]` is VITC bit 2 (the LSB of the frame number), and the MSB of `vitcData[7]` is VITC bit 79.
 
 
-## dropOuts
+### dropOuts
 
 | **Name**  | **Type**      | **Description**                                      |
 | --------- | ------------- | ---------------------------------------------------- |
@@ -275,10 +276,10 @@ Each of the values in `vitcData` represents 8 bits of the raw VITC data, without
 | fieldLine | Integer Array | An array of field-lines on which the drop-outs occur |
 
 
-# Enums
+## Enums
 
 
-## VBI Disc types
+### VBI Disc types
 
 
 This describes types of LaserDisc.
@@ -293,7 +294,7 @@ number (32-bit integer)
 | cav             | 2         |
 
 
-## VBI Sound Modes
+### VBI Sound Modes
 
 
 soundModes
@@ -316,6 +317,3 @@ number (32-bit integer)
 | stereo\_dump         | 9         |
 | bilingual\_dump      | 10        |
 | futureUse            | 11        |
-
-
-# Page End

@@ -1,4 +1,8 @@
-# Nyquist Sampling
+---
+title: Signal Sampling
+---
+
+## Nyquist Sampling
 
 
 1mhz = 2msps of minimum sampling so a 2:1 ratio
@@ -14,7 +18,7 @@ The best layman's example of this is HiFi 20hz to 20khz (Witch is around the ave
 Oversampling is just the practice of capturing far more information then the potential of the source information, this just wastes space in simple terms and is always the preference to underdamping ware signal information is lost. 
 
 
-# 4fsc
+## 4fsc
 
 
 Four times the frequency of SC (sub-carrier).
@@ -44,7 +48,7 @@ Full Signal Frame: 1135x625
 Active Picture Area: 720x576
 
 
-# Sub-Carrier
+## Sub-Carrier
 
 
 A subcarrier is a sideband of a radio frequency carrier wave, which is modulated to send additional information.
@@ -71,7 +75,7 @@ Left is 1.38Mhz A head & 1.53Mhz B head
 Right is 1.68Mhz A head & 1.83Mhz B head
 
 
-# Good Book Exurbs
+## Good Book Exurbs
 
 
 Exurbs From Digital Video and HD Algorithms and Interfaces 2nd Edition (By Charles Poynton 2012-02-07)
@@ -102,11 +106,3 @@ In simple terms the same system used for D2/D3 tape.
 ![](assets/docs/Book-Extracts/Poynton/Book-02/Page-172.png#FIXME){: style="width:600px"}
 
 > Page 172
-
-
-
-# Page End
-
-
-- [Technical Breakdowns](Technical-Breakdowns.md)
-- [Acronyms Guide](Acronyms-Guide.md)

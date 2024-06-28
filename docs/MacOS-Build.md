@@ -1,15 +1,11 @@
-# MacOS Builds 
-
-
-Previous Page [Home](index.md)
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)
-
+---
+title: MacOS Builds 
+---
 
 ![](assets/ld-analyse-rev7/ld-analyse_MacOS_Apple_M2.png){: style="width:px"}
 
 
-# Download & Usage
+## Download & Usage
 
 
 Self-Contained Builds: [MacOS (Intel & Arm)](https://github.com/oyvindln/vhs-decode/releases)
@@ -27,7 +23,7 @@ Run `tbc-tools.app` opening it will call ld-analyse, otherwise manually call too
     Due to developers not physically owning a range of apple x86 and Arm systems, this is entirely tested by community members, and virtual environments.
 
 
-## DomesDay Duplicator (DdD)
+### DomesDay Duplicator (DdD)
 
 
 ![](assets/images/Hardware/DdD_MacOS_2023-07-15_at_9.09.46_PM.png){: style="width:400px"}
@@ -36,7 +32,7 @@ Run `tbc-tools.app` opening it will call ld-analyse, otherwise manually call too
 Builds for MacOS (Arm) can be found [here](https://github.com/harrypm/DomesdayDuplicator#macos-software-installation)
 
 
-# Manually Building
+## Manually Building
 
 MacOS x86 & Arm is supported.
 
@@ -90,11 +86,3 @@ This should install the binaries in your bin folder, otherwise you can run them 
 
 
 [DD86 Discord](https://discord.com/channels/665557267189334046/676084498097766451/1126341637962997892)
-
-
-# Page End 
-
-
-Previous Page [Home](index.md)
-
-Next Page [Hardware Installation Guide](Hardware-Installation-Guide.md)

@@ -1,10 +1,6 @@
-Back Page [Decoding RF Data](RF-Capture-Decoding-Guide.md)
-
-Sub Page's [Digital Tape Guide](Digital-Tape-Guide.md) & [Conventional Digitisation Guide](Conventional-Digitisation-Guide.md)
-
-
-# Post Processing 
-
+---
+title: Post Processing 
+---
 
 This doc goes over what and how you can post-process your video files.
 
@@ -13,26 +9,7 @@ This is a in-drafting doc not a final workflow doc as the export tool could inte
 You will most likely want to start at the [Deinterlacing](Deinterlacing.md) doc which is the first thing you need to know after producing some decoded data.
 
 
-## Key
-
-
-!!! NOTE
-    Highlights information that users should take into account, even when skimming.
-
-!!! TIP
-    Optional information to help a user be more successful.
-
-!!! IMPORTANT
-    Crucial information necessary for users to succeed.
-
-!!! WARNING]
-    Critical content demanding immediate user attention due to potential risks.
-
-!!! CAUTION
-    Negative potential consequences of an action.
-
-
-# Universal Information 
+## Universal Information 
 
 
 This guide assumes you are using FFV1 or V210 (10-bit 4:2:2) files that are uncompressed or lossless compressed data, as you never want to in any capture chain go to lossy formats while in post production only when mastering files to lower quality "disro" or distributable copies should that be done for fixed standard systems or limited support systems such as web streaming or optical formats.
@@ -62,19 +39,19 @@ Editing Tools (NLE - Non-Linear Editors)
 - [Lossless Cut](https://github.com/mifi/lossless-cut/releases) (Basic Quick Editor, Handy for cutting and chapters)
 
 
-# Windows 
+## Windows 
 
 
 StaxRip, Hybrid, Resolve
 
 
-# MacOS 
+## MacOS 
 
 
 Hybrid, Resolve
 
 
-# Linux 
+## Linux 
 
 
 Hybrid, Vapoursynth Direct, Resolve
@@ -97,7 +74,7 @@ Install Vapoursynth Editor
 
 
 
-# Index 
+## Index 
 
 
 Deinterlacing
@@ -107,7 +84,7 @@ Deinterlacing
 50p | 59.94p | 24p | 23.97p
 
 
-# Deinterlacing 
+## Deinterlacing 
 
 
 Tools 
@@ -123,7 +100,7 @@ AvsPMod
 
 
 
-# De-Noising
+## De-Noising
 
 
 Topas Labs?
@@ -131,7 +108,7 @@ Topas Labs?
 Just No it damages original details, and if you have watched the Stargate SG1 re-mastered Blu-Rays you wonder why people want to get there hands on the original Betacam tapes intended for broadcast use, they ruined the source material, there is a clear line between cleaning up sensor noise and utterly destroying the native look of actual film grain. 
 
 
-## cvbs-ai-decode
+### cvbs-ai-decode
 
 
 Vurnk11's personal denoiser project, that's fairly effective for NTSC.
@@ -145,7 +122,7 @@ Vurnk11's personal denoiser project, that's fairly effective for NTSC.
 
 
 
-# DVD & Blu-Ray Mastering 
+## DVD & Blu-Ray Mastering 
 
 
 For direct Blu-Ray & DVD mastering ProRes HQ is recommended and supported directly by Sony DVD Architect.
@@ -222,7 +199,7 @@ You can pick either `x264_web` or `x265_web` depending on how much system/client
     tbc-video-export --profile x264_web example_decoded_media
 
 
-# Tools
+## Tools
 
 
 Some useful free tools to note for post processing for upscaling and deinterlacing.
@@ -240,7 +217,7 @@ These give you basic editing to quickly handle uncompressed files across operati
 QTGMC de-interlacing experience, and full colour grading and post production ability.
 
 
-# StaxRip
+## StaxRip
 
 
 [StaxRip](https://github.com/staxrip/staxrip/wiki/) - Your new best media friend
@@ -254,7 +231,7 @@ StaxRip has `FFmpeg`, `Avisynth+`, `Vapoursynth` and over 40 tools for muxing, s
 It's not a 1-click encoder it's a 5 click and your ready for production encoder.
 
 
-## Basic Usage 
+### Basic Usage 
 
 
 Crop - This lets you crop using a mouse wheel or dragging margin (to the pixel level of control)
@@ -264,7 +241,7 @@ Cutting - Preview --> Set your playing position --> HOME for the start point and
 If you set multiple cut points it will chop the video up into one cut with those scenes. 
 
 
-## Profiles
+### Profiles
 
 
 There are templates for drag and drop de-interlacing & upscaling. 
@@ -295,7 +272,7 @@ Centre - Resolution & Aspect ratio control
 Bottom - First 2 Audio tracks (4 Channels in 2 stereo tracks is all analogue has anyways)
 
 
-## Always Check and Set Aspect Ratio
+### Always Check and Set Aspect Ratio
 
 
 If using profiles you only need to flag the aspect ratio correctly before export as this can change sometimes.
@@ -315,7 +292,7 @@ Breakdown:
 `1.555555` = 3:2 (Full Frame with 16:9 Media)
 
 
-## Deinterlacing - Interlaced Media to Progressive
+### Deinterlacing - Interlaced Media to Progressive
 
 
 Today de-interlacing is not a daunting task hard or complex just requires correct handling.
@@ -401,10 +378,3 @@ The default value is all.
 `-pix_fmt yuv422p10le` - 10-bit 4:2:2 
 
 `-pix_fmt p010le`      - 10-bit 4:2:0
-
-
-# Page End
-
-Back Page [Decoding RF Data](RF-Capture-Decoding-Guide.md)
-
-Sub Page's [Digital Tape Guide](Digital-Tape-Guide.md) & [Conventional Digitisation Guide](Conventional-Digitisation-Guide.md)

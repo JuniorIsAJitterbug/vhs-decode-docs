@@ -1,5 +1,6 @@
-# Linear Open Tape Master Guide 
-
+---
+title: Linear Open Tape Master Guide 
+---
 
 This a guide tossed together during a crisis adoption of the LTO5 tape format, starting during June 2023 going over the efforts to deploy LTO archival on Windows 10, Linux Mint & Windows Server 2016, archiving software found, consuming guides, collecting scripts and developing workflows to help others in the process.
 
@@ -8,7 +9,7 @@ Initial thoughts seem to be, LTO support is a very spotty thing between installs
 As of 2023 LTO4 and older is effectively dead in the support tree mess that is LTO after version 5 I say this due to LTFS being the main driver for the last decade the LTO consortiums attempt at a tape version of UDF (Universal Disc Format) has been a iffy but "it works" state.
 
 
-# LTO Tape
+## LTO Tape
 
 
 LTO Tape is a linear, mass produced industry archival format, using affixed media sizes, and generation to generation replaceable reading/writing hardware.
@@ -25,7 +26,7 @@ RFID Chip with MAM Code Data
 ![](assets/lto-wiki/tapes/LTO-3_cartridge_memory_chip.jpg){: style="width:300px"}
 
 
-# Rules of Using LTO
+## Rules of Using LTO
 
 
 - Never Zero Fill Tape Drives, leave about 10% of space with LTFS.
@@ -33,7 +34,7 @@ RFID Chip with MAM Code Data
 - Never open-air store tapes in high humidity air, always store in a cold, dry place but ideally vacuum or "vac-packed".
 
 
-# LTO Hardware Interface Software
+## LTO Hardware Interface Software
 
 
 [Internet Archive Download Link](https://archive.org/details/LTO-Tape-HP-IBM-Tandberg-Software-Pack)
@@ -48,7 +49,7 @@ RFID Chip with MAM Code Data
 - LTFS Copy GUI (Chinese)
 
 
-# Table 'o LTO
+## Table 'o LTO
 
 
 | Media ID | Cartridge Type | Native Capacity      | Compressed Capacity  | LTFS Capacity     | Year Introduced  | Backwards Support | Transfer Rate |
@@ -64,7 +65,7 @@ RFID Chip with MAM Code Data
 | L9       | LTO-9          | 18TB   (16.37 TiB)   | 45TB   (40.92 TiB)   | 17.4TB (15.8 TiB) | 2021             | LTO-8             | 400MB/s       |
 
 
-## Interfaces 
+### Interfaces 
 
 
 | Interface     | LTO Support | Operating System Support              |
@@ -108,7 +109,7 @@ Windows XP/7/10/11 support really is not there for many Fibre HBA cards, only Wi
 USB 3.0/3.1 like M.2 NVME adapters just has a controller IC emulating an SAS controller, unitex and ibm have 
 
 
-# Format Overview Notes 
+## Format Overview Notes 
 
 
 Tapes can not be degaussed externally it will make tapes unusable.
@@ -122,7 +123,7 @@ Drives should be cleaned after 40 to 50 running hours or 13 to 16 LTO5 full tape
 Drives can be manually cleaned, they are not airtight units just like a digital video tape VCR only difference is the head/heads are a static module which moves up and down tape is moved on 2 independent motors to control tension 
 
 
-# MAM Barcodes 
+## MAM Barcodes 
 
 
 ![](assets/images/meterials-handling-guide/Sony_ILCE-6000_2023.07.24_13.46.14.JPG){: style="width:400px"}
@@ -138,10 +139,10 @@ This code can be overwritten or used to auto-rename formatted cartages.
 ![](assets/lto-wiki/lables/pbs-proxmox-docs-lto-barcode-2024.png){: style="width:300px"}
 
 
-# Visual Examples
+## Visual Examples
 
 
-## Internals 
+### Internals 
 
 
 !!! TIP
@@ -152,10 +153,10 @@ LTO drives are based around a single linear head.
 ![](assets/lto-wiki/internals/IBM-LTO-repair-4-e1393008318675.jpg){: style="width:400px"}![](assets/lto-wiki/internals/repairing-of-lto-tape-drives-500x500.png){: style="width:400px"}
 
 
-# Interfaces 
+## Interfaces 
 
 
-## Fibre HBA (SFP)
+### Fibre HBA (SFP)
 
 
 Fibre Channel Host Bus Adapters, come in 4G and 8G versions, fixed module or SFP removable modules which house the RX/TX lasers for send/receive each module has 2 pairs of LC connector terminated fibres.
@@ -170,7 +171,7 @@ Fibre Channel Host Bus Adapters, come in 4G and 8G versions, fixed module or SFP
 
 
 
-## SAS Cards
+### SAS Cards
 
 
 SAS Comes in 6G versions and 12G versions, ports are always fixed this uses copper cables. 
@@ -196,7 +197,7 @@ Internal M8087 to External SFF8088
 ![](assets/lto-wiki/interfaces/M8087-to-SFF-8088-Adapter-Card-2.jpg){: style="width:400px"}
 
 
-## SCSI
+### SCSI
 
 
 LTO1-4 Used the SCSI interface.
@@ -212,7 +213,7 @@ USB to SCSI
 ![](assets/lto-wiki/interfaces/USB-to-SCSI.jpg){: style="width:400px"}
 
 
-## Auto Loaders
+### Auto Loaders
 
 
 Fibre Channel Duel Hight 
@@ -243,7 +244,7 @@ SAS Autoloaders
 ![](assets/lto-wiki/autoloaders/ibm-lto5-ultrium-5-h-1.5-3.0tb-sas-hh-v2.jpg){: style="width:400px"}
 
 
-## Rackmount 
+### Rackmount 
 
 
 ![](assets/lto-wiki/rack-mount/unitex-2u-lto-rack.jpg){: style="width:400px"}
@@ -251,7 +252,7 @@ SAS Autoloaders
 ![](assets/lto-wiki/rack-mount/hp-3u-duel-hight.jpg){: style="width:400px"}
 
 
-## External
+### External
 
 
 External LTO Drives are universal for SAS based drives normally using SFF-8088 but newer units can have MiniSAS.
@@ -271,7 +272,7 @@ Unitex USB 3.0/MiniSAS desktop
 ![](assets/lto-wiki/external/Unitex-USB-3.0-SAS-2022-product11-34.png){: style="width:400px"}
 
 
-# File Systems 
+## File Systems 
 
 
 This boils down to just two. 
@@ -283,7 +284,7 @@ This boils down to just two.
 - STFS - [Simple Tape File System](https://github.com/pojntfx/stfs) - Modern `.tar` based file system for any tape drive formats.
 
 
-# Software
+## Software
 
 
 LTFS is based around universal ease of access via host systems regardless of vendor hardware platforms, in reality software implementation has massive gaps and dying support for operating systems such as Windows 10 with little to zero working of software for IBM or HP's suits in some cases.
@@ -307,7 +308,7 @@ External enclosures are also interchangeable, if you're going the external route
 
 
 
-# HP LTFS 
+## HP LTFS 
 
 
 After starting out with IBM software its quite clear that HP's suite is a bit more refined:
@@ -352,7 +353,7 @@ Mostly thanks to having an actual log output while preforming actions!
 
 
 
-## Paid Indexing Tools
+### Paid Indexing Tools
 
 
 [Yoyotta](https://yoyotta.com/yoyotta/ltfs.html) MacOS Only, but audio/video media focused.
@@ -368,7 +369,7 @@ Mostly thanks to having an actual log output while preforming actions!
 [P5 Archive](https://www.archiware.com/products/p5-archive)
 
 
-## Free Indexing Tools 
+### Free Indexing Tools 
 
 
 [Yet Another Tape Manager (YATM)](https://github.com/samuelncui/yatm#readme)
@@ -385,7 +386,7 @@ Mostly thanks to having an actual log output while preforming actions!
 
 
 
-## Manual Indexing Tools 
+### Manual Indexing Tools 
 
 
 git-annex
@@ -398,7 +399,7 @@ https://community.spiceworks.com/how_to/160065-list-all-files-from-folders-and-s
 
 
 
-## Calculators 
+### Calculators 
 
 
 https://www.lto.org/tco-calculator/
@@ -406,7 +407,7 @@ https://www.lto.org/tco-calculator/
 https://www.sanspot.com/lto-guide
 
 
-## Alternative & Dead Formats
+### Alternative & Dead Formats
 
 
 Tandberg - RDX - (SSD Media)
@@ -421,7 +422,7 @@ DAT - Digital Audio Tape
 
 
 
-## Error Codes 
+### Error Codes 
 
 
 In software these are stated as `EC = Error Code`
@@ -454,7 +455,7 @@ Unload/Eject Button
 
 
 
-# References & Links
+## References & Links
 
 
 Official IBM Software Links [Windows](https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=Tape%20drivers%20and%20software&product=ibm/Storage_Tape/Long+Term+File+System+LTFS&release=2.4&platform=Windows&function=all) / [Linux](https://www.ibm.com/support/fixcentral/swg/downloadFixes?parent=Tape%20drivers%20and%20software&product=ibm/Storage_Tape/Long+Term+File+System+LTFS&release=2.4&platform=Windows&function=fixId&fixids=IBM_LTFS_Single_Drive_Edition_for_Windows_2.4.5.1_10503&includeRequisites=1&includeSupersedes=0&downloadMethod=http) / [MacOS](https://www.ibm.com/support/fixcentral/swg/downloadFixes?parent=Tape%20drivers%20and%20software&product=ibm/Storage_Tape/Long+Term+File+System+LTFS&release=2.4&platform=Mac+OSX&function=fixId&fixids=IBM_LTFS_Single_Drive_Edition_for_OS_X_2.4.5.1_10503&includeRequisites=1&includeSupersedes=0&downloadMethod=http)

@@ -1,5 +1,6 @@
-# Experimental "Gooey" - graphical user interface (partially broken at the moment)
-
+---
+title: Experimental "Gooey" - graphical user interface (partially broken at the moment)
+---
 
 ![GUI](assets/images/vhs-decode-gui/vhs-decode_gui_test_2022.jpg)
 
@@ -31,5 +32,4 @@ Then install Gooey
 To use VHS Decode GUI Run:
 
     ./vhs-decode-gui
-
-# Page End
+    

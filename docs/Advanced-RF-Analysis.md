@@ -1,5 +1,6 @@
-# Advanced RF Analysis
-
+---
+title: Advanced RF Analysis
+---
 
 ## Studys & Writeup's
 
@@ -47,14 +48,14 @@ View -> Show Spectral Frequency Display (Shift+D)
 ![](assets/images/RF-Analysis/Adobe_Audition_Main_Window.png){: style="width:600px"}
 
 
-# Inspect Data
+## Inspect Data
 
 
 Then you can use normal visual inspection to determine if it's signal is too low or too high.
 
 It's recommended to use 8/16bit FLAC compressed or uncompressed 8/16bit captures for this task and set your cache directory to a location with enough space or you will possibly zero-fill a drive.
 
-## Audacity
+### Audacity
 
 
 ![](assets/images/RF-Analysis/Audacity_Main_Window.png){: style="width:800px"}
@@ -66,7 +67,7 @@ Right-click on the left-hand side to change settings and enable the spectrograph
 You can change the settings according to the sample rate used for the capture.
 
 
-# ld-analyse
+### ld-analyse
 
 
 ![](assets/images/Post-Processing/ld-analyse-line-ossiliscope-2022-11-30-08-27-47.png){: style="width:800px"}

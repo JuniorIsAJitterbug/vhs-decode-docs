@@ -1,4 +1,6 @@
-# Frequently Asked Questions & Answers
+---
+title: Frequently Asked Questions & Answers
+---
 
 If any words or terms are confusing and or completely unknown to you read the above document first it covers all the little things and more.
 
@@ -226,7 +228,7 @@ Video8/Hi8 HiFi is always captured on its 1 RF point alongside video/timecode on
 (S)VHS/Beta has 2 separate signals one for Video and one for HiFi audio if your tapes only have Linear then you will need to conventionally capture the audio regardless, this is why reference conventional captures are recommended during your RF capture to save on tape re-runs and give you a reference to correct for audio drift, is becoming non-critical when synchronised setups are used such as [Clockgen Mod](CX-Cards.md) or the [MISRC](MISRC-Multi-Input-Simultaneous-RF-Capture.md#FIXME).
 
 
-## Linear Audio
+### Linear Audio
 
 
 SMPTE-C, SMPTE-B, EIAJ alongside Beta/VHS first gen decks are Linear Audio only. (Low end 80s for VHS etc)
@@ -242,7 +244,7 @@ You can also use line inputs or desktop interfaces, this capture method tops out
 (Fun fact Linear magnetic is also common on Super8/Standard8 film formats, ware as 16/35mm has had digital optical since the 1980s)
 
 
-## HiFi Audio
+### HiFi Audio
 
 
 [HiFi-Decode](HiFi-Decode.md) & [RTL-SDR Decode](RTLSDR.md)
@@ -457,8 +459,3 @@ BD/BDXL burners are only 45-80USD (all made after 2014 practically support M-Dis
 `Black Bias Macroblock Encoding`, as you will notice darker colours will be more blocky and "crunched" by compression artefacts.
 
 But in the 4k to 8k brackets the bitrate is higher and macroblocks are much harder to see outside of pure black images, so videos are best upscaled to 2160p or "4k" bracket i.g `2880x2176` after being QTGMC de-interlaced or IVTC if 24p media and here is some example settings with `spline16` upscaling and QTGMC configured to `SourceMatch=3, Lossless=2, Sharpness=0.3, TR2=2`.
-
-
-## Page End
-
-

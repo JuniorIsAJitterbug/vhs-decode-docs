@@ -1,13 +1,14 @@
-# Test Media Doc 
-
+---
+title: Test Media Doc 
+---
 
 This doc provides testing assets that are useful for creating test tapes or testing equipment. 
 
 
-# Creating Test TBC Files
+## Creating Test TBC Files
 
 
-## Pick a Test Pattern
+### Pick a Test Pattern
 
 
 `Right click --> Open In New Tab --> Save to File`
@@ -17,7 +18,7 @@ This doc provides testing assets that are useful for creating test tapes or test
 | ![](assets/images/Test-Patterns/EBU_Colorbars_75.png){: style="width:500px"} | ![](assets/images/Test-Patterns/EBU_Colourbars_100.png){: style="width:500px"} | ![](assets/images/Test-Patterns/SMPTE_Colourbars_75.png){: style="width:500px"} | ![](assets/images/Test-Patterns/SMPTE_Color_Bars_HD_100_16_9.png){: style="width:700px"} |
 
 
-## Format Data
+### Format Data
 
 
 Convert a picture to a raw rgb48 file with ffmpeg:
@@ -25,7 +26,7 @@ Convert a picture to a raw rgb48 file with ffmpeg:
 `ffmpeg -loop 1 -i SMPTE_Colourbars_75.png -vcodec rawvideo -t 15 -pix_fmt rgb48 928_576_rgb48.rgb`
 
 
-## Encode Data
+### Encode Data
 
 Run the ld-chroma-encoder:
    
@@ -36,7 +37,7 @@ Then link the output `.tbc` file to a `.u16` file so cvbs-decode knows the forma
 `ln -s 928_576_rgb48.rgb.tbc 928_576_rgb48.rgb.tbc.u16`
 
 
-## Decode Data
+### Decode Data
 
 
 Run the output though cvbs-decode:
@@ -46,7 +47,7 @@ Run the output though cvbs-decode:
 Black SNR should be in the 95~98dB range when viewed in ld-analyse.
 
 
-## Test Tones
+### Test Tones
 
 
 [1khz Sine Wave Tone](assets/test-data/1kHz_44100Hz_16bit_05sec.wav#FIXME)
@@ -58,12 +59,9 @@ Black SNR should be in the 95~98dB range when viewed in ld-analyse.
 [BLITS 5.1 Lineup](assets/test-data/BLITS_5.1Lineup_Demonstration.ogg#FIXME)
 
 
-## Docs
+### Docs
 
 
 [Multichannel Audio Line-up Tones](assets/test-data/Multichannel-Audio-Line-up-Tones-tech3304.pdf#FIXME)
 
 [BLITS Surround Sound Ident](assets/test-data/03_BLITS_Surround_Sound_Ident.pdf#FIXME)
-
-
-# Page End

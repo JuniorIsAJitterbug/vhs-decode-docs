@@ -1,3 +1,7 @@
+---
+title: Data Calculations
+---
+
 While for most people simple capture start press play wait till end stop capture decode and that good enough you may need to get to exact points or samples or simply want to do proper doucmentation.
 
 

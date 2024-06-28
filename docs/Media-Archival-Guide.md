@@ -1,5 +1,6 @@
-# Media Archival Guide
-
+---
+title: Media Archival Guide
+---
 
 There is a deep confusion between archives and copies of media this guide goes over what an archive is and the process of making archives which has three stages.
 
@@ -10,7 +11,7 @@ There is a deep confusion between archives and copies of media this guide goes o
 - Physical Archival, this includes storage and indexing of physical media tapes, data discs, data tapes.
 
 
-# What is an archive?
+## What is an archive?
 
 
 An archive is two key things, long-term and unchanging record of media, from art to text and now video and audio data too.
@@ -20,7 +21,7 @@ In historical context an compiled collection of information duplicated over and 
 Best common historical example of this practice is religious scriptures the youth would write/press a exact copy so each generation would have a copy and it would be verified by the elders own copy.
 
 
-# Workflow
+## Workflow
 
 
 This guide is agnostic in terms of data handling for both digital and analogue tape formats, and even covers standard digital data and production workflows the main difference is digital formats take less initial ingest effort.
@@ -36,7 +37,7 @@ RF Data, Logging Data, Decoded Data, Audio/Visual Data
 Burning Blu-Ray & DVD - Playable Media
 
 
-## Storage Mediums Overview 
+### Storage Mediums Overview 
 
 
 There is a few options but it all boils down to HDD short term, LTO long term, Optical very long term, there is emerging quartz/liquid/biological, and data block optical celluloid like the DOTS system but like with all storage systems redundancy is as critical as well actually being able to obtain and maintain.
@@ -52,7 +53,7 @@ Optical well just keep it in a cool dry place and it will last as long as the pl
 HDD goes upto 22TB per 3.5inch drive, SSD goes upto 100TB per 3.5inch drive, LTO goes upto 17.4TB per tape, Optical goes upto 128GB per disc. 
 
 
-## Magnetic Media Workflow
+### Magnetic Media Workflow
 
 
 `Files` --> `Solid State Storage` --> `Checksums` --> `Duplication`
@@ -60,7 +61,7 @@ HDD goes upto 22TB per 3.5inch drive, SSD goes upto 100TB per 3.5inch drive, LTO
 Rinse and repeat every 3-5 years maintaining the 3-2-1 workflow if possible.
 
 
-## The Optical Workflow
+### The Optical Workflow
 
 
 `Files` --> `Folder` --> `data.iso` --> `Add EEC Data` --> `Burn & Verify` --> `Make Label's & Index` --> `Physical Archive`
@@ -79,7 +80,7 @@ File System: UDF (Universal Disk Filesystem)
 *NOTE* You can also add metadata to the ISO file format such as who prepared, owns and or media name data.
 
 
-## The LTO Tape Workflow
+### The LTO Tape Workflow
 
 
 *NOTE* Always engage the lock tab after filling a tape, to prevent software from accidental overwrites.
@@ -101,18 +102,18 @@ IBM - Use single drive edition / IDIT
 
 
 
-# Digital File Systems & Formats
+## Digital File Systems & Formats
 
 
 Today there is two long term file system formats, alongside `exFat`, `NTFS`, `ext4` used for recording media, windows, and Linux respectively.
 
-## UDF - Universal Disc Format
+### UDF - Universal Disc Format
 
 
 This format is used by all optical media in the digital era starting in 1995 this allows for universal reading support by practically any past or current operating system or interface such as desktops to phones if you can find a reader or sample the pits you can extract the data off discs. 
 
 
-## LTFS - Linear Tape File System
+### LTFS - Linear Tape File System
 
 
 This file system is meant to be universal standard for Linear Open Tape starting from generation 5 released in 2010 allowing for a easy and universal format between desktop station and autoloader mounted archives.
@@ -120,7 +121,7 @@ This file system is meant to be universal standard for Linear Open Tape starting
 However support is mostly orientated around hardware and autoloader systems, Windows support is slowly dying, MacOS is workable and Linux is iffy and is not drag and drop fluid nor universal software between vendors tape drives. 
 
 
-# The Optical Archive
+## The Optical Archive
 
 
 What do I "just buy" to get started? is a common question it boils down to workflow and cost.
@@ -142,7 +143,7 @@ Portable (USB Type-C):
 ![](assets/images/hardware- baha sata cable#FIXME){: style="width:400px"}
 
 
-## One simple reason is the cost of Bit-Rot
+### One simple reason is the cost of Bit-Rot
 
 
 SSDs have limited life without power all flash memory degrades this can be 1 year or 25 years.
@@ -152,7 +153,7 @@ HDDs need mechanical replacements and are not immune from magnetic radiation and
 Optical just needs a crush proof box, and a 405nm laser to read it in 100+ years which is today mass fabricated for many uses once written and verified its a solid medium.
 
 
-## What are archival grade optical discs?
+### What are archival grade optical discs?
 
 
 Optical Discs are 2 things polycarbonate and some form of manipulatable material to store pits of information.
@@ -164,7 +165,7 @@ This means no contaminate from air to water etc gets in so nothing can damage it
 Unlike Laserdisc's today proper air/water tight moulding and forever adhesives with inert materials are common have been for a decade now with the HLT disc standard.
 
 
-# Optical Disc Options
+## Optical Disc Options
 
 
 - M-Disc
@@ -173,7 +174,7 @@ Unlike Laserdisc's today proper air/water tight moulding and forever adhesives w
 - Glass Master Discs (Extreme Cost)
 
 
-## Mobile Phone / Network Terminal Use 
+### Mobile Phone / Network Terminal Use 
 
 
 You can read CD/DVD/BD/BDXL UDF formatted discs data via USB OTG with many apps.
@@ -183,7 +184,7 @@ Android [MLUSB Mounter](https://play.google.com/store/apps/details?id=jp.co.medi
 iPhones can support drives naively that have USB translation mode [YouTube Example](https://www.youtube.com/watch?v=bPqjrwjO7H4) / [File Browser Professional](https://apps.apple.com/us/app/id854618029?app=itunes&cn=00) 
 
 
-## Basics of Blu-Ray Disc Sizes  
+### Basics of Blu-Ray Disc Sizes  
 
 
 BD = Blu-Ray Disc
@@ -237,7 +238,7 @@ Size is: 120 mm
 
 ---------
 
-## M-Disk
+### M-Disk
 
 
 Millennial Disc made by Millenniata (Fabricated and sold by Verbatim/Ritek today)
@@ -262,7 +263,7 @@ In use it's exactly like a normal DVD/BD/BD-DL/BDXL-TL in terms of read/write pr
 Cost of adoption is 50GBP / 70USD for top-end BDXL reader/writers M-Disk wins in terms of future-proofing and cost of interface hardware with UDF disk formatting supported on all computer platforms from desktops and even IOS/Android based smartphones.
 
 
-## DM Archive 
+### DM Archive 
 
 
 ![](assets/images/archival-hardware/DM-Archive-Disc-Reader.png){: style="width:300px"}
@@ -281,14 +282,14 @@ This is the newest Blu-Ray disc based system standardised by Japan with the "DM 
 
 These solutions are at the 30~100TB of data point in terms of raw practical cost effectiveness.
 
-## [Sony Optical Archive & PetaSite](https://pro.sony/en_GB/products/optical-disc) 
+### [Sony Optical Archive & PetaSite](https://pro.sony/en_GB/products/optical-disc) 
 
 * Discontinued support as of May 2023, (Will update if changes occur as this was quite popular as a one time migration workflow from LTO)
 
 [Page has been moved](Sony-ODA-Optical-Disc-Archive.md) to de-clutter though it is worth reading for basic info/history of optical archival in the 2012-2023 era, and is still a viable medium if you can get your hands on hardware and enough media.
 
 
-## LTO Linear Tape-Open
+### LTO Linear Tape-Open
 
 
 ![](assets/images/archival-hardware/SpectraStack-Top-OFF-LF-Angle-2MB.png){: style="width:300px"}
@@ -356,13 +357,13 @@ The benefits is clear however, kinetic stability you can pack these in a fight c
 There is a great blog about the tape format and how to use the more affordable yet less accessible "FC" Fibre Channel based loaders.
 
 
-## Indexing Tools & Methods
+### Indexing Tools & Methods
 
 
 https://community.spiceworks.com/how_to/160065-list-all-files-from-folders-and-subfolders-in-windows-and-export-it-to-csv
 
 
-## Checksums & Verifying Archives
+### Checksums & Verifying Archives
 
 
 Physical print sheets should always be stored with archives internally and or externally.
@@ -404,7 +405,7 @@ Although FLAC/RAW files have an degree of redundancy and the time base corrected
 FFV1 has checksums on the frame level for example. 
 
 
-## Packing Tapes 
+### Packing Tapes 
 
 ![](assets/images/meterials-handling-guide/Betamax-VAC-Packed-Sony-ILCE-6000-2023.03.09-22.07.11.jpg){: style="width:500px"}
 

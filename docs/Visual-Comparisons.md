@@ -1,9 +1,10 @@
-## Conventional Vs Decode
-
+---
+title: Conventional Vs Decode
+---
 
 This doc has a list of basic visual examples of the same frames from the same media via conventional methods and FM RF decoded images, these examples vary from setup to TV System.
 
-# Media Examples
+## Media Examples
 
 
 RAW & Processed data can be directly obtained for viewing, testing and or presenting the projects [Here](Submitting-&-Downloading-Sample-Data.md).
