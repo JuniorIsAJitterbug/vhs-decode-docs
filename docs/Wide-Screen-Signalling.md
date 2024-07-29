@@ -23,7 +23,7 @@ Not currently but there is flags for 16:9 called `isWidesceen` in the .JSON form
 
 ## Examples of Wide Screen Signalling
 
-(Example refrance CVBS RF/TBC/Video files) [Google Drive Mirror](https://drive.google.com/open?id=1PVKRyKeu74RXmwJSAc4Zm2CXZomfhMc9) / [Internet Archive Mirror](https://archive.org/details/wss-wide-screen-signaling)
+(Example reference CVBS RF/TBC/Video files) [Google Drive Mirror](https://drive.google.com/open?id=1PVKRyKeu74RXmwJSAc4Zm2CXZomfhMc9) / [Internet Archive Mirror](https://archive.org/details/wss-wide-screen-signaling)
 
 LetterBox
 

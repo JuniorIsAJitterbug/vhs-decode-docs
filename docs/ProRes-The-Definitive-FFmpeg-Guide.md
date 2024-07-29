@@ -446,7 +446,7 @@ Apple ProRes 422 Proxy is an even more highly compressed codec than Apple ProRes
 * Apple ProRes 4444 and Apple ProRes 4444 XQ are ideal for the exchange of motion graphics media because they are virtually lossless. They are also the only Apple ProRes codecs that support alpha channels.
 
 
-### Refrances:
+### References:
 
 https://support.apple.com/en-us/HT202410
 

@@ -187,9 +187,9 @@ The 2 pass method.  Note that the color below the normal headswitch location is 
 
 The decoded individual head pictures are illustrative of what each head captures, and you can easily ascertain the overlap
 
-![](assets/images/refrance-media/Tonys_Head_Capture_Experiments/Frontcut_1_2.png){: style="width:800px"}
+![](assets/images/reference-media/Tonys_Head_Capture_Experiments/Frontcut_1_2.png){: style="width:800px"}
 
-![](assets/images/refrance-media/Tonys_Head_Capture_Experiments/Combined_TBC_Image.png){: style="width:430px"}![](assets/images/refrance-media/Tonys_Head_Capture_Experiments/Combined_TBC_Image_Decoded_Colour.png){: style="width:550px"}
+![](assets/images/reference-media/Tonys_Head_Capture_Experiments/Combined_TBC_Image.png){: style="width:430px"}![](assets/images/reference-media/Tonys_Head_Capture_Experiments/Combined_TBC_Image_Decoded_Colour.png){: style="width:550px"}
 
 
 

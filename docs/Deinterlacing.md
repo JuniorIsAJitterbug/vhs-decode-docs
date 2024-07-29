@@ -78,7 +78,7 @@ De-Interlaced (De-Squeezed 16:9)
 
 Digital Video and HD Algorithms and Interfaces 2nd Edition (Charles Poynton 2012-02-07) (PDF Page 173)
 
-![](assets/images/refrance-media/Charles-Poynton/Digital-Video-And-HD-Algorithems-and-interfaces-2nd-Edition-2012/Page-173.png){: style="width:600px"}
+![](assets/images/reference-media/Charles-Poynton/Digital-Video-And-HD-Algorithems-and-interfaces-2nd-Edition-2012/Page-173.png){: style="width:600px"}
 
 
 ## What is a Deinterlacer?
